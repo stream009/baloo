@@ -44,6 +44,9 @@ private:
 
     Transaction* m_tr;
 };
+
+void notifyChangeToFileMonitorClients(const QStringList &paths);
+
 }
 
 #endif //BALOO_INDEXER_H
