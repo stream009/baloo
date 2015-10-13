@@ -21,6 +21,8 @@
 #include "idtreedb.h"
 #include "postingiterator.h"
 
+#include <cstdint>
+
 #include <QDebug>
 #include <algorithm>
 
@@ -37,7 +39,11 @@ IdTreeDB::IdTreeDB(MDB_dbi dbi, MDB_txn* txn)
 MDB_dbi IdTreeDB::create(MDB_txn* txn)
 {
     MDB_dbi dbi;
+#if SIZE_MAX == UINT64_MAX
     int rc = mdb_dbi_open(txn, "idtree", MDB_CREATE | MDB_INTEGERKEY, &dbi);
+#else
+    int rc = mdb_dbi_open(txn, "idtree", MDB_CREATE, &dbi);
+#endif
     Q_ASSERT_X(rc == 0, "IdTreeDB::create", mdb_strerror(rc));
 
     return dbi;
@@ -46,7 +52,11 @@ MDB_dbi IdTreeDB::create(MDB_txn* txn)
 MDB_dbi IdTreeDB::open(MDB_txn* txn)
 {
     MDB_dbi dbi;
+#if SIZE_MAX == UINT64_MAX
     int rc = mdb_dbi_open(txn, "idtree", MDB_INTEGERKEY, &dbi);
+#else
+    int rc = mdb_dbi_open(txn, "idtree", 0, &dbi);
+#endif
     if (rc == MDB_NOTFOUND) {
         return 0;
     }

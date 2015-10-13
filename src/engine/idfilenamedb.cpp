@@ -20,6 +20,8 @@
 
 #include "idfilenamedb.h"
 
+#include <cstdint>
+
 using namespace Baloo;
 
 IdFilenameDB::IdFilenameDB(MDB_dbi dbi, MDB_txn* txn)
@@ -37,7 +39,11 @@ IdFilenameDB::~IdFilenameDB()
 MDB_dbi IdFilenameDB::create(MDB_txn* txn)
 {
     MDB_dbi dbi;
+#if SIZE_MAX == UINT64_MAX
     int rc = mdb_dbi_open(txn, "idfilename", MDB_CREATE | MDB_INTEGERKEY, &dbi);
+#else
+    int rc = mdb_dbi_open(txn, "idfilename", MDB_CREATE, &dbi);
+#endif
     Q_ASSERT_X(rc == 0, "IdFilenameDB::create", mdb_strerror(rc));
 
     return dbi;
@@ -46,7 +52,11 @@ MDB_dbi IdFilenameDB::create(MDB_txn* txn)
 MDB_dbi IdFilenameDB::open(MDB_txn* txn)
 {
     MDB_dbi dbi;
+#if SIZE_MAX == UINT64_MAX
     int rc = mdb_dbi_open(txn, "idfilename", MDB_INTEGERKEY, &dbi);
+#else
+    int rc = mdb_dbi_open(txn, "idfilename", 0, &dbi);
+#endif
     if (rc == MDB_NOTFOUND) {
         return 0;
     }

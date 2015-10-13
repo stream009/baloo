@@ -21,6 +21,8 @@
 #include "documentdb.h"
 #include "doctermscodec.h"
 
+#include <cstdint>
+
 #include <QDebug>
 
 using namespace Baloo;
@@ -40,7 +42,11 @@ DocumentDB::~DocumentDB()
 MDB_dbi DocumentDB::create(const char* name, MDB_txn* txn)
 {
     MDB_dbi dbi;
+#if SIZE_MAX == UINT64_MAX
     int rc = mdb_dbi_open(txn, name, MDB_CREATE | MDB_INTEGERKEY, &dbi);
+#else
+    int rc = mdb_dbi_open(txn, name, MDB_CREATE, &dbi);
+#endif
     Q_ASSERT_X(rc == 0, "DocumentDB::create", mdb_strerror(rc));
 
     return dbi;
@@ -49,7 +55,11 @@ MDB_dbi DocumentDB::create(const char* name, MDB_txn* txn)
 MDB_dbi DocumentDB::open(const char* name, MDB_txn* txn)
 {
     MDB_dbi dbi;
+#if SIZE_MAX == UINT64_MAX
     int rc = mdb_dbi_open(txn, name, MDB_INTEGERKEY, &dbi);
+#else
+    int rc = mdb_dbi_open(txn, name, 0, &dbi);
+#endif
     if (rc == MDB_NOTFOUND) {
         return 0;
     }
