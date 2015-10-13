@@ -25,6 +25,9 @@
 #include "database.h"
 #include "./extractor/result.h"
 
+#include <QDBusConnection>
+#include <QDBusMessage>
+
 #include <KFileMetaData/Extractor>
 #include <KFileMetaData/PropertyInfo>
 
@@ -53,9 +56,22 @@ void Indexer::index()
     }
 
     result.finish();
-    if (m_tr->hasDocument(doc.id())) {
-        m_tr->replaceDocument(doc, DocumentTerms | DocumentData);
+    if (m_tr->hasDocument(result.document().id())) {
+        m_tr->replaceDocument(result.document(), DocumentTerms | DocumentData);
     } else {
         m_tr->addDocument(result.document());
     }
+}
+
+void notifyChangeToFileMonitorClients(const QStringList &paths)
+{
+    auto &&message = QDBusMessage::createSignal(QLatin1String("/files"),
+                                                QLatin1String("org.kde"),
+                                                QLatin1String("changed"));
+    QVariantList arg;
+    arg << paths;
+
+    message.setArguments(arg);
+
+    QDBusConnection::sessionBus().send(message);
 }
