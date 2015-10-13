@@ -21,6 +21,8 @@
 #include "mtimedb.h"
 #include "vectorpostingiterator.h"
 
+#include <cstdint>
+
 using namespace Baloo;
 
 MTimeDB::MTimeDB(MDB_dbi dbi, MDB_txn* txn)
@@ -38,7 +40,11 @@ MTimeDB::~MTimeDB()
 MDB_dbi MTimeDB::create(MDB_txn* txn)
 {
     MDB_dbi dbi;
+#if SIZE_MAX == UINT64_MAX
     int rc = mdb_dbi_open(txn, "mtimedb", MDB_CREATE | MDB_INTEGERKEY | MDB_DUPSORT | MDB_DUPFIXED | MDB_INTEGERDUP, &dbi);
+#else
+    int rc = mdb_dbi_open(txn, "mtimedb", MDB_CREATE | MDB_DUPSORT | MDB_DUPFIXED, &dbi);
+#endif
     Q_ASSERT_X(rc == 0, "MTimeDB::create", mdb_strerror(rc));
 
     return dbi;
@@ -47,7 +53,11 @@ MDB_dbi MTimeDB::create(MDB_txn* txn)
 MDB_dbi MTimeDB::open(MDB_txn* txn)
 {
     MDB_dbi dbi;
+#if SIZE_MAX == UINT64_MAX
     int rc = mdb_dbi_open(txn, "mtimedb", MDB_INTEGERKEY | MDB_DUPSORT | MDB_DUPFIXED | MDB_INTEGERDUP, &dbi);
+#else
+    int rc = mdb_dbi_open(txn, "mtimedb", MDB_DUPSORT | MDB_DUPFIXED, &dbi);
+#endif
     if (rc == MDB_NOTFOUND) {
         return 0;
     }

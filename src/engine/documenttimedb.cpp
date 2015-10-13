@@ -20,6 +20,8 @@
 
 #include "documenttimedb.h"
 
+#include <cstdint>
+
 using namespace Baloo;
 
 DocumentTimeDB::DocumentTimeDB(MDB_dbi dbi, MDB_txn* txn)
@@ -37,7 +39,11 @@ DocumentTimeDB::~DocumentTimeDB()
 MDB_dbi DocumentTimeDB::create(MDB_txn* txn)
 {
     MDB_dbi dbi;
+#if SIZE_MAX == UINT64_MAX
     int rc = mdb_dbi_open(txn, "documenttimedb", MDB_CREATE | MDB_INTEGERKEY, &dbi);
+#else
+    int rc = mdb_dbi_open(txn, "documenttimedb", MDB_CREATE, &dbi);
+#endif
     Q_ASSERT_X(rc == 0, "DocumentTimeDB::create", mdb_strerror(rc));
 
     return dbi;
@@ -46,7 +52,11 @@ MDB_dbi DocumentTimeDB::create(MDB_txn* txn)
 MDB_dbi DocumentTimeDB::open(MDB_txn* txn)
 {
     MDB_dbi dbi;
+#if SIZE_MAX == UINT64_MAX
     int rc = mdb_dbi_open(txn, "documenttimedb", MDB_INTEGERKEY, &dbi);
+#else
+    int rc = mdb_dbi_open(txn, "documenttimedb", 0, &dbi);
+#endif
     if (rc == MDB_NOTFOUND) {
         return 0;
     }

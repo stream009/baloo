@@ -19,6 +19,8 @@
 
 #include "documentdatadb.h"
 
+#include <cstdint>
+
 using namespace Baloo;
 
 DocumentDataDB::DocumentDataDB(MDB_dbi dbi, MDB_txn* txn)
@@ -36,7 +38,11 @@ DocumentDataDB::~DocumentDataDB()
 MDB_dbi DocumentDataDB::create(MDB_txn* txn)
 {
     MDB_dbi dbi;
+#if SIZE_MAX == UINT64_MAX
     int rc = mdb_dbi_open(txn, "documentdatadb", MDB_CREATE | MDB_INTEGERKEY, &dbi);
+#else
+    int rc = mdb_dbi_open(txn, "documentdatadb", MDB_CREATE, &dbi);
+#endif
     Q_ASSERT_X(rc == 0, "DocumentUrlDB::create", mdb_strerror(rc));
 
     return dbi;
@@ -45,7 +51,11 @@ MDB_dbi DocumentDataDB::create(MDB_txn* txn)
 MDB_dbi DocumentDataDB::open(MDB_txn* txn)
 {
     MDB_dbi dbi;
+#if SIZE_MAX == UINT64_MAX
     int rc = mdb_dbi_open(txn, "documentdatadb", MDB_INTEGERKEY, &dbi);
+#else
+    int rc = mdb_dbi_open(txn, "documentdatadb", 0, &dbi);
+#endif
     if (rc == MDB_NOTFOUND) {
         return 0;
     }
