@@ -281,6 +281,7 @@ int main(int argc, char* argv[])
 
         Transaction tr(db, Transaction::ReadWrite);
 
+        QStringList paths;
         for (int i = 1; i < parser.positionalArguments().size(); ++i) {
             const QString url = QFileInfo(parser.positionalArguments().at(i)).absoluteFilePath();
             quint64 id = filePathToId(QFile::encodeName(url));
@@ -292,15 +293,14 @@ int main(int argc, char* argv[])
                 out << "Skipping: " << url << " Reason: Already scheduled for indexing\n";
                 continue;
             }
-            if (!tr.documentData(id).isEmpty()) {
-                out << "Skipping: " << url << " Reason: Already indexed\n";
-                continue;
-            }
             Indexer indexer(url, &tr);
             out << "Indexing " << url << endl;
             indexer.index();
+
+            paths << url;
         }
         tr.commit();
+        notifyChangeToFileMonitorClients(paths);
         out << "File(s) indexed\n";
     }
 
