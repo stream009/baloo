@@ -63,6 +63,8 @@ void Indexer::index()
     }
 }
 
+namespace Baloo {
+
 void notifyChangeToFileMonitorClients(const QStringList &paths)
 {
     auto &&message = QDBusMessage::createSignal(QLatin1String("/files"),
@@ -75,3 +77,5 @@ void notifyChangeToFileMonitorClients(const QStringList &paths)
 
     QDBusConnection::sessionBus().send(message);
 }
+
+} // namespace Baloo
