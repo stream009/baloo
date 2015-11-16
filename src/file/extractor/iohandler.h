@@ -33,13 +33,15 @@ class IOHandler
 public:
     IOHandler(int stdin, int stdout);
     quint64 nextId();
-    bool atEnd();
-    void indexedId(quint64 id);
-    
-    //always call this after a batch has been indexed
-    void batchIndexed();
+    bool atEnd() const;
+
     void newBatch();
-    void indexingUrl(QString url);
+
+    void writeStartedIndexingUrl(const QString& url);
+    void writeFinishedIndexingUrl(const QString& url);
+
+    // always call this after a batch has been indexed
+    void writeBatchIndexed();
 
 private:
     int m_stdinHandle;

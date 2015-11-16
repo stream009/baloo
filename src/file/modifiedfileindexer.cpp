@@ -70,7 +70,7 @@ void ModifiedFileIndexer::run()
             continue;
         }
 
-        quint32 mTime = tr.documentMTime(fileId);
+        quint32 mTime = tr.documentTimeInfo(fileId).mTime;
 
         // A folders mtime is updated when a new file is added / removed / renamed
         // we don't really need to reindex a folder when that happens

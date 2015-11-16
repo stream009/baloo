@@ -94,12 +94,13 @@ void App::processNextFile()
             qCDebug(BALOO) << "File doesn't exist";
             m_tr->removeDocument(id);
             QTimer::singleShot(0, this, &App::processNextFile);
-            m_io.batchIndexed();
+            m_io.writeBatchIndexed();
             return;
         }
 
-        m_io.indexingUrl(url);
+        m_io.writeStartedIndexingUrl(url);
         index(m_tr, url, id);
+        m_io.writeFinishedIndexingUrl(url);
         m_updatedFiles << url;
 
         QTimer::singleShot(delay, this, &App::processNextFile);
@@ -114,9 +115,9 @@ void App::processNextFile()
         * signal isntead of sending out the list of files, that will need changes in whatever
         * uses this signal, Dolphin I think?
         */
-        QDBusMessage message = QDBusMessage::createSignal(QLatin1String("/files"),
-                                                        QLatin1String("org.kde"),
-                                                        QLatin1String("changed"));
+        QDBusMessage message = QDBusMessage::createSignal(QStringLiteral("/files"),
+                                                        QStringLiteral("org.kde"),
+                                                        QStringLiteral("changed"));
 
         QVariantList vl;
         vl.reserve(1);
@@ -128,7 +129,7 @@ void App::processNextFile()
 
         // Enable the SocketNotifier for the next batch
         m_notifyNewData.setEnabled(true);
-        m_io.batchIndexed();
+        m_io.writeBatchIndexed();
         qCDebug(BALOO) << "Batch finished";
     }
     qCDebug(BALOO) << "<<";

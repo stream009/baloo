@@ -47,43 +47,44 @@
 #include "indexerconfig.h"
 #include "idutils.h"
 #include "fileindexerconfig.h"
-#include "monitor.h"
+#include "monitorcommand.h"
 #include "schedulerinterface.h"
 #include "maininterface.h"
 #include "indexerstate.h"
 #include "configcommand.h"
+#include "statuscommand.h"
 
 using namespace Baloo;
 
 void start()
 {
-    const QString exe = QStandardPaths::findExecutable(QLatin1String("baloo_file"));
+    const QString exe = QStandardPaths::findExecutable(QStringLiteral("baloo_file"));
     QProcess::startDetached(exe);
 }
 
 int main(int argc, char* argv[])
 {
-    KAboutData aboutData(QLatin1String("baloo"), i18n("balooctl"), PROJECT_VERSION);
-    aboutData.addAuthor(i18n("Vishesh Handa"), i18n("Maintainer"), QLatin1String("vhanda@kde.org"));
+    KAboutData aboutData(QStringLiteral("baloo"), i18n("balooctl"), PROJECT_VERSION);
+    aboutData.addAuthor(i18n("Vishesh Handa"), i18n("Maintainer"), QStringLiteral("vhanda@kde.org"));
 
     QCoreApplication app(argc, argv);
     KAboutData::setApplicationData(aboutData);
 
     QCommandLineParser parser;
-    parser.addPositionalArgument(QLatin1String("command"), i18n("The command to execute"));
+    parser.addPositionalArgument(QStringLiteral("command"), i18n("The command to execute"));
 
-    parser.addPositionalArgument(QLatin1String("status"), i18n("Print the status of the indexer"));
-    parser.addPositionalArgument(QLatin1String("enable"), i18n("Enable the file indexer"));
-    parser.addPositionalArgument(QLatin1String("disable"), i18n("Disable the file indexer"));
-    parser.addPositionalArgument(QLatin1String("start"), i18n("Start the file indexer"));
-    parser.addPositionalArgument(QLatin1String("stop"), i18n("Stop the file indexer"));
-    parser.addPositionalArgument(QLatin1String("restart"), i18n("Restart the file indexer"));
-    parser.addPositionalArgument(QLatin1String("suspend"), i18n("Suspend the file indexer"));
-    parser.addPositionalArgument(QLatin1String("resume"), i18n("Resume the file indexer"));
-    parser.addPositionalArgument(QLatin1String("check"), i18n("Check for any unindexed files and index them"));
-    parser.addPositionalArgument(QLatin1String("index"), i18n("Index the specified files"));
-    parser.addPositionalArgument(QLatin1String("clear"), i18n("Forget the specified files"));
-    parser.addPositionalArgument(QLatin1String("config"), i18n("Modify the Baloo configuration"));
+    parser.addPositionalArgument(QStringLiteral("status"), i18n("Print the status of the indexer"));
+    parser.addPositionalArgument(QStringLiteral("enable"), i18n("Enable the file indexer"));
+    parser.addPositionalArgument(QStringLiteral("disable"), i18n("Disable the file indexer"));
+    parser.addPositionalArgument(QStringLiteral("start"), i18n("Start the file indexer"));
+    parser.addPositionalArgument(QStringLiteral("stop"), i18n("Stop the file indexer"));
+    parser.addPositionalArgument(QStringLiteral("restart"), i18n("Restart the file indexer"));
+    parser.addPositionalArgument(QStringLiteral("suspend"), i18n("Suspend the file indexer"));
+    parser.addPositionalArgument(QStringLiteral("resume"), i18n("Resume the file indexer"));
+    parser.addPositionalArgument(QStringLiteral("check"), i18n("Check for any unindexed files and index them"));
+    parser.addPositionalArgument(QStringLiteral("index"), i18n("Index the specified files"));
+    parser.addPositionalArgument(QStringLiteral("clear"), i18n("Forget the specified files"));
+    parser.addPositionalArgument(QStringLiteral("config"), i18n("Modify the Baloo configuration"));
     parser.addVersionOption();
     parser.addHelpOption();
 
@@ -111,94 +112,8 @@ int main(int argc, char* argv[])
     }
 
     if (command == QLatin1String("status")) {
-
-        IndexerConfig cfg;
-        if (!cfg.fileIndexingEnabled()) {
-            out << i18n("Baloo is currently disabled. To enable, please run \"balooctl enable\"") << endl;
-            return 1;
-        }
-
-        Database *db = globalDatabaseInstance();
-        if (!db->open(Database::OpenDatabase)) {
-            out << "Baloo Index could not be opened\n";
-            return 1;
-        }
-
-        Transaction tr(db, Transaction::ReadOnly);
-
-        if (parser.positionalArguments().length() == 1) {
-
-            bool running = mainInterface.isValid();
-
-            if (running) {
-                out << "Baloo File Indexer is running\n";
-                out << "Indexer state: " << stateString(schedulerinterface.state()) << endl;
-            }
-            else {
-                out << "Baloo File Indexer is NOT running\n";
-            }
-
-            uint phaseOne = tr.phaseOneSize();
-            uint total = tr.size();
-
-            out << "Indexed " << total - phaseOne << " / " << total << " files\n";
-
-            const QString path = fileIndexDbPath();
-
-            QFileInfo indexInfo(path + QLatin1String("/index"));
-            quint32 size = indexInfo.size();
-            KFormat format(QLocale::system());
-            if (size) {
-                out << "Current size of index is " << format.formatByteSize(size, 2) << endl;
-            } else {
-                out << "Index does not exist yet\n";
-            }
-        } else {
-            FileIndexerConfig m_config;
-
-            for (int i = 1; i < parser.positionalArguments().length(); ++i) {
-                QString url = QFileInfo(parser.positionalArguments().at(i)).absoluteFilePath();
-                quint64 id = filePathToId(QFile::encodeName(url));
-
-                out << "File: " << url << endl;
-
-                out << "Basic indexing: ";
-                if (tr.hasDocument(id)) {
-                    out << "done\n";
-                } else if (m_config.shouldBeIndexed(url)) {
-                    out << "scheduled\n";
-                    return 0;
-                } else {
-                    out << "disbabled\n";
-                    return 0;
-                }
-
-                out << "Content indexing: ";
-                if (tr.inPhaseOne(id)) {
-                    out << "scheduled\n";
-                } else if (!tr.documentData(id).isEmpty()) {
-                    out << "done\n";
-                } else if (tr.hasFailed(id)) {
-                    out << "failed\n";
-                } else {
-                    out << "disabled\n";
-                }
-            }
-        }
-
-            /*
-            if (failed) {
-                out << "Failed to index " << failed << " files\n";
-                out << "File IDs: ";
-                Xapian::MSetIterator iter = mset.begin();
-                for (; iter != mset.end(); ++iter) {
-                    out << *iter << " ";
-                }
-                out << "\n";
-            }
-            */
-
-        return 0;
+        StatusCommand command;
+        return command.exec(parser);
     }
 
     if (command == QLatin1String("enable") || command == QLatin1String("disable")) {
@@ -367,25 +282,25 @@ int main(int argc, char* argv[])
         uint ts = size.expectedSize;
         out << "Actual Size: " << format.formatByteSize(size.actualSize, 2) << "\n";
         out << "Expected Size: " << format.formatByteSize(size.expectedSize, 2) << "\n\n";
-        prFunc("PostingDB", size.postingDb, ts);
-        prFunc("PosistionDB", size.positionDb, ts);
-        prFunc("DocTerms", size.docTerms, ts);
-        prFunc("DocFilenameTerms", size.docFilenameTerms, ts);
-        prFunc("DocXattrTerms", size.docXattrTerms, ts);
-        prFunc("IdTree", size.idTree, ts);
-        prFunc("IdFileName", size.idFilename, ts);
-        prFunc("DocTime", size.docTime, ts);
-        prFunc("DocData", size.docData, ts);
-        prFunc("ContentIndexingDB", size.contentIndexingIds, ts);
-        prFunc("FailedIdsDB", size.failedIds, ts);
-        prFunc("MTimeDB", size.mtimeDb, ts);
+        prFunc(QStringLiteral("PostingDB"), size.postingDb, ts);
+        prFunc(QStringLiteral("PosistionDB"), size.positionDb, ts);
+        prFunc(QStringLiteral("DocTerms"), size.docTerms, ts);
+        prFunc(QStringLiteral("DocFilenameTerms"), size.docFilenameTerms, ts);
+        prFunc(QStringLiteral("DocXattrTerms"), size.docXattrTerms, ts);
+        prFunc(QStringLiteral("IdTree"), size.idTree, ts);
+        prFunc(QStringLiteral("IdFileName"), size.idFilename, ts);
+        prFunc(QStringLiteral("DocTime"), size.docTime, ts);
+        prFunc(QStringLiteral("DocData"), size.docData, ts);
+        prFunc(QStringLiteral("ContentIndexingDB"), size.contentIndexingIds, ts);
+        prFunc(QStringLiteral("FailedIdsDB"), size.failedIds, ts);
+        prFunc(QStringLiteral("MTimeDB"), size.mtimeDb, ts);
 
         return 0;
     }
 
     if (command == QStringLiteral("monitor")) {
-        Monitor mon;
-        app.exec();
+        MonitorCommand mon;
+        return mon.exec(parser);
     }
 
     if (command == QStringLiteral("checkDb")) {
@@ -403,5 +318,6 @@ int main(int argc, char* argv[])
         return 0;
     }
 
+    parser.showHelp(1);
     return 0;
 }

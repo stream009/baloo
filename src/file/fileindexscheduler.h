@@ -45,6 +45,7 @@ class FileIndexScheduler : public QObject
     Q_PROPERTY(int state READ state NOTIFY stateChanged)
 public:
     FileIndexScheduler(Database* db, FileIndexerConfig* config, QObject* parent = 0);
+    ~FileIndexScheduler() Q_DECL_OVERRIDE;
     int state() const { return m_indexerState; }
 
 Q_SIGNALS:
@@ -55,21 +56,21 @@ public Q_SLOTS:
         if (!m_newFiles.contains(file)) {
             qDebug() << "enque new file:" << file;
             m_newFiles << file;
-            QTimer::singleShot(0, this, SLOT(scheduleIndexing()));
+            QTimer::singleShot(0, this, &FileIndexScheduler::scheduleIndexing);
         }
     }
 
     void indexModifiedFile(const QString& file) {
         if (!m_modifiedFiles.contains(file)) {
             m_modifiedFiles << file;
-            QTimer::singleShot(0, this, SLOT(scheduleIndexing()));
+            QTimer::singleShot(0, this, &FileIndexScheduler::scheduleIndexing);
         }
     }
 
     void indexXAttrFile(const QString& file) {
         if (!m_xattrFiles.contains(file)) {
             m_xattrFiles << file;
-            QTimer::singleShot(0, this, SLOT(scheduleIndexing()));
+            QTimer::singleShot(0, this, &FileIndexScheduler::scheduleIndexing);
         }
     }
 

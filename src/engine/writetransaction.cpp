@@ -173,6 +173,7 @@ void WriteTransaction::replaceDocument(const Document& doc, DocumentOperations o
     DocumentTimeDB docTimeDB(m_dbis.docTimeDbi, m_txn);
     DocumentDataDB docDataDB(m_dbis.docDataDbi, m_txn);
     MTimeDB mtimeDB(m_dbis.mtimeDbi, m_txn);
+    DocumentUrlDB docUrlDB(m_dbis.idTreeDbi, m_dbis.idFilenameDbi, m_txn);
 
     const quint64 id = doc.id();
 
@@ -205,6 +206,9 @@ void WriteTransaction::replaceDocument(const Document& doc, DocumentOperations o
     }
 
     if (operations & DocumentTime) {
+        Q_ASSERT(doc.m_mTime);
+        Q_ASSERT(doc.m_cTime);
+
         DocumentTimeDB::TimeInfo info;
         info.mTime = doc.m_mTime;
         info.cTime = doc.m_cTime;
@@ -219,6 +223,12 @@ void WriteTransaction::replaceDocument(const Document& doc, DocumentOperations o
         } else {
             docDataDB.del(id);
         }
+    }
+
+    if (operations & DocumentUrl) {
+        docUrlDB.replace(id, doc.url(), [&docTimeDB](quint64 id) {
+            return !docTimeDB.contains(id);
+        });;
     }
 }
 
@@ -265,7 +275,9 @@ void WriteTransaction::commit()
         const QVector<Operation> operations = iter.value();
 
         PostingList list = postingDB.get(term);
-        QVector<PositionInfo> positionList = positionDB.get(term); // FIXME: We do not need to fetch this for all the terms
+
+        bool fetchedPositionList = false;
+        QVector<PositionInfo> positionList;
 
         for (const Operation& op : operations) {
             quint64 id = op.data.docId;
@@ -274,11 +286,19 @@ void WriteTransaction::commit()
                 insert(list, id);
 
                 if (!op.data.positions.isEmpty()) {
+                    if (!fetchedPositionList) {
+                        positionList = positionDB.get(term);
+                        fetchedPositionList = true;
+                    }
                     insert(positionList, op.data);
                 }
             }
             else {
                 list.removeOne(id);
+                if (!fetchedPositionList) {
+                    positionList = positionDB.get(term);
+                    fetchedPositionList = true;
+                }
                 positionList.removeOne(PositionInfo(id));
             }
         }
@@ -289,10 +309,12 @@ void WriteTransaction::commit()
             postingDB.del(term);
         }
 
-        if (!positionList.isEmpty()) {
-            positionDB.put(term, positionList);
-        } else {
-            positionDB.del(term);
+        if (fetchedPositionList) {
+            if (!positionList.isEmpty()) {
+                positionDB.put(term, positionList);
+            } else {
+                positionDB.del(term);
+            }
         }
     }
 

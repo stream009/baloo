@@ -45,7 +45,7 @@ public:
     /**
      * Create a new file indexr config.
      */
-    FileIndexerConfig(QObject* parent = 0);
+    explicit FileIndexerConfig(QObject* parent = 0);
     ~FileIndexerConfig();
 
     /**
@@ -60,6 +60,8 @@ public:
     QStringList excludeFolders() const;
 
     QStringList excludeFilters() const;
+
+    QStringList excludeMimetypes() const;
 
     bool indexHiddenFilesAndFolders() const;
 

@@ -50,7 +50,8 @@ FileContentIndexer::FileContentIndexer(FileContentIndexerProvider* provider, QOb
 void FileContentIndexer::run()
 {
     ExtractorProcess process;
-    connect(&process, &ExtractorProcess::indexingFile, this, &FileContentIndexer::slotIndexingFile);
+    connect(&process, &ExtractorProcess::startedIndexingFile, this, &FileContentIndexer::slotStartedIndexingFile);
+    connect(&process, &ExtractorProcess::startedIndexingFile, this, &FileContentIndexer::slotFinishedIndexingFile);
 
     m_stop.store(false);
     while (m_provider->size() && !m_stop.load()) {
@@ -82,12 +83,20 @@ void FileContentIndexer::run()
     qCDebug(BALOO) << __PRETTY_FUNCTION__ << "done";
 }
 
-void FileContentIndexer::slotIndexingFile(QString filePath)
+void FileContentIndexer::slotStartedIndexingFile(const QString& filePath)
 {
     qDebug() << "Content index has done:" << filePath;
     m_currentFile = filePath;
     if (!m_registeredMonitors.isEmpty()) {
-        Q_EMIT indexingFile(filePath);
+        Q_EMIT startedIndexingFile(filePath);
+    }
+}
+
+void FileContentIndexer::slotFinishedIndexingFile(const QString& filePath)
+{
+    Q_UNUSED(filePath);
+    if (!m_registeredMonitors.isEmpty()) {
+        Q_EMIT finishedIndexingFile(filePath);
     }
 }
 
@@ -105,7 +114,7 @@ void FileContentIndexer::unregisterMonitor(const QDBusMessage& message)
     m_monitorWatcher.removeWatchedService(message.service());
 }
 
-void FileContentIndexer::monitorClosed(QString service)
+void FileContentIndexer::monitorClosed(const QString& service)
 {
     m_registeredMonitors.removeAll(service);
     m_monitorWatcher.removeWatchedService(service);
