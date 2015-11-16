@@ -95,7 +95,11 @@ void PendingFileQueue::processCache()
             Q_EMIT indexXAttr(file.path());
         }
         else if (file.shouldIndexContents()) {
-            if (m_pendingFiles.contains(file.path())) {
+            if (file.isCloseOnWrite()) {
+                Q_EMIT indexModifiedFile(file.path());
+                m_recentlyEmitted.insert(file.path(), currentTime);
+            }
+            else if (m_pendingFiles.contains(file.path())) {
                 QTime time = m_pendingFiles[file.path()];
 
                 int secondsLeft = currentTime.secsTo(time);
