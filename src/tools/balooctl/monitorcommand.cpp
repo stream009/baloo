@@ -1,6 +1,7 @@
 /*
  * This file is part of the KDE Baloo Project
  * Copyright (C) 2015  Pinak Ahuja <pinak.ahuja@gmail.com>
+ * Copyright (C) 2015  Vishesh Handa <vhanda@kde.org>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,12 +21,14 @@
  *
  */
 
-#include "monitor.h"
+#include "monitorcommand.h"
 
 #include <QDBusConnection>
+#include <QDBusServiceWatcher>
 
 using namespace Baloo;
-Monitor::Monitor(QObject *parent)
+
+MonitorCommand::MonitorCommand(QObject *parent)
     : QObject(parent)
     , m_out(stdout)
 {
@@ -39,11 +42,34 @@ Monitor::Monitor(QObject *parent)
         QCoreApplication::exit();
     }
     m_interface->registerMonitor();
-    connect(m_interface, &org::kde::baloo::fileindexer::indexingFile, this, &Monitor::newFile);
+    connect(m_interface, &org::kde::baloo::fileindexer::startedIndexingFile, this, &MonitorCommand::startedIndexingFile);
+    connect(m_interface, &org::kde::baloo::fileindexer::finishedIndexingFile, this, &MonitorCommand::finishedIndexingFile);
     m_out << "Press ctrl+c to exit monitor" << endl;
+
+    auto balooWatcher = new QDBusServiceWatcher(QStringLiteral("org.kde.baloo"), QDBusConnection::sessionBus());
+    balooWatcher->setWatchMode(QDBusServiceWatcher::WatchForUnregistration);
+    connect(balooWatcher, &QDBusServiceWatcher::serviceUnregistered, this, [&]() {
+        m_out << "Baloo died" << endl;
+        QCoreApplication::instance()->quit();
+    });
 }
 
-void Monitor::newFile(const QString& url)
+int MonitorCommand::exec(const QCommandLineParser& parser)
 {
-    m_out << "Indexing: " << url << endl;
+    Q_UNUSED(parser);
+    return QCoreApplication::instance()->exec();
+}
+
+void MonitorCommand::startedIndexingFile(const QString& filePath)
+{
+    m_currentFile = filePath;
+    m_out << "Indexing: " << filePath;
+}
+
+void MonitorCommand::finishedIndexingFile(const QString& filePath)
+{
+    Q_UNUSED(filePath);
+
+    m_currentFile.clear();
+    m_out << endl;
 }

@@ -51,7 +51,7 @@ quint64 IOHandler::nextId()
     return id;
 }
 
-bool IOHandler::atEnd()
+bool IOHandler::atEnd() const
 {
     if (m_batchSize == 0) {
         return true;
@@ -59,18 +59,18 @@ bool IOHandler::atEnd()
     return false;
 }
 
-void IOHandler::indexedId(quint64 id)
-{
-    write(m_stdoutHandle, reinterpret_cast<void*>(&id), sizeof(quint64));
-}
-
-void IOHandler::batchIndexed()
+void IOHandler::writeBatchIndexed()
 {
     m_batchSize = 0;
-    m_stdout << "batch commited" << endl;
+    m_stdout << "B" << endl;
 }
 
-void IOHandler::indexingUrl(QString url)
+void IOHandler::writeStartedIndexingUrl(const QString& url)
 {
-    m_stdout << url << endl;
+    m_stdout << "S " << url << endl;
+}
+
+void IOHandler::writeFinishedIndexingUrl(const QString& url)
+{
+    m_stdout << "F " << url << endl;
 }

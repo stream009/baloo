@@ -1,5 +1,5 @@
 /*
-   This file is part of the KDE Baloo project.
+ * This file is part of the KDE Baloo project.
  * Copyright (C) 2015  Vishesh Handa <vhanda@kde.org>
  *
  * This library is free software; you can redistribute it and/or
@@ -18,30 +18,21 @@
  *
  */
 
-#ifndef BALOO_PHRASEANDITER_H
-#define BALOO_PHRASEANDITER_H
+#ifndef BALOO_STATUSCOMMAND_H
+#define BALOO_STATUSCOMMAND_H
 
-#include "postingiterator.h"
-
-#include <QVector>
+#include "command.h"
 
 namespace Baloo {
 
-class BALOO_ENGINE_EXPORT PhraseAndIterator : public PostingIterator
+class StatusCommand : public Command
 {
 public:
-    explicit PhraseAndIterator(const QVector<PostingIterator*>& iterators);
-    ~PhraseAndIterator();
+    QString command() Q_DECL_OVERRIDE;
+    QString description() Q_DECL_OVERRIDE;
 
-    quint64 next();
-    quint64 docId() const;
-
-private:
-    QVector<PostingIterator*> m_iterators;
-    quint64 m_docId;
-
-    bool checkIfPositionsMatch();
+    int exec(const QCommandLineParser& parser) Q_DECL_OVERRIDE;
 };
 }
 
-#endif // BALOO_PHRASEANDITER_H
+#endif // BALOO_STATUSCOMMAND_H
