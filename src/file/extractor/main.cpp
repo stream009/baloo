@@ -23,6 +23,10 @@
 #include "app.h"
 #include "../priority.h"
 
+#include <cassert>
+#include <csignal>
+#include <unistd.h>
+
 #include <KAboutData>
 #include <KLocalizedString>
 #include <QStandardPaths>
@@ -30,29 +34,72 @@
 
 #include <QApplication>
 #include <QSessionManager>
+#include <QFile>
+
+void messageHandler(const QtMsgType type, const QMessageLogContext &context,
+                    const QString &message)
+{
+    QFile log { "/tmp/baloo_extractor.log" };
+    log.open(QIODevice::WriteOnly | QIODevice::Append);
+    QTextStream ts { &log };
+
+    ts << qFormatLogMessage(type, context, message) << endl;
+
+    if (type == QtFatalMsg) {
+        abort();
+    }
+}
+
+void handleSignal(const int num)
+{
+    qDebug() << "Receive signal:" << num;
+    abort();
+}
 
 int main(int argc, char* argv[])
 {
+#if 0
     lowerIOPriority();
     setIdleSchedulingPriority();
     lowerPriority();
+#endif
 
     KAboutData aboutData(QStringLiteral("baloo"), i18n("Baloo File Extractor"), PROJECT_VERSION);
     aboutData.addAuthor(i18n("Vishesh Handa"), i18n("Maintainer"), QStringLiteral("vhanda@kde.org"), QStringLiteral("http://vhanda.in"));
 
-    QApplication::setDesktopSettingsAware(false);
+    //QApplication::setDesktopSettingsAware(false);
     QApplication app(argc, argv);
+
+    qSetMessagePattern("%{time hh:mm:ss} %{pid} %{function} %{message}");
+    qInstallMessageHandler(messageHandler);
+    qDebug() << "launched";
+
+    for (auto sig = 1; sig <= 15; ++sig) {
+        if (sig == SIGABRT) continue;
+        if (sig == SIGSEGV) continue;
+        if (sig == SIGPIPE) {
+            signal(sig, SIG_IGN);
+        }
+        else {
+            signal(sig, handleSignal);
+        }
+    }
 
     KAboutData::setApplicationData(aboutData);
 
-    app.setQuitOnLastWindowClosed(false);
-
+    //app.setQuitOnLastWindowClosed(false);
+#if 0
     auto disableSessionManagement = [](QSessionManager &sm) {
         sm.setRestartHint(QSessionManager::RestartNever);
     };
     QObject::connect(&app, &QGuiApplication::commitDataRequest, disableSessionManagement);
     QObject::connect(&app, &QGuiApplication::saveStateRequest, disableSessionManagement);
-
+#endif
     Baloo::App appObject;
-    return app.exec();
+
+    //kill(getpid(), SIGHUP);
+    const auto rc = app.exec();
+    qDebug() << "exit normally:" << rc;
+
+    return rc;
 }

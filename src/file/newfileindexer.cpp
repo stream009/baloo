@@ -49,11 +49,13 @@ void NewFileIndexer::run()
 
         QString fileName = filePath.mid(filePath.lastIndexOf('/') + 1);
         if (!m_config->shouldFileBeIndexed(fileName)) {
+            qDebug() << fileName << "is filter out based on filename";
             continue;
         }
 
         QString mimetype = mimeDb.mimeTypeForFile(filePath, QMimeDatabase::MatchExtension).name();
         if (!m_config->shouldMimeTypeBeIndexed(mimetype)) {
+            qDebug() << fileName << "is filter out based on MIME type:" << mimetype;
             continue;
         }
 
@@ -61,15 +63,18 @@ void NewFileIndexer::run()
             m_config->onlyBasicIndexing() ? BasicIndexingJob::NoLevel : BasicIndexingJob::MarkForContentIndexing;
         BasicIndexingJob job(filePath, mimetype, level);
         if (!job.index()) {
+            qDebug() << "Fail to index file:" << fileName;
             continue;
         }
 
         // The same file can be sent twice though it shouldn't be.
         // Lets just silently ignore it instead of crashing
         if (tr.hasDocument(job.document().id())) {
+            qDebug() << fileName << "has indexed successfully but already registerd in database.";
             continue;
         }
         tr.addDocument(job.document());
+        qDebug() << filePath << ".... done";
     }
 
     tr.commit();

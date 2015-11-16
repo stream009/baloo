@@ -48,6 +48,7 @@ int main(int argc, char** argv)
     aboutData.addAuthor(i18n("Vishesh Handa"), i18n("Maintainer"), QStringLiteral("vhanda@kde.org"), QStringLiteral("http://vhanda.in"));
 
     QCoreApplication app(argc, argv);
+    qSetMessagePattern("%{time hh:mm:ss} %{message}");
 
     KAboutData::setApplicationData(aboutData);
 

@@ -56,12 +56,14 @@ void FirstRunIndexer::run()
         while (!it.next().isEmpty()) {
             QString mimetype = mimeDb.mimeTypeForFile(it.filePath(), QMimeDatabase::MatchExtension).name();
             if (!m_config->shouldMimeTypeBeIndexed(mimetype)) {
+                qDebug() << it.filePath() << "is filter out based on MIME type:" << mimetype;
                 continue;
             }
             BasicIndexingJob::IndexingLevel level =
                 m_config->onlyBasicIndexing() ? BasicIndexingJob::NoLevel : BasicIndexingJob::MarkForContentIndexing;
             BasicIndexingJob job(it.filePath(), mimetype, level);
             if (!job.index()) {
+                qDebug() << "Fail to index file:" << it.filePath();
                 continue;
             }
 
@@ -71,9 +73,11 @@ void FirstRunIndexer::run()
             // FIXME: Silently ignore hard links!
             //
             if (tr.hasDocument(job.document().id())) {
+                qDebug() << it.filePath() << "has indexed successfully but already registerd in database.";
                 continue;
             }
             tr.addDocument(job.document());
+            qDebug() << it.filePath() << ".... done";
         }
 
         // FIXME: This would consume too much memory. We should make some more commits

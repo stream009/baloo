@@ -21,9 +21,9 @@
  */
 
 #include "iohandler.h"
+#include "baloodebug.h"
 #include <unistd.h>
 #include <iostream>
-#include <QDebug>
 
 using namespace Baloo;
 
@@ -39,6 +39,7 @@ void IOHandler::newBatch()
 {
     read(m_stdinHandle, &m_batchSize, sizeof(quint32));
     Q_ASSERT(m_batchSize != 0);
+    qCDebug(BALOO) << "Batch size:" << m_batchSize;
 }
 
 quint64 IOHandler::nextId()

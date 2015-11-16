@@ -53,16 +53,20 @@ void ModifiedFileIndexer::run()
 
         QString fileName = filePath.mid(filePath.lastIndexOf('/') + 1);
         if (!m_config->shouldFileBeIndexed(fileName)) {
+            qDebug() << fileName << "is filter out based on filename";
             continue;
         }
 
         QString mimetype = mimeDb.mimeTypeForFile(filePath, QMimeDatabase::MatchExtension).name();
         if (!m_config->shouldMimeTypeBeIndexed(mimetype)) {
+            qDebug() << fileName << "is filter out based on MIME type:" << mimetype;
             continue;
         }
 
         quint64 fileId = filePathToId(QFile::encodeName(filePath));
         if (!fileId) {
+            qDebug() << fileName << "is filter out because path couldn't be converted to ID:"
+                     << fileId;
             continue;
         }
 
@@ -72,12 +76,14 @@ void ModifiedFileIndexer::run()
         // we don't really need to reindex a folder when that happens
         // In fact, we never need to reindex a folder
         if (mTime && mimetype == QLatin1String("inode/directory")) {
+            qDebug() << filePath << "is skipped because it is directory.";
             continue;
         }
 
         // FIXME: Using QFileInfo over here is quite expensive!
         QFileInfo fileInfo(filePath);
         if (mTime == fileInfo.lastModified().toTime_t()) {
+            qDebug() << filePath << "is skipped because modified time is differenct to database's one.";
             continue;
         }
 
@@ -86,6 +92,7 @@ void ModifiedFileIndexer::run()
             m_config->onlyBasicIndexing() ? BasicIndexingJob::NoLevel : BasicIndexingJob::MarkForContentIndexing;
         BasicIndexingJob job(filePath, mimetype, level);
         if (!job.index()) {
+            qDebug() << "Fail to index file:" << fileName;
             continue;
         }
 
@@ -98,6 +105,7 @@ void ModifiedFileIndexer::run()
         else {
             tr.addDocument(job.document());
         }
+        qDebug() << filePath << ".... done";
     }
 
     tr.commit();

@@ -24,6 +24,7 @@
 #include <QStringList>
 #include <QThreadPool>
 #include <QTimer>
+#include <QDebug>
 
 #include "filecontentindexerprovider.h"
 #include "powerstatemonitor.h"
@@ -52,6 +53,7 @@ Q_SIGNALS:
 public Q_SLOTS:
     void indexNewFile(const QString& file) {
         if (!m_newFiles.contains(file)) {
+            qDebug() << "enque new file:" << file;
             m_newFiles << file;
             QTimer::singleShot(0, this, SLOT(scheduleIndexing()));
         }

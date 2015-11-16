@@ -67,10 +67,19 @@ FileIndexScheduler::FileIndexScheduler(Database* db, FileIndexerConfig* config, 
 void FileIndexScheduler::scheduleIndexing()
 {
     if (m_threadPool.activeThreadCount() || m_indexerState == Suspended) {
+        if (m_indexerState == Suspended) {
+            qDebug() << "Index is requested but indexer is suspended";
+        }
+        else {
+            QTextStream out { stdout };
+            out << "*";
+            QTimer::singleShot(1000, this, &FileIndexScheduler::scheduleIndexing);
+        }
         return;
     }
 
     if (m_config->isInitialRun()) {
+        qDebug() << "Launching FirstRunIndexer";
         auto runnable = new FirstRunIndexer(m_db, m_config, m_config->includeFolders());
         connect(runnable, &FirstRunIndexer::done, this, &FileIndexScheduler::scheduleIndexing);
 
@@ -81,6 +90,7 @@ void FileIndexScheduler::scheduleIndexing()
     }
 
     if (!m_newFiles.isEmpty()) {
+        qDebug() << "Launching NewFileIndexer:" << m_newFiles.size();
         auto runnable = new NewFileIndexer(m_db, m_config, m_newFiles);
         connect(runnable, &NewFileIndexer::done, this, &FileIndexScheduler::scheduleIndexing);
 
@@ -92,6 +102,7 @@ void FileIndexScheduler::scheduleIndexing()
     }
 
     if (!m_modifiedFiles.isEmpty()) {
+        qDebug() << "Launching ModifiedFileIndexer:" << m_modifiedFiles.size();
         auto runnable = new ModifiedFileIndexer(m_db, m_config, m_modifiedFiles);
         connect(runnable, &ModifiedFileIndexer::done, this, &FileIndexScheduler::scheduleIndexing);
 
@@ -103,6 +114,7 @@ void FileIndexScheduler::scheduleIndexing()
     }
 
     if (!m_xattrFiles.isEmpty()) {
+        qDebug() << "Launching XAttrIndexer:" << m_xattrFiles.size();
         auto runnable = new XAttrIndexer(m_db, m_config, m_xattrFiles);
         connect(runnable, &XAttrIndexer::done, this, &FileIndexScheduler::scheduleIndexing);
 
@@ -114,13 +126,20 @@ void FileIndexScheduler::scheduleIndexing()
     }
 
     if (m_provider.size() && !m_powerMonitor.isOnBattery()) {
+        qDebug() << "Launching content indexer:" << m_provider.size();
         m_threadPool.start(m_contentIndexer);
         m_indexerState = ContentIndexing;
         Q_EMIT stateChanged(m_indexerState);
         return;
     }
+    else {
+        if (m_provider.size() != 0) {
+            qDebug() << "Skipping content indexer because system is running on battery.";
+        }
+    }
 
     if (m_checkUnindexedFiles) {
+        qDebug() << "Launching UnindexedFileIndexer";
         auto runnable = new UnindexedFileIndexer(m_db, m_config);
         connect(runnable, &UnindexedFileIndexer::done, this, &FileIndexScheduler::scheduleIndexing);
 

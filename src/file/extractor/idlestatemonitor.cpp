@@ -19,6 +19,8 @@
 
 #include "idlestatemonitor.h"
 
+#include "baloodebug.h"
+
 #include <KIdleTime>
 
 // TODO: Make idle timeout configurable?
@@ -30,24 +32,32 @@ IdleStateMonitor::IdleStateMonitor(QObject* parent)
     : QObject(parent)
     , m_isIdle(false)
 {
+    qCDebug(BALOO) << ">>";
     // setup idle time
     KIdleTime* idleTime = KIdleTime::instance();
     idleTime->addIdleTimeout(s_idleTimeout);
     connect(idleTime, SIGNAL(timeoutReached(int)), this, SLOT(slotIdleTimeoutReached()));
     connect(idleTime, SIGNAL(resumingFromIdle()), this, SLOT(slotResumeFromIdle()));
+    qCDebug(BALOO) << "<<";
 }
 
 IdleStateMonitor::~IdleStateMonitor()
 {
+    qCDebug(BALOO) << ">>";
     KIdleTime::instance()->removeAllIdleTimeouts();
+    qCDebug(BALOO) << "<<";
 }
 
 void IdleStateMonitor::slotIdleTimeoutReached()
 {
+    qCDebug(BALOO) << ">>";
     m_isIdle = true;
+    qCDebug(BALOO) << "<<";
 }
 
 void IdleStateMonitor::slotResumeFromIdle()
 {
+    qCDebug(BALOO) << ">>";
     m_isIdle = false;
+    qCDebug(BALOO) << "<<";
 }

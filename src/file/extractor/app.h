@@ -37,6 +37,8 @@
 #include "iohandler.h"
 #include "idlestatemonitor.h"
 
+class QFile;
+
 namespace Baloo {
 
 class Transaction;

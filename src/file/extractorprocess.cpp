@@ -20,6 +20,10 @@
 
 #include "extractorprocess.h"
 
+#include "baloodebug.h"
+
+#include <cassert>
+
 #include <QStandardPaths>
 #include <QDebug>
 
@@ -27,16 +31,30 @@ using namespace Baloo;
 
 ExtractorProcess::ExtractorProcess(QObject* parent)
     : QObject(parent)
-    , m_extractorPath(QStandardPaths::findExecutable(QLatin1String("baloo_file_extractor")))
+    //, m_extractorPath(QStandardPaths::findExecutable(QLatin1String("baloo_file_extractor")))
+    , m_extractorPath("extractor/baloo_file_extractor")
     , m_extractorProcess(this)
     , m_batchSize(0)
     , m_indexedFiles(0)
     , m_extractorIdle(true)
 {
+    qCDebug(BALOO) << "Launching extractor process...";
     connect(&m_extractorProcess, &QProcess::readyRead, this, &ExtractorProcess::slotIndexingFile);
     m_extractorProcess.start(m_extractorPath, QStringList(), QIODevice::Unbuffered | QIODevice::ReadWrite);
     m_extractorProcess.waitForStarted();
+
+    qCDebug(BALOO) << "extractor process started. PID:" << m_extractorProcess.processId();
+    connect(&m_extractorProcess,
+        static_cast<void (QProcess::*)(int, QProcess::ExitStatus)>(&QProcess::finished),
+        [](int exitCode, QProcess::ExitStatus exitStatus) {
+            qCDebug(BALOO) << QString {
+                "extractor prcess has finished (code: %1, status: %2)"
+            }.arg(exitCode).arg(exitStatus);
+        }
+    );
+
     m_extractorProcess.setReadChannel(QProcess::StandardOutput);
+    qCDebug(BALOO) << "...done";
 }
 
 ExtractorProcess::~ExtractorProcess()
@@ -60,6 +78,7 @@ void ExtractorProcess::index(const QVector<quint64>& fileIds)
 
     m_extractorIdle = false;
     m_indexedFiles = 0;
+    qCDebug(BALOO) << "sending batch data";
     m_extractorProcess.write(batchData.data(), batchData.size());
 }
 

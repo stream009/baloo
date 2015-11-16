@@ -20,11 +20,13 @@
 #include "filecontentindexer.h"
 #include "filecontentindexerprovider.h"
 #include "extractorprocess.h"
+#include "baloodebug.h"
 
 #include <QEventLoop>
 #include <QElapsedTimer>
 #include <QTimer>
 #include <QDBusConnection>
+#include <QDebug>
 
 using namespace Baloo;
 
@@ -67,17 +69,22 @@ void FileContentIndexer::run()
         connect(&process, &ExtractorProcess::done, &loop, &QEventLoop::quit);
 
         process.index(idList);
+        qCDebug(BALOO) << "Waiting for extractor process to finish batch:"
+                       << idList.size();
         loop.exec();
+        qCDebug(BALOO) << "Batch has done";
 
         // QDbus requires us to be in object creation thread (thread affinity)
         // This signal is not even exported, and yet QDbus complains. QDbus bug?
         QMetaObject::invokeMethod(this, "newBatchTime", Qt::QueuedConnection, Q_ARG(uint, timer.elapsed()));
     }
     QMetaObject::invokeMethod(this, "done", Qt::QueuedConnection);
+    qCDebug(BALOO) << __PRETTY_FUNCTION__ << "done";
 }
 
 void FileContentIndexer::slotIndexingFile(QString filePath)
 {
+    qDebug() << "Content index has done:" << filePath;
     m_currentFile = filePath;
     if (!m_registeredMonitors.isEmpty()) {
         Q_EMIT indexingFile(filePath);

@@ -44,6 +44,7 @@ public:
     void setDeleted() { m_deleted = true; }
 
     bool isNewFile() const;
+    bool isCloseOnWrite() const { return m_closedOnWrite; }
     bool shouldIndexContents() const;
     bool shouldIndexXAttrOnly() const;
     bool shouldRemoveIndex() const;

@@ -34,6 +34,7 @@
 #include <QFileInfo>
 #include <QDBusMessage>
 #include <QDBusConnection>
+#include <QFile>
 
 #include <KFileMetaData/Extractor>
 #include <KFileMetaData/PropertyInfo>
@@ -49,11 +50,14 @@ App::App(QObject* parent)
     , m_io(STDIN_FILENO, STDOUT_FILENO)
     , m_tr(0)
 {
+    qCDebug(BALOO) << ">>";
     connect(&m_notifyNewData, &QSocketNotifier::activated, this, &App::slotNewInput);
+    qCDebug(BALOO) << "<<";
 }
 
 void App::slotNewInput()
 {
+    qCDebug(BALOO) << ">>";
     Database *db = globalDatabaseInstance();
     if (!db->open(Database::OpenDatabase)) {
         qCritical() << "Failed to open the database";
@@ -73,19 +77,24 @@ void App::slotNewInput()
      * so we disable it till the batch is done.
      */
     m_notifyNewData.setEnabled(false);
+    qCDebug(BALOO) << "<<";
 }
 
 void App::processNextFile()
 {
+    qCDebug(BALOO) << ">>";
     if (!m_io.atEnd()) {
         int delay = m_idleMonitor.isIdle() ? 0 : 10;
 
         quint64 id = m_io.nextId();
 
         QString url = QFile::decodeName(m_tr->documentUrl(id));
+        qCDebug(BALOO) << url;
         if (!QFile::exists(url)) {
+            qCDebug(BALOO) << "File doesn't exist";
             m_tr->removeDocument(id);
             QTimer::singleShot(0, this, &App::processNextFile);
+            m_io.batchIndexed();
             return;
         }
 
@@ -120,17 +129,21 @@ void App::processNextFile()
         // Enable the SocketNotifier for the next batch
         m_notifyNewData.setEnabled(true);
         m_io.batchIndexed();
+        qCDebug(BALOO) << "Batch finished";
     }
+    qCDebug(BALOO) << "<<";
 }
 
 void App::index(Transaction* tr, const QString& url, quint64 id)
 {
+    qCDebug(BALOO) << ">>";
     QString mimetype = m_mimeDb.mimeTypeForFile(url).name();
 
     bool shouldIndex = m_config.shouldBeIndexed(url) && m_config.shouldMimeTypeBeIndexed(mimetype);
     if (!shouldIndex) {
         // FIXME: This should never be happening!
         tr->removeDocument(id);
+        qCDebug(BALOO) << url << "shouldn't be indexed. skipping.";
         return;
     }
 
@@ -152,6 +165,7 @@ void App::index(Transaction* tr, const QString& url, quint64 id)
     if (mimetype.startsWith(QStringLiteral("text/"))) {
         QFileInfo fileInfo(url);
         if (fileInfo.size() >= 10 * 1024 * 1024) {
+            qCDebug(BALOO) << url << "is bigger than 10MB. Ignoring";
             tr->removePhaseOne(id);
             return;
         }
@@ -170,6 +184,9 @@ void App::index(Transaction* tr, const QString& url, quint64 id)
 
     QList<KFileMetaData::Extractor*> exList = m_extractorCollection.fetchExtractors(mimetype);
 
+    if (exList.empty()) {
+        qCDebug(BALOO) << url << mimetype << "doesn't have corresponding extractor.";
+    }
     Q_FOREACH (KFileMetaData::Extractor* ex, exList) {
         ex->extract(&result);
     }
@@ -185,6 +202,8 @@ void App::index(Transaction* tr, const QString& url, quint64 id)
         }
     } else {
         tr->replaceDocument(result.document(), DocumentTerms | DocumentData);
+        qCDebug(BALOO) << url << "has indexed properly";
     }
     tr->removePhaseOne(doc.id());
+    qCDebug(BALOO) << "<<";
 }
