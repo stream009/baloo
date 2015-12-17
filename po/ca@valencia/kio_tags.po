@@ -1,4 +1,4 @@
-# Translation of kio_tags.po to Catalan
+# Translation of kio_tags.po to Catalan (Valencian)
 # Copyright (C) 2014 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.4\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Lokalize 1.4\n"
 
 #: kio_tags.cpp:63 kio_tags.cpp:161
 msgid "Tag"

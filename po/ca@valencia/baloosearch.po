@@ -1,15 +1,15 @@
-# Translation of baloosearch.po to Catalan
-# Copyright (C) 2014 This_file_is_part_of_KDE
+# Translation of baloosearch.po to Catalan (Valencian)
+# Copyright (C) 2014-2015 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Josep Ma. Ferrer <txemaq@gmail.com>, 2014.
+# Josep Ma. Ferrer <txemaq@gmail.com>, 2014, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: baloosearch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-09-19 08:51+0000\n"
-"PO-Revision-Date: 2014-02-02 17:02+0100\n"
+"PO-Revision-Date: 2015-09-19 16:54+0200\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.4\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Lokalize 1.5\n"
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -34,7 +34,7 @@ msgstr "Cerca del Baloo"
 
 #: main.cpp:41
 msgid "A tool to search through the files indexed by Baloo"
-msgstr ""
+msgstr "Una eina per cercar pels fitxers indexats pel Baloo"
 
 #: main.cpp:43
 msgid "Vishesh Handa"
@@ -46,21 +46,19 @@ msgstr "Mantenidor"
 
 #: main.cpp:50
 msgid "The maximum number of results"
-msgstr ""
+msgstr "El nombre màxim de resultats"
 
 #: main.cpp:51
 msgid "limit"
-msgstr ""
+msgstr "límit"
 
 #: main.cpp:53
-#, fuzzy
-#| msgid "Offset from which start the search"
 msgid "Offset from which to start the search"
-msgstr "Desplaçament des del que començar la cerca"
+msgstr "Desplaçament des del qual començar la cerca"
 
 #: main.cpp:54
 msgid "offset"
-msgstr ""
+msgstr "desplaçament"
 
 #: main.cpp:56
 msgid "Type of data to be searched"
@@ -68,22 +66,20 @@ msgstr "Tipus de dades a cercar"
 
 #: main.cpp:57
 msgid "typeStr"
-msgstr ""
+msgstr "typeStr"
 
 #: main.cpp:59
 msgid "Limit search to specified directory"
-msgstr ""
+msgstr "Limita la cerca al directori especificat"
 
 #: main.cpp:60
 msgid "directory"
-msgstr ""
+msgstr "directori"
 
 #: main.cpp:61
 msgid "query"
-msgstr ""
+msgstr "consulta"
 
 #: main.cpp:61
-#, fuzzy
-#| msgid "The words to search for"
 msgid "List of words to query for"
-msgstr "Les paraules a cercar"
+msgstr "Llista de les paraules a consultar"

@@ -2,20 +2,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Marce Villarino <mvillarino@kde-espana.org>, 2014.
+# Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail.com>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-24 08:35+0000\n"
-"PO-Revision-Date: 2014-03-31 23:01+0200\n"
-"Last-Translator: Marce Villarino <mvillarino@kde-espana.org>\n"
-"Language-Team: Galician <proxecto@trasno.net>\n"
+"POT-Creation-Date: 2015-10-11 08:16+0000\n"
+"PO-Revision-Date: 2015-11-07 11:18+0100\n"
+"Last-Translator: Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail."
+"com>\n"
+"Language-Team: Galician <kde-i18n-doc@kde.org>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -45,20 +47,24 @@ msgstr "Vishesh Handa"
 msgid "Maintainer"
 msgstr "Mantenedor"
 
-#: main.cpp:97
+#: main.cpp:105
 msgid ""
 "The Baloo index could not be opened. Please run \"balooctl status\" to see "
 "if Baloo is enabled and working."
 msgstr ""
+"Non foi posíbel abrir o índice de Baloo. Executa «balooctl status» para ver "
+"se Baloo está activado e en funcionamento."
 
-#: main.cpp:113
+#: main.cpp:121
 msgid "The fileID is not equal to the actual Baloo fileID"
 msgstr ""
+"O identificador do ficheiro non é idéntico ao identificador do ficheiro de "
+"Baloo."
 
-#: main.cpp:114
+#: main.cpp:122
 msgid "This is a bug"
-msgstr ""
+msgstr "Isto é un erro."
 
-#: main.cpp:136
+#: main.cpp:150
 msgid "No index information found"
-msgstr ""
+msgstr "Non se atopou información de indexación."

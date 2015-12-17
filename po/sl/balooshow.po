@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Andrej Mernik <andrejm@ubuntu.si>, 2014.
+# Andrej Mernik <andrejm@ubuntu.si>, 2014, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-24 08:35+0000\n"
-"PO-Revision-Date: 2014-01-04 12:10+0100\n"
+"POT-Creation-Date: 2015-10-11 08:16+0000\n"
+"PO-Revision-Date: 2015-10-25 18:58+0100\n"
 "Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -46,20 +46,22 @@ msgstr "Vishesh Handa"
 msgid "Maintainer"
 msgstr "Vzdrževalec"
 
-#: main.cpp:97
+#: main.cpp:105
 msgid ""
 "The Baloo index could not be opened. Please run \"balooctl status\" to see "
 "if Baloo is enabled and working."
 msgstr ""
+"Kazala Baloo ni bilo mogoče odpreti. Zaženite »balooctl status«, da "
+"preverite, ali je Baloo omogočen in deluje."
 
-#: main.cpp:113
+#: main.cpp:121
 msgid "The fileID is not equal to the actual Baloo fileID"
-msgstr ""
+msgstr "ID datoteke ni enak ID-ju datoteke v programu Baloo"
 
-#: main.cpp:114
+#: main.cpp:122
 msgid "This is a bug"
-msgstr ""
+msgstr "To je hrošč"
 
-#: main.cpp:136
+#: main.cpp:150
 msgid "No index information found"
-msgstr ""
+msgstr "V kazalu ni bilo najdenih podatkov"

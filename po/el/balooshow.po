@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-24 08:35+0000\n"
-"PO-Revision-Date: 2014-02-07 04:02+0200\n"
-"Last-Translator: Antonis Geralis <capoiosct@gmail.com>\n"
+"POT-Creation-Date: 2015-10-11 08:16+0000\n"
+"PO-Revision-Date: 2015-10-27 00:02+0200\n"
+"Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
@@ -45,20 +45,22 @@ msgstr "Vishesh Handa"
 msgid "Maintainer"
 msgstr "Συντηρητής"
 
-#: main.cpp:97
+#: main.cpp:105
 msgid ""
 "The Baloo index could not be opened. Please run \"balooctl status\" to see "
 "if Baloo is enabled and working."
 msgstr ""
+"Αδυναμία ανοίγματος του δείκτη Baloo. Εκτελέστε \"balooctl status\" για να "
+"δείτε αν το Baloo είναι ενεργό και λειτουργεί."
 
-#: main.cpp:113
+#: main.cpp:121
 msgid "The fileID is not equal to the actual Baloo fileID"
-msgstr ""
+msgstr "Το fileID δεν είναι ίδιο με το πραγματικό fileID του Baloo"
 
-#: main.cpp:114
+#: main.cpp:122
 msgid "This is a bug"
-msgstr ""
+msgstr "Αυτό είναι ένα σφάλμα"
 
-#: main.cpp:136
+#: main.cpp:150
 msgid "No index information found"
-msgstr ""
+msgstr "Δεν βρέθηκαν πληροφορίες δείκτη"

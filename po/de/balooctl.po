@@ -1,22 +1,19 @@
-# Copyright (C) YEAR This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
-#
-# Frederik Schwarzer <schwarzer@kde.org>, 2014.
+# Frederik Schwarzer <schwarzer@kde.org>, 2014, 2015.
 # Burkhard Lück <lueck@hube-lueck.de>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-10-03 08:40+0000\n"
-"PO-Revision-Date: 2015-10-03 14:58+0200\n"
-"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"POT-Creation-Date: 2015-10-19 08:03+0000\n"
+"PO-Revision-Date: 2015-10-24 23:35+0100\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -104,7 +101,7 @@ msgstr "Zeigt dieses Hilfemenü an"
 msgid "The following configuration options may be listed:"
 msgstr "Folgende Einrichtungs-Optionen können können aufgeführt werden:"
 
-#: configcommand.cpp:85 configcommand.cpp:356
+#: configcommand.cpp:85 configcommand.cpp:398
 msgid "Controls if Baloo indexes hidden files and folders"
 msgstr "Steuert, ob Baloo versteckte Dateien und Ordner indiziert"
 
@@ -112,128 +109,214 @@ msgstr "Steuert, ob Baloo versteckte Dateien und Ordner indiziert"
 msgid "Controls if baloo indexes file content."
 msgstr "Steuert, ob Baloo den Dateieninhalt indiziert"
 
-#: configcommand.cpp:87 configcommand.cpp:144 configcommand.cpp:237
+#: configcommand.cpp:87 configcommand.cpp:150 configcommand.cpp:261
 msgid "The list of folders which Baloo indexes"
 msgstr "Die Liste der Ordner, die von Baloo indiziert werden"
 
-#: configcommand.cpp:88 configcommand.cpp:145 configcommand.cpp:238
+#: configcommand.cpp:88 configcommand.cpp:151 configcommand.cpp:262
 msgid "The list of folders which Baloo will never index"
 msgstr "Die Liste der Ordner, die nie von Baloo indiziert werden"
 
-#: configcommand.cpp:89 configcommand.cpp:146 configcommand.cpp:239
+#: configcommand.cpp:89 configcommand.cpp:152 configcommand.cpp:263
 msgid "The list of filters which are used to exclude files"
 msgstr "Die Filterliste, die zum Ausschluss von Dateien verwendet wird"
 
-#: configcommand.cpp:136 configcommand.cpp:229 configcommand.cpp:348
-#: configcommand.cpp:417
+#: configcommand.cpp:90 configcommand.cpp:153 configcommand.cpp:264
+msgid "The list of mimetypes which are used to exclude files"
+msgstr "Die MIME-Typ-Liste, die zum Ausschluss von Dateien verwendet wird"
+
+#: configcommand.cpp:142 configcommand.cpp:253 configcommand.cpp:390
+#: configcommand.cpp:459
 msgid "Config parameter could not be found"
 msgstr "Der Einrichtungs-Parameter wurde nicht gefunden"
 
-#: configcommand.cpp:142 configcommand.cpp:235 configcommand.cpp:354
+#: configcommand.cpp:148 configcommand.cpp:259 configcommand.cpp:396
 msgid "The following configuration options may be modified:"
 msgstr "Folgende Einrichtungs-Optionen können können geändert werden:"
 
-#: configcommand.cpp:154 configcommand.cpp:184 configcommand.cpp:248
-#: configcommand.cpp:290
+#: configcommand.cpp:161 configcommand.cpp:191 configcommand.cpp:272
+#: configcommand.cpp:314
 msgid "A folder must be provided"
 msgstr "Ein Ordner muss angegeben werden"
 
-#: configcommand.cpp:160 configcommand.cpp:190 configcommand.cpp:254
-#: configcommand.cpp:296
+#: configcommand.cpp:167 configcommand.cpp:197 configcommand.cpp:278
+#: configcommand.cpp:320
 msgid "Path does not exist"
 msgstr "Der Pfad existiert nicht"
 
-#: configcommand.cpp:165 configcommand.cpp:195 configcommand.cpp:259
-#: configcommand.cpp:301
+#: configcommand.cpp:172 configcommand.cpp:202 configcommand.cpp:283
+#: configcommand.cpp:325
 msgid "Path is not a directory"
 msgstr "Der Pfad ist kein Ordner"
 
-#: configcommand.cpp:214 configcommand.cpp:332
+#: configcommand.cpp:179
+#, kde-format
+msgid "%1 is not in the list of include folders"
+msgstr "%1 ist nicht in der Liste der einbezogenen Ordner"
+
+#: configcommand.cpp:209
+#, kde-format
+msgid "%1 is not in the list of exclude folders"
+msgstr "%1 ist nicht in der Liste der ausgeschlossenen Ordner"
+
+#: configcommand.cpp:221 configcommand.cpp:356
 msgid "A filter must be provided"
 msgstr "Ein Filter muss angegeben werden"
 
-#: configcommand.cpp:220
-msgid "is not in list of exclude filters"
-msgstr "Ist nicht in der Liste der Ausschlussfilter"
+#: configcommand.cpp:227
+#, kde-format
+msgid "%1 is not in list of exclude filters"
+msgstr "%1 ist nicht in der Liste der Ausschlussfilter"
+
+#: configcommand.cpp:238 configcommand.cpp:374
+msgid "A mimetype must be provided"
+msgstr "Ein MIME-Typ muss angegeben werden"
+
+#: configcommand.cpp:244
+#, kde-format
+msgid "%1 is not in list of exclude mimetypes"
+msgstr "%1 ist nicht in der Liste der ausgeschlossenen MIME-Typen"
+
+#: configcommand.cpp:290
+#, kde-format
+msgid "%1 is already in the list of include folders"
+msgstr "%1 ist bereits in der Liste der einbezogenen Ordner"
+
+#: configcommand.cpp:296
+#, kde-format
+msgid "Parent folder %1 is already in the list of include folders"
+msgstr ""
+"Übergeordneter Ordner %1 ist bereits in der Liste der einbezogenen Ordner"
+
+#: configcommand.cpp:302 configcommand.cpp:344
+#, kde-format
+msgid "%1 is in the list of exclude folders"
+msgstr "%1 ist in der Liste der ausgeschlossenen Ordner"
+
+#: configcommand.cpp:332
+#, kde-format
+msgid "%1 is already in the list of exclude folders"
+msgstr "%1 ist bereits in der Liste der ausgeschlossenen Ordner"
 
 #: configcommand.cpp:338
+#, kde-format
+msgid "Parent folder %1 is already in the list of exclude folders"
+msgstr ""
+"Übergeordneter Ordner %1 ist bereits in der Liste der ausgeschlossenen Ordner"
+
+#: configcommand.cpp:362
 msgid "Exclude filter is already in the list"
 msgstr "Der Ausschlussfilter ist bereits in der Liste"
 
-#: configcommand.cpp:365 configcommand.cpp:392
-msgid "Must provide a value"
+#: configcommand.cpp:380
+msgid "Exclude mimetype is already in the list"
+msgstr "Der ausgeschlossene MIME-Typ ist bereits in der Liste"
+
+#: configcommand.cpp:407 configcommand.cpp:434
+msgid "A value must be provided"
 msgstr "Ein Wert muss angegeben werden"
 
-#: configcommand.cpp:386 configcommand.cpp:413
+#: configcommand.cpp:428 configcommand.cpp:455
 msgid "Invalid value"
 msgstr "Ungültiger Wert"
 
-#: main.cpp:66
+#: main.cpp:67
 msgid "balooctl"
 msgstr "balooctl"
 
-#: main.cpp:67
+#: main.cpp:68
 msgid "Vishesh Handa"
 msgstr "Vishesh Handa"
 
-#: main.cpp:67
+#: main.cpp:68
 msgid "Maintainer"
 msgstr "Betreuer"
 
-#: main.cpp:73
+#: main.cpp:74
 msgid "The command to execute"
 msgstr "Auszuführender Befehl"
 
-#: main.cpp:75
+#: main.cpp:76
 msgid "Print the status of the indexer"
 msgstr "Status der Indizierung anzeigen"
 
-#: main.cpp:76
+#: main.cpp:77
 msgid "Enable the file indexer"
 msgstr "Datei-Indizierung aktivieren"
 
-#: main.cpp:77
+#: main.cpp:78
 msgid "Disable the file indexer"
 msgstr "Datei-Indizierung deaktivieren"
 
-#: main.cpp:78
+#: main.cpp:79
 msgid "Start the file indexer"
 msgstr "Datei-Indizierung starten"
 
-#: main.cpp:79
+#: main.cpp:80
 msgid "Stop the file indexer"
 msgstr "Datei-Indizierung beenden"
 
-#: main.cpp:80
+#: main.cpp:81
 msgid "Restart the file indexer"
 msgstr "Datei-Indizierung neustarten"
 
-#: main.cpp:81
+#: main.cpp:82
 msgid "Suspend the file indexer"
 msgstr "Datei-Indizierung aussetzen"
 
-#: main.cpp:82
+#: main.cpp:83
 msgid "Resume the file indexer"
 msgstr "Datei-Indizierung wieder aufnehmen"
 
-#: main.cpp:83
+#: main.cpp:84
 msgid "Check for any unindexed files and index them"
 msgstr "Nach nicht indizierten Dateien suchen und indizieren"
 
-#: main.cpp:84
+#: main.cpp:85
 msgid "Index the specified files"
 msgstr "Angegebene Dateien indizieren"
 
-#: main.cpp:85
+#: main.cpp:86
 msgid "Forget the specified files"
 msgstr "Angegebene Dateien nicht mehr indizieren"
 
-#: main.cpp:86
+#: main.cpp:87
 msgid "Modify the Baloo configuration"
 msgstr "Baloo-Einrichtung bearbeiten"
 
-#: main.cpp:117
+#: statuscommand.cpp:45
+msgid "Print the status of the Indexer"
+msgstr "Status der Indizierung anzeigen"
+
+#: statuscommand.cpp:54
 msgid "Baloo is currently disabled. To enable, please run \"balooctl enable\""
 msgstr ""
 "Baloo ist zurzeit deaktiviert. Zum Aktivieren führen Sie bitte „balooctl "
 "enable“ aus"
+
+#: statuscommand.cpp:60
+msgid "Baloo Index could not be opened"
+msgstr "Der Baloo-Index kann nicht geöffnet werden"
+
+#: statuscommand.cpp:81
+msgid "Baloo File Indexer is running"
+msgstr "Die Baloo-Dateiindizierung läuft"
+
+#: statuscommand.cpp:82
+#, kde-format
+msgid "Indexer state: %1"
+msgstr "Indizierungsstatus: %1"
+
+#: statuscommand.cpp:85
+msgid "Baloo File Indexer is not running"
+msgstr "Die Baloo-Dateiindizierung läuft nicht"
+
+#: statuscommand.cpp:91
+#, kde-format
+msgid "Indexed %1 / %2 files"
+msgstr "%1/%2 Dateien indiziert"
+
+#: statuscommand.cpp:110
+#, kde-format
+msgid "File: %1"
+msgstr "Datei: %1"

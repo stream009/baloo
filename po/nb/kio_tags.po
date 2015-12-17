@@ -1,3 +1,5 @@
+# Translation of kio_tags to Norwegian Bokmål
+#
 # Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2014.
 msgid ""
 msgstr ""

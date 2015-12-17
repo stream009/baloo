@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: baloosearch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-09-19 08:51+0000\n"
-"PO-Revision-Date: 2015-09-24 19:16+0100\n"
+"PO-Revision-Date: 2015-10-11 12:20+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
 "Language: sk\n"
@@ -29,7 +29,7 @@ msgstr "Baloo Search"
 
 #: main.cpp:41
 msgid "A tool to search through the files indexed by Baloo"
-msgstr ""
+msgstr "Nástroj na hľadanie cez súbory indexované v Baloo"
 
 #: main.cpp:43
 msgid "Vishesh Handa"
@@ -41,15 +41,13 @@ msgstr "Správca"
 
 #: main.cpp:50
 msgid "The maximum number of results"
-msgstr ""
+msgstr "Maximálny počet výsledkov"
 
 #: main.cpp:51
 msgid "limit"
 msgstr "obmedzenie"
 
 #: main.cpp:53
-#, fuzzy
-#| msgid "Offset from which start the search"
 msgid "Offset from which to start the search"
 msgstr "Posun, z ktorého začať hľadanie"
 
@@ -63,11 +61,11 @@ msgstr "Napíšte údaje na hľadanie"
 
 #: main.cpp:57
 msgid "typeStr"
-msgstr ""
+msgstr "typeStr"
 
 #: main.cpp:59
 msgid "Limit search to specified directory"
-msgstr ""
+msgstr "Obmedziť hľadanie na určený adresár"
 
 #: main.cpp:60
 msgid "directory"
@@ -78,7 +76,5 @@ msgid "query"
 msgstr "otázka(query)"
 
 #: main.cpp:61
-#, fuzzy
-#| msgid "The words to search for"
 msgid "List of words to query for"
-msgstr "Slová na hľadanie"
+msgstr "Zoznam slov na hľadanie"

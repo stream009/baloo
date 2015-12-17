@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-09-19 08:51+0000\n"
-"PO-Revision-Date: 2015-08-26 19:56+0200\n"
+"PO-Revision-Date: 2015-11-23 21:08+0100\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
 "Language: da\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -31,7 +31,7 @@ msgstr "Baloo søgning"
 
 #: main.cpp:41
 msgid "A tool to search through the files indexed by Baloo"
-msgstr ""
+msgstr "Et værktøj til at søge i de filer som Baloo indekserer"
 
 #: main.cpp:43
 msgid "Vishesh Handa"
@@ -43,21 +43,19 @@ msgstr "Vedligeholder"
 
 #: main.cpp:50
 msgid "The maximum number of results"
-msgstr ""
+msgstr "Det maksimale antal resultater"
 
 #: main.cpp:51
 msgid "limit"
-msgstr ""
+msgstr "grænse"
 
 #: main.cpp:53
-#, fuzzy
-#| msgid "Offset from which start the search"
 msgid "Offset from which to start the search"
 msgstr "Forskydning som søgningen skal starte fra"
 
 #: main.cpp:54
 msgid "offset"
-msgstr ""
+msgstr "forskydning"
 
 #: main.cpp:56
 msgid "Type of data to be searched"
@@ -65,22 +63,20 @@ msgstr "Type data der skal søges i"
 
 #: main.cpp:57
 msgid "typeStr"
-msgstr ""
+msgstr "typeStr"
 
 #: main.cpp:59
 msgid "Limit search to specified directory"
-msgstr ""
+msgstr "Begræns søgning til angiven mappe"
 
 #: main.cpp:60
 msgid "directory"
-msgstr ""
+msgstr "mappe"
 
 #: main.cpp:61
 msgid "query"
-msgstr ""
+msgstr "forespørgsel"
 
 #: main.cpp:61
-#, fuzzy
-#| msgid "The words to search for"
 msgid "List of words to query for"
-msgstr "De ord der skal søges efter"
+msgstr "Liste over ord der skal søges efter"

@@ -1,5 +1,5 @@
 # Translation of balooshow.po to Catalan
-# Copyright (C) 2014 This_file_is_part_of_KDE
+# Copyright (C) 2014-2015 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooshow\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-24 08:35+0000\n"
+"POT-Creation-Date: 2015-10-11 08:16+0000\n"
 "PO-Revision-Date: 2015-10-04 18:55+0200\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -48,7 +48,7 @@ msgstr "Vishesh Handa"
 msgid "Maintainer"
 msgstr "Mantenidor"
 
-#: main.cpp:97
+#: main.cpp:105
 msgid ""
 "The Baloo index could not be opened. Please run \"balooctl status\" to see "
 "if Baloo is enabled and working."
@@ -56,14 +56,14 @@ msgstr ""
 "No s'ha pogut obrir l'índex del Baloo. Executeu «balooctl status» pera veure "
 "si el Baloo està habilitat i en funcionament."
 
-#: main.cpp:113
+#: main.cpp:121
 msgid "The fileID is not equal to the actual Baloo fileID"
 msgstr "L'ID del fitxer no és igual que l'ID del fitxer real del Baloo."
 
-#: main.cpp:114
+#: main.cpp:122
 msgid "This is a bug"
 msgstr "Això és un error"
 
-#: main.cpp:136
+#: main.cpp:150
 msgid "No index information found"
 msgstr "No s'ha trobat informació de l'índex"

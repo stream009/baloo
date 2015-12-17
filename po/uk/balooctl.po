@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooctl\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-10-03 08:40+0000\n"
-"PO-Revision-Date: 2015-10-03 15:38+0300\n"
+"POT-Creation-Date: 2015-10-19 08:03+0000\n"
+"PO-Revision-Date: 2015-10-19 17:26+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -61,7 +61,6 @@ msgid "Indexing file content"
 msgstr "Індексування вмісту файла"
 
 #: ../../file/indexerstate.h:66
-#| msgid "Check for any unindexed files and index them"
 msgid "Checking for unindexed files"
 msgstr "Пошук неіндексованих файлів"
 
@@ -105,138 +104,222 @@ msgstr "Показати це довідкове меню"
 msgid "The following configuration options may be listed:"
 msgstr "Може бути показано список таких параметрів налаштування:"
 
-#: configcommand.cpp:85 configcommand.cpp:356
+#: configcommand.cpp:85 configcommand.cpp:398
 msgid "Controls if Baloo indexes hidden files and folders"
 msgstr "Керує тим, чи буде Baloo індексувати приховані файли і теки"
 
 #: configcommand.cpp:86
-#| msgid "Controls if Baloo indexes hidden files and folders"
 msgid "Controls if baloo indexes file content."
 msgstr "Керує тим, чи буде Baloo індексувати вміст файлів."
 
-#: configcommand.cpp:87 configcommand.cpp:144 configcommand.cpp:237
+#: configcommand.cpp:87 configcommand.cpp:150 configcommand.cpp:261
 msgid "The list of folders which Baloo indexes"
 msgstr "Список тек, які індексує Baloo"
 
-#: configcommand.cpp:88 configcommand.cpp:145 configcommand.cpp:238
+#: configcommand.cpp:88 configcommand.cpp:151 configcommand.cpp:262
 msgid "The list of folders which Baloo will never index"
 msgstr "Список тек, які Baloo ніколи не індексує"
 
-#: configcommand.cpp:89 configcommand.cpp:146 configcommand.cpp:239
+#: configcommand.cpp:89 configcommand.cpp:152 configcommand.cpp:263
 msgid "The list of filters which are used to exclude files"
 msgstr ""
 "Список фільтрів, які використовуються для виключення файлів з індексування"
 
-#: configcommand.cpp:136 configcommand.cpp:229 configcommand.cpp:348
-#: configcommand.cpp:417
+#: configcommand.cpp:90 configcommand.cpp:153 configcommand.cpp:264
+msgid "The list of mimetypes which are used to exclude files"
+msgstr ""
+"Список типів MIME, які використовуються для виключення файлів з індексування"
+
+#: configcommand.cpp:142 configcommand.cpp:253 configcommand.cpp:390
+#: configcommand.cpp:459
 msgid "Config parameter could not be found"
 msgstr "Не вдалося знайти параметр налаштувань"
 
-#: configcommand.cpp:142 configcommand.cpp:235 configcommand.cpp:354
+#: configcommand.cpp:148 configcommand.cpp:259 configcommand.cpp:396
 msgid "The following configuration options may be modified:"
 msgstr "Можна змінювати такі параметри налаштувань:"
 
-#: configcommand.cpp:154 configcommand.cpp:184 configcommand.cpp:248
-#: configcommand.cpp:290
+#: configcommand.cpp:161 configcommand.cpp:191 configcommand.cpp:272
+#: configcommand.cpp:314
 msgid "A folder must be provided"
 msgstr "Слід вказати теку"
 
-#: configcommand.cpp:160 configcommand.cpp:190 configcommand.cpp:254
-#: configcommand.cpp:296
+#: configcommand.cpp:167 configcommand.cpp:197 configcommand.cpp:278
+#: configcommand.cpp:320
 msgid "Path does not exist"
 msgstr "Шляху не існує"
 
-#: configcommand.cpp:165 configcommand.cpp:195 configcommand.cpp:259
-#: configcommand.cpp:301
+#: configcommand.cpp:172 configcommand.cpp:202 configcommand.cpp:283
+#: configcommand.cpp:325
 msgid "Path is not a directory"
 msgstr "Вказана адреса не є адресою каталогу"
 
-#: configcommand.cpp:214 configcommand.cpp:332
+#: configcommand.cpp:179
+#, kde-format
+msgid "%1 is not in the list of include folders"
+msgstr "%1 немає у списку включених тек"
+
+#: configcommand.cpp:209
+#, kde-format
+msgid "%1 is not in the list of exclude folders"
+msgstr "%1 немає у списку виключених тек"
+
+#: configcommand.cpp:221 configcommand.cpp:356
 msgid "A filter must be provided"
 msgstr "Слід вказати фільтр"
 
-#: configcommand.cpp:220
-msgid "is not in list of exclude filters"
-msgstr "немає у списку фільтрів виключення"
+#: configcommand.cpp:227
+#, kde-format
+msgid "%1 is not in list of exclude filters"
+msgstr "%1 немає у списку фільтрів виключення"
+
+#: configcommand.cpp:238 configcommand.cpp:374
+msgid "A mimetype must be provided"
+msgstr "Слід вказати тип MIME"
+
+#: configcommand.cpp:244
+#, kde-format
+msgid "%1 is not in list of exclude mimetypes"
+msgstr "%1 немає у списку типів MIME виключення"
+
+#: configcommand.cpp:290
+#, kde-format
+msgid "%1 is already in the list of include folders"
+msgstr "%1 вже є у списку включених тек"
+
+#: configcommand.cpp:296
+#, kde-format
+msgid "Parent folder %1 is already in the list of include folders"
+msgstr "Батьківська тека %1 вже є у списку включених тек"
+
+#: configcommand.cpp:302 configcommand.cpp:344
+#, kde-format
+msgid "%1 is in the list of exclude folders"
+msgstr "%1 є у списку виключених тек"
+
+#: configcommand.cpp:332
+#, kde-format
+msgid "%1 is already in the list of exclude folders"
+msgstr "%1 вже є у списку виключених тек"
 
 #: configcommand.cpp:338
+#, kde-format
+msgid "Parent folder %1 is already in the list of exclude folders"
+msgstr "Батьківська тека %1 вже є у списку виключених тек"
+
+#: configcommand.cpp:362
 msgid "Exclude filter is already in the list"
 msgstr "Фільтр виключення вже є у списку"
 
-#: configcommand.cpp:365 configcommand.cpp:392
-msgid "Must provide a value"
+#: configcommand.cpp:380
+msgid "Exclude mimetype is already in the list"
+msgstr "Тип MIME виключення вже є у списку"
+
+#: configcommand.cpp:407 configcommand.cpp:434
+msgid "A value must be provided"
 msgstr "Слід вказати значення"
 
-#: configcommand.cpp:386 configcommand.cpp:413
+#: configcommand.cpp:428 configcommand.cpp:455
 msgid "Invalid value"
 msgstr "Некоректне значення"
 
-#: main.cpp:66
+#: main.cpp:67
 msgid "balooctl"
 msgstr "balooctl"
 
-#: main.cpp:67
+#: main.cpp:68
 msgid "Vishesh Handa"
 msgstr "Vishesh Handa"
 
-#: main.cpp:67
+#: main.cpp:68
 msgid "Maintainer"
 msgstr "Супровідник"
 
-#: main.cpp:73
+#: main.cpp:74
 msgid "The command to execute"
 msgstr "Команда, яку слід виконати"
 
-#: main.cpp:75
+#: main.cpp:76
 msgid "Print the status of the indexer"
 msgstr "Вивести дані щодо стану засобу індексування"
 
-#: main.cpp:76
+#: main.cpp:77
 msgid "Enable the file indexer"
 msgstr "Увімкнути засіб індексування файлів"
 
-#: main.cpp:77
+#: main.cpp:78
 msgid "Disable the file indexer"
 msgstr "Вимкнути засіб індексування файлів"
 
-#: main.cpp:78
+#: main.cpp:79
 msgid "Start the file indexer"
 msgstr "Запустити засіб індексування файлів"
 
-#: main.cpp:79
+#: main.cpp:80
 msgid "Stop the file indexer"
 msgstr "Зупинити роботу засобу індексування файлів"
 
-#: main.cpp:80
+#: main.cpp:81
 msgid "Restart the file indexer"
 msgstr "Перезапустити засіб індексування файлів"
 
-#: main.cpp:81
+#: main.cpp:82
 msgid "Suspend the file indexer"
 msgstr "Призупинити роботу засобу індексування файлів"
 
-#: main.cpp:82
+#: main.cpp:83
 msgid "Resume the file indexer"
 msgstr "Поновити роботу засобу індексування файлів"
 
-#: main.cpp:83
+#: main.cpp:84
 msgid "Check for any unindexed files and index them"
 msgstr "Знайти усі неіндексовані файли і індексувати їх"
 
-#: main.cpp:84
+#: main.cpp:85
 msgid "Index the specified files"
 msgstr "Індексувати вказані файли"
 
-#: main.cpp:85
+#: main.cpp:86
 msgid "Forget the specified files"
 msgstr "Забути про вказані файли"
 
-#: main.cpp:86
+#: main.cpp:87
 msgid "Modify the Baloo configuration"
 msgstr "Змінити налаштування Baloo"
 
-#: main.cpp:117
+#: statuscommand.cpp:45
+msgid "Print the status of the Indexer"
+msgstr "Вивести дані щодо стану засобу індексування"
+
+#: statuscommand.cpp:54
 msgid "Baloo is currently disabled. To enable, please run \"balooctl enable\""
 msgstr ""
 "Baloo вимкнено. Щоб увімкнути систему, будь ласка, віддайте команду "
 "«balooctl enable»."
+
+#: statuscommand.cpp:60
+msgid "Baloo Index could not be opened"
+msgstr "Не вдалося відкрити покажчик Baloo"
+
+#: statuscommand.cpp:81
+msgid "Baloo File Indexer is running"
+msgstr "Засіб індексування файлів Baloo працює"
+
+#: statuscommand.cpp:82
+#, kde-format
+msgid "Indexer state: %1"
+msgstr "Стан засобу індексування: %1"
+
+#: statuscommand.cpp:85
+msgid "Baloo File Indexer is not running"
+msgstr "Засіб індексування файлів Baloo не працює"
+
+#: statuscommand.cpp:91
+#, kde-format
+msgid "Indexed %1 / %2 files"
+msgstr "Проіндексовано %1 / %2 файлів"
+
+#: statuscommand.cpp:110
+#, kde-format
+msgid "File: %1"
+msgstr "Файл: %1"

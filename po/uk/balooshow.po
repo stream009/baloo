@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooshow\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-24 08:35+0000\n"
+"POT-Creation-Date: 2015-10-11 08:16+0000\n"
 "PO-Revision-Date: 2015-09-24 17:00+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -48,7 +48,7 @@ msgstr "Vishesh Handa"
 msgid "Maintainer"
 msgstr "Супровідник"
 
-#: main.cpp:97
+#: main.cpp:105
 msgid ""
 "The Baloo index could not be opened. Please run \"balooctl status\" to see "
 "if Baloo is enabled and working."
@@ -56,16 +56,16 @@ msgstr ""
 "Не вдалося відкрити покажчик Baloo. Будь ласка, віддайте команду «balooctl "
 "status», щоб дізнатися, чи увімкнено Baloo і чи працює система."
 
-#: main.cpp:113
+#: main.cpp:121
 msgid "The fileID is not equal to the actual Baloo fileID"
 msgstr ""
 "Значення ідентифікатора файла не дорівнює дійсному значенню ідентифікатора "
 "файла Baloo"
 
-#: main.cpp:114
+#: main.cpp:122
 msgid "This is a bug"
 msgstr "Це вада у програмі"
 
-#: main.cpp:136
+#: main.cpp:150
 msgid "No index information found"
 msgstr "Не знайдено даних індексування"
