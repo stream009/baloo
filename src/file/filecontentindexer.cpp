@@ -30,8 +30,10 @@
 
 using namespace Baloo;
 
-FileContentIndexer::FileContentIndexer(FileContentIndexerProvider* provider, QObject* parent)
+FileContentIndexer::FileContentIndexer(Database &db, FileIndexerConfig &config,
+                         FileContentIndexerProvider* provider, QObject* parent)
     : QObject(parent)
+    , m_extractor { db, config }
     , m_provider(provider)
     , m_stop(0)
 {
@@ -49,10 +51,11 @@ FileContentIndexer::FileContentIndexer(FileContentIndexerProvider* provider, QOb
 
 void FileContentIndexer::run()
 {
+#if 0
     ExtractorProcess process;
     connect(&process, &ExtractorProcess::startedIndexingFile, this, &FileContentIndexer::slotStartedIndexingFile);
     connect(&process, &ExtractorProcess::startedIndexingFile, this, &FileContentIndexer::slotFinishedIndexingFile);
-
+#endif
     m_stop.store(false);
     while (m_provider->size() && !m_stop.load()) {
         //
@@ -66,6 +69,9 @@ void FileContentIndexer::run()
         if (idList.isEmpty() || m_stop.load()) {
             break;
         }
+
+        m_extractor.index(idList);
+#if 0
         QEventLoop loop;
         connect(&process, &ExtractorProcess::done, &loop, &QEventLoop::quit);
 
@@ -74,6 +80,7 @@ void FileContentIndexer::run()
                        << idList.size();
         loop.exec();
         qCDebug(BALOO) << "Batch has done";
+#endif
 
         // QDbus requires us to be in object creation thread (thread affinity)
         // This signal is not even exported, and yet QDbus complains. QDbus bug?

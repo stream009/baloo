@@ -23,6 +23,9 @@ set(file_static_lib_SRCS
 
     indexcleaner.cpp
 
+    contents_extractor.cpp
+    extractor/result.cpp
+
     # Common
     priority.cpp
     regexpcache.cpp
