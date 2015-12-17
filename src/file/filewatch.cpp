@@ -61,7 +61,7 @@ FileWatch::FileWatch(Database* db, FileIndexerConfig* config, QObject* parent)
     connect(m_dirWatch, &KInotify::moved, this, &FileWatch::slotFileMoved);
     connect(m_dirWatch, &KInotify::deleted, this, &FileWatch::slotFileDeleted);
     connect(m_dirWatch, &KInotify::created, this, &FileWatch::slotFileCreated);
-    connect(m_dirWatch, &KInotify::modified, this, &FileWatch::slotFileModified);
+    //connect(m_dirWatch, &KInotify::modified, this, &FileWatch::slotFileModified);
     connect(m_dirWatch, &KInotify::closedWrite, this, &FileWatch::slotFileClosedAfterWrite);
     connect(m_dirWatch, &KInotify::attributeChanged, this, &FileWatch::slotAttributeChanged);
     connect(m_dirWatch, &KInotify::watchUserLimitReached, this, &FileWatch::slotInotifyWatchUserLimitReached);

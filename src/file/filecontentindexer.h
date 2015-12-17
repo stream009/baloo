@@ -20,6 +20,10 @@
 #ifndef BALOO_FILECONTENTINDEXER_H
 #define BALOO_FILECONTENTINDEXER_H
 
+#include "database.h"
+#include "fileindexerconfig.h"
+#include "contents_extractor.h"
+
 #include <QRunnable>
 #include <QObject>
 #include <QAtomicInt>
@@ -39,7 +43,8 @@ class FileContentIndexer : public QObject, public QRunnable
 
     Q_PROPERTY(QString currentFile READ currentFile NOTIFY startedIndexingFile)
 public:
-    FileContentIndexer(FileContentIndexerProvider* provider, QObject* parent = 0);
+    FileContentIndexer(Database&, FileIndexerConfig&,
+                       FileContentIndexerProvider*, QObject* parent = 0);
 
     QString currentFile() { return m_currentFile; }
 
@@ -66,6 +71,7 @@ private Q_SLOTS:
     void slotFinishedIndexingFile(const QString& filePath);
 
 private:
+    ContentsExtractor m_extractor;
     FileContentIndexerProvider* m_provider;
 
     QAtomicInt m_stop;
