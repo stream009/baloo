@@ -60,7 +60,7 @@ void App::slotNewInput()
     qCDebug(BALOO) << ">>";
     Database *db = globalDatabaseInstance();
     if (!db->open(Database::OpenDatabase)) {
-        qCritical() << "Failed to open the database";
+        qCCritical(BALOO) << "Failed to open the database";
         exit(1);
     }
 

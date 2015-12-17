@@ -44,6 +44,7 @@ void IOHandler::newBatch()
 
 quint64 IOHandler::nextId()
 {
+    qCDebug(BALOO);
     Q_ASSERT(!atEnd());
     quint64 id = 0;
     read(m_stdinHandle, &id, sizeof(quint64));
@@ -54,6 +55,7 @@ quint64 IOHandler::nextId()
 
 bool IOHandler::atEnd() const
 {
+    qCDebug(BALOO);
     if (m_batchSize == 0) {
         return true;
     }
@@ -62,16 +64,19 @@ bool IOHandler::atEnd() const
 
 void IOHandler::writeBatchIndexed()
 {
+    qCDebug(BALOO);
     m_batchSize = 0;
     m_stdout << "B" << endl;
 }
 
 void IOHandler::writeStartedIndexingUrl(const QString& url)
 {
+    qCDebug(BALOO);
     m_stdout << "S " << url << endl;
 }
 
 void IOHandler::writeFinishedIndexingUrl(const QString& url)
 {
+    qCDebug(BALOO);
     m_stdout << "F " << url << endl;
 }

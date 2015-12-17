@@ -79,6 +79,7 @@ int main(int argc, char* argv[])
         if (sig == SIGSEGV) continue;
         if (sig == SIGPIPE) {
             signal(sig, SIG_IGN);
+            //signal(sig, handleSignal);
         }
         else {
             signal(sig, handleSignal);
