@@ -68,8 +68,8 @@ add_subdirectory(src)
 add_subdirectory(icons)
 
 if (${BUILD_KINOTIFY})
-    add_subdirectory(tests)
-    add_subdirectory(autotests)
+    #add_subdirectory(tests)
+    #add_subdirectory(autotests)
 endif()
 
 if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")

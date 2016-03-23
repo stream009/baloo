@@ -1,6 +1,7 @@
 set(EXTRACTOR_IO_TEST_SRCS
     iohandlertest.cpp
     ../iohandler.cpp
+    ../../baloodebug.cpp
 )
 
 ecm_add_test(${EXTRACTOR_IO_TEST_SRCS}
