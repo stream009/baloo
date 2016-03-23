@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-12-15 08:19+0000\n"
-"PO-Revision-Date: 2015-03-20 13:55+0100\n"
+"PO-Revision-Date: 2015-12-14 13:02+0100\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -27,39 +27,39 @@ msgstr "vit@pelcak.org"
 
 #: ../../file/indexerstate.h:42
 msgid "Unknown"
-msgstr ""
+msgstr "Neznámý"
 
 #: ../../file/indexerstate.h:45
 msgid "Idle"
-msgstr ""
+msgstr "Nečinný"
 
 #: ../../file/indexerstate.h:48
 msgid "Suspended"
-msgstr ""
+msgstr "Pozastaveno"
 
 #: ../../file/indexerstate.h:51
 msgid "Initial Indexing"
-msgstr ""
+msgstr "Počáteční indexování"
 
 #: ../../file/indexerstate.h:54
 msgid "Indexing new files"
-msgstr ""
+msgstr "Indexuji nové soubory"
 
 #: ../../file/indexerstate.h:57
 msgid "Indexing modified files"
-msgstr ""
+msgstr "Indexuji změněné soubory"
 
 #: ../../file/indexerstate.h:60
 msgid "Indexing Extended Attributes"
-msgstr ""
+msgstr "Indexuji rozšířené atributy"
 
 #: ../../file/indexerstate.h:63
 msgid "Indexing file content"
-msgstr ""
+msgstr "Indexuji obsah souboru"
 
 #: ../../file/indexerstate.h:66
 msgid "Checking for unindexed files"
-msgstr ""
+msgstr "Hledám neindexované soubory"
 
 #: configcommand.cpp:45
 msgid "Manipulate the Baloo configuration"
@@ -216,7 +216,7 @@ msgstr ""
 
 #: configcommand.cpp:428 configcommand.cpp:455
 msgid "Invalid value"
-msgstr ""
+msgstr "Neplatná hodnota"
 
 #: main.cpp:67
 msgid "balooctl"
@@ -283,8 +283,6 @@ msgid "Modify the Baloo configuration"
 msgstr ""
 
 #: statuscommand.cpp:45
-#, fuzzy
-#| msgid "Print the status of the indexer"
 msgid "Print the status of the Indexer"
 msgstr "Zobrazit status indexeru"
 
@@ -303,7 +301,7 @@ msgstr ""
 #: statuscommand.cpp:82
 #, kde-format
 msgid "Indexer state: %1"
-msgstr ""
+msgstr "Stav indexeru: %1"
 
 #: statuscommand.cpp:85
 msgid "Baloo File Indexer is not running"

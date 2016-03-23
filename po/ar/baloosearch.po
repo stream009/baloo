@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-09-19 08:51+0000\n"
-"PO-Revision-Date: ٢٠١٥-٠٤-٠٣ ١٤:٢٢+0300\n"
+"PO-Revision-Date: ٢٠١٥-١٠-٠١ ١٠:٤٣+0300\n"
 "Last-Translator: Safa Alfulaij <safa1996alfulaij@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "Language: ar\n"
@@ -21,23 +21,23 @@ msgstr ""
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "عبدالرحيم الفاخوري"
+msgstr "عبدالرحيم الفاخوري,صفا الفليج"
 
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "abdilra7eem@yahoo.com"
+msgstr "abdilra7eem@yahoo.com,safa1996alfulaij@gmail.com"
 
 #: main.cpp:39
 msgid "Baloo Search"
-msgstr "بحث بالو"
+msgstr "بالو للبحث"
 
 #: main.cpp:41
 msgid "A tool to search through the files indexed by Baloo"
-msgstr ""
+msgstr "أداة للبحث في الملفّات التي فهرسها بالو"
 
 #: main.cpp:43
 msgid "Vishesh Handa"
-msgstr ""
+msgstr "Vishesh Handa"
 
 #: main.cpp:43
 msgid "Maintainer"
@@ -45,7 +45,7 @@ msgstr "المصين"
 
 #: main.cpp:50
 msgid "The maximum number of results"
-msgstr ""
+msgstr "عدد النّتائج الأقصى"
 
 #: main.cpp:51
 msgid "limit"
@@ -61,7 +61,7 @@ msgstr ""
 
 #: main.cpp:56
 msgid "Type of data to be searched"
-msgstr "نوع البيانات التي سيجري البحث عنها"
+msgstr ""
 
 #: main.cpp:57
 msgid "typeStr"
@@ -80,7 +80,5 @@ msgid "query"
 msgstr ""
 
 #: main.cpp:61
-#, fuzzy
-#| msgid "The words to search for"
 msgid "List of words to query for"
-msgstr "الكلمات التي سيُبحث عنها"
+msgstr ""

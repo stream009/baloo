@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-10-11 08:16+0000\n"
-"PO-Revision-Date: ٢٠١٥-٠٤-٠٣ ١٤:٢٢+0300\n"
+"PO-Revision-Date: ٢٠١٥-١٠-٠١ ١٠:٤٥+0300\n"
 "Last-Translator: Safa Alfulaij <safa1996alfulaij@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "Language: ar\n"
@@ -21,19 +21,19 @@ msgstr ""
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "عبدالرحيم الفاخوري"
+msgstr "عبدالرحيم الفاخوري,صفا الفليج"
 
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "abdilra7eem@yahoo.com"
+msgstr "abdilra7eem@yahoo.com,safa1996alfulaij@gmail.com"
 
 #: main.cpp:56
 msgid "Baloo Show"
-msgstr "عرض بالو"
+msgstr "بالو العارض"
 
 #: main.cpp:58
 msgid "The Baloo data Viewer - A debugging tool"
-msgstr "عارض بيانات بالو - أداة تنقيح"
+msgstr "بالو لعرض البيانات - أداة تنقيح"
 
 #: main.cpp:60
 msgid "(c) 2012, Vishesh Handa"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: main.cpp:61
 msgid "Vishesh Handa"
-msgstr ""
+msgstr "Vishesh Handa"
 
 #: main.cpp:61
 msgid "Maintainer"
@@ -52,6 +52,8 @@ msgid ""
 "The Baloo index could not be opened. Please run \"balooctl status\" to see "
 "if Baloo is enabled and working."
 msgstr ""
+"تعذّر فتح فهرس بالو. فضلًا نفّذ \"balooctl status\" لمعرفة فيما إذا كان بالو "
+"مفعّلًا ونشطًا أم لا."
 
 #: main.cpp:121
 msgid "The fileID is not equal to the actual Baloo fileID"
@@ -59,7 +61,7 @@ msgstr ""
 
 #: main.cpp:122
 msgid "This is a bug"
-msgstr ""
+msgstr "هذه علّة"
 
 #: main.cpp:150
 msgid "No index information found"

@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Lasse Liehu <lasse.liehu@gmail.com>, 2013, 2015.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2013, 2015, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-10-11 08:16+0000\n"
-"PO-Revision-Date: 2015-10-02 19:45+0200\n"
+"PO-Revision-Date: 2016-01-05 22:43+0200\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -31,7 +31,7 @@ msgstr "Baloo Show"
 
 #: main.cpp:58
 msgid "The Baloo data Viewer - A debugging tool"
-msgstr "Baloon datakatselin – työkalu vikojen jäljittämiseen"
+msgstr "Baloon datakatselin – työkalu virheiden paikantamiseen"
 
 #: main.cpp:60
 msgid "(c) 2012, Vishesh Handa"
