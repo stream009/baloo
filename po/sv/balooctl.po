@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-10-19 08:03+0000\n"
+"POT-Creation-Date: 2015-12-15 08:19+0000\n"
 "PO-Revision-Date: 2015-10-24 19:01+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -314,7 +314,7 @@ msgstr "Baloo filindexering kör inte"
 msgid "Indexed %1 / %2 files"
 msgstr "Indexerar %1/%2 filer"
 
-#: statuscommand.cpp:110
+#: statuscommand.cpp:108
 #, kde-format
 msgid "File: %1"
 msgstr "Fil: %1"

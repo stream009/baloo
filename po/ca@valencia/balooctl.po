@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooctl\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-10-19 08:03+0000\n"
+"POT-Creation-Date: 2015-12-15 08:19+0000\n"
 "PO-Revision-Date: 2015-10-19 22:27+0200\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -319,7 +319,7 @@ msgstr "La indexació de fitxers del Baloo no s'està executant"
 msgid "Indexed %1 / %2 files"
 msgstr "S'han indexat %1 / %2 fitxers"
 
-#: statuscommand.cpp:110
+#: statuscommand.cpp:108
 #, kde-format
 msgid "File: %1"
 msgstr "Fitxer: %1"

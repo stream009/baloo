@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-10-19 08:03+0000\n"
+"POT-Creation-Date: 2015-12-15 08:19+0000\n"
 "PO-Revision-Date: 2014-12-23 17:50-0600\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -312,7 +312,7 @@ msgstr ""
 msgid "Indexed %1 / %2 files"
 msgstr ""
 
-#: statuscommand.cpp:110
+#: statuscommand.cpp:108
 #, kde-format
 msgid "File: %1"
 msgstr ""

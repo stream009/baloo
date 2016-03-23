@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-10-19 08:03+0000\n"
+"POT-Creation-Date: 2015-12-15 08:19+0000\n"
 "PO-Revision-Date: 2015-11-16 00:49+0100\n"
 "Last-Translator: enolp <enolp@softastur.org>\n"
 "Language-Team: Asturian <kde-i18n-doc@kde.org>\n"
@@ -101,6 +101,7 @@ msgstr ""
 msgid "The following configuration options may be listed:"
 msgstr ""
 
+#: configcommand.cpp:85 configcommand.cpp:398
 msgid "Controls if Baloo indexes hidden files and folders"
 msgstr ""
 
@@ -312,7 +313,7 @@ msgstr ""
 msgid "Indexed %1 / %2 files"
 msgstr ""
 
-#: statuscommand.cpp:110
+#: statuscommand.cpp:108
 #, kde-format
 msgid "File: %1"
 msgstr ""
