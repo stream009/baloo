@@ -1,15 +1,15 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Alexander Potashev <aspotashev@gmail.com>, 2014, 2015.
+# Alexander Potashev <aspotashev@gmail.com>, 2014, 2015, 2016.
 # Nick Shaforostoff <shafff@ukr.net>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-12-15 08:19+0000\n"
-"PO-Revision-Date: 2015-11-14 17:22+0000\n"
-"Last-Translator: Nick Shaforostoff <shafff@ukr.net>\n"
+"PO-Revision-Date: 2016-02-22 00:58+0300\n"
+"Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -129,7 +129,7 @@ msgstr ""
 msgid "The list of mimetypes which are used to exclude files"
 msgstr ""
 "Список типов файлов, используемых для исключения файлов из процесса "
-"индексирования"
+"индексирования."
 
 #: configcommand.cpp:142 configcommand.cpp:253 configcommand.cpp:390
 #: configcommand.cpp:459
@@ -166,7 +166,7 @@ msgstr "%1 не входит в список индексируемых папо
 #: configcommand.cpp:209
 #, kde-format
 msgid "%1 is not in the list of exclude folders"
-msgstr "%1 не входит в список исключенных из индексирования папок"
+msgstr "%1 не входит в список исключённых из индексирования папок"
 
 #: configcommand.cpp:221 configcommand.cpp:356
 msgid "A filter must be provided"
@@ -174,73 +174,62 @@ msgstr "Необходимо указать фильтр."
 
 # BUGME: word puzzle --aspotashev
 #: configcommand.cpp:227
-#, fuzzy, kde-format
-#| msgid "is not in list of exclude filters"
+#, kde-format
 msgid "%1 is not in list of exclude filters"
-msgstr "не входит в список фильтров исключения."
+msgstr "%1 не входит в список фильтров исключения."
 
 #: configcommand.cpp:238 configcommand.cpp:374
-#, fuzzy
-#| msgid "A filter must be provided"
 msgid "A mimetype must be provided"
-msgstr "Необходимо указать фильтр."
+msgstr "Необходимо указать тип файла (MIME)."
 
 # BUGME: word puzzle --aspotashev
 #: configcommand.cpp:244
-#, fuzzy, kde-format
-#| msgid "is not in list of exclude filters"
+#, kde-format
 msgid "%1 is not in list of exclude mimetypes"
-msgstr "не входит в список фильтров исключения."
+msgstr "%1 не входит в список исключённых типов файлов (MIME)."
 
 # BUGME: word puzzle --aspotashev
 #: configcommand.cpp:290
-#, fuzzy, kde-format
-#| msgid "is not in list of exclude filters"
+#, kde-format
 msgid "%1 is already in the list of include folders"
-msgstr "не входит в список фильтров исключения."
+msgstr "%1 уже входит в список папок для индексирования."
 
 #: configcommand.cpp:296
-#, fuzzy, kde-format
-#| msgid "Exclude filter is already in the list"
+#, kde-format
 msgid "Parent folder %1 is already in the list of include folders"
-msgstr "Такой фильтр исключения уже находится в списке."
+msgstr "Родительская папка %1 уже входит в список папок для индексирования."
 
 # BUGME: word puzzle --aspotashev
 #: configcommand.cpp:302 configcommand.cpp:344
-#, fuzzy, kde-format
-#| msgid "is not in list of exclude filters"
+#, kde-format
 msgid "%1 is in the list of exclude folders"
-msgstr "не входит в список фильтров исключения."
+msgstr "%1 входит в список исключённых из индексирования папок."
 
 # BUGME: word puzzle --aspotashev
 #: configcommand.cpp:332
-#, fuzzy, kde-format
-#| msgid "is not in list of exclude filters"
+#, kde-format
 msgid "%1 is already in the list of exclude folders"
-msgstr "не входит в список фильтров исключения."
+msgstr "%1 уже входит в список исключённых из индексирования папок."
 
 # BUGME: word puzzle --aspotashev
 #: configcommand.cpp:338
-#, fuzzy, kde-format
-#| msgid "is not in list of exclude filters"
+#, kde-format
 msgid "Parent folder %1 is already in the list of exclude folders"
-msgstr "не входит в список фильтров исключения."
+msgstr ""
+"Родительская папка %1 уже входит в список исключённых из индексирования "
+"папок."
 
 #: configcommand.cpp:362
 msgid "Exclude filter is already in the list"
 msgstr "Такой фильтр исключения уже находится в списке."
 
 #: configcommand.cpp:380
-#, fuzzy
-#| msgid "Exclude filter is already in the list"
 msgid "Exclude mimetype is already in the list"
-msgstr "Такой фильтр исключения уже находится в списке."
+msgstr "Тип файла (MIME) уже находится в списке исключённых из индексирования."
 
 #: configcommand.cpp:407 configcommand.cpp:434
-#, fuzzy
-#| msgid "A folder must be provided"
 msgid "A value must be provided"
-msgstr "Необходимо указать путь к каталогу."
+msgstr "Необходимо указать значение параметра."
 
 #: configcommand.cpp:428 configcommand.cpp:455
 msgid "Invalid value"
@@ -312,8 +301,6 @@ msgid "Modify the Baloo configuration"
 msgstr "Изменить настройку Baloo."
 
 #: statuscommand.cpp:45
-#, fuzzy
-#| msgid "Print the status of the indexer"
 msgid "Print the status of the Indexer"
 msgstr "Вывести состояние программы индексирования файлов."
 
@@ -324,10 +311,8 @@ msgstr ""
 "команду «balooctl enable»."
 
 #: statuscommand.cpp:60
-#, fuzzy
-#| msgid "Config parameter could not be found"
 msgid "Baloo Index could not be opened"
-msgstr "Выбранный параметр конфигурации не найден."
+msgstr "Не удалось открыть индекс Baloo."
 
 #: statuscommand.cpp:81
 msgid "Baloo File Indexer is running"
@@ -343,10 +328,9 @@ msgid "Baloo File Indexer is not running"
 msgstr "Индексирование файлов не выполняется"
 
 #: statuscommand.cpp:91
-#, fuzzy, kde-format
-#| msgid "Indexing new files"
+#, kde-format
 msgid "Indexed %1 / %2 files"
-msgstr "Идёт индексирование новых файлов"
+msgstr "Проиндексированы %1 из %2 файлов"
 
 #: statuscommand.cpp:108
 #, kde-format

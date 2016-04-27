@@ -30,10 +30,11 @@
 
 using namespace Baloo;
 
-FileContentIndexer::FileContentIndexer(Database &db, FileIndexerConfig &config,
-                         FileContentIndexerProvider* provider, QObject* parent)
+FileContentIndexer::FileContentIndexer(FileIndexerConfig* config, FileContentIndexerProvider* provider, QObject* parent)
     : QObject(parent)
     , m_extractor { db, config }
+    , m_config(config)
+    , m_batchSize(config->maxUncomittedFiles())
     , m_provider(provider)
     , m_stop(0)
 {
@@ -59,13 +60,13 @@ void FileContentIndexer::run()
     m_stop.store(false);
     while (m_provider->size() && !m_stop.load()) {
         //
-        // WARNING: This will go mad, if the Extractor does not commit after 40 files
-        // cause then we will keep fetching the same 40 again and again.
+        // WARNING: This will go mad, if the Extractor does not commit after N=m_batchSize files
+        // cause then we will keep fetching the same N files again and again.
         //
         QElapsedTimer timer;
         timer.start();
 
-        QVector<quint64> idList = m_provider->fetch(40);
+        QVector<quint64> idList = m_provider->fetch(m_batchSize);
         if (idList.isEmpty() || m_stop.load()) {
             break;
         }

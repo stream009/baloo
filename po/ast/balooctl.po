@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-12-15 08:19+0000\n"
-"PO-Revision-Date: 2016-02-03 01:51+0100\n"
-"Last-Translator: enolp <enolp@sofastur.org>\n"
+"PO-Revision-Date: 2016-03-08 15:23+0100\n"
+"Last-Translator: enolp <enolp@softastur.org>\n"
 "Language-Team: Asturian <>\n"
 "Language: ast\n"
 "MIME-Version: 1.0\n"
@@ -152,12 +152,12 @@ msgstr "Nun ye un direutoriu'l camín"
 #: configcommand.cpp:179
 #, kde-format
 msgid "%1 is not in the list of include folders"
-msgstr ""
+msgstr "%1 nun ta nel llistáu de carpetes incluyíes"
 
 #: configcommand.cpp:209
 #, kde-format
 msgid "%1 is not in the list of exclude folders"
-msgstr ""
+msgstr "%1 nun ta nel llistáu de carpetes escluyíes"
 
 #: configcommand.cpp:221 configcommand.cpp:356
 msgid "A filter must be provided"
@@ -180,7 +180,7 @@ msgstr ""
 #: configcommand.cpp:290
 #, kde-format
 msgid "%1 is already in the list of include folders"
-msgstr ""
+msgstr "%1 yá ta nel llistáu de carpetes incluyíes"
 
 #: configcommand.cpp:296
 #, kde-format
@@ -195,7 +195,7 @@ msgstr ""
 #: configcommand.cpp:332
 #, kde-format
 msgid "%1 is already in the list of exclude folders"
-msgstr ""
+msgstr "%1 yá ta nel llistáu de carpetes escluyíes"
 
 #: configcommand.cpp:338
 #, kde-format
