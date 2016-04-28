@@ -30,11 +30,11 @@
 
 using namespace Baloo;
 
-FileContentIndexer::FileContentIndexer(FileIndexerConfig* config, FileContentIndexerProvider* provider, QObject* parent)
+FileContentIndexer::FileContentIndexer(Database &db, FileIndexerConfig &config,
+                         FileContentIndexerProvider* provider, QObject* parent)
     : QObject(parent)
     , m_extractor { db, config }
-    , m_config(config)
-    , m_batchSize(config->maxUncomittedFiles())
+    , m_batchSize(config.maxUncomittedFiles())
     , m_provider(provider)
     , m_stop(0)
 {

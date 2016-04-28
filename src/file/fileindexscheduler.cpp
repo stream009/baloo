@@ -53,7 +53,7 @@ FileIndexScheduler::FileIndexScheduler(Database* db, FileIndexerConfig* config, 
     connect(&m_powerMonitor, &PowerStateMonitor::powerManagementStatusChanged,
             this, &FileIndexScheduler::powerManagementStatusChanged);
 
-    m_contentIndexer = new FileContentIndexer(m_config, &m_provider, this);
+    m_contentIndexer = new FileContentIndexer(*m_db, *m_config, &m_provider, this);
     m_contentIndexer->setAutoDelete(false);
     connect(m_contentIndexer, &FileContentIndexer::done, this,
             &FileIndexScheduler::scheduleIndexing);

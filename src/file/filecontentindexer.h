@@ -44,7 +44,9 @@ class FileContentIndexer : public QObject, public QRunnable
 
     Q_PROPERTY(QString currentFile READ currentFile NOTIFY startedIndexingFile)
 public:
-    FileContentIndexer(FileIndexerConfig* config, FileContentIndexerProvider* provider, QObject* parent = 0);
+    FileContentIndexer(Database&, FileIndexerConfig&,
+                       FileContentIndexerProvider*, QObject* parent = 0);
+
 
     QString currentFile() { return m_currentFile; }
 
@@ -72,7 +74,6 @@ private Q_SLOTS:
 
 private:
     ContentsExtractor m_extractor;
-    FileIndexerConfig *m_config;
     uint m_batchSize;
     FileContentIndexerProvider* m_provider;
 

@@ -86,10 +86,10 @@ include_directories(
 add_subdirectory(src)
 add_subdirectory(icons)
 
-if (BUILD_KINOTIFY)
-    add_subdirectory(tests)
-    add_subdirectory(autotests)
-endif()
+#if (BUILD_KINOTIFY)
+#    add_subdirectory(tests)
+#    add_subdirectory(autotests)
+#endif()
 
 # i18n
 if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
