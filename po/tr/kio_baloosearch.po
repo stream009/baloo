@@ -20,3 +20,6 @@ msgstr ""
 #: kio_search.cpp:47
 msgid "Search Folder"
 msgstr "Arama Klasörü"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "Masaüstü Sorguları"

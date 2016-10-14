@@ -81,3 +81,15 @@ msgstr "poizvedba"
 #: main.cpp:61
 msgid "List of words to query for"
 msgstr "Seznam besed, po katerih se bo iskalo"
+
+#~ msgid "Baloo Search - A debugging tool"
+#~ msgstr "Iskanje Baloo - orodje za razhroščevanje"
+
+#~ msgid "(c) 2013-15, Vishesh Handa"
+#~ msgstr "(c) 2013-15, Vishesh Handa"
+
+#~ msgid "Number of results to return"
+#~ msgstr "Število rezultatov, ki bodo vrnjeni"
+
+#~ msgid "If set, search through emails"
+#~ msgstr "Če je nastavljeno, preišče e-pošto"

@@ -1,16 +1,16 @@
 # Translation of balooctl.po to Catalan
-# Copyright (C) 2014-2015 This_file_is_part_of_KDE
+# Copyright (C) 2014-2016 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2014, 2015.
-# Josep Ma. Ferrer <txemaq@gmail.com>, 2015.
+# Josep Ma. Ferrer <txemaq@gmail.com>, 2015, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: balooctl\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-12-15 08:19+0000\n"
-"PO-Revision-Date: 2015-10-19 22:27+0200\n"
+"PO-Revision-Date: 2016-05-19 22:45+0200\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -245,11 +245,11 @@ msgstr "Imprimeix l'estat de l'indexador"
 
 #: main.cpp:77
 msgid "Enable the file indexer"
-msgstr "Habilita l'indexador de fitxers"
+msgstr "Activa l'indexador de fitxers"
 
 #: main.cpp:78
 msgid "Disable the file indexer"
-msgstr "Deshabilita l'indexador de fitxers"
+msgstr "Desactiva l'indexador de fitxers"
 
 #: main.cpp:79
 msgid "Start the file indexer"
@@ -294,7 +294,7 @@ msgstr "Imprimeix l'estat de l'indexador"
 #: statuscommand.cpp:54
 msgid "Baloo is currently disabled. To enable, please run \"balooctl enable\""
 msgstr ""
-"Actualment el Baloo està deshabilitat. Per habilitar-lo, executeu «balooctl "
+"Actualment el Baloo està desactivat. Per activar-lo, executeu «balooctl "
 "enable»"
 
 #: statuscommand.cpp:60
@@ -323,3 +323,6 @@ msgstr "S'han indexat %1 / %2 fitxers"
 #, kde-format
 msgid "File: %1"
 msgstr "Fitxer: %1"
+
+#~ msgid "Must provide a value"
+#~ msgstr "Cal indicar un valor"

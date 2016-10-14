@@ -82,3 +82,9 @@ msgstr "consulta"
 #: main.cpp:61
 msgid "List of words to query for"
 msgstr "Lista de palabras a buscar"
+
+#~ msgid "Baloo Search - A debugging tool"
+#~ msgstr "Búsqueda de Baloo - Una herramienta de depuración"
+
+#~ msgid "(c) 2013-15, Vishesh Handa"
+#~ msgstr "© 2013-2015, Vishesh Handa"

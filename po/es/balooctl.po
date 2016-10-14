@@ -320,3 +320,6 @@ msgstr "Indexado %1 / %2 archivos"
 #, kde-format
 msgid "File: %1"
 msgstr "Archivo: %1"
+
+#~ msgid "Must provide a value"
+#~ msgstr "Se debe proporcionar un valor"

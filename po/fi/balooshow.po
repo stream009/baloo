@@ -64,3 +64,6 @@ msgstr "Tämä on ohjelmavirhe"
 #: main.cpp:150
 msgid "No index information found"
 msgstr "Indeksitietoa ei löytynyt"
+
+#~ msgid "The file URL"
+#~ msgstr "Tiedosto-URL"

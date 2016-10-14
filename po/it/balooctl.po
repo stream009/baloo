@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 2.0\n"
 
 msgctxt "NAME OF TRANSLATORS"
@@ -318,3 +318,6 @@ msgstr "Indicizzati %1 su %2 file"
 #, kde-format
 msgid "File: %1"
 msgstr "File: %1"
+
+#~ msgid "Must provide a value"
+#~ msgstr "Deve essere fornito un valore"

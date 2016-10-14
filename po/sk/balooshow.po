@@ -62,3 +62,6 @@ msgstr "Toto je chyba"
 #: main.cpp:150
 msgid "No index information found"
 msgstr "Nenašli sa žiadne indexové informácie"
+
+#~ msgid "The file URL"
+#~ msgstr "URL súboru"

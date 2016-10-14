@@ -1,6 +1,7 @@
 /*
    This file is part of the KDE Baloo project.
  * Copyright (C) 2015  Vishesh Handa <vhanda@kde.org>
+ * Copyright (C) 2016  Christoph Cullmann <cullmann@kde.org>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -43,23 +44,31 @@
 #include <QFile>
 #include <QFileInfo>
 #include <QDir>
+#include <QMutexLocker>
 
 using namespace Baloo;
 
 Database::Database(const QString& path)
     : m_path(path)
-    , m_env(0)
+    , m_env(nullptr)
 {
 }
 
 Database::~Database()
 {
-    mdb_env_close(m_env);
+    // try only to close if we did open the DB successfully
+    if (m_env) {
+        mdb_env_close(m_env);
+        m_env = nullptr;
+    }
 }
 
 bool Database::open(OpenMode mode)
 {
-    if (isOpen()) {
+    QMutexLocker locker(&m_mutex);
+
+    // nop if already open!
+    if (m_env) {
         return true;
     }
 
@@ -70,7 +79,7 @@ bool Database::open(OpenMode mode)
     }
     QFileInfo indexInfo(dir, QStringLiteral("index"));
 
-    if (mode == OpenDatabase && !indexInfo.exists()) {
+    if ((mode != CreateDatabase) && !indexInfo.exists()) {
         return false;
     }
 
@@ -89,18 +98,29 @@ bool Database::open(OpenMode mode)
 
     int rc = mdb_env_create(&m_env);
     if (rc) {
-        m_env = 0;
+        m_env = nullptr;
         return false;
     }
 
+    /**
+     * maximal number of allowed named databases, must match number of databases we create below
+     * each additional one leads to overhead
+     */
     mdb_env_set_maxdbs(m_env, 12);
-    mdb_env_set_mapsize(m_env, static_cast<size_t>(1024) * 1024 * 1024 * 5); // 5 gb
+
+    /**
+     * size limit for database == size limit of mmap
+     * use 1 GB on 32-bit, use 256 GB on 64-bit
+     */
+    const size_t maximalSizeInBytes = size_t((sizeof(size_t) == 4) ? 1 : 256) * size_t(1024) * size_t(1024) * size_t(1024);
+    mdb_env_set_mapsize(m_env, maximalSizeInBytes);
 
     // The directory needs to be created before opening the environment
     QByteArray arr = QFile::encodeName(indexInfo.absoluteFilePath());
-    rc = mdb_env_open(m_env, arr.constData(), MDB_NOSUBDIR | MDB_NOMEMINIT, 0664);
+    rc = mdb_env_open(m_env, arr.constData(), MDB_NOSUBDIR | MDB_NOMEMINIT | ((mode == ReadOnlyDatabase) ? MDB_RDONLY : 0), 0664);
     if (rc) {
-        m_env = 0;
+        mdb_env_close(m_env);
+        m_env = nullptr;
         return false;
     }
 
@@ -108,6 +128,7 @@ bool Database::open(OpenMode mode)
     Q_ASSERT_X(rc == 0, "Database::open reader_check", mdb_strerror(rc));
     if (rc) {
         mdb_env_close(m_env);
+        m_env = nullptr;
         return false;
     }
 
@@ -115,13 +136,12 @@ bool Database::open(OpenMode mode)
     // Individual Databases
     //
     MDB_txn* txn;
-    if (mode == OpenDatabase) {
+    if (mode != CreateDatabase) {
         int rc = mdb_txn_begin(m_env, NULL, MDB_RDONLY, &txn);
         Q_ASSERT_X(rc == 0, "Database::transaction ro begin", mdb_strerror(rc));
         if (rc) {
-            mdb_txn_abort(txn);
             mdb_env_close(m_env);
-            m_env = 0;
+            m_env = nullptr;
             return false;
         }
 
@@ -147,7 +167,7 @@ bool Database::open(OpenMode mode)
         if (!m_dbis.isValid()) {
             mdb_txn_abort(txn);
             mdb_env_close(m_env);
-            m_env = 0;
+            m_env = nullptr;
             return false;
         }
 
@@ -155,16 +175,15 @@ bool Database::open(OpenMode mode)
         Q_ASSERT_X(rc == 0, "Database::transaction ro commit", mdb_strerror(rc));
         if (rc) {
             mdb_env_close(m_env);
-            m_env = 0;
+            m_env = nullptr;
             return false;
         }
     } else {
         int rc = mdb_txn_begin(m_env, NULL, 0, &txn);
         Q_ASSERT_X(rc == 0, "Database::transaction begin", mdb_strerror(rc));
         if (rc) {
-            mdb_txn_abort(txn);
             mdb_env_close(m_env);
-            m_env = 0;
+            m_env = nullptr;
             return false;
         }
 
@@ -190,7 +209,7 @@ bool Database::open(OpenMode mode)
         if (!m_dbis.isValid()) {
             mdb_txn_abort(txn);
             mdb_env_close(m_env);
-            m_env = 0;
+            m_env = nullptr;
             return false;
         }
 
@@ -198,15 +217,23 @@ bool Database::open(OpenMode mode)
         Q_ASSERT_X(rc == 0, "Database::transaction commit", mdb_strerror(rc));
         if (rc) {
             mdb_env_close(m_env);
-            m_env = 0;
+            m_env = nullptr;
             return false;
         }
     }
 
+    Q_ASSERT(m_env);
     return true;
+}
+
+bool Database::isOpen() const
+{
+    QMutexLocker locker(&m_mutex);
+    return m_env != 0;
 }
 
 QString Database::path() const
 {
+    QMutexLocker locker(&m_mutex);
     return m_path;
 }

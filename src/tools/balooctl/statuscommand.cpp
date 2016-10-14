@@ -56,7 +56,7 @@ int StatusCommand::exec(const QCommandLineParser& parser)
     }
 
     Database *db = globalDatabaseInstance();
-    if (!db->open(Database::OpenDatabase)) {
+    if (!db->open(Database::ReadOnlyDatabase)) {
         out << i18n("Baloo Index could not be opened") << endl;
         return 1;
     }
@@ -92,8 +92,8 @@ int StatusCommand::exec(const QCommandLineParser& parser)
 
         const QString path = fileIndexDbPath();
 
-        QFileInfo indexInfo(path + QLatin1String("/index"));
-        quint32 size = indexInfo.size();
+        const QFileInfo indexInfo(path + QLatin1String("/index"));
+        const auto size = indexInfo.size();
         KFormat format(QLocale::system());
         if (size) {
             out << "Current size of index is " << format.formatByteSize(size, 2) << endl;

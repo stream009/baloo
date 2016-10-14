@@ -28,3 +28,6 @@ msgstr ""
 #| msgid "Query folder"
 msgid "Search Folder"
 msgstr "Dossier de requêtes"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "Requêtes du bureau"

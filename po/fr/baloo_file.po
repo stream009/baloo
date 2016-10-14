@@ -43,3 +43,52 @@ msgstr "Vishesh Handa"
 #: main.cpp:48
 msgid "Maintainer"
 msgstr "Mainteneur"
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is suspended."
+#~ msgstr "L'indexeur de fichiers est suspendu."
+
+#~ msgctxt "@info:status"
+#~ msgid "Scanning for recent changes in files for desktop search"
+#~ msgstr ""
+#~ "Analyse des changements récents dans les fichiers pour la recherche sur "
+#~ "le bureau"
+
+#~ msgctxt "@info:status"
+#~ msgid "Indexing files for desktop search."
+#~ msgstr "Indexation des fichiers pour la recherche sur le bureau."
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is idle."
+#~ msgstr "L'indexeur de fichiers est inactif."
+
+#~ msgid "Baloo File"
+#~ msgstr "Fichier Baloo"
+
+#~ msgid "An application to handle file metadata"
+#~ msgstr "Une application pour gérer les métadonnées de fichiers"
+
+#~ msgctxt "@title"
+#~ msgid "New removable device detected"
+#~ msgstr "Nouveau périphérique amovible détecté"
+
+#~ msgctxt "@action"
+#~ msgid "Index files"
+#~ msgstr "Indexer les fichiers"
+
+#~ msgctxt "@action"
+#~ msgid "Ignore device"
+#~ msgstr "Ignorer un périphérique"
+
+#~ msgctxt "@action"
+#~ msgid "Configure"
+#~ msgstr "Configurer"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Do you want files on removable device <resource>%1</resource> to be "
+#~ "indexed for fast desktop searches?"
+#~ msgstr ""
+#~ "Voulez-vous que les fichiers présents sur le périphérique "
+#~ "amovible <resource>%1</resource> soient indexés pour permettre des "
+#~ "recherches plus rapides ?"

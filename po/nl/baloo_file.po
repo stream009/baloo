@@ -36,3 +36,79 @@ msgstr "Vishesh Handa"
 #: main.cpp:48
 msgid "Maintainer"
 msgstr "Onderhouder"
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is suspended."
+#~ msgstr "Bestandenindexering is onderbroken."
+
+#~ msgctxt "@info:status"
+#~ msgid "Scanning for recent changes in files for desktop search"
+#~ msgstr "Scannen op recente wijzigingen in bestanden voor bureaubladzoeken."
+
+#~ msgctxt "@info:status"
+#~ msgid "Indexing files for desktop search."
+#~ msgstr "Indexeren van bestanden voor bureaubladzoeken."
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is idle."
+#~ msgstr "Bestandenindexering is in ruste."
+
+#~ msgid "Baloo File"
+#~ msgstr "Baloo-bestand"
+
+#~ msgid "An application to handle file metadata"
+#~ msgstr "Een toepassing voor het behandelen van metagegevens van bestanden"
+
+#~ msgctxt "@title"
+#~ msgid "New removable device detected"
+#~ msgstr "Nieuw verwijderbaar apparaat gedetecteerd"
+
+#~ msgctxt "@action"
+#~ msgid "Index files"
+#~ msgstr "Indexeringsbestanden"
+
+#~ msgctxt "@action"
+#~ msgid "Ignore device"
+#~ msgstr "Apparaat negeren"
+
+#~ msgctxt "@action"
+#~ msgid "Configure"
+#~ msgstr "Instellen"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Do you want files on removable device <resource>%1</resource> to be "
+#~ "indexed for fast desktop searches?"
+#~ msgstr ""
+#~ "Wilt u dat bestanden op verwijderbaar apparaat <resource>%1</resource> "
+#~ "geïndexeerd worden om snel bureaubladzoeken mogelijk te maken?"
+
+#~ msgid "Cleans up stale file index information"
+#~ msgstr "Schoont verouderde indexinformatie van bestanden op"
+
+#~ msgid "(C) 2014, Vishesh Handa"
+#~ msgstr "(C) 2014, Vishesh Handa"
+
+#~ msgid "xattrdetectortest"
+#~ msgstr "xattrdetectortest"
+
+#~ msgid "(c) 2014, Vishesh Handa"
+#~ msgstr "(c) 2014, Vishesh Handa"
+
+#~ msgid "The file URL"
+#~ msgstr "De URL van het bestand"
+
+#~ msgid "indexerconfigtest"
+#~ msgstr "indexerconfigtest"
+
+#~ msgid "Disk space is running low (%1 left). Suspending indexing of files."
+#~ msgstr ""
+#~ "Schijfruimte loopt vol (%1 resterend). Bestandenindexering wordt "
+#~ "onderbroken."
+
+#~ msgid "Resuming indexing of files for fast searching."
+#~ msgstr "Met het indexeren van bestanden voor snel zoeken verdergaan."
+
+#~ msgctxt "@info:status"
+#~ msgid "Cleaning invalid file metadata"
+#~ msgstr "Ongeldige metagegevens van bestanden worden opgeschoond"

@@ -24,6 +24,9 @@
 #include "idtreedb.h"
 #include "idfilenamedb.h"
 
+#include <QDebug>
+#include <QFile>
+
 namespace Baloo {
 
 class UrlTest;
@@ -96,14 +99,7 @@ void DocumentUrlDB::replace(quint64 docId, const QByteArray& url, Functor should
     idFilenameDb.del(docId);
 
     QVector<quint64> subDocs = idTreeDb.get(path.parentId);
-#if QT_VERSION < QT_VERSION_CHECK(5, 4, 0)
-    const int docIdIndex = subDocs.indexOf(docId);
-    if (docIdIndex >= 0) {
-        subDocs.remove(docIdIndex);
-    }
-#else
     subDocs.removeOne(docId);
-#endif
 
     if (!subDocs.isEmpty()) {
         idTreeDb.put(path.parentId, subDocs);
@@ -131,7 +127,25 @@ void DocumentUrlDB::replace(quint64 docId, const QByteArray& url, Functor should
     }
 
     if (url.isEmpty()) {
-        Q_ASSERT_X(idTreeDb.get(docId).isEmpty(), "DocumentUrlDB::del", "This folder still has sub-files in its cache. It cannot be deleted");
+        auto subDocs = idTreeDb.get(docId);
+        if (!subDocs.isEmpty()) {
+            // Check if subdocs actually exist or is it a curruption
+            for (auto const& docId : subDocs) {
+                auto filePath = idFilenameDb.get(docId);
+                auto fileName = QFile::decodeName(filePath.name);
+                if (QFile::exists(fileName)) {
+                    Q_ASSERT_X(idTreeDb.get(docId).isEmpty(),
+                               "DocumentUrlDB::del",
+                               "This folder still has sub-files in its cache. It cannot be deleted");
+                } else {
+                    /*
+                     * FIXME: this is not an ideal solution we need to figure out how such currptions are
+                     * creeping in or at least if we detect some figure out a proper cleaning mechanism
+                     */
+                    qWarning() << "Database has corrupted entries baloo may misbehave, please recreate the DB by running $ balooctl disable && balooctl enable";
+                }
+            }
+        }
         return;
     }
 

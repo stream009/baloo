@@ -38,3 +38,67 @@ msgstr "Vishesh Handa"
 #: main.cpp:48
 msgid "Maintainer"
 msgstr "Pleger"
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is suspended."
+#~ msgstr "Dateiindizeren is utsett."
+
+#~ msgctxt "@info:status"
+#~ msgid "Scanning for recent changes in files for desktop search"
+#~ msgstr "Dateien warrt för de Schriefdischsöök op niege Ännern dörkeken"
+
+#~ msgctxt "@info:status"
+#~ msgid "Indexing files for desktop search."
+#~ msgstr "Dateien warrt för de Schriefdischsöök indizeert."
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is idle."
+#~ msgstr "Dateiindizeren deit opstunns nix."
+
+#~ msgid "Baloo File"
+#~ msgstr "Baloo-Datei"
+
+#~ msgid "An application to handle file metadata"
+#~ msgstr "En Programm, dat Metadaten vun Dateien pleegt"
+
+#~ msgctxt "@title"
+#~ msgid "New removable device detected"
+#~ msgstr "Keen tuuschbor Reedschap funnen"
+
+#~ msgctxt "@action"
+#~ msgid "Index files"
+#~ msgstr "Dateien indizeren"
+
+#~ msgctxt "@action"
+#~ msgid "Ignore device"
+#~ msgstr "Reedschap övergahn"
+
+#~ msgctxt "@action"
+#~ msgid "Configure"
+#~ msgstr "Instellen"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Do you want files on removable device <resource>%1</resource> to be "
+#~ "indexed for fast desktop searches?"
+#~ msgstr ""
+#~ "Wullt Du de Dateien op de tuuschbore Reedschap <resource>%1</resource> "
+#~ "för de Schriefdischsöök indizeren?"
+
+#~ msgid "Cleans up stale file index information"
+#~ msgstr "Rüümt överhaalt Dateiindex-Informatschonen op"
+
+#~ msgid "(C) 2014, Vishesh Handa"
+#~ msgstr "(C) 2014, Vishesh Handa"
+
+#~ msgid "xattrdetectortest"
+#~ msgstr "xattrdetectortest"
+
+#~ msgid "(c) 2014, Vishesh Handa"
+#~ msgstr "(c) 2014, Vishesh Handa"
+
+#~ msgid "The file URL"
+#~ msgstr "De Datei-URL"
+
+#~ msgid "indexerconfigtest"
+#~ msgstr "indexerconfigtest"

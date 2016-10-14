@@ -34,3 +34,55 @@ msgstr "Vishesh Handa"
 #: main.cpp:48
 msgid "Maintainer"
 msgstr "Správca"
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is suspended."
+#~ msgstr "Indexer súborov je pozastavený."
+
+#~ msgctxt "@info:status"
+#~ msgid "Scanning for recent changes in files for desktop search"
+#~ msgstr "Skenovanie nedávnuych zmien v súboroch pre hľadanie na ploche"
+
+#~ msgctxt "@info:status"
+#~ msgid "Indexing files for desktop search."
+#~ msgstr "Indexovanie súborov pre hľadanie na ploche."
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is idle."
+#~ msgstr "Indexer súborov je nečinný."
+
+#~ msgid "Baloo File"
+#~ msgstr "Súbor Baloo"
+
+#~ msgid "An application to handle file metadata"
+#~ msgstr "Aplikácia na spracovanie metadát súborov"
+
+#~ msgctxt "@title"
+#~ msgid "New removable device detected"
+#~ msgstr "Zistilo sa nové odpojiteľné zariadenie"
+
+#~ msgctxt "@action"
+#~ msgid "Index files"
+#~ msgstr "Indexovať súbory"
+
+#~ msgctxt "@action"
+#~ msgid "Ignore device"
+#~ msgstr "Ignorovať zariadenie"
+
+#~ msgctxt "@action"
+#~ msgid "Configure"
+#~ msgstr "Nastaviť"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Do you want files on removable device <resource>%1</resource> to be "
+#~ "indexed for fast desktop searches?"
+#~ msgstr ""
+#~ "Chcete súbory na vymeniteľnom zariadení <resource>%1</resource> indexovať "
+#~ "pre rýchle hľadanie na ploche?"
+
+#~ msgid "Cleans up stale file index information"
+#~ msgstr "Vyčistí staré informácie o indexe súborov"
+
+#~ msgid "(C) 2014, Vishesh Handa"
+#~ msgstr "(C) 2014, Vishesh Handa"

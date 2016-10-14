@@ -81,3 +81,17 @@ msgstr "query"
 #: main.cpp:61
 msgid "List of words to query for"
 msgstr "Lista de parolas de cercar"
+
+#~ msgid "Baloo Search - A debugging tool"
+#~ msgstr "Baloo Search - un instrumento de cribrar"
+
+#, fuzzy
+#~| msgid "(c) 2013, Vishesh Handa"
+#~ msgid "(c) 2013-15, Vishesh Handa"
+#~ msgstr "(C) 20013, Vishesh Handa"
+
+#~ msgid "Number of results to return"
+#~ msgstr "Numero de exitos de retornar"
+
+#~ msgid "If set, search through emails"
+#~ msgstr "Si fixate, cerca per messages de e-posta"

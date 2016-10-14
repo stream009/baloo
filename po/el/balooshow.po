@@ -64,3 +64,6 @@ msgstr "Αυτό είναι ένα σφάλμα"
 #: main.cpp:150
 msgid "No index information found"
 msgstr "Δεν βρέθηκαν πληροφορίες δείκτη"
+
+#~ msgid "The file URL"
+#~ msgstr "Το URL του αρχείου"

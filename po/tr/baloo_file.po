@@ -36,3 +36,25 @@ msgstr "Vishesh Handa"
 #: main.cpp:48
 msgid "Maintainer"
 msgstr "Bakıcı"
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is suspended."
+#~ msgstr "Dosya dizinleyici beklemeye alındı."
+
+#~ msgctxt "@info:status"
+#~ msgid "Scanning for recent changes in files for desktop search"
+#~ msgstr "Masaüstü araması için dosyalardaki son değişiklikler taranıyor"
+
+#~ msgctxt "@info:status"
+#~ msgid "Indexing files for desktop search."
+#~ msgstr "Masaüstü araması için dosyalar dizinleniyor."
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is idle."
+#~ msgstr "Dosya dizinleyici boşta."
+
+#~ msgid "Baloo File"
+#~ msgstr "Baloo Dosyası"
+
+#~ msgid "An application to handle file metadata"
+#~ msgstr "Dosya üst verisini işleyen bir uygulama"

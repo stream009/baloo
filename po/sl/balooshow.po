@@ -65,3 +65,6 @@ msgstr "To je hrošč"
 #: main.cpp:150
 msgid "No index information found"
 msgstr "V kazalu ni bilo najdenih podatkov"
+
+#~ msgid "The file URL"
+#~ msgstr "URL datoteke"

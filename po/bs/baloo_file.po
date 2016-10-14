@@ -40,3 +40,25 @@ msgstr "Vishesh Handa"
 #: main.cpp:48
 msgid "Maintainer"
 msgstr "Održava"
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is suspended."
+#~ msgstr "Indeksiranje datoteka je suspendovano."
+
+#~ msgctxt "@info:status"
+#~ msgid "Scanning for recent changes in files for desktop search"
+#~ msgstr "Tražim novije promjene u datotekama u desktop pretrazi"
+
+#~ msgctxt "@info:status"
+#~ msgid "Indexing files for desktop search."
+#~ msgstr "Indeksiram datoteke za desktop pretragu."
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is idle."
+#~ msgstr "Indekser datoteka je neaktivan."
+
+#~ msgid "Baloo File"
+#~ msgstr "Baloo datoteka"
+
+#~ msgid "An application to handle file metadata"
+#~ msgstr "Program za upravljanje metapodataka datoteke."

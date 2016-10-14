@@ -67,3 +67,6 @@ msgstr "Això és un error"
 #: main.cpp:150
 msgid "No index information found"
 msgstr "No s'ha trobat informació de l'índex"
+
+#~ msgid "The file URL"
+#~ msgstr "L'URL del fitxer"

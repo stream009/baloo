@@ -320,3 +320,6 @@ msgstr "%1/%2 Dateien indiziert"
 #, kde-format
 msgid "File: %1"
 msgstr "Datei: %1"
+
+#~ msgid "Must provide a value"
+#~ msgstr "Ein Wert muss angegeben werden"

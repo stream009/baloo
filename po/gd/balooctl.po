@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# GunChleoc <fios@foramnagaidhlig.net>, 2015.
+# GunChleoc <fios@foramnagaidhlig.net>, 2015, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-12-15 08:19+0000\n"
-"PO-Revision-Date: 2015-11-04 15:09+0000\n"
-"Last-Translator: Michael Bauer <fios@akerbeltz.org>\n"
+"PO-Revision-Date: 2016-04-29 13:11+0100\n"
+"Last-Translator: GunChleoc <fios@foramnagaidhlig.net>\n"
 "Language-Team: Fòram na Gàidhlig\n"
 "Language: gd\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3;\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: kde\n"
 
 msgctxt "NAME OF TRANSLATORS"
@@ -131,11 +131,10 @@ msgstr ""
 "Liosta nan criathragan a thèid a chleachdadh gus faidhlichean às-dhùnadh"
 
 #: configcommand.cpp:90 configcommand.cpp:153 configcommand.cpp:264
-#, fuzzy
-#| msgid "The list of filters which are used to exclude files"
 msgid "The list of mimetypes which are used to exclude files"
 msgstr ""
-"Liosta nan criathragan a thèid a chleachdadh gus faidhlichean às-dhùnadh"
+"Liosta nan seòrsaichean MIME a thèid a chleachdadh gus faidhlichean às-"
+"dhùnadh"
 
 #: configcommand.cpp:142 configcommand.cpp:253 configcommand.cpp:390
 #: configcommand.cpp:459
@@ -162,84 +161,71 @@ msgid "Path is not a directory"
 msgstr "Chan eil an t-slighe 'na pasgan"
 
 #: configcommand.cpp:179
-#, fuzzy, kde-format
-#| msgid "is not in list of exclude filters"
+#, kde-format
 msgid "%1 is not in the list of include folders"
-msgstr "chan eil seo air liosta nan criathragan às-dhùnaidh"
+msgstr "chan eil %1 air liosta nan criathragan gabhail a-steach"
 
 #: configcommand.cpp:209
-#, fuzzy, kde-format
-#| msgid "is not in list of exclude filters"
+#, kde-format
 msgid "%1 is not in the list of exclude folders"
-msgstr "chan eil seo air liosta nan criathragan às-dhùnaidh"
+msgstr "chan eil %1 air liosta nam pasgan às-dhùnaidh"
 
 #: configcommand.cpp:221 configcommand.cpp:356
 msgid "A filter must be provided"
 msgstr "Feumaidh tu criathrag a shònrachadh"
 
 #: configcommand.cpp:227
-#, fuzzy, kde-format
-#| msgid "is not in list of exclude filters"
+#, kde-format
 msgid "%1 is not in list of exclude filters"
-msgstr "chan eil seo air liosta nan criathragan às-dhùnaidh"
+msgstr "chan eil %1 air liosta nan criathragan às-dhùnaidh"
 
 #: configcommand.cpp:238 configcommand.cpp:374
-#, fuzzy
-#| msgid "A filter must be provided"
 msgid "A mimetype must be provided"
-msgstr "Feumaidh tu criathrag a shònrachadh"
+msgstr "Feumaidh tu seòrsa MIME a shònrachadh"
 
 #: configcommand.cpp:244
-#, fuzzy, kde-format
-#| msgid "is not in list of exclude filters"
+#, kde-format
 msgid "%1 is not in list of exclude mimetypes"
-msgstr "chan eil seo air liosta nan criathragan às-dhùnaidh"
+msgstr "chan eil %1 air liosta nan seòrsaichean MIME às-dhùnaidh"
 
 #: configcommand.cpp:290
-#, fuzzy, kde-format
-#| msgid "is not in list of exclude filters"
+#, kde-format
 msgid "%1 is already in the list of include folders"
-msgstr "chan eil seo air liosta nan criathragan às-dhùnaidh"
+msgstr "tha %1 air liosta nam pasgan gabhail a-steach mar-thà"
 
 #: configcommand.cpp:296
-#, fuzzy, kde-format
-#| msgid "Exclude filter is already in the list"
+#, kde-format
 msgid "Parent folder %1 is already in the list of include folders"
-msgstr "Tha a' chriathrag às-dhùnaidh air an liosta mar-thà"
+msgstr ""
+"Tha am pasgan-pàraint %1 air an liosta nam pasganan gabhail a-steach mar-thà"
 
 #: configcommand.cpp:302 configcommand.cpp:344
-#, fuzzy, kde-format
-#| msgid "is not in list of exclude filters"
+#, kde-format
 msgid "%1 is in the list of exclude folders"
-msgstr "chan eil seo air liosta nan criathragan às-dhùnaidh"
+msgstr "tha %1 air liosta nam pasgan às-dhùnaidh"
 
 #: configcommand.cpp:332
-#, fuzzy, kde-format
-#| msgid "is not in list of exclude filters"
+#, kde-format
 msgid "%1 is already in the list of exclude folders"
-msgstr "chan eil seo air liosta nan criathragan às-dhùnaidh"
+msgstr "tha %1 air liosta nam pasgan às-dhùnaidh mar-thà"
 
 #: configcommand.cpp:338
-#, fuzzy, kde-format
-#| msgid "is not in list of exclude filters"
+#, kde-format
 msgid "Parent folder %1 is already in the list of exclude folders"
-msgstr "chan eil seo air liosta nan criathragan às-dhùnaidh"
+msgstr ""
+"Tha am pasgan-pàraint %1 air an liosta nam pasganan às-dhùnaidh mar-thà"
 
 #: configcommand.cpp:362
 msgid "Exclude filter is already in the list"
 msgstr "Tha a' chriathrag às-dhùnaidh air an liosta mar-thà"
 
 #: configcommand.cpp:380
-#, fuzzy
-#| msgid "Exclude filter is already in the list"
 msgid "Exclude mimetype is already in the list"
-msgstr "Tha a' chriathrag às-dhùnaidh air an liosta mar-thà"
+msgstr "Tha an seòrsa MIME às-dhùnaidh air an liosta mar-thà"
 
 #: configcommand.cpp:407 configcommand.cpp:434
-#, fuzzy
-#| msgid "A folder must be provided"
 msgid "A value must be provided"
-msgstr "Feumaidh tu pasgan a shònrachadh"
+msgstr "Feumaidh tu luach a shònrachadh"
 
 #: configcommand.cpp:428 configcommand.cpp:455
 msgid "Invalid value"
@@ -311,8 +297,6 @@ msgid "Modify the Baloo configuration"
 msgstr "Atharraich rèiteachadh Baloo"
 
 #: statuscommand.cpp:45
-#, fuzzy
-#| msgid "Print the status of the indexer"
 msgid "Print the status of the Indexer"
 msgstr "Cuir staid an inneil-inneacsaidh air an sgrìn"
 
@@ -322,31 +306,31 @@ msgstr ""
 "Tha Baloo à comas an-dràsta. Gus a chur an comas, ruith \"balooctl enable\""
 
 #: statuscommand.cpp:60
-#, fuzzy
-#| msgid "Config parameter could not be found"
 msgid "Baloo Index could not be opened"
-msgstr "Cha deach paramadair an rèiteachaidh a lorg"
+msgstr "Cha b' urrainn dhuinn inneacs Baloo fhosgladh"
 
 #: statuscommand.cpp:81
 msgid "Baloo File Indexer is running"
-msgstr ""
+msgstr "Tha inneal-inneacsaidh Baloo 'ga ruith"
 
 #: statuscommand.cpp:82
 #, kde-format
 msgid "Indexer state: %1"
-msgstr ""
+msgstr "Staid an inneil-inneacsaidh: %1"
 
 #: statuscommand.cpp:85
 msgid "Baloo File Indexer is not running"
-msgstr ""
+msgstr "Chan eil inneal-inneacsaidh Baloo 'ga ruith"
 
 #: statuscommand.cpp:91
-#, fuzzy, kde-format
-#| msgid "Indexing new files"
+#, kde-format
 msgid "Indexed %1 / %2 files"
-msgstr "Ag inneacsadh nam faidhlichean ùra"
+msgstr "Chaidh %1 / %2 faidhle inneacsadh"
 
 #: statuscommand.cpp:108
 #, kde-format
 msgid "File: %1"
-msgstr ""
+msgstr "Faidhle: %1"
+
+#~ msgid "Must provide a value"
+#~ msgstr "Feumar luach a shònrachadh"

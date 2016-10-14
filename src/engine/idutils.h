@@ -26,6 +26,10 @@
 #include <qplatformdefs.h>
 #include <qglobal.h>
 
+#ifdef Q_OS_WIN
+# include <QFileInfo>
+#endif
+
 namespace Baloo {
 
 inline quint64 devIdAndInodeToId(quint32 devId, quint32 inode)
@@ -52,9 +56,20 @@ inline quint64 statBufToId(const QT_STATBUF& stBuf)
 inline quint64 filePathToId(const QByteArray& filePath)
 {
     QT_STATBUF statBuf;
+#ifndef Q_OS_WIN
     if (QT_LSTAT(filePath.constData(), &statBuf) != 0) {
         return 0;
     }
+#else
+    if (QT_STAT(filePath.constData(), &statBuf) != 0) {
+        return 0;
+    }
+    if (QFileInfo(filePath).isSymLink()) {
+        if (QT_STAT(QFileInfo(filePath).symLinkTarget().toUtf8().constData(), &statBuf) != 0) {
+            return 0;
+        }
+    }
+#endif
     return statBufToId(statBuf);
 }
 
@@ -69,6 +84,33 @@ inline quint32 idToDeviceId(quint64 id)
     quint32* arr = reinterpret_cast<quint32*>(&id);
     return arr[0];
 }
+
+
+template<typename T, typename V>
+inline void sortedIdInsert(T& vec, const V& id)
+{
+    /**
+     * search with normal <
+     */
+    const auto i(std::lower_bound(vec.begin(), vec.end(), id));
+
+    /**
+     * end reached or element found smaller?
+     * => insert new element!
+     */
+    if (i == vec.end() || (id != *i))
+        vec.insert(i, id);
+}
+
+template<typename T, typename V>
+inline void sortedIdRemove(T& vec, const V& id)
+{
+    const int idx = vec.indexOf(id);
+    if (idx >= 0) {
+        vec.remove(idx);
+    }
+}
+
 
 }
 

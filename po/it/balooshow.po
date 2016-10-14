@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 2.0\n"
 
 msgctxt "NAME OF TRANSLATORS"
@@ -64,3 +64,6 @@ msgstr "Questo è un errore"
 #: main.cpp:150
 msgid "No index information found"
 msgstr "Nessun informazioni trovata nell'indice"
+
+#~ msgid "The file URL"
+#~ msgstr "URL del file"

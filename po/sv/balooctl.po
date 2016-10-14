@@ -318,3 +318,6 @@ msgstr "Indexerar %1/%2 filer"
 #, kde-format
 msgid "File: %1"
 msgstr "Fil: %1"
+
+#~ msgid "Must provide a value"
+#~ msgstr "Måste ange ett värde"

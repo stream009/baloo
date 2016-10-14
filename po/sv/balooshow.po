@@ -64,3 +64,6 @@ msgstr "Det är ett fel"
 #: main.cpp:150
 msgid "No index information found"
 msgstr "Ingen indexinformation hittades"
+
+#~ msgid "The file URL"
+#~ msgstr "Filens webbadress"

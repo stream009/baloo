@@ -23,3 +23,6 @@ msgstr ""
 #: kio_search.cpp:47
 msgid "Search Folder"
 msgstr "Тека пошуку"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "Стільничні запити"

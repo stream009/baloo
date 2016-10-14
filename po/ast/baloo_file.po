@@ -36,3 +36,12 @@ msgstr "Vishesh Handa"
 #: main.cpp:48
 msgid "Maintainer"
 msgstr "Caltenedor"
+
+#, fuzzy
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is suspended."
+#~ msgstr "L'indizador de ficheros ta suspendíu."
+
+#, fuzzy
+#~ msgid "An application to handle file metadata"
+#~ msgstr "Una aplicación pa remanar meta datos"

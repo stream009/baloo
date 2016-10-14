@@ -78,3 +78,15 @@ msgstr "otázka(query)"
 #: main.cpp:61
 msgid "List of words to query for"
 msgstr "Zoznam slov na hľadanie"
+
+#~ msgid "Baloo Search - A debugging tool"
+#~ msgstr "Baloo Search - ladiaci nástroj"
+
+#~ msgid "(c) 2013-15, Vishesh Handa"
+#~ msgstr "(c) 2013-15, Vishesh Handa"
+
+#~ msgid "Number of results to return"
+#~ msgstr "Počet výsledkov na vrátenie"
+
+#~ msgid "If set, search through emails"
+#~ msgstr "Ak nastavené, hľadať v e-mailoch"

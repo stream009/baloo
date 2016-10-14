@@ -36,3 +36,76 @@ msgstr "Vishesh Handa"
 #: main.cpp:48
 msgid "Maintainer"
 msgstr "Vedligeholder"
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is suspended."
+#~ msgstr "Filindeksering er suspenderet."
+
+#~ msgctxt "@info:status"
+#~ msgid "Scanning for recent changes in files for desktop search"
+#~ msgstr "Scanner efter nylige ændringer i filer til skrivebordssøgning"
+
+#~ msgctxt "@info:status"
+#~ msgid "Indexing files for desktop search."
+#~ msgstr "Indekserer filer til skrivebordssøgning."
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is idle."
+#~ msgstr "Filindeksering er inaktiv."
+
+#~ msgid "Baloo File"
+#~ msgstr "Baloo fil"
+
+#~ msgid "An application to handle file metadata"
+#~ msgstr "Et program til at håndtere filmetadata"
+
+#~ msgctxt "@title"
+#~ msgid "New removable device detected"
+#~ msgstr "Ny flytbar enhed detekteret"
+
+#~ msgctxt "@action"
+#~ msgid "Index files"
+#~ msgstr "Indeksér filer"
+
+#~ msgctxt "@action"
+#~ msgid "Ignore device"
+#~ msgstr "Ignorér enhed"
+
+#~ msgctxt "@action"
+#~ msgid "Configure"
+#~ msgstr "Indstil"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Do you want files on removable device <resource>%1</resource> to be "
+#~ "indexed for fast desktop searches?"
+#~ msgstr ""
+#~ "Vil du have at filer på den flytbare enhed <resource>%1</resource> skal "
+#~ "indekseres til hurtig skrivebordssøgning?"
+
+#~ msgid "Cleans up stale file index information"
+#~ msgstr "Rydder op i forældet filindeks-information"
+
+#~ msgid "(C) 2014, Vishesh Handa"
+#~ msgstr "(C) 2014, Vishesh Handa"
+
+#~ msgid "(c) 2014, Vishesh Handa"
+#~ msgstr "(c) 2014, Vishesh Handa"
+
+#~ msgid "The file URL"
+#~ msgstr "Filens URL"
+
+#~ msgid "indexerconfigtest"
+#~ msgstr "test af indekseringskonfiguration"
+
+#~ msgid "Disk space is running low (%1 left). Suspending indexing of files."
+#~ msgstr ""
+#~ "Ved at løbe tør for diskplads (%1 tilbage). Suspenderer indeksering af "
+#~ "filer."
+
+#~ msgid "Resuming indexing of files for fast searching."
+#~ msgstr "Genoptager indeksering af filer til hurtig søgning."
+
+#~ msgctxt "@info:status"
+#~ msgid "Cleaning invalid file metadata"
+#~ msgstr "Oprydning af ugyldige filmetadata"

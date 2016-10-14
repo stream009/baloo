@@ -1,12 +1,12 @@
 # Translation of baloosearch to Norwegian Nynorsk
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2015.
+# Karl Ove Hufthammer <karl@huftis.org>, 2015, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-09-19 08:51+0000\n"
-"PO-Revision-Date: 2015-09-12 19:03+0100\n"
+"PO-Revision-Date: 2016-04-24 21:24+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "Language: nn\n"
@@ -33,7 +33,7 @@ msgstr "Baloo-søk"
 
 #: main.cpp:41
 msgid "A tool to search through the files indexed by Baloo"
-msgstr ""
+msgstr "Verktøy for å søkja gjennom filer indekserte av Baloo"
 
 #: main.cpp:43
 msgid "Vishesh Handa"
@@ -45,19 +45,19 @@ msgstr "Vedlikehaldar"
 
 #: main.cpp:50
 msgid "The maximum number of results"
-msgstr ""
+msgstr "Høgste tal på forslag"
 
 #: main.cpp:51
 msgid "limit"
-msgstr ""
+msgstr "grenser"
 
 #: main.cpp:53
 msgid "Offset from which to start the search"
-msgstr ""
+msgstr "Posisjon der søket skal starta"
 
 #: main.cpp:54
 msgid "offset"
-msgstr ""
+msgstr "posisjon"
 
 #: main.cpp:56
 msgid "Type of data to be searched"
@@ -65,20 +65,20 @@ msgstr "Type data som skal gjennomsøkjast"
 
 #: main.cpp:57
 msgid "typeStr"
-msgstr ""
+msgstr "typeStr"
 
 #: main.cpp:59
 msgid "Limit search to specified directory"
-msgstr ""
+msgstr "Avgrens søket til vald mappe"
 
 #: main.cpp:60
 msgid "directory"
-msgstr ""
+msgstr "mappe"
 
 #: main.cpp:61
 msgid "query"
-msgstr ""
+msgstr "søk"
 
 #: main.cpp:61
 msgid "List of words to query for"
-msgstr ""
+msgstr "Ord å søkja etter"

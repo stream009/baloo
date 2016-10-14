@@ -37,3 +37,56 @@ msgstr "Vishesh Handa"
 #: main.cpp:48
 msgid "Maintainer"
 msgstr "Mantenedor"
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is suspended."
+#~ msgstr "O indexador de ficheiros está suspendido."
+
+#~ msgctxt "@info:status"
+#~ msgid "Scanning for recent changes in files for desktop search"
+#~ msgstr ""
+#~ "Estanse a buscar cambios recentes nos ficheiros para a busca no escritorio"
+
+#~ msgctxt "@info:status"
+#~ msgid "Indexing files for desktop search."
+#~ msgstr "Estanse a indexar ficheiros para a busca no escritorio."
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is idle."
+#~ msgstr "O indexador de ficheiros está ocioso."
+
+#~ msgid "Baloo File"
+#~ msgstr "Baloo ficheiros"
+
+#~ msgid "An application to handle file metadata"
+#~ msgstr "Un programa para manexar metadatos de ficheiros"
+
+#~ msgctxt "@title"
+#~ msgid "New removable device detected"
+#~ msgstr "Detectouse un dispositivo extraíbel novo"
+
+#~ msgctxt "@action"
+#~ msgid "Index files"
+#~ msgstr "Indexar os ficheiros"
+
+#~ msgctxt "@action"
+#~ msgid "Ignore device"
+#~ msgstr "Ignorar o dispositivo"
+
+#~ msgctxt "@action"
+#~ msgid "Configure"
+#~ msgstr "Configurar"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Do you want files on removable device <resource>%1</resource> to be "
+#~ "indexed for fast desktop searches?"
+#~ msgstr ""
+#~ "Desexa indexar os ficheiros no dispositivo extraíbel <resource>%1</"
+#~ "resource> para facer buscas rápidas?"
+
+#~ msgid "Cleans up stale file index information"
+#~ msgstr "Limpa información obsoleta do índice de ficheiros"
+
+#~ msgid "(C) 2014, Vishesh Handa"
+#~ msgstr "(C) 2014, Vishesh Handa"

@@ -82,3 +82,12 @@ msgstr ""
 #: main.cpp:61
 msgid "List of words to query for"
 msgstr ""
+
+#~ msgid "Baloo Search - A debugging tool"
+#~ msgstr "بحث بالو - أداة تنقيح"
+
+#~ msgid "Number of results to return"
+#~ msgstr "عدد نتائج المُرجَعة"
+
+#~ msgid "If set, search through emails"
+#~ msgstr "إذا كان مضبوطاً، ابحث في رسائل البريد الإلكتروني"

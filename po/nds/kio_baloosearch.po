@@ -22,3 +22,6 @@ msgstr ""
 #: kio_search.cpp:47
 msgid "Search Folder"
 msgstr "Söökorner"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "Schriefdischsöök"

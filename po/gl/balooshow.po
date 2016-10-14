@@ -68,3 +68,6 @@ msgstr "Isto é un erro."
 #: main.cpp:150
 msgid "No index information found"
 msgstr "Non se atopou información de indexación."
+
+#~ msgid "The file URL"
+#~ msgstr "O URL do ficheiro"

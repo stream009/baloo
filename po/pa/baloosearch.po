@@ -80,3 +80,8 @@ msgstr ""
 #: main.cpp:61
 msgid "List of words to query for"
 msgstr ""
+
+#, fuzzy
+#~| msgid "(c) 2013, Vishesh Handa"
+#~ msgid "(c) 2013-15, Vishesh Handa"
+#~ msgstr "(c) 2013, Vishesh Handa"

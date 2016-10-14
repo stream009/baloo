@@ -1,12 +1,12 @@
 # Translation of balooctl to Norwegian Nynorsk
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2015.
+# Karl Ove Hufthammer <karl@huftis.org>, 2015, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-12-15 08:19+0000\n"
-"PO-Revision-Date: 2015-09-12 19:01+0100\n"
+"PO-Revision-Date: 2016-04-30 10:09+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "Language: nn\n"
@@ -29,196 +29,196 @@ msgstr "karl@huftis.org"
 
 #: ../../file/indexerstate.h:42
 msgid "Unknown"
-msgstr ""
+msgstr "Ukjend"
 
 #: ../../file/indexerstate.h:45
 msgid "Idle"
-msgstr ""
+msgstr "Passiv"
 
 #: ../../file/indexerstate.h:48
 msgid "Suspended"
-msgstr ""
+msgstr "I pause"
 
 #: ../../file/indexerstate.h:51
 msgid "Initial Indexing"
-msgstr ""
+msgstr "Første indeksering"
 
 #: ../../file/indexerstate.h:54
 msgid "Indexing new files"
-msgstr ""
+msgstr "Indekserer nye filer"
 
 #: ../../file/indexerstate.h:57
 msgid "Indexing modified files"
-msgstr ""
+msgstr "Indekserer endra filer"
 
 #: ../../file/indexerstate.h:60
 msgid "Indexing Extended Attributes"
-msgstr ""
+msgstr "Indekserer utvida attributt"
 
 #: ../../file/indexerstate.h:63
 msgid "Indexing file content"
-msgstr ""
+msgstr "Indekserer filinnhald"
 
 #: ../../file/indexerstate.h:66
 msgid "Checking for unindexed files"
-msgstr ""
+msgstr "Ser etter ikkje-indekserte filer"
 
 #: configcommand.cpp:45
 msgid "Manipulate the Baloo configuration"
-msgstr ""
+msgstr "Endra Baloo-oppsettet"
 
 #: configcommand.cpp:68
 msgid "The config command can be used to manipulate the Baloo Configuration"
-msgstr ""
+msgstr "Kommandoen «config» kan brukast til å endra Baloo-oppsettet"
 
 #: configcommand.cpp:69
 msgid "Usage: balooctl config <command>"
-msgstr ""
+msgstr "Bruk: balooctl config <kommando>"
 
 #: configcommand.cpp:70
 msgid "Possible Commands:"
-msgstr ""
+msgstr "Moglege kommandoar:"
 
 #: configcommand.cpp:73
 msgid "Add a value to config parameter"
-msgstr ""
+msgstr "Legg verdi til oppsettparameter"
 
 #: configcommand.cpp:74
 msgid "Remove a value from a config parameter"
-msgstr ""
+msgstr "Fjern verdi frå oppsettparameter"
 
 #: configcommand.cpp:75
 msgid "Show the value of a config parameter"
-msgstr ""
+msgstr "Vis verdi til oppsettparameter"
 
 #: configcommand.cpp:76
 msgid "Set the value of a config parameter"
-msgstr ""
+msgstr "Definer verdi til oppsettparameter"
 
 #: configcommand.cpp:77
 msgid "Display this help menu"
-msgstr ""
+msgstr "Vis denne hjelpeteksten"
 
 #: configcommand.cpp:83
 msgid "The following configuration options may be listed:"
-msgstr ""
+msgstr "Desse oppsettverdiane kan visast:"
 
 #: configcommand.cpp:85 configcommand.cpp:398
 msgid "Controls if Baloo indexes hidden files and folders"
-msgstr ""
+msgstr "Styrer om Baloo skal indeksera gøymde filer og mapper"
 
 #: configcommand.cpp:86
 msgid "Controls if baloo indexes file content."
-msgstr ""
+msgstr "Styrer om Baloo skal indeksera filinnhald"
 
 #: configcommand.cpp:87 configcommand.cpp:150 configcommand.cpp:261
 msgid "The list of folders which Baloo indexes"
-msgstr ""
+msgstr "Liste over mapper som Baloo skal indeksera"
 
 #: configcommand.cpp:88 configcommand.cpp:151 configcommand.cpp:262
 msgid "The list of folders which Baloo will never index"
-msgstr ""
+msgstr "Liste over mapper som Baloo aldri skal indeksera"
 
 #: configcommand.cpp:89 configcommand.cpp:152 configcommand.cpp:263
 msgid "The list of filters which are used to exclude files"
-msgstr ""
+msgstr "Liste over filter som vert brukt til å eksludera filer"
 
 #: configcommand.cpp:90 configcommand.cpp:153 configcommand.cpp:264
 msgid "The list of mimetypes which are used to exclude files"
-msgstr ""
+msgstr "Liste over MIME-typar som skal brukast til å ekskludera filer"
 
 #: configcommand.cpp:142 configcommand.cpp:253 configcommand.cpp:390
 #: configcommand.cpp:459
 msgid "Config parameter could not be found"
-msgstr ""
+msgstr "Fann ikkje oppsettparameteren"
 
 #: configcommand.cpp:148 configcommand.cpp:259 configcommand.cpp:396
 msgid "The following configuration options may be modified:"
-msgstr ""
+msgstr "Desse innstillingane kan endrast:"
 
 #: configcommand.cpp:161 configcommand.cpp:191 configcommand.cpp:272
 #: configcommand.cpp:314
 msgid "A folder must be provided"
-msgstr ""
+msgstr "Du må oppgje ei mappe"
 
 #: configcommand.cpp:167 configcommand.cpp:197 configcommand.cpp:278
 #: configcommand.cpp:320
 msgid "Path does not exist"
-msgstr ""
+msgstr "Adressa finst ikkje"
 
 #: configcommand.cpp:172 configcommand.cpp:202 configcommand.cpp:283
 #: configcommand.cpp:325
 msgid "Path is not a directory"
-msgstr ""
+msgstr "Adresse viser ikkje til ei mappe"
 
 #: configcommand.cpp:179
 #, kde-format
 msgid "%1 is not in the list of include folders"
-msgstr ""
+msgstr "%1 er ikkje i lista over inkluderte mapper"
 
 #: configcommand.cpp:209
 #, kde-format
 msgid "%1 is not in the list of exclude folders"
-msgstr ""
+msgstr "%1 er ikkje i lista over ekskluderte mapper"
 
 #: configcommand.cpp:221 configcommand.cpp:356
 msgid "A filter must be provided"
-msgstr ""
+msgstr "Du må oppgje eit filter"
 
 #: configcommand.cpp:227
 #, kde-format
 msgid "%1 is not in list of exclude filters"
-msgstr ""
+msgstr "%1 er ikkje i lista over ekskluderte filter"
 
 #: configcommand.cpp:238 configcommand.cpp:374
 msgid "A mimetype must be provided"
-msgstr ""
+msgstr "Du må oppgje MIME-type"
 
 #: configcommand.cpp:244
 #, kde-format
 msgid "%1 is not in list of exclude mimetypes"
-msgstr ""
+msgstr "%1 er ikkje i lista over ekskluderte MIME-typar"
 
 #: configcommand.cpp:290
 #, kde-format
 msgid "%1 is already in the list of include folders"
-msgstr ""
+msgstr "%1 er alt i lista over inkluderte mapper"
 
 #: configcommand.cpp:296
 #, kde-format
 msgid "Parent folder %1 is already in the list of include folders"
-msgstr ""
+msgstr "Foreldermappa %1 er alt i lista over inkluderte mapper"
 
 #: configcommand.cpp:302 configcommand.cpp:344
 #, kde-format
 msgid "%1 is in the list of exclude folders"
-msgstr ""
+msgstr "%1 er i lista over ekskluderte mapper"
 
 #: configcommand.cpp:332
 #, kde-format
 msgid "%1 is already in the list of exclude folders"
-msgstr ""
+msgstr "%1 finst alt i lista over ekskluderte mapper"
 
 #: configcommand.cpp:338
 #, kde-format
 msgid "Parent folder %1 is already in the list of exclude folders"
-msgstr ""
+msgstr "Foreldermappa %1 finst alt i lista over ekskluderte mapper"
 
 #: configcommand.cpp:362
 msgid "Exclude filter is already in the list"
-msgstr ""
+msgstr "Ekskluderingsfilteret finst alt i lista"
 
 #: configcommand.cpp:380
 msgid "Exclude mimetype is already in the list"
-msgstr ""
+msgstr "Den ekskluderte MIME-typen finst alt i lista"
 
 #: configcommand.cpp:407 configcommand.cpp:434
 msgid "A value must be provided"
-msgstr ""
+msgstr "Du må oppgje ein verdi"
 
 #: configcommand.cpp:428 configcommand.cpp:455
 msgid "Invalid value"
-msgstr ""
+msgstr "Ugyldig verdi"
 
 #: main.cpp:67
 msgid "balooctl"
@@ -282,39 +282,39 @@ msgstr "Gløym dei valde filene"
 
 #: main.cpp:87
 msgid "Modify the Baloo configuration"
-msgstr ""
+msgstr "Endra Baloo-oppsettet"
 
 #: statuscommand.cpp:45
 msgid "Print the status of the Indexer"
-msgstr ""
+msgstr "Vis status for indekseraren"
 
 #: statuscommand.cpp:54
 msgid "Baloo is currently disabled. To enable, please run \"balooctl enable\""
-msgstr ""
+msgstr "Baloo er slått av. Køyr «balooctl enable» for å slå det på att."
 
 #: statuscommand.cpp:60
 msgid "Baloo Index could not be opened"
-msgstr ""
+msgstr "Klarte ikkje opna Baloo-indeksen"
 
 #: statuscommand.cpp:81
 msgid "Baloo File Indexer is running"
-msgstr ""
+msgstr "Baloo filindeksering køyrer"
 
 #: statuscommand.cpp:82
 #, kde-format
 msgid "Indexer state: %1"
-msgstr ""
+msgstr "Indekseringsstatus: %1"
 
 #: statuscommand.cpp:85
 msgid "Baloo File Indexer is not running"
-msgstr ""
+msgstr "Baloo filindeksering køyrer ikkje"
 
 #: statuscommand.cpp:91
 #, kde-format
 msgid "Indexed %1 / %2 files"
-msgstr ""
+msgstr "Indeksert %1/%2 filer"
 
 #: statuscommand.cpp:108
 #, kde-format
 msgid "File: %1"
-msgstr ""
+msgstr "Fil: %1"

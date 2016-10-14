@@ -64,3 +64,6 @@ msgstr "This is a bug"
 #: main.cpp:150
 msgid "No index information found"
 msgstr "No index information found"
+
+#~ msgid "The file URL"
+#~ msgstr "The file URL"

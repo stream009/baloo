@@ -1,12 +1,12 @@
 # Translation of balooshow to Norwegian Nynorsk
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2015.
+# Karl Ove Hufthammer <karl@huftis.org>, 2015, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2015-10-11 08:16+0000\n"
-"PO-Revision-Date: 2015-09-12 19:03+0100\n"
+"PO-Revision-Date: 2016-04-24 21:23+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "Language: nn\n"
@@ -52,15 +52,17 @@ msgid ""
 "The Baloo index could not be opened. Please run \"balooctl status\" to see "
 "if Baloo is enabled and working."
 msgstr ""
+"Klarte ikkje opna Baloo-indeksen. Køyr «balooctl status» for å sjå om Baloo "
+"køyrer og verkar skikkeleg."
 
 #: main.cpp:121
 msgid "The fileID is not equal to the actual Baloo fileID"
-msgstr ""
+msgstr "«fileID» er ikkje lik den faktiske Baloo-fileID-en"
 
 #: main.cpp:122
 msgid "This is a bug"
-msgstr ""
+msgstr "Dette er ein feil"
 
 #: main.cpp:150
 msgid "No index information found"
-msgstr ""
+msgstr "Fann ikkje nokon indeksinformasjon"
