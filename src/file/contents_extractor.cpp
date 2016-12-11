@@ -23,7 +23,7 @@ ContentsExtractor(Database &db, FileIndexerConfig &config)
 {}
 
 void ContentsExtractor::
-index(const QVector<uint64_t> &ids)
+index(const QVector<qint64> &ids)
 {
     QStringList updatedPaths;
     for (const auto id: ids) {
@@ -44,7 +44,7 @@ index(const QVector<uint64_t> &ids)
 }
 
 QString ContentsExtractor::
-index(const uint64_t id)
+index(const quint64 id)
 {
     Transaction tr { &m_db, Transaction::ReadWrite };
 

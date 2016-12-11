@@ -17,10 +17,10 @@ class ContentsExtractor
 public:
     ContentsExtractor(Database&, FileIndexerConfig&);
 
-    void index(const QVector<uint64_t> &ids);
+    void index(const QVector<quint64> &ids);
 
 private:
-    QString index(const uint64_t id);
+    QString index(const quint64 id);
 
 private:
     Database &m_db;
