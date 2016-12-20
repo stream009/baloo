@@ -23,7 +23,7 @@ ContentsExtractor(Database &db, FileIndexerConfig &config)
 {}
 
 void ContentsExtractor::
-index(const QVector<qint64> &ids)
+index(const QVector<quint64> &ids)
 {
     QStringList updatedPaths;
     for (const auto id: ids) {
