@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: baloo_file_extractor\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-08 10:30+0000\n"
+"POT-Creation-Date: 2016-11-19 20:11+0100\n"
 "PO-Revision-Date: 2014-07-12 09:15+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -18,22 +18,27 @@ msgstr ""
 "X-Text-Markup: kde4\n"
 "X-Environment: kde\n"
 
+#, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Часлав Илић"
 
+#, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "caslav.ilic@gmx.net"
 
 #: main.cpp:40
+#, kde-format
 msgid "Baloo File Extractor"
 msgstr "Издвајач фајлова Балу"
 
 #: main.cpp:41
+#, kde-format
 msgid "Vishesh Handa"
 msgstr "Вишеш Ханда"
 
 #: main.cpp:41
+#, kde-format
 msgid "Maintainer"
 msgstr "Одржавалац"

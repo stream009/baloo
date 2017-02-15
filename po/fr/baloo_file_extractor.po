@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-08 10:30+0000\n"
+"POT-Creation-Date: 2016-11-19 20:11+0100\n"
 "PO-Revision-Date: 2015-06-11 15:42+0200\n"
 "Last-Translator: Geoffray Levasseur <geoffray.levasseur-brandin@ac-toulouse."
 "fr>\n"
@@ -24,23 +24,28 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
+#, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Geoffray Levasseur, Joëlle Cornavin, Vincent Pinon"
 
+#, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 "geoffray.levasseurbrandin@numericable.fr, jcorn@free.fr, vpinon@kde.org"
 
 #: main.cpp:40
+#, kde-format
 msgid "Baloo File Extractor"
 msgstr "Extracteur de fichier Baloo"
 
 #: main.cpp:41
+#, kde-format
 msgid "Vishesh Handa"
 msgstr "Vishesh Handa"
 
 #: main.cpp:41
+#, kde-format
 msgid "Maintainer"
 msgstr "Mainteneur"

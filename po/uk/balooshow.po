@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooshow\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-10-11 08:16+0000\n"
+"POT-Creation-Date: 2016-11-19 20:11+0100\n"
 "PO-Revision-Date: 2015-09-24 17:00+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -20,35 +20,43 @@ msgstr ""
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.5\n"
 
+#, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Юрій Чорноіван"
 
+#, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yurchor@ukr.net"
 
 #: main.cpp:56
+#, kde-format
 msgid "Baloo Show"
 msgstr "Показ даних Baloo"
 
 #: main.cpp:58
+#, kde-format
 msgid "The Baloo data Viewer - A debugging tool"
 msgstr "Засіб перегляду даних Baloo — засіб діагностики"
 
 #: main.cpp:60
+#, kde-format
 msgid "(c) 2012, Vishesh Handa"
 msgstr "© Vishesh Handa, 2012"
 
 #: main.cpp:61
+#, kde-format
 msgid "Vishesh Handa"
 msgstr "Vishesh Handa"
 
 #: main.cpp:61
+#, kde-format
 msgid "Maintainer"
 msgstr "Супровідник"
 
 #: main.cpp:105
+#, kde-format
 msgid ""
 "The Baloo index could not be opened. Please run \"balooctl status\" to see "
 "if Baloo is enabled and working."
@@ -57,15 +65,18 @@ msgstr ""
 "status», щоб дізнатися, чи увімкнено Baloo і чи працює система."
 
 #: main.cpp:121
+#, kde-format
 msgid "The fileID is not equal to the actual Baloo fileID"
 msgstr ""
 "Значення ідентифікатора файла не дорівнює дійсному значенню ідентифікатора "
 "файла Baloo"
 
 #: main.cpp:122
+#, kde-format
 msgid "This is a bug"
 msgstr "Це вада у програмі"
 
 #: main.cpp:150
+#, kde-format
 msgid "No index information found"
 msgstr "Не знайдено даних індексування"

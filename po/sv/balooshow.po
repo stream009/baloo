@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-10-11 08:16+0000\n"
+"POT-Creation-Date: 2016-11-19 20:11+0100\n"
 "PO-Revision-Date: 2015-10-04 11:25+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -17,35 +17,43 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 2.0\n"
 
+#, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Stefan Asserhäll"
 
+#, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "stefan.asserhall@bredband.net"
 
 #: main.cpp:56
+#, kde-format
 msgid "Baloo Show"
 msgstr "Baloo-visare"
 
 #: main.cpp:58
+#, kde-format
 msgid "The Baloo data Viewer - A debugging tool"
 msgstr "Baloo-datavisare - ett felsökningsverktyg"
 
 #: main.cpp:60
+#, kde-format
 msgid "(c) 2012, Vishesh Handa"
 msgstr "© 2012, Vishesh Handa"
 
 #: main.cpp:61
+#, kde-format
 msgid "Vishesh Handa"
 msgstr "Vishesh Handa"
 
 #: main.cpp:61
+#, kde-format
 msgid "Maintainer"
 msgstr "Underhåll"
 
 #: main.cpp:105
+#, kde-format
 msgid ""
 "The Baloo index could not be opened. Please run \"balooctl status\" to see "
 "if Baloo is enabled and working."
@@ -54,16 +62,16 @@ msgstr ""
 "är aktiverat och fungerade."
 
 #: main.cpp:121
+#, kde-format
 msgid "The fileID is not equal to the actual Baloo fileID"
 msgstr "Fil-id är inte lika med verkligt fil-id i Baloo"
 
 #: main.cpp:122
+#, kde-format
 msgid "This is a bug"
 msgstr "Det är ett fel"
 
 #: main.cpp:150
+#, kde-format
 msgid "No index information found"
 msgstr "Ingen indexinformation hittades"
-
-#~ msgid "The file URL"
-#~ msgstr "Filens webbadress"

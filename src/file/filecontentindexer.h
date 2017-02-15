@@ -47,7 +47,6 @@ public:
     FileContentIndexer(Database&, FileIndexerConfig&,
                        FileContentIndexerProvider*, QObject* parent = 0);
 
-
     QString currentFile() { return m_currentFile; }
 
     void run() Q_DECL_OVERRIDE;

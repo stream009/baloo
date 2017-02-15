@@ -28,7 +28,7 @@ IdFilenameDB::IdFilenameDB(MDB_dbi dbi, MDB_txn* txn)
     : m_txn(txn)
     , m_dbi(dbi)
 {
-    Q_ASSERT(txn != 0);
+    Q_ASSERT(txn != nullptr);
     Q_ASSERT(dbi != 0);
 }
 
@@ -134,7 +134,7 @@ void IdFilenameDB::del(quint64 docId)
     key.mv_size = sizeof(quint64);
     key.mv_data = static_cast<void*>(&docId);
 
-    int rc = mdb_del(m_txn, m_dbi, &key, 0);
+    int rc = mdb_del(m_txn, m_dbi, &key, nullptr);
     Q_ASSERT_X(rc == 0, "IdfilenameDB::del", mdb_strerror(rc));
 }
 
@@ -143,7 +143,7 @@ QMap<quint64, IdFilenameDB::FilePath> IdFilenameDB::toTestMap() const
     MDB_cursor* cursor;
     mdb_cursor_open(m_txn, m_dbi, &cursor);
 
-    MDB_val key = {0, 0};
+    MDB_val key = {0, nullptr};
     MDB_val val;
 
     QMap<quint64, FilePath> map;

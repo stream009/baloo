@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: baloomonitorplugin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-10-03 08:40+0000\n"
+"POT-Creation-Date: 2016-11-19 20:11+0100\n"
 "PO-Revision-Date: 2015-10-14 18:13+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -20,45 +20,54 @@ msgstr ""
 
 # >> @item indexer state
 #: ../../file/indexerstate.h:42
+#, kde-format
 msgid "Unknown"
 msgstr "непознато"
 
 # >> @item indexer state
 #: ../../file/indexerstate.h:45
+#, kde-format
 msgid "Idle"
 msgstr "мирује"
 
 # >> @item indexer state
 #: ../../file/indexerstate.h:48
+#, kde-format
 msgid "Suspended"
 msgstr "суспендован"
 
 # >> @item indexer state
 #: ../../file/indexerstate.h:51
+#, kde-format
 msgid "Initial Indexing"
 msgstr "почетно индексира"
 
 # >> @item indexer state
 #: ../../file/indexerstate.h:54
+#, kde-format
 msgid "Indexing new files"
 msgstr "индексира нове фајлове"
 
 # >> @item indexer state
 #: ../../file/indexerstate.h:57
+#, kde-format
 msgid "Indexing modified files"
 msgstr "индексира измењене фајлове"
 
 # >> @item indexer state
 #: ../../file/indexerstate.h:60
+#, kde-format
 msgid "Indexing Extended Attributes"
 msgstr "индексира проширене атрибуте"
 
 # >> @item indexer state
 #: ../../file/indexerstate.h:63
+#, kde-format
 msgid "Indexing file content"
 msgstr "индексира садржај фајлова"
 
 # >> @item indexer state
 #: ../../file/indexerstate.h:66
+#, kde-format
 msgid "Checking for unindexed files"
 msgstr "тражи неиндексиране фајлове"

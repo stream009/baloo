@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio_nepomuksearch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-15 07:45+0000\n"
+"POT-Creation-Date: 2016-11-19 20:11+0100\n"
 "PO-Revision-Date: 2014-09-10 11:07+0200\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -19,5 +19,6 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 
 #: kio_search.cpp:47
+#, kde-format
 msgid "Search Folder"
 msgstr "Složka pro vyhledávání"

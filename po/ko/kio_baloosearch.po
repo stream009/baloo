@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-15 07:45+0000\n"
+"POT-Creation-Date: 2016-11-19 20:11+0100\n"
 "PO-Revision-Date: 2014-10-16 21:05+0900\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde@peremen.name>\n"
@@ -18,8 +18,6 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 
 #: kio_search.cpp:47
+#, kde-format
 msgid "Search Folder"
 msgstr "폴더 검색"
-
-#~ msgid "Desktop Queries"
-#~ msgstr "데스크톱 질의"

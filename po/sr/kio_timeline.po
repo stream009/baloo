@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio_timeline\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-09 08:06+0000\n"
+"POT-Creation-Date: 2016-11-19 20:11+0100\n"
 "PO-Revision-Date: 2015-09-13 14:07+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -20,6 +20,7 @@ msgstr ""
 
 # >! + (qtdt-format)
 #: kio_timeline.cpp:62
+#, kde-format
 msgctxt ""
 "Month and year used in a tree above the actual days. Have a look at http://"
 "doc.qt.io/qt-5/qdate.html#toString to see which variables you can use and "
@@ -29,9 +30,11 @@ msgid "MMMM yyyy"
 msgstr "MMMM yyyy"
 
 #: kio_timeline.cpp:120
+#, kde-format
 msgid "Today"
 msgstr "данас"
 
 #: kio_timeline.cpp:121 kio_timeline.cpp:190
+#, kde-format
 msgid "Calendar"
 msgstr "календар"

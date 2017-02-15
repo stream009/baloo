@@ -32,7 +32,7 @@ IdTreeDB::IdTreeDB(MDB_dbi dbi, MDB_txn* txn)
     : m_txn(txn)
     , m_dbi(dbi)
 {
-    Q_ASSERT(txn != 0);
+    Q_ASSERT(txn != nullptr);
     Q_ASSERT(dbi != 0);
 }
 
@@ -108,7 +108,7 @@ void IdTreeDB::del(quint64 docId)
     key.mv_size = sizeof(quint64);
     key.mv_data = static_cast<void*>(&docId);
 
-    int rc = mdb_del(m_txn, m_dbi, &key, 0);
+    int rc = mdb_del(m_txn, m_dbi, &key, nullptr);
     Q_ASSERT_X(rc == 0, "IdTreeDB::del", mdb_strerror(rc));
 }
 
@@ -120,13 +120,13 @@ public:
     IdTreePostingIterator(const IdTreeDB& db, const QVector<quint64> list)
         : m_db(db), m_pos(-1), m_idList(list) {}
 
-    quint64 docId() const {
+    quint64 docId() const Q_DECL_OVERRIDE {
         if (m_pos >= 0 && m_pos < m_resultList.size())
             return m_resultList[m_pos];
         return 0;
     }
 
-    quint64 next() {
+    quint64 next() Q_DECL_OVERRIDE {
         if (m_resultList.isEmpty() && m_idList.isEmpty()) {
             return 0;
         }
@@ -173,7 +173,7 @@ QMap<quint64, QVector<quint64>> IdTreeDB::toTestMap() const
     MDB_cursor* cursor;
     mdb_cursor_open(m_txn, m_dbi, &cursor);
 
-    MDB_val key = {0, 0};
+    MDB_val key = {0, nullptr};
     MDB_val val;
 
     QMap<quint64, QVector<quint64>> map;

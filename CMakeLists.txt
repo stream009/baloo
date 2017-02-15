@@ -1,11 +1,11 @@
 # set minimum version requirements
-cmake_minimum_required(VERSION 2.8.12)
-set(REQUIRED_QT_VERSION 5.5.0)
-set(KF5_VERSION "5.27.0") # handled by release scripts
-set(KF5_DEP_VERSION "5.27.0") # handled by release scripts
+cmake_minimum_required(VERSION 3.0)
+set(REQUIRED_QT_VERSION 5.6.0)
+set(KF5_VERSION "5.31.0") # handled by release scripts
+set(KF5_DEP_VERSION "5.31.0") # handled by release scripts
 
 # set up project
-project(Baloo)
+project(Baloo VERSION ${KF5_VERSION})
 
 # set up extra-cmake-modules before trying anything else
 include(FeatureSummary)
@@ -24,24 +24,25 @@ set(CMAKE_MODULE_PATH
     "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR}
 )
 
-# include optional and extra cmake stuff
-include(GenerateExportHeader)
-include(ECMGenerateHeaders)
-include(ECMPackageConfigHelpers)
 include(ECMSetupVersion)
-include(KDEInstallDirs)
-include(KDECMakeSettings)
-include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
-include(ECMInstallIcons)
-include(ECMAddTests)
 
 # set up baloo versions
-ecm_setup_version(${KF5_VERSION}
+ecm_setup_version(PROJECT
     VARIABLE_PREFIX BALOO
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/baloo_version.h"
     PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5BalooConfigVersion.cmake"
     SOVERSION 5
 )
+
+# include optional and extra cmake stuff
+include(GenerateExportHeader)
+include(ECMGenerateHeaders)
+include(CMakePackageConfigHelpers)
+include(KDEInstallDirs)
+include(KDECMakeSettings)
+include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
+include(ECMInstallIcons)
+include(ECMAddTests)
 
 # set up build dependencies
 find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Core DBus Widgets Qml Quick Test)
@@ -54,6 +55,9 @@ set_package_properties(LMDB
         URL "http://symas.com/mdb"
         TYPE REQUIRED
 )
+if(${LMDB_FOUND})
+    include_directories(${LMDB_INCLUDE_DIRS})
+endif()
 
 # compiler flags and build system
 add_definitions(-DQT_NO_KEYWORDS)
@@ -99,7 +103,7 @@ endif()
 # config files
 set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/KF5Baloo")
 
-ecm_configure_package_config_file(
+configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KF5BalooConfig.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/KF5BalooConfig.cmake"
     PATH_VARS KDE_INSTALL_DBUSINTERFACEDIR

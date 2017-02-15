@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-09-19 08:51+0000\n"
+"POT-Creation-Date: 2016-11-19 20:11+0100\n"
 "PO-Revision-Date: 2015-09-20 10:56+0200\n"
 "Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -18,78 +18,82 @@ msgstr ""
 "%100==4 ? 3 : 0);\n"
 "X-Generator: Lokalize 1.5\n"
 
+#, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Andrej Mernik"
 
+#, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "andrejm@ubuntu.si"
 
 #: main.cpp:39
+#, kde-format
 msgid "Baloo Search"
 msgstr "Iskanje Baloo"
 
 #: main.cpp:41
+#, kde-format
 msgid "A tool to search through the files indexed by Baloo"
 msgstr "Orodje za iskanje po kazalu datotek Baloo"
 
 #: main.cpp:43
+#, kde-format
 msgid "Vishesh Handa"
 msgstr "Vishesh Handa"
 
 #: main.cpp:43
+#, kde-format
 msgid "Maintainer"
 msgstr "Vzdrževalec"
 
 #: main.cpp:50
+#, kde-format
 msgid "The maximum number of results"
 msgstr "Največje število rezultatov"
 
 #: main.cpp:51
+#, kde-format
 msgid "limit"
 msgstr "omejitev"
 
 #: main.cpp:53
+#, kde-format
 msgid "Offset from which to start the search"
 msgstr "Odmik od začetka iskanja"
 
 #: main.cpp:54
+#, kde-format
 msgid "offset"
 msgstr "odmik"
 
 #: main.cpp:56
+#, kde-format
 msgid "Type of data to be searched"
 msgstr "Vrsta podatkov po kateri bo iskano"
 
 #: main.cpp:57
+#, kde-format
 msgid "typeStr"
 msgstr "typeStr"
 
 #: main.cpp:59
+#, kde-format
 msgid "Limit search to specified directory"
 msgstr "Omeji iskanje na navedeno mapo"
 
 #: main.cpp:60
+#, kde-format
 msgid "directory"
 msgstr "mapa"
 
 #: main.cpp:61
+#, kde-format
 msgid "query"
 msgstr "poizvedba"
 
 #: main.cpp:61
+#, kde-format
 msgid "List of words to query for"
 msgstr "Seznam besed, po katerih se bo iskalo"
-
-#~ msgid "Baloo Search - A debugging tool"
-#~ msgstr "Iskanje Baloo - orodje za razhroščevanje"
-
-#~ msgid "(c) 2013-15, Vishesh Handa"
-#~ msgstr "(c) 2013-15, Vishesh Handa"
-
-#~ msgid "Number of results to return"
-#~ msgstr "Število rezultatov, ki bodo vrnjeni"
-
-#~ msgid "If set, search through emails"
-#~ msgstr "Če je nastavljeno, preišče e-pošto"

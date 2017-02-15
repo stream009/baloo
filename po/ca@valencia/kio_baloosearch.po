@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio_baloosearch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-15 07:45+0000\n"
+"POT-Creation-Date: 2016-11-19 20:11+0100\n"
 "PO-Revision-Date: 2014-09-11 11:31+0200\n"
 "Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -22,8 +22,6 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 
 #: kio_search.cpp:47
+#, kde-format
 msgid "Search Folder"
 msgstr "Carpeta de cerca"
-
-#~ msgid "Desktop Queries"
-#~ msgstr "Consultes d'escriptori"
