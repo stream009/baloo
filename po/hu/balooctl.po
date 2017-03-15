@@ -2,20 +2,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2014, 2015.
+# Kiszel Kristóf <kiszel.kristof@gmail.com>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2016-11-19 20:11+0100\n"
-"PO-Revision-Date: 2015-09-07 11:35+0200\n"
-"Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
+"PO-Revision-Date: 2017-02-14 23:07+0100\n"
+"Last-Translator: Kiszel Kristóf <kiszel.kristof@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -30,55 +31,52 @@ msgstr "ulysses@kubuntu.org"
 #: ../../file/indexerstate.h:42
 #, kde-format
 msgid "Unknown"
-msgstr ""
+msgstr "Ismeretlen"
 
 #: ../../file/indexerstate.h:45
 #, kde-format
 msgid "Idle"
-msgstr ""
+msgstr "Inaktív"
 
 #: ../../file/indexerstate.h:48
 #, kde-format
 msgid "Suspended"
-msgstr ""
+msgstr "Felfüggesztve"
 
 #: ../../file/indexerstate.h:51
 #, kde-format
 msgid "Initial Indexing"
-msgstr ""
+msgstr "Kezdeti indexelés"
 
 #: ../../file/indexerstate.h:54
-#, fuzzy, kde-format
-#| msgid "Index the specified files"
+#, kde-format
 msgid "Indexing new files"
-msgstr "A megadott fájlok indexelése"
+msgstr "Új fájlok indexelése"
 
 #: ../../file/indexerstate.h:57
-#, fuzzy, kde-format
-#| msgid "Index the specified files"
+#, kde-format
 msgid "Indexing modified files"
-msgstr "A megadott fájlok indexelése"
+msgstr "Módosított fájlok indexelése"
 
 #: ../../file/indexerstate.h:60
 #, kde-format
 msgid "Indexing Extended Attributes"
-msgstr ""
+msgstr "Kiterjesztett attribútumok indexelése"
 
 #: ../../file/indexerstate.h:63
 #, kde-format
 msgid "Indexing file content"
-msgstr ""
+msgstr "Fájltartalom indexelése"
 
 #: ../../file/indexerstate.h:66
-#, fuzzy, kde-format
-#| msgid "Check for any unindexed files and index them"
+#, kde-format
 msgid "Checking for unindexed files"
-msgstr "Nem indexelt fájlok keresése és indexelése"
+msgstr "Nem indexelt fájlok keresése"
 
 #: configcommand.cpp:45
 #, kde-format
 msgid "Manipulate the Baloo configuration"
-msgstr ""
+msgstr "A Baloo beállításainak módosítása"
 
 #: configcommand.cpp:68
 #, kde-format
@@ -88,12 +86,12 @@ msgstr ""
 #: configcommand.cpp:69
 #, kde-format
 msgid "Usage: balooctl config <command>"
-msgstr ""
+msgstr "Használat: balooctl config <parancs>"
 
 #: configcommand.cpp:70
 #, kde-format
 msgid "Possible Commands:"
-msgstr ""
+msgstr "Lehetséges parancsok:"
 
 #: configcommand.cpp:73
 #, kde-format
@@ -252,12 +250,12 @@ msgstr ""
 #: configcommand.cpp:407 configcommand.cpp:434
 #, kde-format
 msgid "A value must be provided"
-msgstr ""
+msgstr "Meg kell adni egy értéket"
 
 #: configcommand.cpp:428 configcommand.cpp:455
 #, kde-format
 msgid "Invalid value"
-msgstr ""
+msgstr "Érvénytelen érték"
 
 #: main.cpp:67
 #, kde-format
@@ -337,11 +335,10 @@ msgstr "A megadott fájlok elfelejtése"
 #: main.cpp:87
 #, kde-format
 msgid "Modify the Baloo configuration"
-msgstr ""
+msgstr "A Baloo beállításainak módosítása"
 
 #: statuscommand.cpp:45
-#, fuzzy, kde-format
-#| msgid "Print the status of the indexer"
+#, kde-format
 msgid "Print the status of the Indexer"
 msgstr "Az indexelő állapotának nyomtatása"
 
@@ -349,34 +346,35 @@ msgstr "Az indexelő állapotának nyomtatása"
 #, kde-format
 msgid "Baloo is currently disabled. To enable, please run \"balooctl enable\""
 msgstr ""
+"A Baloo ki van kapcsolva. A bekapcsolásához futtassa a „balooctl enable” "
+"parancsot"
 
 #: statuscommand.cpp:60
 #, kde-format
 msgid "Baloo Index could not be opened"
-msgstr ""
+msgstr "A Baloo nem nyitható meg"
 
 #: statuscommand.cpp:81
 #, kde-format
 msgid "Baloo File Indexer is running"
-msgstr ""
+msgstr "A Baloo fut"
 
 #: statuscommand.cpp:82
 #, kde-format
 msgid "Indexer state: %1"
-msgstr ""
+msgstr "Indexelő állapota: %1"
 
 #: statuscommand.cpp:85
 #, kde-format
 msgid "Baloo File Indexer is not running"
-msgstr ""
+msgstr "A Baloo nem fut"
 
 #: statuscommand.cpp:91
-#, fuzzy, kde-format
-#| msgid "Index the specified files"
+#, kde-format
 msgid "Indexed %1 / %2 files"
-msgstr "A megadott fájlok indexelése"
+msgstr "%1 / %2 fájl indexelve"
 
 #: statuscommand.cpp:108
 #, kde-format
 msgid "File: %1"
-msgstr ""
+msgstr "Fájl: %1"

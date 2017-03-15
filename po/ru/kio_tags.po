@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-19 20:11+0100\n"
+"POT-Creation-Date: 2017-02-20 03:53+0100\n"
 "PO-Revision-Date: 2014-04-09 22:35+0400\n"
 "Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -18,12 +18,12 @@ msgstr ""
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: kio_tags.cpp:63 kio_tags.cpp:161
+#: kio_tags.cpp:63 kio_tags.cpp:184
 #, kde-format
 msgid "Tag"
 msgstr "Метка"
 
-#: kio_tags.cpp:164
+#: kio_tags.cpp:187
 #, kde-format
 msgid "All Tags"
 msgstr "Все метки"

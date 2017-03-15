@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio_tags\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-19 20:11+0100\n"
+"POT-Creation-Date: 2017-02-20 03:53+0100\n"
 "PO-Revision-Date: 2008-11-30 00:26+0900\n"
 "Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -14,12 +14,12 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
-#: kio_tags.cpp:63 kio_tags.cpp:161
+#: kio_tags.cpp:63 kio_tags.cpp:184
 #, kde-format
 msgid "Tag"
 msgstr ""
 
-#: kio_tags.cpp:164
+#: kio_tags.cpp:187
 #, kde-format
 msgid "All Tags"
 msgstr ""

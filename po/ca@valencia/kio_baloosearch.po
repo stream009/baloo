@@ -24,4 +24,4 @@ msgstr ""
 #: kio_search.cpp:47
 #, kde-format
 msgid "Search Folder"
-msgstr "Carpeta de cerca"
+msgstr "Carpeta de busca"

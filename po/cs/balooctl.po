@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Vít Pelčák <vit@pelcak.org>, 2014, 2015, 2016.
+# Vít Pelčák <vit@pelcak.org>, 2014, 2015, 2016, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2016-11-19 20:11+0100\n"
-"PO-Revision-Date: 2016-12-09 09:10+0100\n"
+"PO-Revision-Date: 2017-02-27 11:21+0100\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -75,7 +75,7 @@ msgstr "Hledám neindexované soubory"
 #: configcommand.cpp:45
 #, kde-format
 msgid "Manipulate the Baloo configuration"
-msgstr ""
+msgstr "Úpravy nastavení Baloo"
 
 #: configcommand.cpp:68
 #, kde-format
@@ -90,7 +90,7 @@ msgstr ""
 #: configcommand.cpp:70
 #, kde-format
 msgid "Possible Commands:"
-msgstr ""
+msgstr "Možné příkazy:"
 
 #: configcommand.cpp:73
 #, kde-format
@@ -167,19 +167,19 @@ msgstr ""
 #: configcommand.cpp:314
 #, kde-format
 msgid "A folder must be provided"
-msgstr ""
+msgstr "Musí být poskytnuta složka"
 
 #: configcommand.cpp:167 configcommand.cpp:197 configcommand.cpp:278
 #: configcommand.cpp:320
 #, kde-format
 msgid "Path does not exist"
-msgstr ""
+msgstr "Cesta neexistuje"
 
 #: configcommand.cpp:172 configcommand.cpp:202 configcommand.cpp:283
 #: configcommand.cpp:325
 #, kde-format
 msgid "Path is not a directory"
-msgstr ""
+msgstr "Cesta není adresář"
 
 #: configcommand.cpp:179
 #, kde-format
@@ -194,7 +194,7 @@ msgstr ""
 #: configcommand.cpp:221 configcommand.cpp:356
 #, kde-format
 msgid "A filter must be provided"
-msgstr ""
+msgstr "Musí být poskytnut filtr"
 
 #: configcommand.cpp:227
 #, kde-format
@@ -329,12 +329,12 @@ msgstr ""
 #: main.cpp:86
 #, kde-format
 msgid "Forget the specified files"
-msgstr ""
+msgstr "Zapomenout zadané soubory"
 
 #: main.cpp:87
 #, kde-format
 msgid "Modify the Baloo configuration"
-msgstr ""
+msgstr "Úpravy nastavení Baloo"
 
 #: statuscommand.cpp:45
 #, kde-format
@@ -345,16 +345,17 @@ msgstr "Zobrazit status indexeru"
 #, kde-format
 msgid "Baloo is currently disabled. To enable, please run \"balooctl enable\""
 msgstr ""
+"Baloo je momentálně vypnuté. Pro jeho zapnutí spusťte \"balooctl enable\""
 
 #: statuscommand.cpp:60
 #, kde-format
 msgid "Baloo Index could not be opened"
-msgstr ""
+msgstr "Nelze otevřít index Baloo."
 
 #: statuscommand.cpp:81
 #, kde-format
 msgid "Baloo File Indexer is running"
-msgstr ""
+msgstr "Indexer Baloo běží"
 
 #: statuscommand.cpp:82
 #, kde-format
@@ -364,7 +365,7 @@ msgstr "Stav indexeru: %1"
 #: statuscommand.cpp:85
 #, kde-format
 msgid "Baloo File Indexer is not running"
-msgstr ""
+msgstr "Indexer Baloo neběží"
 
 #: statuscommand.cpp:91
 #, kde-format

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-19 20:11+0100\n"
+"POT-Creation-Date: 2017-02-20 03:53+0100\n"
 "PO-Revision-Date: 2013-01-20 20:02:32+0000\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <lokalisointi@lists.coss.fi>\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: kio_tags.cpp:63 kio_tags.cpp:161
+#: kio_tags.cpp:63 kio_tags.cpp:184
 #, kde-format
 msgid "Tag"
 msgstr "Tunniste"
 
-#: kio_tags.cpp:164
+#: kio_tags.cpp:187
 #, kde-format
 msgid "All Tags"
 msgstr "Kaikki tunnisteet"

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-19 20:11+0100\n"
+"POT-Creation-Date: 2017-02-20 03:53+0100\n"
 "PO-Revision-Date: 2015-09-18 20:12+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -19,12 +19,12 @@ msgstr ""
 "X-Text-Markup: kde4\n"
 "X-Generator: Lokalize 2.0\n"
 
-#: kio_tags.cpp:63 kio_tags.cpp:161
+#: kio_tags.cpp:63 kio_tags.cpp:184
 #, kde-format
 msgid "Tag"
 msgstr "Merkelapp"
 
-#: kio_tags.cpp:164
+#: kio_tags.cpp:187
 #, kde-format
 msgid "All Tags"
 msgstr "Alle merkelappar"
