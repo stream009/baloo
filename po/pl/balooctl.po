@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2014, 2015.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2014, 2015, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-19 20:11+0100\n"
-"PO-Revision-Date: 2015-10-24 06:12+0100\n"
+"POT-Creation-Date: 2017-03-20 02:37+0100\n"
+"PO-Revision-Date: 2017-03-25 05:57+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -324,18 +324,33 @@ msgstr "Znajdź pliki poza indeksem i dodaj je do indeksu"
 
 #: main.cpp:85
 #, kde-format
+msgid "Check database for consistency"
+msgstr "Sprawdź bazę danych na spójność"
+
+#: main.cpp:86
+#, kde-format
 msgid "Index the specified files"
 msgstr "Indeksuj podane pliki"
 
-#: main.cpp:86
+#: main.cpp:87
 #, kde-format
 msgid "Forget the specified files"
 msgstr "Zapomij o danych plikach"
 
-#: main.cpp:87
+#: main.cpp:88
 #, kde-format
 msgid "Modify the Baloo configuration"
 msgstr "Zmień ustawienia Baloo"
+
+#: main.cpp:89
+#, kde-format
+msgid "Monitor the file indexer"
+msgstr "Monitorowanie indeksowania plików"
+
+#: main.cpp:90
+#, kde-format
+msgid "Display the disk space used by index"
+msgstr "Wyświetl przestrzeń dyskową używaną przez indeks"
 
 #: statuscommand.cpp:45
 #, kde-format

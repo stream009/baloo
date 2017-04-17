@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Automatically generated, 2014.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2014, 2015.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2014, 2015, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: balooctl\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-19 20:11+0100\n"
-"PO-Revision-Date: 2015-10-24 19:59+0200\n"
+"POT-Creation-Date: 2017-03-20 02:37+0100\n"
+"PO-Revision-Date: 2017-03-20 19:58+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -325,18 +325,33 @@ msgstr "Comprobar archivos sin indexar e indexarlos"
 
 #: main.cpp:85
 #, kde-format
+msgid "Check database for consistency"
+msgstr "Comprobar la consistencia de la base de datos"
+
+#: main.cpp:86
+#, kde-format
 msgid "Index the specified files"
 msgstr "Indexar los archivos indicados"
 
-#: main.cpp:86
+#: main.cpp:87
 #, kde-format
 msgid "Forget the specified files"
 msgstr "Olvidar los archivos indicados"
 
-#: main.cpp:87
+#: main.cpp:88
 #, kde-format
 msgid "Modify the Baloo configuration"
 msgstr "Modificar la configuración de Baloo"
+
+#: main.cpp:89
+#, kde-format
+msgid "Monitor the file indexer"
+msgstr "Monitorizar el indexador de archivos"
+
+#: main.cpp:90
+#, kde-format
+msgid "Display the disk space used by index"
+msgstr "Mostrar el espacio de disco usado por el índice"
 
 #: statuscommand.cpp:45
 #, kde-format

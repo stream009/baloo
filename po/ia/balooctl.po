@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-19 20:11+0100\n"
+"POT-Creation-Date: 2017-03-20 02:37+0100\n"
 "PO-Revision-Date: 2017-01-24 22:50+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-it@kde.org>\n"
@@ -325,17 +325,33 @@ msgstr ""
 
 #: main.cpp:85
 #, kde-format
-msgid "Index the specified files"
+msgid "Check database for consistency"
 msgstr ""
 
 #: main.cpp:86
 #, kde-format
-msgid "Forget the specified files"
+msgid "Index the specified files"
 msgstr ""
 
 #: main.cpp:87
 #, kde-format
+msgid "Forget the specified files"
+msgstr ""
+
+#: main.cpp:88
+#, kde-format
 msgid "Modify the Baloo configuration"
+msgstr ""
+
+#: main.cpp:89
+#, fuzzy, kde-format
+#| msgid "Print the status of the indexer"
+msgid "Monitor the file indexer"
+msgstr "Imprime le status del indicisator"
+
+#: main.cpp:90
+#, kde-format
+msgid "Display the disk space used by index"
 msgstr ""
 
 #: statuscommand.cpp:45

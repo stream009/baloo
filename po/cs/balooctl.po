@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-19 20:11+0100\n"
-"PO-Revision-Date: 2017-02-27 11:21+0100\n"
+"POT-Creation-Date: 2017-03-20 02:37+0100\n"
+"PO-Revision-Date: 2017-03-20 11:52+0100\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -115,7 +115,7 @@ msgstr ""
 #: configcommand.cpp:77
 #, kde-format
 msgid "Display this help menu"
-msgstr ""
+msgstr "Zobrazit tuto nabídku nápovědy"
 
 #: configcommand.cpp:83
 #, kde-format
@@ -156,7 +156,7 @@ msgstr ""
 #: configcommand.cpp:459
 #, kde-format
 msgid "Config parameter could not be found"
-msgstr ""
+msgstr "Parametr nastavení nelze nalézt"
 
 #: configcommand.cpp:148 configcommand.cpp:259 configcommand.cpp:396
 #, kde-format
@@ -249,7 +249,7 @@ msgstr ""
 #: configcommand.cpp:407 configcommand.cpp:434
 #, kde-format
 msgid "A value must be provided"
-msgstr ""
+msgstr "Musí být poskytnuta hodnota"
 
 #: configcommand.cpp:428 configcommand.cpp:455
 #, kde-format
@@ -323,18 +323,33 @@ msgstr "Vyhledat všechny neindexované soubory a indexovat je"
 
 #: main.cpp:85
 #, kde-format
-msgid "Index the specified files"
-msgstr ""
+msgid "Check database for consistency"
+msgstr "Ověřit konzistenci databáze"
 
 #: main.cpp:86
+#, kde-format
+msgid "Index the specified files"
+msgstr "Indexovat zadané soubory"
+
+#: main.cpp:87
 #, kde-format
 msgid "Forget the specified files"
 msgstr "Zapomenout zadané soubory"
 
-#: main.cpp:87
+#: main.cpp:88
 #, kde-format
 msgid "Modify the Baloo configuration"
 msgstr "Úpravy nastavení Baloo"
+
+#: main.cpp:89
+#, kde-format
+msgid "Monitor the file indexer"
+msgstr "Monitorovat indexer souborů"
+
+#: main.cpp:90
+#, kde-format
+msgid "Display the disk space used by index"
+msgstr "Zobrazit místo na disku zabrané indexováním"
 
 #: statuscommand.cpp:45
 #, kde-format
@@ -370,7 +385,7 @@ msgstr "Indexer Baloo neběží"
 #: statuscommand.cpp:91
 #, kde-format
 msgid "Indexed %1 / %2 files"
-msgstr ""
+msgstr "Indexováno %1 / %2 souborů"
 
 #: statuscommand.cpp:108
 #, kde-format

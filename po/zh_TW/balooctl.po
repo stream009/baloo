@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Franklin, 2014, 2015.
-# Jeff Huang <s8321414@gmail.com>, 2016.
+# Jeff Huang <s8321414@gmail.com>, 2016, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-19 20:11+0100\n"
-"PO-Revision-Date: 2016-06-28 21:58+0800\n"
+"POT-Creation-Date: 2017-03-20 02:37+0100\n"
+"PO-Revision-Date: 2017-03-23 19:49+0800\n"
 "Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
 "Language-Team: Chinese <kde-i18n-doc@kde.org>\n"
 "Language: zh_TW\n"
@@ -324,18 +324,33 @@ msgstr "檢查是否有任何未建索引的檔案，並建立索引"
 
 #: main.cpp:85
 #, kde-format
+msgid "Check database for consistency"
+msgstr "檢查資料庫一致性"
+
+#: main.cpp:86
+#, kde-format
 msgid "Index the specified files"
 msgstr "建立指定檔案索引"
 
-#: main.cpp:86
+#: main.cpp:87
 #, kde-format
 msgid "Forget the specified files"
 msgstr "忘記指定檔案索引"
 
-#: main.cpp:87
+#: main.cpp:88
 #, kde-format
 msgid "Modify the Baloo configuration"
 msgstr "修改 Baloo 設定"
+
+#: main.cpp:89
+#, kde-format
+msgid "Monitor the file indexer"
+msgstr "監控檔案索引器"
+
+#: main.cpp:90
+#, kde-format
+msgid "Display the disk space used by index"
+msgstr "顯示被索引使用的磁碟空間"
 
 #: statuscommand.cpp:45
 #, kde-format

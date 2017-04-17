@@ -1,13 +1,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Vít Pelčák <vit@pelcak.org>, 2011.
+# Vít Pelčák <vit@pelcak.org>, 2011, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2016-11-19 20:11+0100\n"
-"PO-Revision-Date: 2011-10-22 12:07+0200\n"
+"PO-Revision-Date: 2017-03-08 10:49+0100\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: kio_timeline.cpp:62
 #, kde-format
@@ -25,7 +25,7 @@ msgctxt ""
 "ask kde-i18n-doc@kde.org if you have problems understanding how to translate "
 "this"
 msgid "MMMM yyyy"
-msgstr ""
+msgstr "MMMM rrrr"
 
 #: kio_timeline.cpp:120
 #, kde-format

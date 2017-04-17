@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooctl\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-19 20:11+0100\n"
+"POT-Creation-Date: 2017-03-20 02:37+0100\n"
 "PO-Revision-Date: 2015-10-19 18:26+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -321,18 +321,34 @@ msgstr "Skontrolovať neindexované súbory a indexovať ich"
 
 #: main.cpp:85
 #, kde-format
+msgid "Check database for consistency"
+msgstr ""
+
+#: main.cpp:86
+#, kde-format
 msgid "Index the specified files"
 msgstr "Indexovať určené súbory"
 
-#: main.cpp:86
+#: main.cpp:87
 #, kde-format
 msgid "Forget the specified files"
 msgstr "Zabudnúť určené súbory"
 
-#: main.cpp:87
+#: main.cpp:88
 #, kde-format
 msgid "Modify the Baloo configuration"
 msgstr "Zmeniť nastavenie Baloo"
+
+#: main.cpp:89
+#, fuzzy, kde-format
+#| msgid "Stop the file indexer"
+msgid "Monitor the file indexer"
+msgstr "Zastaviť indexer súborov"
+
+#: main.cpp:90
+#, kde-format
+msgid "Display the disk space used by index"
+msgstr ""
 
 #: statuscommand.cpp:45
 #, kde-format

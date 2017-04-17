@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-19 20:11+0100\n"
+"POT-Creation-Date: 2017-03-20 02:37+0100\n"
 "PO-Revision-Date: 2016-02-14 15:36+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde@peremen.name>\n"
@@ -323,18 +323,34 @@ msgstr "색인되지 않은 파일을 찾아서 색인에 추가"
 
 #: main.cpp:85
 #, kde-format
+msgid "Check database for consistency"
+msgstr ""
+
+#: main.cpp:86
+#, kde-format
 msgid "Index the specified files"
 msgstr "지정한 파일 색인"
 
-#: main.cpp:86
+#: main.cpp:87
 #, kde-format
 msgid "Forget the specified files"
 msgstr "지정한 파일 잊기"
 
-#: main.cpp:87
+#: main.cpp:88
 #, kde-format
 msgid "Modify the Baloo configuration"
 msgstr "Baloo 설정 수정"
+
+#: main.cpp:89
+#, fuzzy, kde-format
+#| msgid "Stop the file indexer"
+msgid "Monitor the file indexer"
+msgstr "파일 인덱서 정지"
+
+#: main.cpp:90
+#, kde-format
+msgid "Display the disk space used by index"
+msgstr ""
 
 #: statuscommand.cpp:45
 #, kde-format
