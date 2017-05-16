@@ -52,6 +52,8 @@ QString colorString(const QString& input, int color)
 
 int main(int argc, char* argv[])
 {
+    QCoreApplication app(argc, argv);
+
     KAboutData aboutData(QStringLiteral("balooshow"),
                          i18n("Baloo Show"),
                          PROJECT_VERSION,
@@ -61,14 +63,13 @@ int main(int argc, char* argv[])
     aboutData.addAuthor(i18n("Vishesh Handa"), i18n("Maintainer"), QStringLiteral("me@vhanda.in"));
 
     KAboutData::setApplicationData(aboutData);
-    QCoreApplication app(argc, argv);
 
     QCommandLineParser parser;
     parser.addPositionalArgument(QStringLiteral("files"), QStringLiteral("The file urls"));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("x"),
                                         QStringLiteral("Print internal info")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("i"),
-                                        QStringLiteral("Inode number of the fiel to show")));
+                                        QStringLiteral("Inode number of the file to show")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("d"),
                                         QStringLiteral("Device id for the files"), QStringLiteral("deviceId"), QString()));
     parser.addHelpOption();
