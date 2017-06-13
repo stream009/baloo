@@ -100,3 +100,11 @@ msgstr ""
 #, kde-format
 msgid "List of words to query for"
 msgstr ""
+
+#~ msgid "Baloo Search - A debugging tool"
+#~ msgstr "Baloo pretraga - alat za otkrivanje grešaka"
+
+#, fuzzy
+#~| msgid "(c) 2013, Vishesh Handa"
+#~ msgid "(c) 2013-15, Vishesh Handa"
+#~ msgstr "(c) 2013, Vishesh Handa"

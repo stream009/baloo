@@ -25,3 +25,15 @@ msgstr ""
 #, kde-format
 msgid "Search Folder"
 msgstr "Hakukansio"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "Työpöytäkyselyt"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Lasse Liehu, Tommi Nieminen, Teemu Rytilahti"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr ""
+#~ "lasse.liehu@gmail.com, translator@legisign.org, teemu.rytilahti@d5k.net"

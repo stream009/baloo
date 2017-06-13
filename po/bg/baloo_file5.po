@@ -43,3 +43,55 @@ msgstr "Vishesh Handa"
 #, kde-format
 msgid "Maintainer"
 msgstr "Поддръжка"
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is suspended."
+#~ msgstr "Индексирането на файлове е спряно."
+
+#~ msgctxt "@info:status"
+#~ msgid "Scanning for recent changes in files for desktop search"
+#~ msgstr "Сканиране за скорошни промени във файловете за търсене"
+
+#~ msgctxt "@info:status"
+#~ msgid "Indexing files for desktop search."
+#~ msgstr "Индексиране на файлове за търсене."
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is idle."
+#~ msgstr "Индексирането на файлове е в покой."
+
+#~ msgid "Baloo File"
+#~ msgstr "Baloo File"
+
+#~ msgid "An application to handle file metadata"
+#~ msgstr "Приложение за работа с мета-данните на файловете"
+
+#~ msgctxt "@title"
+#~ msgid "New removable device detected"
+#~ msgstr "Засечено е ново преносимо устройство"
+
+#~ msgctxt "@action"
+#~ msgid "Index files"
+#~ msgstr "Индексиране на файловете"
+
+#~ msgctxt "@action"
+#~ msgid "Ignore device"
+#~ msgstr "Пренебрегване на устройството"
+
+#~ msgctxt "@action"
+#~ msgid "Configure"
+#~ msgstr "Настройване"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Do you want files on removable device <resource>%1</resource> to be "
+#~ "indexed for fast desktop searches?"
+#~ msgstr ""
+#~ "Желаете ли файловете на преносимото устройство <resource>%1</resource> да "
+#~ "бъдат индексирани за бързо търсене?"
+
+#~ msgid "Cleans up stale file index information"
+#~ msgstr "Изчиства остаряла информация от индексирането на файлове"
+
+#~ msgid "(C) 2014, Vishesh Handa"
+#~ msgstr "(C) 2014, Vishesh Handa"

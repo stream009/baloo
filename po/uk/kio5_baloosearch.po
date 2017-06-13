@@ -24,3 +24,6 @@ msgstr ""
 #, kde-format
 msgid "Search Folder"
 msgstr "Тека пошуку"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "Стільничні запити"

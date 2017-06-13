@@ -19,3 +19,6 @@ msgstr ""
 #, kde-format
 msgid "Search Folder"
 msgstr "Priečinok hľadania"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "Dotazy na ploche"

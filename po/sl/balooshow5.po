@@ -76,3 +76,6 @@ msgstr "To je hrošč"
 #, kde-format
 msgid "No index information found"
 msgstr "V kazalu ni bilo najdenih podatkov"
+
+#~ msgid "The file URL"
+#~ msgstr "URL datoteke"

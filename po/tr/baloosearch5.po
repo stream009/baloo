@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2017-04-20 02:49+0200\n"
-"PO-Revision-Date: 2015-06-19 17:08+0000\n"
-"Last-Translator: Necdet <necdetyucel@gmail.com>\n"
+"PO-Revision-Date: 2017-05-08 14:36+0000\n"
+"Last-Translator: Kaan <kaanozdincer@gmail.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -36,6 +36,7 @@ msgstr "Baloo Araması"
 #, kde-format
 msgid "A tool to search through the files indexed by Baloo"
 msgstr ""
+"Baloo tarafından indekslenen dosyalar arasında arama yapmak için bir araç"
 
 #: main.cpp:45
 #, kde-format
@@ -50,49 +51,55 @@ msgstr "Projeyi yürüten"
 #: main.cpp:51
 #, kde-format
 msgid "The maximum number of results"
-msgstr ""
+msgstr "Azami sonuç sayısı"
 
 #: main.cpp:52
 #, kde-format
 msgid "limit"
-msgstr ""
+msgstr "sınır"
 
 #: main.cpp:54
 #, kde-format
 msgid "Offset from which to start the search"
-msgstr ""
+msgstr "Aramanın başlatılacağı konum"
 
 #: main.cpp:55
 #, kde-format
 msgid "offset"
-msgstr ""
+msgstr "konum"
 
 #: main.cpp:57
 #, kde-format
 msgid "Type of data to be searched"
-msgstr ""
+msgstr "Aranacak verinin türü"
 
 #: main.cpp:58
 #, kde-format
 msgid "typeStr"
-msgstr ""
+msgstr "typeStr"
 
 #: main.cpp:60
 #, kde-format
 msgid "Limit search to specified directory"
-msgstr ""
+msgstr "Aramayı belirlenen dizinle sınırlandır"
 
 #: main.cpp:61
 #, kde-format
 msgid "directory"
-msgstr ""
+msgstr "dizin"
 
 #: main.cpp:62
 #, kde-format
 msgid "query"
-msgstr ""
+msgstr "sorgu"
 
 #: main.cpp:62
 #, kde-format
 msgid "List of words to query for"
-msgstr ""
+msgstr "Sorgulanacak kelime listesi"
+
+#~ msgid "Baloo Search - A debugging tool"
+#~ msgstr "Baloo Araması - Bir hata giderme aracı"
+
+#~ msgid "(c) 2013-15, Vishesh Handa"
+#~ msgstr "(c) 2013-15, Vishesh Handa"

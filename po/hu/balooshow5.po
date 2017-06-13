@@ -76,3 +76,6 @@ msgstr "Ez egy hiba"
 #, kde-format
 msgid "No index information found"
 msgstr "Nem találhatók indexelési információk"
+
+#~ msgid "The file URL"
+#~ msgstr "A fájl URL"

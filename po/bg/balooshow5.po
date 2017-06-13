@@ -74,3 +74,6 @@ msgstr ""
 #, kde-format
 msgid "No index information found"
 msgstr ""
+
+#~ msgid "The file URL"
+#~ msgstr "Адрес на файла"

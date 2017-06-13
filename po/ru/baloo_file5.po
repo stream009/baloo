@@ -42,3 +42,57 @@ msgstr "Vishesh Handa"
 #, kde-format
 msgid "Maintainer"
 msgstr "Сопровождающий"
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is suspended."
+#~ msgstr "Индексирование файлов приостановлено."
+
+#~ msgctxt "@info:status"
+#~ msgid "Scanning for recent changes in files for desktop search"
+#~ msgstr "Обнаружение недавних изменений в файлах для быстрого поиска"
+
+#~ msgctxt "@info:status"
+#~ msgid "Indexing files for desktop search."
+#~ msgstr "Выполняется индексирование файлов."
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is idle."
+#~ msgstr "Индексирование файлов не осуществляется."
+
+#~ msgid "Baloo File"
+#~ msgstr "Обработчик файлов для Baloo"
+
+#~ msgid "An application to handle file metadata"
+#~ msgstr "Программа обработки метаданных файлов"
+
+#~ msgctxt "@title"
+#~ msgid "New removable device detected"
+#~ msgstr "Обнаружено внешнее устройство"
+
+#~ msgctxt "@action"
+#~ msgid "Index files"
+#~ msgstr "Индексировать файлы"
+
+#~ msgctxt "@action"
+#~ msgid "Ignore device"
+#~ msgstr "Игнорировать устройство"
+
+#~ msgctxt "@action"
+#~ msgid "Configure"
+#~ msgstr "Настроить"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Do you want files on removable device <resource>%1</resource> to be "
+#~ "indexed for fast desktop searches?"
+#~ msgstr ""
+#~ "Проиндексировать файлы на внешнем устройстве <resource>%1</resource> для "
+#~ "ускорения поиска?"
+
+#~ msgid "Cleans up stale file index information"
+#~ msgstr ""
+#~ "Программа для очистки информации о более не существующих файлах из базы "
+#~ "данных Baloo"
+
+#~ msgid "(C) 2014, Vishesh Handa"
+#~ msgstr "© Vishesh Handa, 2014"

@@ -42,3 +42,67 @@ msgstr "Vishesh Handa"
 #, kde-format
 msgid "Maintainer"
 msgstr "Opiekun"
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is suspended."
+#~ msgstr "Wydobywanie z plików zostało wstrzymane."
+
+#~ msgctxt "@info:status"
+#~ msgid "Scanning for recent changes in files for desktop search"
+#~ msgstr "Poszukiwanie niedawnych zmian w plikach dla znajdowania na pulpicie"
+
+#~ msgctxt "@info:status"
+#~ msgid "Indexing files for desktop search."
+#~ msgstr "Indeksowanie plików dla znajdowania na pulpicie."
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is idle."
+#~ msgstr "Program indeksujący pliki jest bezczyny."
+
+#~ msgid "Baloo File"
+#~ msgstr "Plik Baloo"
+
+#~ msgid "An application to handle file metadata"
+#~ msgstr "Program do obsługi metadanych plików"
+
+#~ msgctxt "@title"
+#~ msgid "New removable device detected"
+#~ msgstr "Wykryto nowe urządzenie wymienne"
+
+#~ msgctxt "@action"
+#~ msgid "Index files"
+#~ msgstr "Indeksuj pliki"
+
+#~ msgctxt "@action"
+#~ msgid "Ignore device"
+#~ msgstr "Pomiń urządzenie"
+
+#~ msgctxt "@action"
+#~ msgid "Configure"
+#~ msgstr "Konfiguruj"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Do you want files on removable device <resource>%1</resource> to be "
+#~ "indexed for fast desktop searches?"
+#~ msgstr ""
+#~ "Czy chcesz aby pliki na urządzeniu wymiennym <resource>%1</resource> "
+#~ "zostały zaindeksowane na potrzeby szybkiego wyszukiwania na pulpicie?"
+
+#~ msgid "Cleans up stale file index information"
+#~ msgstr "Czyści zleżałe informacje o indeksie pliku"
+
+#~ msgid "(C) 2014, Vishesh Handa"
+#~ msgstr "(C) 2014, Vishesh Handa"
+
+#~ msgid "xattrdetectortest"
+#~ msgstr "xattrdetectortest"
+
+#~ msgid "(c) 2014, Vishesh Handa"
+#~ msgstr "(c) 2014, Vishesh Handa"
+
+#~ msgid "The file URL"
+#~ msgstr "Adres URL pliku"
+
+#~ msgid "indexerconfigtest"
+#~ msgstr "indexerconfigtest"

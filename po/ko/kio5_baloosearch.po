@@ -21,3 +21,6 @@ msgstr ""
 #, kde-format
 msgid "Search Folder"
 msgstr "폴더 검색"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "데스크톱 질의"

@@ -73,3 +73,6 @@ msgstr "Toto je chyba"
 #, kde-format
 msgid "No index information found"
 msgstr "Nenašli sa žiadne indexové informácie"
+
+#~ msgid "The file URL"
+#~ msgstr "URL súboru"

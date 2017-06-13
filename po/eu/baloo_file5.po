@@ -42,3 +42,67 @@ msgstr "Vishesh Handa"
 #, kde-format
 msgid "Maintainer"
 msgstr "Mantentzailea"
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is suspended."
+#~ msgstr "Fitxategi-indexatzailea egonean dago."
+
+#~ msgctxt "@info:status"
+#~ msgid "Scanning for recent changes in files for desktop search"
+#~ msgstr "Fitxategien azken aldaketak aztertzen mahaigaineko bilaketarako"
+
+#~ msgctxt "@info:status"
+#~ msgid "Indexing files for desktop search."
+#~ msgstr "Fitxategiak indexatzen mahaigaineko bilaketarako."
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is idle."
+#~ msgstr "Fitxategi-indexatzailea nagi dago."
+
+#~ msgid "Baloo File"
+#~ msgstr "Baloo-fitxategia"
+
+#~ msgid "An application to handle file metadata"
+#~ msgstr "Fitxategien metadatuak maneiatzeko aplikazio bat"
+
+#~ msgctxt "@title"
+#~ msgid "New removable device detected"
+#~ msgstr "Gailu aldagarri berria detektatu da"
+
+#~ msgctxt "@action"
+#~ msgid "Index files"
+#~ msgstr "Indexatu fitxategiak"
+
+#~ msgctxt "@action"
+#~ msgid "Ignore device"
+#~ msgstr "Ezikusi gailua"
+
+#~ msgctxt "@action"
+#~ msgid "Configure"
+#~ msgstr "Konfiguratu"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Do you want files on removable device <resource>%1</resource> to be "
+#~ "indexed for fast desktop searches?"
+#~ msgstr ""
+#~ "Nahi duzu <resource>%1</resource> gailu aldagarriko fitxategiak "
+#~ "indexatzea mahaigaineko bilaketa azkarrak egin ahal izateko?"
+
+#~ msgid "Cleans up stale file index information"
+#~ msgstr "Fintxategi-indizearen informazio zaharkitua garbitzen du"
+
+#~ msgid "(C) 2014, Vishesh Handa"
+#~ msgstr "(C) 2014, Vishesh Handa"
+
+#~ msgid "xattrdetectortest"
+#~ msgstr "xattrdetectortest"
+
+#~ msgid "(c) 2014, Vishesh Handa"
+#~ msgstr "(c) 2014, Vishesh Handa"
+
+#~ msgid "The file URL"
+#~ msgstr "Fitxategiaren URLa"
+
+#~ msgid "indexerconfigtest"
+#~ msgstr "indexatzaile-konfigurazioren proba"

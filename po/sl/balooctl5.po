@@ -392,3 +392,6 @@ msgstr "%1 od %2 datotek dodanih v kazalo"
 #, kde-format
 msgid "File: %1"
 msgstr "Datoteka: %1"
+
+#~ msgid "Must provide a value"
+#~ msgstr "Podana mora biti vrednost"

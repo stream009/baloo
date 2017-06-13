@@ -75,3 +75,6 @@ msgstr "Dit is een bug"
 #, kde-format
 msgid "No index information found"
 msgstr "Geen indexinformatie gevonden"
+
+#~ msgid "The file URL"
+#~ msgstr "De URL van het bestand"

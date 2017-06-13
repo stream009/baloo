@@ -22,3 +22,14 @@ msgstr ""
 #, kde-format
 msgid "Search Folder"
 msgstr "Φάκελος αναζήτησης"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "Ερωτήματα επιφάνειας εργασίας"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Αντώνης Γέραλης"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "capoiosct@gmail.com"

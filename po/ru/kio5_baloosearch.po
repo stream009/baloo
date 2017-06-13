@@ -22,3 +22,6 @@ msgstr ""
 #, kde-format
 msgid "Search Folder"
 msgstr "Папка поискового запроса"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "Поисковые запросы"

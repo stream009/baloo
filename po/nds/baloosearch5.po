@@ -98,3 +98,17 @@ msgstr ""
 #| msgid "The words to search for"
 msgid "List of words to query for"
 msgstr "De Wöör, de söcht warrt"
+
+#~ msgid "Baloo Search - A debugging tool"
+#~ msgstr "Baloo-Söök - En Fehlersöök-Warktüüch"
+
+#, fuzzy
+#~| msgid "(c) 2013, Vishesh Handa"
+#~ msgid "(c) 2013-15, Vishesh Handa"
+#~ msgstr "(C) 2014, Vishesh Handa"
+
+#~ msgid "Number of results to return"
+#~ msgstr "Tall vun wiest Resultaten"
+
+#~ msgid "If set, search through emails"
+#~ msgstr "Wenn anmaakt, ok Nettpost dörkieken"

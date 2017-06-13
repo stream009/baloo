@@ -76,3 +76,6 @@ msgstr "這是臭蟲"
 #, kde-format
 msgid "No index information found"
 msgstr "找不到索引資訊"
+
+#~ msgid "The file URL"
+#~ msgstr "檔案網址"

@@ -21,3 +21,6 @@ msgstr ""
 #, kde-format
 msgid "Search Folder"
 msgstr "ਖੋਜ ਫੋਲਡਰ"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "ਡੈਸਕਟਾਪ ਕਿਊਰੀ"

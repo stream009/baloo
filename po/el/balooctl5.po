@@ -395,3 +395,6 @@ msgstr "Δεικτοδοτήθηκαν %1 / %2 αρχεία"
 #, kde-format
 msgid "File: %1"
 msgstr "Αρχείο: %1"
+
+#~ msgid "Must provide a value"
+#~ msgstr "Απαιτείται να δοθεί τιμή"

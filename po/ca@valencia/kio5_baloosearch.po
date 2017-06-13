@@ -25,3 +25,6 @@ msgstr ""
 #, kde-format
 msgid "Search Folder"
 msgstr "Carpeta de busca"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "Consultes d'escriptori"

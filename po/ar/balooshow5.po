@@ -77,3 +77,6 @@ msgstr "هذه علّة"
 #, kde-format
 msgid "No index information found"
 msgstr "لم توجد معلومات الفهرس"
+
+#~ msgid "The file URL"
+#~ msgstr "عنوان الملف"

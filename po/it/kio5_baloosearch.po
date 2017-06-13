@@ -21,3 +21,55 @@ msgstr ""
 #, kde-format
 msgid "Search Folder"
 msgstr "Ricerca cartella"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "Ricerche del desktop"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Vincenzo Reale"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "smart2128@baslug.org"
+
+#~ msgid ""
+#~ "The desktop search service is not activated. Unable to answer queries "
+#~ "without it."
+#~ msgstr ""
+#~ "Il sistema di ricerca desktop non è attivato. Impossibile rispondere alle "
+#~ "richieste senza."
+
+#~ msgid "Search excerpt: %1"
+#~ msgstr "Cerca estratto: %1"
+
+#~ msgid ""
+#~ "The desktop search query service is not running. Unable to answer queries "
+#~ "without it."
+#~ msgstr ""
+#~ "Il servizio di interrogazione di ricerca desktop non è in esecuzione. "
+#~ "Impossibile rispondere alle richieste senza."
+
+#~ msgid "Saved Query"
+#~ msgstr "Ricerca salvata"
+
+#~ msgctxt ""
+#~ "@title UDS_DISPLAY_NAME for a KIO directory listing. %1 is the query the "
+#~ "user entered."
+#~ msgid "Query Results from '%1'"
+#~ msgstr "Risultati della ricerca per '%1'"
+
+#~ msgid "Query Results"
+#~ msgstr "Risultati della ricerca"
+
+#~ msgid "All Music Files"
+#~ msgstr "Tutti i file musicali"
+
+#~ msgid "Recent Files"
+#~ msgstr "File recenti"
+
+#~ msgid "Today's Files"
+#~ msgstr "File di oggi"
+
+#~ msgid "Yesterday's Files"
+#~ msgstr "File di ieri"

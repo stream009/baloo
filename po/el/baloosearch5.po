@@ -97,3 +97,17 @@ msgstr "αναζήτηση"
 #, kde-format
 msgid "List of words to query for"
 msgstr "Λίστα λέξεων προς αναζήτηση"
+
+#~ msgid "Baloo Search - A debugging tool"
+#~ msgstr "Baloo αναζήτηση - Εργαλείο διόρθωσης σφαλμάτων"
+
+#, fuzzy
+#~| msgid "(c) 2013, Vishesh Handa"
+#~ msgid "(c) 2013-15, Vishesh Handa"
+#~ msgstr "(c) 2013, Vishesh Handa"
+
+#~ msgid "Number of results to return"
+#~ msgstr "Αριθμός αποτελεσμάτων που θα επιστραφούν"
+
+#~ msgid "If set, search through emails"
+#~ msgstr "Εφόσον ενεργοποιηθεί, αναζήτηση στα μηνύματα ηλ. αλληλογραφίας"

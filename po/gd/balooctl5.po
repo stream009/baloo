@@ -406,3 +406,6 @@ msgstr "Chaidh %1 / %2 faidhle inneacsadh"
 #, kde-format
 msgid "File: %1"
 msgstr "Faidhle: %1"
+
+#~ msgid "Must provide a value"
+#~ msgstr "Feumar luach a shònrachadh"

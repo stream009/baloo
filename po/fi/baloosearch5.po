@@ -96,3 +96,15 @@ msgstr "hakusanat"
 #, kde-format
 msgid "List of words to query for"
 msgstr "Haun hakusanaluettelo"
+
+#~ msgid "Baloo Search - A debugging tool"
+#~ msgstr "Baloo Search – Työkalu vikojen jäljittämiseen"
+
+#~ msgid "(c) 2013-15, Vishesh Handa"
+#~ msgstr "© 2013–15 Vishesh Handa"
+
+#~ msgid "Number of results to return"
+#~ msgstr "Palautettavien tulosten määrä"
+
+#~ msgid "If set, search through emails"
+#~ msgstr "Jos asetettu, hae sähköposteista"

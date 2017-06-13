@@ -75,3 +75,6 @@ msgstr "버그입니다"
 #, kde-format
 msgid "No index information found"
 msgstr "색인 정보를 찾을 수 없습니다"
+
+#~ msgid "The file URL"
+#~ msgstr "파일 URL"

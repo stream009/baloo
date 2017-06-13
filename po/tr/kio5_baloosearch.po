@@ -21,3 +21,6 @@ msgstr ""
 #, kde-format
 msgid "Search Folder"
 msgstr "Arama Klasörü"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "Masaüstü Sorguları"

@@ -23,3 +23,6 @@ msgstr ""
 #, kde-format
 msgid "Search Folder"
 msgstr "Söökorner"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "Schriefdischsöök"

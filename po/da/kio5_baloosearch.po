@@ -21,3 +21,14 @@ msgstr ""
 #, kde-format
 msgid "Search Folder"
 msgstr "Søgemappe"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "Skrivebordsforespørgsler"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Martin Schlander"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "mschlander@opensuse.org"

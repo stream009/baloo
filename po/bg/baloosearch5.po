@@ -99,3 +99,17 @@ msgstr ""
 #| msgid "The words to search for"
 msgid "List of words to query for"
 msgstr "Думи, за които да се търси"
+
+#~ msgid "Baloo Search - A debugging tool"
+#~ msgstr "Търсене Baloo - инструмен за откриване на грешки"
+
+#, fuzzy
+#~| msgid "(c) 2013, Vishesh Handa"
+#~ msgid "(c) 2013-15, Vishesh Handa"
+#~ msgstr "(c) 2013, Vishesh Handa"
+
+#~ msgid "Number of results to return"
+#~ msgstr "Брой получени резултати"
+
+#~ msgid "If set, search through emails"
+#~ msgstr "Ако е отметнато, да се търси и в писмата"

@@ -41,3 +41,55 @@ msgstr "Vishesh Handa"
 #, kde-format
 msgid "Maintainer"
 msgstr "Responsabile"
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is suspended."
+#~ msgstr "Indicizzazione dei file sospesa."
+
+#~ msgctxt "@info:status"
+#~ msgid "Scanning for recent changes in files for desktop search"
+#~ msgstr "Ricerca di modifiche recenti nei file per la ricerca desktop"
+
+#~ msgctxt "@info:status"
+#~ msgid "Indexing files for desktop search."
+#~ msgstr "Indicizzazione dei file per la ricerca desktop."
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is idle."
+#~ msgstr "Indicizzazione dei file pronta."
+
+#~ msgid "Baloo File"
+#~ msgstr "Baloo File"
+
+#~ msgid "An application to handle file metadata"
+#~ msgstr "Un'applicazione per gestire i metadati dei file"
+
+#~ msgid "Cleans up stale file index information"
+#~ msgstr "Pulisce le informazioni sui vecchi file di indice"
+
+#~ msgid "(C) 2014, Vishesh Handa"
+#~ msgstr "(C) 2014, Vishesh Handa"
+
+#~ msgctxt "@title"
+#~ msgid "New removable device detected"
+#~ msgstr "Rilevato un nuovo dispositivo removibile"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Do you want files on removable device <resource>%1</resource> to be "
+#~ "indexed for fast desktop searches?"
+#~ msgstr ""
+#~ "Vuoi che i file del dispositivo removibile <resource>%1</resource> siano "
+#~ "indicizzati per ricerche desktop veloci?"
+
+#~ msgctxt "@action"
+#~ msgid "Index files"
+#~ msgstr "File di indice"
+
+#~ msgctxt "@action"
+#~ msgid "Ignore device"
+#~ msgstr "Ignora dispositivo"
+
+#~ msgctxt "@action"
+#~ msgid "Configure"
+#~ msgstr "Configura"

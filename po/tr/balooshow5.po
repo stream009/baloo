@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2017-04-20 02:49+0200\n"
-"PO-Revision-Date: 2015-02-08 13:53+0100\n"
-"Last-Translator: Volkan Gezer <volkangezer@gmail.com>\n"
+"PO-Revision-Date: 2017-05-08 14:37+0000\n"
+"Last-Translator: Kaan <kaanozdincer@gmail.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -58,18 +58,20 @@ msgid ""
 "The Baloo index could not be opened. Please run \"balooctl status\" to see "
 "if Baloo is enabled and working."
 msgstr ""
+"Baloo indeksi açılamadı. Lütfen Baloo'nun etkin ve çalışır olup olmadığını "
+"görmek için \"balooctl status\" çalıştırın."
 
 #: main.cpp:122
 #, kde-format
 msgid "The fileID is not equal to the actual Baloo fileID"
-msgstr ""
+msgstr "fileID güncel Baloo fileID ile eşit değil"
 
 #: main.cpp:123
 #, kde-format
 msgid "This is a bug"
-msgstr ""
+msgstr "Bu bir hata"
 
 #: main.cpp:151
 #, kde-format
 msgid "No index information found"
-msgstr ""
+msgstr "İndeks bilgisi bulunamadı"

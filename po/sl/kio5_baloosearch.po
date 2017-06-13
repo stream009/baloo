@@ -22,3 +22,14 @@ msgstr ""
 #, kde-format
 msgid "Search Folder"
 msgstr "Iskalna mapa"
+
+#~ msgid "Desktop Queries"
+#~ msgstr "Namizne poizvedbe"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Andrej Mernik"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "andrejm@ubuntu.si"

@@ -96,3 +96,15 @@ msgstr "forespørgsel"
 #, kde-format
 msgid "List of words to query for"
 msgstr "Liste over ord der skal søges efter"
+
+#~ msgid "Baloo Search - A debugging tool"
+#~ msgstr "Baloo søgning - Et fejlsøgningsværktøj"
+
+#~ msgid "(c) 2013-15, Vishesh Handa"
+#~ msgstr "(c) 2013-15, Vishesh Handa"
+
+#~ msgid "Number of results to return"
+#~ msgstr "Antal fund der skal returneres"
+
+#~ msgid "If set, search through emails"
+#~ msgstr "Hvis sat søges der i e-mails"

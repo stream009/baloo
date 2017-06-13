@@ -44,3 +44,25 @@ msgstr "Vishesh Handa"
 #, kde-format
 msgid "Maintainer"
 msgstr "Prižiūrėtojas"
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is suspended."
+#~ msgstr "Failų indeksuoklis pristabdytas."
+
+#~ msgctxt "@info:status"
+#~ msgid "Scanning for recent changes in files for desktop search"
+#~ msgstr "Ieškoma nesenų failų pakeitimų paieškos duomenų bazės atnaujinimui"
+
+#~ msgctxt "@info:status"
+#~ msgid "Indexing files for desktop search."
+#~ msgstr "Indeksuojami failai darbalaukio paieškai."
+
+#~ msgctxt "@info:status"
+#~ msgid "File indexer is idle."
+#~ msgstr "Failų indeksuoklis tinginiauja."
+
+#~ msgid "Baloo File"
+#~ msgstr "Baloo failas"
+
+#~ msgid "An application to handle file metadata"
+#~ msgstr "Programa skirta tvarkyti failo metaduomenis"
