@@ -397,6 +397,3 @@ msgstr "Проіндексовано %1 / %2 файлів"
 #, kde-format
 msgid "File: %1"
 msgstr "Файл: %1"
-
-#~ msgid "Must provide a value"
-#~ msgstr "Слід вказати значення"

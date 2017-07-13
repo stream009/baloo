@@ -99,9 +99,3 @@ msgstr "запит"
 #, kde-format
 msgid "List of words to query for"
 msgstr "Список слів для запиту"
-
-#~ msgid "Baloo Search - A debugging tool"
-#~ msgstr "Пошук Baloo — засіб діагностики"
-
-#~ msgid "(c) 2013-15, Vishesh Handa"
-#~ msgstr "© Vishesh Handa, 2013–2015"

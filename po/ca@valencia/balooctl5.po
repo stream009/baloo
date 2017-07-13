@@ -397,6 +397,3 @@ msgstr "S'han indexat %1 / %2 fitxers"
 #, kde-format
 msgid "File: %1"
 msgstr "Fitxer: %1"
-
-#~ msgid "Must provide a value"
-#~ msgstr "Cal indicar un valor"

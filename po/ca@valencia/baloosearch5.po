@@ -99,15 +99,3 @@ msgstr "consulta"
 #, kde-format
 msgid "List of words to query for"
 msgstr "Llista de les paraules a consultar"
-
-#~ msgid "Baloo Search - A debugging tool"
-#~ msgstr "Cerca del Baloo - Una eina de depuració"
-
-#~ msgid "(c) 2013-15, Vishesh Handa"
-#~ msgstr "(c) 2013-15, Vishesh Handa"
-
-#~ msgid "Number of results to return"
-#~ msgstr "Nombre de resultats a retornar"
-
-#~ msgid "If set, search through emails"
-#~ msgstr "Si s'ha establert, cerca pels correus electrònics"

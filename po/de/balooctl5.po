@@ -1,12 +1,12 @@
 # Frederik Schwarzer <schwarzer@kde.org>, 2014, 2015.
-# Burkhard Lück <lueck@hube-lueck.de>, 2015.
+# Burkhard Lück <lueck@hube-lueck.de>, 2015, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2017-04-20 02:49+0200\n"
-"PO-Revision-Date: 2015-10-24 23:35+0100\n"
-"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"PO-Revision-Date: 2017-06-12 06:02+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -326,7 +326,7 @@ msgstr "Nach nicht indizierten Dateien suchen und indizieren"
 #: main.cpp:86
 #, kde-format
 msgid "Check database for consistency"
-msgstr ""
+msgstr "Datenbank auf Konsistenz überprüfen"
 
 #: main.cpp:87
 #, kde-format
@@ -344,15 +344,14 @@ msgid "Modify the Baloo configuration"
 msgstr "Baloo-Einrichtung bearbeiten"
 
 #: main.cpp:90
-#, fuzzy, kde-format
-#| msgid "Stop the file indexer"
+#, kde-format
 msgid "Monitor the file indexer"
-msgstr "Datei-Indizierung beenden"
+msgstr "Datei-Indizierung überwachen"
 
 #: main.cpp:91
 #, kde-format
 msgid "Display the disk space used by index"
-msgstr ""
+msgstr "Durch Index belegten Speicherplatz anzeigen"
 
 #: statuscommand.cpp:45
 #, kde-format
@@ -395,6 +394,3 @@ msgstr "%1/%2 Dateien indiziert"
 #, kde-format
 msgid "File: %1"
 msgstr "Datei: %1"
-
-#~ msgid "Must provide a value"
-#~ msgstr "Ein Wert muss angegeben werden"

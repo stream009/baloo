@@ -98,15 +98,3 @@ msgstr "lekérdezés"
 #, kde-format
 msgid "List of words to query for"
 msgstr "Keresendő szavak"
-
-#~ msgid "Baloo Search - A debugging tool"
-#~ msgstr "Baloo keresés - Egy hibakereső eszköz"
-
-#~ msgid "(c) 2013-15, Vishesh Handa"
-#~ msgstr "© Vishesh Handa, 2013-2015."
-
-#~ msgid "Number of results to return"
-#~ msgstr "A visszaadandó eredmények száma"
-
-#~ msgid "If set, search through emails"
-#~ msgstr "Ha be van állítva, az e-maileket is keresi"

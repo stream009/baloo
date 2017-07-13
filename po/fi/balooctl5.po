@@ -393,6 +393,3 @@ msgstr "Indeksoitu %1/%2 tiedostoa"
 #, kde-format
 msgid "File: %1"
 msgstr "Tiedosto: %1"
-
-#~ msgid "Must provide a value"
-#~ msgstr "Arvo täytyy antaa"

@@ -28,6 +28,3 @@ msgstr ""
 #, kde-format
 msgid "Search Folder"
 msgstr "Dossier de recherche"
-
-#~ msgid "Desktop Queries"
-#~ msgstr "Requêtes du bureau"

@@ -18,14 +18,3 @@ msgstr ""
 #, kde-format
 msgid "Search Folder"
 msgstr "Suchordner"
-
-#~ msgid "Desktop Queries"
-#~ msgstr "Arbeitsflächen-Abfragen"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Burkhard Lück"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "lueck@hube-lueck.de"

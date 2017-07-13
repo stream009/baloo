@@ -75,6 +75,3 @@ msgstr "Αυτό είναι ένα σφάλμα"
 #, kde-format
 msgid "No index information found"
 msgstr "Δεν βρέθηκαν πληροφορίες δείκτη"
-
-#~ msgid "The file URL"
-#~ msgstr "Το URL του αρχείου"

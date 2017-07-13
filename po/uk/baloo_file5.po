@@ -44,25 +44,3 @@ msgstr "Vishesh Handa"
 #, kde-format
 msgid "Maintainer"
 msgstr "Супровідник"
-
-#~ msgctxt "@info:status"
-#~ msgid "File indexer is suspended."
-#~ msgstr "Індексування файлів призупинено."
-
-#~ msgctxt "@info:status"
-#~ msgid "Scanning for recent changes in files for desktop search"
-#~ msgstr "Пошук нещодавніх змін у файлах для стільничного пошуку"
-
-#~ msgctxt "@info:status"
-#~ msgid "Indexing files for desktop search."
-#~ msgstr "Індексування файлів для стільничного пошуку."
-
-#~ msgctxt "@info:status"
-#~ msgid "File indexer is idle."
-#~ msgstr "Засіб індексування файлів у стані очікування."
-
-#~ msgid "Baloo File"
-#~ msgstr "Файл Baloo"
-
-#~ msgid "An application to handle file metadata"
-#~ msgstr "Програма для обробки метаданих файлів"

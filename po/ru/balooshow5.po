@@ -76,6 +76,3 @@ msgstr "Это результат ошибки в программе."
 #, kde-format
 msgid "No index information found"
 msgstr "Файл не найден в индексе."
-
-#~ msgid "The file URL"
-#~ msgstr "Адрес URL, ссылающийся на файл"

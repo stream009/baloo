@@ -1,8 +1,8 @@
 # set minimum version requirements
 cmake_minimum_required(VERSION 3.0)
 set(REQUIRED_QT_VERSION 5.6.0)
-set(KF5_VERSION "5.35.0") # handled by release scripts
-set(KF5_DEP_VERSION "5.35.0") # handled by release scripts
+set(KF5_VERSION "5.36.0") # handled by release scripts
+set(KF5_DEP_VERSION "5.36.0") # handled by release scripts
 
 # set up project
 project(Baloo VERSION ${KF5_VERSION})
@@ -43,6 +43,11 @@ include(KDECMakeSettings)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMInstallIcons)
 include(ECMAddTests)
+include(ECMAddQch)
+
+option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
+add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
+
 
 # set up build dependencies
 find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Core DBus Widgets Qml Quick Test)
@@ -63,10 +68,10 @@ endif()
 add_definitions(-DQT_NO_KEYWORDS)
 remove_definitions(-DQT_NO_CAST_FROM_ASCII)
 
-set(BUILD_KINOTIFY False)
-if(CMAKE_SYSTEM_NAME MATCHES "Linux")
-    set(BUILD_KINOTIFY True)
-endif()
+find_package(Inotify)
+set_package_properties(Inotify PROPERTIES
+    PURPOSE "Filesystem alteration notifications using inotify")
+set(BUILD_KINOTIFY ${Inotify_FOUND})
 
 include_directories(
     ${CMAKE_BINARY_DIR}
@@ -102,6 +107,16 @@ endif()
 
 # config files
 set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/KF5Baloo")
+
+if (BUILD_QCH)
+    ecm_install_qch_export(
+        TARGETS KF5Baloo_QCH
+        FILE KF5BalooQchTargets.cmake
+        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+        COMPONENT Devel
+    )
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KF5BalooQchTargets.cmake\")")
+endif()
 
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KF5BalooConfig.cmake.in"

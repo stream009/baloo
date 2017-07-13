@@ -96,15 +96,3 @@ msgstr "query"
 #, kde-format
 msgid "List of words to query for"
 msgstr "Lijst met te zoeken woorden"
-
-#~ msgid "Baloo Search - A debugging tool"
-#~ msgstr "Zoeken met Baloo - een hulpmiddel voor debuggen"
-
-#~ msgid "(c) 2013-15, Vishesh Handa"
-#~ msgstr "(c) 2013-2015, Vishesh Handa"
-
-#~ msgid "Number of results to return"
-#~ msgstr "Aantal terug te geven resultaten"
-
-#~ msgid "If set, search through emails"
-#~ msgstr "Indien geactiveerd, zoeken in e-mailberichten"

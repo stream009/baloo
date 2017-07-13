@@ -1,3 +1,4 @@
+include_directories(${Inotify_INCLUDE_DIRS})
 add_definitions(-DTRANSLATION_DOMAIN=\"baloo_file5\")
 
 set(file_static_lib_SRCS
@@ -54,6 +55,7 @@ target_link_libraries(baloofilecommon
     KF5::Crash
     KF5::ConfigCore
     KF5::BalooEngine
+    ${Inotify_LIBRARIES}
 )
 
 set(file_SRCS

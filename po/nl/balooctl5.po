@@ -396,6 +396,3 @@ msgstr "Geïndexeerd %1 / %2 bestanden"
 #, kde-format
 msgid "File: %1"
 msgstr "Bestand: %1"
-
-#~ msgid "Must provide a value"
-#~ msgstr "Moet een waarde leveren"

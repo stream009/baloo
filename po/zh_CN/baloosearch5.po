@@ -97,15 +97,3 @@ msgstr "查询"
 #, kde-format
 msgid "List of words to query for"
 msgstr "要搜索的单词列表"
-
-#~ msgid "Baloo Search - A debugging tool"
-#~ msgstr "Baloo 搜索 - 调试工具"
-
-#~ msgid "(c) 2013-15, Vishesh Handa"
-#~ msgstr "(c) 2013-15, Vishesh Handa"
-
-#~ msgid "Number of results to return"
-#~ msgstr "返回结果的个数"
-
-#~ msgid "If set, search through emails"
-#~ msgstr "如果设置，在电子邮件中搜索"

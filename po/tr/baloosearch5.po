@@ -97,9 +97,3 @@ msgstr "sorgu"
 #, kde-format
 msgid "List of words to query for"
 msgstr "Sorgulanacak kelime listesi"
-
-#~ msgid "Baloo Search - A debugging tool"
-#~ msgstr "Baloo Araması - Bir hata giderme aracı"
-
-#~ msgid "(c) 2013-15, Vishesh Handa"
-#~ msgstr "(c) 2013-15, Vishesh Handa"
