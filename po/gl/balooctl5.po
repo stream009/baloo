@@ -1,15 +1,15 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2015.
+# Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2015, 2017.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2017-04-20 02:49+0200\n"
-"PO-Revision-Date: 2015-11-07 11:30+0100\n"
-"Last-Translator: Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail."
-"com>\n"
+"PO-Revision-Date: 2017-07-28 14:13+0100\n"
+"Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <kde-i18n-doc@kde.org>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
@@ -325,7 +325,7 @@ msgstr "Comprobar se hai ficheiros sen indexar e indexalos."
 #: main.cpp:86
 #, kde-format
 msgid "Check database for consistency"
-msgstr ""
+msgstr "Comprobar a consistencia da base de datos"
 
 #: main.cpp:87
 #, kde-format
@@ -340,18 +340,17 @@ msgstr "Esquecer os ficheiros indicados."
 #: main.cpp:89
 #, kde-format
 msgid "Modify the Baloo configuration"
-msgstr "Cambiar a configuración de Baloo."
+msgstr "Modificar a configuración de Baloo."
 
 #: main.cpp:90
-#, fuzzy, kde-format
-#| msgid "Stop the file indexer"
+#, kde-format
 msgid "Monitor the file indexer"
-msgstr "Deter o indexador de ficheiros."
+msgstr "Vixiar o indexador de ficheiros"
 
 #: main.cpp:91
 #, kde-format
 msgid "Display the disk space used by index"
-msgstr ""
+msgstr "Mostrar o espazo en disco que ocupa o índice"
 
 #: statuscommand.cpp:45
 #, kde-format
