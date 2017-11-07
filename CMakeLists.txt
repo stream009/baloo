@@ -1,8 +1,8 @@
 # set minimum version requirements
 cmake_minimum_required(VERSION 3.0)
 set(REQUIRED_QT_VERSION 5.7.0)
-set(KF5_VERSION "5.37.0") # handled by release scripts
-set(KF5_DEP_VERSION "5.37.0") # handled by release scripts
+set(KF5_VERSION "5.39.0") # handled by release scripts
+set(KF5_DEP_VERSION "5.39.0") # handled by release scripts
 
 # set up project
 project(Baloo VERSION ${KF5_VERSION})
@@ -95,10 +95,10 @@ include_directories(
 add_subdirectory(src)
 add_subdirectory(icons)
 
-#if (BUILD_KINOTIFY)
-#    add_subdirectory(tests)
-#    add_subdirectory(autotests)
-#endif()
+if (BUILD_TESTING AND BUILD_KINOTIFY)
+   add_subdirectory(tests)
+   add_subdirectory(autotests)
+endif()
 
 # i18n
 if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")

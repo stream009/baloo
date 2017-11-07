@@ -59,12 +59,12 @@ void PendingFileQueue::enqueue(const PendingFile& file)
     if (file.shouldRemoveIndex() && file.path().endsWith('/')) {
         QMutableVectorIterator<PendingFile> it(m_cache);
         while (it.hasNext()) {
-            PendingFile pf = it.next();
+            const PendingFile &pf = it.next();
             if (pf.path().startsWith(file.path())) {
-                it.remove();
-
                 m_pendingFiles.remove(pf.path());
                 m_recentlyEmitted.remove(pf.path());
+
+                it.remove();
             }
         }
     }

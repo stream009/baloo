@@ -1,9 +1,14 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Feng Chao <chaofeng111@gmail.com>, 2014.
+# Weng Xuetian <wengxt@gmail.cm>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2016-11-19 20:11+0100\n"
-"PO-Revision-Date: 2017-08-05 09:29-0400\n"
+"PO-Revision-Date: 2017-09-30 17:44-0400\n"
 "Last-Translator: guoyunhebrave <guoyunhebrave@gmail.com>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"

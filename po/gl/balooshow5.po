@@ -73,7 +73,7 @@ msgstr ""
 #: main.cpp:123
 #, kde-format
 msgid "This is a bug"
-msgstr "Isto é un erro."
+msgstr "Isto é un fallo."
 
 #: main.cpp:151
 #, kde-format

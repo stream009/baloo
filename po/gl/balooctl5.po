@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2017-04-20 02:49+0200\n"
-"PO-Revision-Date: 2017-07-28 14:13+0100\n"
+"PO-Revision-Date: 2017-08-31 07:27+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <kde-i18n-doc@kde.org>\n"
 "Language: gl\n"
@@ -71,7 +71,7 @@ msgstr "Indexando o contido dos ficheiros"
 #: ../../file/indexerstate.h:66
 #, kde-format
 msgid "Checking for unindexed files"
-msgstr "Buscando ficheidos non indexados"
+msgstr "Comprobando se hai ficheiros non indexados"
 
 #: configcommand.cpp:45
 #, kde-format
@@ -101,7 +101,7 @@ msgstr "Engadir un valor a un parámetro de configuración."
 #: configcommand.cpp:74
 #, kde-format
 msgid "Remove a value from a config parameter"
-msgstr "Eliminar un valor dun parámetro de configuración."
+msgstr "Retirar un valor dun parámetro de configuración."
 
 #: configcommand.cpp:75
 #, kde-format
@@ -126,7 +126,7 @@ msgstr "Pódense listar as seguintes opcións de configuración:"
 #: configcommand.cpp:85 configcommand.cpp:398
 #, kde-format
 msgid "Controls if Baloo indexes hidden files and folders"
-msgstr "Controla se Baloo indexa ficheiros e cartafoles ocultos."
+msgstr "Controla se Baloo indexa ficheiros e cartafoles agochados."
 
 #: configcommand.cpp:86
 #, kde-format
@@ -168,7 +168,7 @@ msgstr "Pódense modificar as seguintes opcións de configuración:"
 #: configcommand.cpp:314
 #, kde-format
 msgid "A folder must be provided"
-msgstr "Debe indicar un cartafol."
+msgstr "Debe fornecer un cartafol."
 
 #: configcommand.cpp:167 configcommand.cpp:197 configcommand.cpp:278
 #: configcommand.cpp:320
@@ -195,7 +195,7 @@ msgstr "%1 non está na lista de ficheiros excluídos."
 #: configcommand.cpp:221 configcommand.cpp:356
 #, kde-format
 msgid "A filter must be provided"
-msgstr "Debe indicar un filtro."
+msgstr "Debe fornecer un filtro."
 
 #: configcommand.cpp:227
 #, kde-format
@@ -205,7 +205,7 @@ msgstr "%1 non está na lista de filtros excluídos."
 #: configcommand.cpp:238 configcommand.cpp:374
 #, kde-format
 msgid "A mimetype must be provided"
-msgstr "Debe indicar un tipo MIME."
+msgstr "Debe fornecer un tipo MIME."
 
 #: configcommand.cpp:244
 #, kde-format
@@ -250,12 +250,12 @@ msgstr "O tipo MIME de exclusión xa está na lista."
 #: configcommand.cpp:407 configcommand.cpp:434
 #, kde-format
 msgid "A value must be provided"
-msgstr "Debe indicar un valor."
+msgstr "Debe fornecer un valor."
 
 #: configcommand.cpp:428 configcommand.cpp:455
 #, kde-format
 msgid "Invalid value"
-msgstr "Este valor non é válido"
+msgstr "Este valor é incorrecto"
 
 #: main.cpp:69
 #, kde-format
