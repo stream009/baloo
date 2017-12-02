@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2017-04-20 02:49+0200\n"
-"PO-Revision-Date: 2017-08-31 07:27+0100\n"
+"PO-Revision-Date: 2017-11-01 11:58+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <kde-i18n-doc@kde.org>\n"
 "Language: gl\n"
@@ -26,7 +26,7 @@ msgstr "Adrián Chaves Fernández"
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "adriyetichaves@gmail.com"
+msgstr "adrian@chaves.io"
 
 #: ../../file/indexerstate.h:42
 #, kde-format
@@ -185,12 +185,12 @@ msgstr "A ruta non corresponde a un directorio."
 #: configcommand.cpp:179
 #, kde-format
 msgid "%1 is not in the list of include folders"
-msgstr "%1 non está na lista de ficheiros incluídos."
+msgstr "%1 non está na lista de cartafoles incluídos."
 
 #: configcommand.cpp:209
 #, kde-format
 msgid "%1 is not in the list of exclude folders"
-msgstr "%1 non está na lista de ficheiros excluídos."
+msgstr "%1 non está na lista de cartafoles excluídos."
 
 #: configcommand.cpp:221 configcommand.cpp:356
 #, kde-format
@@ -215,7 +215,7 @@ msgstr "%1 non está na lista de tipos MIME excluídos."
 #: configcommand.cpp:290
 #, kde-format
 msgid "%1 is already in the list of include folders"
-msgstr "%1 xa está na lista de ficheiros incluídos."
+msgstr "%1 xa está na lista de cartafoles incluídos."
 
 #: configcommand.cpp:296
 #, kde-format
@@ -225,12 +225,12 @@ msgstr "O cartafol superior %1 xa está na lista de ficheiros incluídos."
 #: configcommand.cpp:302 configcommand.cpp:344
 #, kde-format
 msgid "%1 is in the list of exclude folders"
-msgstr "%1 está na lista de ficheiros excluídos."
+msgstr "%1 está na lista de cartafoles excluídos."
 
 #: configcommand.cpp:332
 #, kde-format
 msgid "%1 is already in the list of exclude folders"
-msgstr "%1 xa está na lista de ficheiros excluídos."
+msgstr "%1 xa está na lista de cartafoles excluídos."
 
 #: configcommand.cpp:338
 #, kde-format

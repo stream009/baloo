@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: baloomonitorplugin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2016-11-19 20:11+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2017-10-04 11:42+0000\n"
+"Last-Translator: Kaan <kaanozdincer@gmail.com>\n"
 "Language-Team: Turkish <kde-i18n-doc@kde.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -20,44 +20,44 @@ msgstr ""
 #: ../../file/indexerstate.h:42
 #, kde-format
 msgid "Unknown"
-msgstr ""
+msgstr "Bilinmeyen"
 
 #: ../../file/indexerstate.h:45
 #, kde-format
 msgid "Idle"
-msgstr ""
+msgstr "Boşta"
 
 #: ../../file/indexerstate.h:48
 #, kde-format
 msgid "Suspended"
-msgstr ""
+msgstr "Beklemede"
 
 #: ../../file/indexerstate.h:51
 #, kde-format
 msgid "Initial Indexing"
-msgstr ""
+msgstr "Başlangıç indekslemesi"
 
 #: ../../file/indexerstate.h:54
 #, kde-format
 msgid "Indexing new files"
-msgstr ""
+msgstr "Yeni dosyaları indeksleme"
 
 #: ../../file/indexerstate.h:57
 #, kde-format
 msgid "Indexing modified files"
-msgstr ""
+msgstr "Değiştirilmiş dosyaları indeksleme"
 
 #: ../../file/indexerstate.h:60
 #, kde-format
 msgid "Indexing Extended Attributes"
-msgstr ""
+msgstr "Genişletilmiş Özenitelikleri İndeksleme"
 
 #: ../../file/indexerstate.h:63
 #, kde-format
 msgid "Indexing file content"
-msgstr ""
+msgstr "Dosya içeriğini indeksleme"
 
 #: ../../file/indexerstate.h:66
 #, kde-format
 msgid "Checking for unindexed files"
-msgstr ""
+msgstr "İndekslenmemiş dosyalar için denetim"
