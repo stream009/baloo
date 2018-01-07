@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio_tags\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-02-20 03:53+0100\n"
+"POT-Creation-Date: 2017-11-30 03:06+0100\n"
 "PO-Revision-Date: 2013-01-25 11:04+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -17,12 +17,28 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: kio_tags.cpp:63 kio_tags.cpp:184
+#: kio_tags.cpp:127 kio_tags.cpp:186
+#, kde-format
+msgid "File %1 already has tag %2"
+msgstr ""
+
+#: kio_tags.cpp:311
 #, kde-format
 msgid "Tag"
 msgstr "Značka"
 
-#: kio_tags.cpp:187
+#: kio_tags.cpp:313
+#, kde-format
+msgid "Tag Fragment"
+msgstr ""
+
+#: kio_tags.cpp:315
 #, kde-format
 msgid "All Tags"
+msgstr "Všechny značky"
+
+#: kio_tags.cpp:321 kio_tags.cpp:330
+#, fuzzy, kde-format
+#| msgid "All Tags"
+msgid "Tags"
 msgstr "Všechny značky"
