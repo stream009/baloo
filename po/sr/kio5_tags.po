@@ -1,11 +1,11 @@
-# Translation of kio_tags.po into Serbian.
-# Chusslove Illich <caslav.ilic@gmx.net>, 2012.
+# Translation of kio5_tags.po into Serbian.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2012, 2017.
 msgid ""
 msgstr ""
-"Project-Id-Version: kio_tags\n"
+"Project-Id-Version: kio5_tags\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-02-20 03:53+0100\n"
-"PO-Revision-Date: 2012-12-01 10:15+0100\n"
+"POT-Creation-Date: 2017-12-15 03:09+0100\n"
+"PO-Revision-Date: 2017-12-15 12:37+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr\n"
@@ -18,14 +18,25 @@ msgstr ""
 "X-Text-Markup: kde4\n"
 "X-Environment: kde\n"
 
+#: kio_tags.cpp:127 kio_tags.cpp:186
+#, kde-format
+msgid "File %1 already has tag %2"
+msgstr "Фајл %1 већ има ознаку %2"
+
 # >> @item
-#: kio_tags.cpp:63 kio_tags.cpp:184
+#: kio_tags.cpp:311
 #, kde-format
 msgid "Tag"
 msgstr "ознака"
 
 # >> @item
-#: kio_tags.cpp:187
+#: kio_tags.cpp:313
+#, kde-format
+msgid "Tag Fragment"
+msgstr "потез ознака"
+
+# >> @item
+#: kio_tags.cpp:315 kio_tags.cpp:320
 #, kde-format
 msgid "All Tags"
 msgstr "све ознаке"

@@ -184,9 +184,9 @@ void TagsProtocol::rename(const QUrl& src, const QUrl& dest, KIO::JobFlags flags
     if (srcResult.metaData.tags().contains(dstResult.tag)) {
         qCWarning(KIO_TAGS) << srcResult.fileUrl.toLocalFile() << "file already has tag" << dstResult.tag;
         infoMessage(i18n("File %1 already has tag %2", srcResult.fileUrl.toLocalFile(), dstResult.tag));
-    } else if (srcResult.urlType == FileUrl && src.isLocalFile()) {
+    } else if (srcResult.urlType == FileUrl) {
         rewriteTags(srcResult.metaData, srcResult.tag, dstResult.tag);
-    } else if (dstResult.urlType == TagUrl) {
+    } else if (srcResult.urlType == TagUrl) {
         ResultIterator it = srcResult.query.exec();
         while (it.next()) {
             KFileMetaData::UserMetaData md(it.filePath());
@@ -317,23 +317,14 @@ TagsProtocol::ParseResult TagsProtocol::parseUrl(const QUrl& url, const QList<Pa
 
         uds.insert(KIO::UDSEntry::UDS_DISPLAY_TYPE, displayType);
 
-        if (tagSection == QStringLiteral(".")) {
-            QString displayName = i18n("Tags");
-            if (!tag.isEmpty()) {
-                displayName = tag.section(QLatin1Char('/'), -1);
-            }
-
-            uds.insert(KIO::UDSEntry::UDS_DISPLAY_NAME, displayName);
+        QString displayName = i18n("All Tags");
+        if (!tag.isEmpty() && ((tagSection == QStringLiteral(".")) || (tagSection == QStringLiteral("..")))) {
+            displayName = tag.section(QLatin1Char('/'), -1);
+        } else {
+            displayName = tagSection;
         }
 
-        if (tagSection == QStringLiteral("..")) {
-            QString displayName = i18n("Tags");
-            if (!tag.isEmpty()) {
-                displayName = tag.section(QLatin1Char('/'), -3);
-            }
-
-            uds.insert(KIO::UDSEntry::UDS_DISPLAY_NAME, displayName);
-        }
+        uds.insert(KIO::UDSEntry::UDS_DISPLAY_NAME, displayName);
 
         return uds;
     };
@@ -379,6 +370,7 @@ TagsProtocol::ParseResult TagsProtocol::parseUrl(const QUrl& url, const QList<Pa
             // Create a query to find files that may be in the operation's scope.
             QString query = result.tag;
             query.prepend("tag:");
+            query.replace(' ', " AND tag:");
             query.replace('/', " AND tag:");
             result.query.setSearchString(query);
 

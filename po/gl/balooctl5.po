@@ -157,7 +157,7 @@ msgstr "A lista de tipos MIME que se usan para excluír ficheiros."
 #: configcommand.cpp:459
 #, kde-format
 msgid "Config parameter could not be found"
-msgstr "Non foi posíbel atopar o parámetro de configuración indicado."
+msgstr "Non se puido atopar o parámetro de configuración indicado."
 
 #: configcommand.cpp:148 configcommand.cpp:259 configcommand.cpp:396
 #, kde-format
@@ -365,7 +365,7 @@ msgstr "Baloo está desactivado. Execute «balooctl enable» para activalo."
 #: statuscommand.cpp:60
 #, kde-format
 msgid "Baloo Index could not be opened"
-msgstr "Non foi posíbel abrir o índice de Baloo."
+msgstr "Non se puido abrir o índice de Baloo."
 
 #: statuscommand.cpp:81
 #, kde-format

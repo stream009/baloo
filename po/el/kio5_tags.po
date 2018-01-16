@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-11-30 03:06+0100\n"
+"POT-Creation-Date: 2017-12-15 03:09+0100\n"
 "PO-Revision-Date: 2014-02-03 03:22+0200\n"
 "Last-Translator: Antonis Geralis <gaantonio@civil.auth.gr>\n"
 "Language-Team: Greek <kde-i18n-doc@kde.org>\n"
@@ -32,13 +32,7 @@ msgstr "Ετικέτα"
 msgid "Tag Fragment"
 msgstr ""
 
-#: kio_tags.cpp:315
+#: kio_tags.cpp:315 kio_tags.cpp:320
 #, kde-format
 msgid "All Tags"
-msgstr "Όλες οι ετικέτες"
-
-#: kio_tags.cpp:321 kio_tags.cpp:330
-#, fuzzy, kde-format
-#| msgid "All Tags"
-msgid "Tags"
 msgstr "Όλες οι ετικέτες"

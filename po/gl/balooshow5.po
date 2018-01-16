@@ -60,8 +60,8 @@ msgid ""
 "The Baloo index could not be opened. Please run \"balooctl status\" to see "
 "if Baloo is enabled and working."
 msgstr ""
-"Non foi posíbel abrir o índice de Baloo. Executa «balooctl status» para ver "
-"se Baloo está activado e en funcionamento."
+"Non se puido abrir o índice de Baloo. Executa «balooctl status» para ver se "
+"Baloo está activado e en funcionamento."
 
 #: main.cpp:122
 #, kde-format

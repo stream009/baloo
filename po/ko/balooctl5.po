@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Shinjo Park <kde@peremen.name>, 2014, 2015, 2016.
+# Shinjo Park <kde@peremen.name>, 2014, 2015, 2016, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2017-04-20 02:49+0200\n"
-"PO-Revision-Date: 2016-02-14 15:36+0100\n"
+"PO-Revision-Date: 2017-12-02 20:35+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde@peremen.name>\n"
 "Language: ko\n"
@@ -279,42 +279,42 @@ msgstr "실행할 명령"
 #: main.cpp:77
 #, kde-format
 msgid "Print the status of the indexer"
-msgstr "인덱서 상태 출력"
+msgstr "색인 도구 상태 출력"
 
 #: main.cpp:78
 #, kde-format
 msgid "Enable the file indexer"
-msgstr "파일 인덱서 사용"
+msgstr "파일 색인 도구 사용"
 
 #: main.cpp:79
 #, kde-format
 msgid "Disable the file indexer"
-msgstr "파일 인덱서 사용 안 함"
+msgstr "파일 색인 도구 사용 안 함"
 
 #: main.cpp:80
 #, kde-format
 msgid "Start the file indexer"
-msgstr "파일 인덱서 시작"
+msgstr "파일 색인 도구 시작"
 
 #: main.cpp:81
 #, kde-format
 msgid "Stop the file indexer"
-msgstr "파일 인덱서 정지"
+msgstr "파일 색인 도구 정지"
 
 #: main.cpp:82
 #, kde-format
 msgid "Restart the file indexer"
-msgstr "파일 인덱서 다시 시작"
+msgstr "파일 색인 도구 다시 시작"
 
 #: main.cpp:83
 #, kde-format
 msgid "Suspend the file indexer"
-msgstr "파일 인덱서 일시 정지"
+msgstr "파일 색인 도구 일시 정지"
 
 #: main.cpp:84
 #, kde-format
 msgid "Resume the file indexer"
-msgstr "파일 인덱서 다시 시작"
+msgstr "파일 색인 도구 다시 시작"
 
 #: main.cpp:85
 #, kde-format
@@ -324,12 +324,12 @@ msgstr "색인되지 않은 파일을 찾아서 색인에 추가"
 #: main.cpp:86
 #, kde-format
 msgid "Check database for consistency"
-msgstr ""
+msgstr "데이터베이스 무결성 검사"
 
 #: main.cpp:87
 #, kde-format
 msgid "Index the specified files"
-msgstr "지정한 파일 색인"
+msgstr "지정한 파일을 색인에 추가"
 
 #: main.cpp:88
 #, kde-format
@@ -342,15 +342,14 @@ msgid "Modify the Baloo configuration"
 msgstr "Baloo 설정 수정"
 
 #: main.cpp:90
-#, fuzzy, kde-format
-#| msgid "Stop the file indexer"
+#, kde-format
 msgid "Monitor the file indexer"
-msgstr "파일 인덱서 정지"
+msgstr "파일 색인 도구 활동 감시"
 
 #: main.cpp:91
 #, kde-format
 msgid "Display the disk space used by index"
-msgstr ""
+msgstr "색인 데이터가 사용하는 디스크 공간 표시"
 
 #: statuscommand.cpp:45
 #, kde-format
@@ -387,7 +386,7 @@ msgstr "Baloo 파일 색인 도구가 실행 중이 아님"
 #: statuscommand.cpp:91
 #, kde-format
 msgid "Indexed %1 / %2 files"
-msgstr "파일 %1/%2개 색인함"
+msgstr "파일 %1/%2개 색인에 추가됨"
 
 #: statuscommand.cpp:108
 #, kde-format

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-11-30 03:06+0100\n"
+"POT-Creation-Date: 2017-12-15 03:09+0100\n"
 "PO-Revision-Date: 2014-02-08 16:28+0100\n"
 "Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -33,13 +33,7 @@ msgstr "Oznaka"
 msgid "Tag Fragment"
 msgstr ""
 
-#: kio_tags.cpp:315
+#: kio_tags.cpp:315 kio_tags.cpp:320
 #, kde-format
 msgid "All Tags"
-msgstr "Vse oznake"
-
-#: kio_tags.cpp:321 kio_tags.cpp:330
-#, fuzzy, kde-format
-#| msgid "All Tags"
-msgid "Tags"
 msgstr "Vse oznake"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio5_tags\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-11-30 03:06+0100\n"
+"POT-Creation-Date: 2017-12-15 03:09+0100\n"
 "PO-Revision-Date: 2017-11-30 17:27+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -35,12 +35,7 @@ msgstr "Мітка"
 msgid "Tag Fragment"
 msgstr "Фрагмент мітки"
 
-#: kio_tags.cpp:315
+#: kio_tags.cpp:315 kio_tags.cpp:320
 #, kde-format
 msgid "All Tags"
 msgstr "Усі мітки"
-
-#: kio_tags.cpp:321 kio_tags.cpp:330
-#, kde-format
-msgid "Tags"
-msgstr "Мітки"

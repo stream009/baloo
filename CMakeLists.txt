@@ -1,8 +1,8 @@
 # set minimum version requirements
 cmake_minimum_required(VERSION 3.0)
 set(REQUIRED_QT_VERSION 5.7.0)
-set(KF5_VERSION "5.41.0") # handled by release scripts
-set(KF5_DEP_VERSION "5.41.0") # handled by release scripts
+set(KF5_VERSION "5.42.0") # handled by release scripts
+set(KF5_DEP_VERSION "5.42.0") # handled by release scripts
 
 # set up project
 project(Baloo VERSION ${KF5_VERSION})
@@ -44,6 +44,7 @@ include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMInstallIcons)
 include(ECMAddTests)
 include(ECMAddQch)
+include(ECMQtDeclareLoggingCategory)
 
 option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
 add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
@@ -143,6 +144,8 @@ install(FILES
     DESTINATION ${KF5_INCLUDE_INSTALL_DIR}
     COMPONENT Devel
 )
+
+install(FILES baloo.categories DESTINATION ${KDE_INSTALL_CONFDIR})
 
 # and we're done
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
