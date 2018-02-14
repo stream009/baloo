@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-04-20 02:49+0200\n"
+"POT-Creation-Date: 2018-01-28 03:17+0100\n"
 "PO-Revision-Date: 2017-02-14 23:04+0100\n"
 "Last-Translator: Kiszel Kristóf <kiszel.kristof@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -98,3 +98,8 @@ msgstr "lekérdezés"
 #, kde-format
 msgid "List of words to query for"
 msgstr "Keresendő szavak"
+
+#: main.cpp:107
+#, kde-format
+msgid "Elapsed: %1 msecs"
+msgstr ""

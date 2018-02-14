@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Automatically generated, 2014.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2014, 2015, 2017.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2014, 2015, 2017, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: balooctl\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-04-20 02:49+0200\n"
-"PO-Revision-Date: 2017-03-20 19:58+0100\n"
+"POT-Creation-Date: 2018-01-28 03:17+0100\n"
+"PO-Revision-Date: 2018-01-31 21:51+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -353,44 +353,129 @@ msgstr "Monitorizar el indexador de archivos"
 msgid "Display the disk space used by index"
 msgstr "Mostrar el espacio de disco usado por el índice"
 
+#: main.cpp:93
+#, kde-format
+msgid ""
+"Output format <%1|%2|%3>.\n"
+"Only applies to \"%4\""
+msgstr ""
+"Formato de salida <%1|%2|%3>.\n"
+"Solo se aplica a «%4»"
+
+#: main.cpp:99
+#, kde-format
+msgid "format"
+msgstr "formato"
+
+#: monitorcommand.cpp:41
+#, kde-format
+msgid "Baloo is not running"
+msgstr "Baloo no está en ejecución"
+
+#: monitorcommand.cpp:47
+#, kde-format
+msgid "Press ctrl+c to exit monitor"
+msgstr "Pulse Ctrl+C para salir del monitor"
+
+#: monitorcommand.cpp:52
+#, kde-format
+msgid "Baloo died"
+msgstr "Baloo ha muerto"
+
+#: monitorcommand.cpp:66
+#, kde-format
+msgctxt "currently indexed file"
+msgid "Indexing: %1"
+msgstr "Indexando: %1"
+
 #: statuscommand.cpp:45
 #, kde-format
 msgid "Print the status of the Indexer"
 msgstr "Mostrar el estado del indexador"
 
-#: statuscommand.cpp:54
+#: statuscommand.cpp:55 statuscommand.cpp:93 statuscommand.cpp:135
 #, kde-format
-msgid "Baloo is currently disabled. To enable, please run \"balooctl enable\""
-msgstr ""
-"Baloo está desactivado en la actualidad. Para activarlo, ejecute «balooctl "
-"enable», por favor."
+msgid "Ignoring non-existent file %1"
+msgstr "Ignorando el archivo no existente %1"
 
 #: statuscommand.cpp:60
+#, kde-format
+msgid "File: %1"
+msgstr "Archivo: %1"
+
+#: statuscommand.cpp:62
+#, kde-format
+msgid "Basic Indexing: Done"
+msgstr "Indexación básica: Terminada"
+
+#: statuscommand.cpp:64
+#, kde-format
+msgid "Basic Indexing: Scheduled"
+msgstr "Indexación básica: Programada"
+
+#: statuscommand.cpp:68
+#, kde-format
+msgid "Basic Indexing: Disabled"
+msgstr "Indexación básica: Desactivada"
+
+#: statuscommand.cpp:77
+#, kde-format
+msgid "Content Indexing: Scheduled"
+msgstr "Indexación de contenidos: Programada"
+
+#: statuscommand.cpp:79
+#, kde-format
+msgid "Content Indexing: Failed"
+msgstr "Indexación de contenidos: Fallida"
+
+#: statuscommand.cpp:81
+#, kde-format
+msgid "Content Indexing: Done"
+msgstr "Indexación de contenidos: Terminada"
+
+#: statuscommand.cpp:181
+#, kde-format
+msgid "Output format \"%1\" is invalid"
+msgstr "El formato de salida «%1» no es válido"
+
+#: statuscommand.cpp:187
+#, kde-format
+msgid "Baloo is currently disabled. To enable, please run %1"
+msgstr ""
+"Baloo está desactivado en la actualidad. Para activarlo, ejecute %1, por "
+"favor."
+
+#: statuscommand.cpp:193
 #, kde-format
 msgid "Baloo Index could not be opened"
 msgstr "No se puede abrir el índice de Baloo"
 
-#: statuscommand.cpp:81
+#: statuscommand.cpp:214
 #, kde-format
 msgid "Baloo File Indexer is running"
 msgstr "El indexador de archivos de Baloo está en ejecución"
 
-#: statuscommand.cpp:82
+#: statuscommand.cpp:215
 #, kde-format
 msgid "Indexer state: %1"
 msgstr "Estado del indexador: %1"
 
-#: statuscommand.cpp:85
+#: statuscommand.cpp:218
 #, kde-format
 msgid "Baloo File Indexer is not running"
 msgstr "El indexador de archivos de Baloo no está en ejecución"
 
-#: statuscommand.cpp:91
+#: statuscommand.cpp:224
 #, kde-format
 msgid "Indexed %1 / %2 files"
 msgstr "Indexado %1 / %2 archivos"
 
-#: statuscommand.cpp:108
+#: statuscommand.cpp:232
 #, kde-format
-msgid "File: %1"
-msgstr "Archivo: %1"
+msgid "Current size of index is %1"
+msgstr "El tamaño actual del índice es %1"
+
+#: statuscommand.cpp:234
+#, kde-format
+msgid "Index does not exist yet"
+msgstr "El índice todavía no existe"

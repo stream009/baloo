@@ -1,14 +1,15 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the baloo package.
 # Luigi Toscano <luigi.toscano@tiscali.it>, 2014, 2015.
+# Paolo Zamponi <zapaolo@email.it>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: baloosearch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-04-20 02:49+0200\n"
-"PO-Revision-Date: 2015-09-29 23:08+0100\n"
-"Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
+"POT-Creation-Date: 2018-01-28 03:17+0100\n"
+"PO-Revision-Date: 2018-01-30 10:23+0100\n"
+"Last-Translator: Paolo Zamponi <zapaolo@email.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -96,3 +97,8 @@ msgstr "interrogazione"
 #, kde-format
 msgid "List of words to query for"
 msgstr "Elenco di parole da cercare"
+
+#: main.cpp:107
+#, kde-format
+msgid "Elapsed: %1 msecs"
+msgstr "Trascorsi: %1 msec"

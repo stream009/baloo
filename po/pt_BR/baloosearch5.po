@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: baloosearch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-04-20 02:49+0200\n"
+"POT-Creation-Date: 2018-01-28 03:17+0100\n"
 "PO-Revision-Date: 2015-09-19 18:20-0300\n"
 "Last-Translator: André Marcelo Alvarenga <alvarenga@kde.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_br@kde.org>\n"
@@ -97,3 +97,8 @@ msgstr "pesquisa"
 #, kde-format
 msgid "List of words to query for"
 msgstr "Lista de palavras a pesquisar"
+
+#: main.cpp:107
+#, kde-format
+msgid "Elapsed: %1 msecs"
+msgstr ""

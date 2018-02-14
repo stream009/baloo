@@ -1,5 +1,5 @@
 [Desktop Entry]
-Type=Service
+Type=Application
 Exec=baloo_file
 X-KDE-StartupNotify=false
 X-KDE-autostart-condition=baloofilerc:Basic Settings:Indexing-Enabled:true
@@ -28,6 +28,7 @@ Name[gd]=Deamhan fhaidhlichean Baloo
 Name[gl]=Servizo de ficheiros de Baloo
 Name[hu]=Baloo fájl démon
 Name[ia]=Baloo File Daemon (Demon de file de Baloo)
+Name[id]=Baloo Daemon File
 Name[it]=Demone dei file Baloo
 Name[ko]=Baloo 파일 데몬
 Name[lt]=Baloo failų tarnyba

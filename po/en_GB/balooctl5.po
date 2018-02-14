@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-04-20 02:49+0200\n"
+"POT-Creation-Date: 2018-01-28 03:17+0100\n"
 "PO-Revision-Date: 2017-05-21 16:47+0000\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -351,42 +351,130 @@ msgstr "Monitor the file indexer"
 msgid "Display the disk space used by index"
 msgstr "Display the disk space used by index"
 
+#: main.cpp:93
+#, kde-format
+msgid ""
+"Output format <%1|%2|%3>.\n"
+"Only applies to \"%4\""
+msgstr ""
+
+#: main.cpp:99
+#, kde-format
+msgid "format"
+msgstr ""
+
+#: monitorcommand.cpp:41
+#, fuzzy, kde-format
+#| msgid "Baloo File Indexer is not running"
+msgid "Baloo is not running"
+msgstr "Baloo File Indexer is not running"
+
+#: monitorcommand.cpp:47
+#, kde-format
+msgid "Press ctrl+c to exit monitor"
+msgstr ""
+
+#: monitorcommand.cpp:52
+#, kde-format
+msgid "Baloo died"
+msgstr ""
+
+#: monitorcommand.cpp:66
+#, fuzzy, kde-format
+#| msgid "Indexer state: %1"
+msgctxt "currently indexed file"
+msgid "Indexing: %1"
+msgstr "Indexer state: %1"
+
 #: statuscommand.cpp:45
 #, kde-format
 msgid "Print the status of the Indexer"
 msgstr "Print the status of the Indexer"
 
-#: statuscommand.cpp:54
+#: statuscommand.cpp:55 statuscommand.cpp:93 statuscommand.cpp:135
 #, kde-format
-msgid "Baloo is currently disabled. To enable, please run \"balooctl enable\""
-msgstr "Baloo is currently disabled. To enable, please run \"balooctl enable\""
+msgid "Ignoring non-existent file %1"
+msgstr ""
 
 #: statuscommand.cpp:60
+#, kde-format
+msgid "File: %1"
+msgstr "File: %1"
+
+#: statuscommand.cpp:62
+#, kde-format
+msgid "Basic Indexing: Done"
+msgstr ""
+
+#: statuscommand.cpp:64
+#, kde-format
+msgid "Basic Indexing: Scheduled"
+msgstr ""
+
+#: statuscommand.cpp:68
+#, kde-format
+msgid "Basic Indexing: Disabled"
+msgstr ""
+
+#: statuscommand.cpp:77
+#, kde-format
+msgid "Content Indexing: Scheduled"
+msgstr ""
+
+#: statuscommand.cpp:79
+#, kde-format
+msgid "Content Indexing: Failed"
+msgstr ""
+
+#: statuscommand.cpp:81
+#, kde-format
+msgid "Content Indexing: Done"
+msgstr ""
+
+#: statuscommand.cpp:181
+#, kde-format
+msgid "Output format \"%1\" is invalid"
+msgstr ""
+
+#: statuscommand.cpp:187
+#, fuzzy, kde-format
+#| msgid ""
+#| "Baloo is currently disabled. To enable, please run \"balooctl enable\""
+msgid "Baloo is currently disabled. To enable, please run %1"
+msgstr "Baloo is currently disabled. To enable, please run \"balooctl enable\""
+
+#: statuscommand.cpp:193
 #, kde-format
 msgid "Baloo Index could not be opened"
 msgstr "Baloo Index could not be opened"
 
-#: statuscommand.cpp:81
+#: statuscommand.cpp:214
 #, kde-format
 msgid "Baloo File Indexer is running"
 msgstr "Baloo File Indexer is running"
 
-#: statuscommand.cpp:82
+#: statuscommand.cpp:215
 #, kde-format
 msgid "Indexer state: %1"
 msgstr "Indexer state: %1"
 
-#: statuscommand.cpp:85
+#: statuscommand.cpp:218
 #, kde-format
 msgid "Baloo File Indexer is not running"
 msgstr "Baloo File Indexer is not running"
 
-#: statuscommand.cpp:91
+#: statuscommand.cpp:224
 #, kde-format
 msgid "Indexed %1 / %2 files"
 msgstr "Indexed %1 / %2 files"
 
-#: statuscommand.cpp:108
+#: statuscommand.cpp:232
 #, kde-format
-msgid "File: %1"
-msgstr "File: %1"
+msgid "Current size of index is %1"
+msgstr ""
+
+#: statuscommand.cpp:234
+#, fuzzy, kde-format
+#| msgid "Path does not exist"
+msgid "Index does not exist yet"
+msgstr "Path does not exist"

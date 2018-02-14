@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio_tags\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-12-15 03:09+0100\n"
+"POT-Creation-Date: 2018-01-23 03:20+0100\n"
 "PO-Revision-Date: 2014-02-08 01:11+0100\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-doc@kde.org>\n"
@@ -18,22 +18,22 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: kio_tags.cpp:127 kio_tags.cpp:186
+#: kio_tags.cpp:125 kio_tags.cpp:184
 #, kde-format
 msgid "File %1 already has tag %2"
 msgstr ""
 
-#: kio_tags.cpp:311
+#: kio_tags.cpp:309
 #, kde-format
 msgid "Tag"
 msgstr "Slötelwoort"
 
-#: kio_tags.cpp:313
+#: kio_tags.cpp:311
 #, kde-format
 msgid "Tag Fragment"
 msgstr ""
 
-#: kio_tags.cpp:315 kio_tags.cpp:320
+#: kio_tags.cpp:313 kio_tags.cpp:318
 #, kde-format
 msgid "All Tags"
 msgstr "All Slötelwöör"

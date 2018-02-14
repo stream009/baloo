@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2014, 2015, 2017.
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2014, 2015, 2017, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-04-20 02:49+0200\n"
-"PO-Revision-Date: 2017-03-20 19:23+0100\n"
+"POT-Creation-Date: 2018-01-28 03:17+0100\n"
+"PO-Revision-Date: 2018-01-28 22:22+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -351,44 +351,127 @@ msgstr "Övervaka filindexering"
 msgid "Display the disk space used by index"
 msgstr "Visa diskutrymme använt av indexet"
 
+#: main.cpp:93
+#, kde-format
+msgid ""
+"Output format <%1|%2|%3>.\n"
+"Only applies to \"%4\""
+msgstr ""
+"Utdataformat <%1|%2|%3>.\n"
+"Gäller bara \"%4\""
+
+#: main.cpp:99
+#, kde-format
+msgid "format"
+msgstr "format"
+
+#: monitorcommand.cpp:41
+#, kde-format
+msgid "Baloo is not running"
+msgstr "Baloo kör inte"
+
+#: monitorcommand.cpp:47
+#, kde-format
+msgid "Press ctrl+c to exit monitor"
+msgstr "Tryck på Ctrl+C för att avsluta övervakning"
+
+#: monitorcommand.cpp:52
+#, kde-format
+msgid "Baloo died"
+msgstr "Baloo avslutades oväntat"
+
+#: monitorcommand.cpp:66
+#, kde-format
+msgctxt "currently indexed file"
+msgid "Indexing: %1"
+msgstr "Indexerar: %1"
+
 #: statuscommand.cpp:45
 #, kde-format
 msgid "Print the status of the Indexer"
 msgstr "Skriv ut indexeringens status"
 
-#: statuscommand.cpp:54
+#: statuscommand.cpp:55 statuscommand.cpp:93 statuscommand.cpp:135
 #, kde-format
-msgid "Baloo is currently disabled. To enable, please run \"balooctl enable\""
-msgstr ""
-"Baloo är för närvarande inaktiverat. Kör \"balooctl enable\" för att "
-"aktivera det."
+msgid "Ignoring non-existent file %1"
+msgstr "Ignorera filen %1 som inte finns"
 
 #: statuscommand.cpp:60
+#, kde-format
+msgid "File: %1"
+msgstr "Fil: %1"
+
+#: statuscommand.cpp:62
+#, kde-format
+msgid "Basic Indexing: Done"
+msgstr "Grundindexering: Klar"
+
+#: statuscommand.cpp:64
+#, kde-format
+msgid "Basic Indexing: Scheduled"
+msgstr "Grundindexering: Schemalagd"
+
+#: statuscommand.cpp:68
+#, kde-format
+msgid "Basic Indexing: Disabled"
+msgstr "Grundindexering: Inaktiverad"
+
+#: statuscommand.cpp:77
+#, kde-format
+msgid "Content Indexing: Scheduled"
+msgstr "Innehållsindexering: Schemalagd"
+
+#: statuscommand.cpp:79
+#, kde-format
+msgid "Content Indexing: Failed"
+msgstr "Innehållsindexering: Misslyckades"
+
+#: statuscommand.cpp:81
+#, kde-format
+msgid "Content Indexing: Done"
+msgstr "Innehållsindexering: Klar"
+
+#: statuscommand.cpp:181
+#, kde-format
+msgid "Output format \"%1\" is invalid"
+msgstr "Utdataformatet \"%1\" är ogiltigt"
+
+#: statuscommand.cpp:187
+#, kde-format
+msgid "Baloo is currently disabled. To enable, please run %1"
+msgstr "Baloo är för närvarande inaktiverat. Kör %1 för att aktivera det."
+
+#: statuscommand.cpp:193
 #, kde-format
 msgid "Baloo Index could not be opened"
 msgstr "Baloo-index kunde inte öppnas"
 
-#: statuscommand.cpp:81
+#: statuscommand.cpp:214
 #, kde-format
 msgid "Baloo File Indexer is running"
 msgstr "Baloo filindexering kör"
 
-#: statuscommand.cpp:82
+#: statuscommand.cpp:215
 #, kde-format
 msgid "Indexer state: %1"
 msgstr "Indexeringstillstånd: %1"
 
-#: statuscommand.cpp:85
+#: statuscommand.cpp:218
 #, kde-format
 msgid "Baloo File Indexer is not running"
 msgstr "Baloo filindexering kör inte"
 
-#: statuscommand.cpp:91
+#: statuscommand.cpp:224
 #, kde-format
 msgid "Indexed %1 / %2 files"
 msgstr "Indexerar %1/%2 filer"
 
-#: statuscommand.cpp:108
+#: statuscommand.cpp:232
 #, kde-format
-msgid "File: %1"
-msgstr "Fil: %1"
+msgid "Current size of index is %1"
+msgstr "Indexets nuvarande storlek är %1"
+
+#: statuscommand.cpp:234
+#, kde-format
+msgid "Index does not exist yet"
+msgstr "Indexet finns inte ännu"

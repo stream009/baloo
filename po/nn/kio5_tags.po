@@ -1,12 +1,12 @@
 # Translation of kio5_tags to Norwegian Nynorsk
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2015.
+# Karl Ove Hufthammer <karl@huftis.org>, 2015, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-02-20 03:53+0100\n"
-"PO-Revision-Date: 2015-09-18 20:12+0100\n"
+"POT-Creation-Date: 2018-01-23 03:20+0100\n"
+"PO-Revision-Date: 2018-01-24 20:07+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "Language: nn\n"
@@ -19,12 +19,22 @@ msgstr ""
 "X-Text-Markup: kde4\n"
 "X-Generator: Lokalize 2.0\n"
 
-#: kio_tags.cpp:63 kio_tags.cpp:184
+#: kio_tags.cpp:125 kio_tags.cpp:184
+#, kde-format
+msgid "File %1 already has tag %2"
+msgstr "Fila %1 har alt merkelappen %2"
+
+#: kio_tags.cpp:309
 #, kde-format
 msgid "Tag"
 msgstr "Merkelapp"
 
-#: kio_tags.cpp:187
+#: kio_tags.cpp:311
+#, kde-format
+msgid "Tag Fragment"
+msgstr "Merkelapp-fragment"
+
+#: kio_tags.cpp:313 kio_tags.cpp:318
 #, kde-format
 msgid "All Tags"
 msgstr "Alle merkelappar"

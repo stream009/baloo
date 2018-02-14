@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-04-20 02:49+0200\n"
+"POT-Creation-Date: 2018-01-28 03:17+0100\n"
 "PO-Revision-Date: 2016-06-13 18:58+0100\n"
 "Last-Translator: Vincent Pinon <vpinon@kde.org>\n"
 "Language-Team: French <kde-i18n-doc@kde.org>\n"
@@ -99,3 +99,8 @@ msgstr "requête"
 #, kde-format
 msgid "List of words to query for"
 msgstr "Liste de mots à chercher"
+
+#: main.cpp:107
+#, kde-format
+msgid "Elapsed: %1 msecs"
+msgstr ""

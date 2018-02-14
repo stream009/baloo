@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-04-20 02:49+0200\n"
-"PO-Revision-Date: 2018-01-05 06:38-0500\n"
+"POT-Creation-Date: 2018-01-28 03:17+0100\n"
+"PO-Revision-Date: 2018-02-01 07:11-0500\n"
 "Last-Translator: guoyunhebrave <guoyunhebrave@gmail.com>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -100,3 +100,8 @@ msgstr "查询"
 #, kde-format
 msgid "List of words to query for"
 msgstr "要搜索的单词列表"
+
+#: main.cpp:107
+#, kde-format
+msgid "Elapsed: %1 msecs"
+msgstr "已经过去：%1 毫秒"

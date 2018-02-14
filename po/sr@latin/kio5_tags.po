@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio5_tags\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-12-15 03:09+0100\n"
+"POT-Creation-Date: 2018-01-23 03:20+0100\n"
 "PO-Revision-Date: 2017-12-15 12:37+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -18,25 +18,25 @@ msgstr ""
 "X-Text-Markup: kde4\n"
 "X-Environment: kde\n"
 
-#: kio_tags.cpp:127 kio_tags.cpp:186
+#: kio_tags.cpp:125 kio_tags.cpp:184
 #, kde-format
 msgid "File %1 already has tag %2"
 msgstr "Fajl %1 već ima oznaku %2"
 
 # >> @item
-#: kio_tags.cpp:311
+#: kio_tags.cpp:309
 #, kde-format
 msgid "Tag"
 msgstr "oznaka"
 
 # >> @item
-#: kio_tags.cpp:313
+#: kio_tags.cpp:311
 #, kde-format
 msgid "Tag Fragment"
 msgstr "potez oznaka"
 
 # >> @item
-#: kio_tags.cpp:315 kio_tags.cpp:320
+#: kio_tags.cpp:313 kio_tags.cpp:318
 #, kde-format
 msgid "All Tags"
 msgstr "sve oznake"

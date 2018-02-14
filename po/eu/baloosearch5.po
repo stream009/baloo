@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: baloosearch5\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-04-20 02:49+0200\n"
+"POT-Creation-Date: 2018-01-28 03:17+0100\n"
 "PO-Revision-Date: 2017-07-25 10:55+0100\n"
 "Last-Translator: Ander Elortondo <ander.elor@gmail.com>\n"
 "Language-Team: Basque (https://www.transifex.com/librezale/teams/76827/eu/)\n"
@@ -98,3 +98,8 @@ msgstr "Kontsulta"
 #, kde-format
 msgid "List of words to query for"
 msgstr "Kontsultarako hitz zerrenda"
+
+#: main.cpp:107
+#, kde-format
+msgid "Elapsed: %1 msecs"
+msgstr ""

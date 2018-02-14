@@ -97,7 +97,11 @@ void FileWatch::watchFolder(const QString& path)
 
 void FileWatch::slotFileMoved(const QString& urlFrom, const QString& urlTo)
 {
-    m_metadataMover->moveFileMetadata(urlFrom, urlTo);
+    if (m_config->shouldBeIndexed(urlTo)) {
+        m_metadataMover->moveFileMetadata(urlFrom, urlTo);
+    } else {
+        m_metadataMover->removeFileMetadata(urlFrom);
+    }
 }
 
 

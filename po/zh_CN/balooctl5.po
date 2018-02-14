@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-04-20 02:49+0200\n"
-"PO-Revision-Date: 2018-01-05 06:38-0500\n"
+"POT-Creation-Date: 2018-01-28 03:17+0100\n"
+"PO-Revision-Date: 2018-02-01 07:11-0500\n"
 "Last-Translator: guoyunhebrave <guoyunhebrave@gmail.com>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -356,42 +356,127 @@ msgstr "监视文件索引器"
 msgid "Display the disk space used by index"
 msgstr "显示索引占用的磁盘空间"
 
+#: main.cpp:93
+#, kde-format
+msgid ""
+"Output format <%1|%2|%3>.\n"
+"Only applies to \"%4\""
+msgstr ""
+"输出格式 <%1|%2|%3>。\n"
+"只适用于 \"%4\""
+
+#: main.cpp:99
+#, kde-format
+msgid "format"
+msgstr "格式化"
+
+#: monitorcommand.cpp:41
+#, kde-format
+msgid "Baloo is not running"
+msgstr "Baloo 未运行"
+
+#: monitorcommand.cpp:47
+#, kde-format
+msgid "Press ctrl+c to exit monitor"
+msgstr "按 ctrl+c 键退出监视器"
+
+#: monitorcommand.cpp:52
+#, kde-format
+msgid "Baloo died"
+msgstr "Baloo 已跪"
+
+#: monitorcommand.cpp:66
+#, kde-format
+msgctxt "currently indexed file"
+msgid "Indexing: %1"
+msgstr "正在索引：%1"
+
 #: statuscommand.cpp:45
 #, kde-format
 msgid "Print the status of the Indexer"
 msgstr "显示索引器状态"
 
-#: statuscommand.cpp:54
+#: statuscommand.cpp:55 statuscommand.cpp:93 statuscommand.cpp:135
 #, kde-format
-msgid "Baloo is currently disabled. To enable, please run \"balooctl enable\""
-msgstr "Baloo 当前被禁用。要启用，请运行“balooctl enable”。"
+msgid "Ignoring non-existent file %1"
+msgstr "忽略不存在的文件 %1"
 
 #: statuscommand.cpp:60
+#, kde-format
+msgid "File: %1"
+msgstr "文件：%1"
+
+#: statuscommand.cpp:62
+#, kde-format
+msgid "Basic Indexing: Done"
+msgstr "基本索引: 完成"
+
+#: statuscommand.cpp:64
+#, kde-format
+msgid "Basic Indexing: Scheduled"
+msgstr "基本索引：已计划"
+
+#: statuscommand.cpp:68
+#, kde-format
+msgid "Basic Indexing: Disabled"
+msgstr "基本索引：已禁用"
+
+#: statuscommand.cpp:77
+#, kde-format
+msgid "Content Indexing: Scheduled"
+msgstr "内容索引：已计划"
+
+#: statuscommand.cpp:79
+#, kde-format
+msgid "Content Indexing: Failed"
+msgstr "内容索引：已失败"
+
+#: statuscommand.cpp:81
+#, kde-format
+msgid "Content Indexing: Done"
+msgstr "内容索引：已完成"
+
+#: statuscommand.cpp:181
+#, kde-format
+msgid "Output format \"%1\" is invalid"
+msgstr "输出格式 \"%1\" 无效"
+
+#: statuscommand.cpp:187
+#, kde-format
+msgid "Baloo is currently disabled. To enable, please run %1"
+msgstr "Baloo 当前处于禁用状态。要启用，请运行 %1"
+
+#: statuscommand.cpp:193
 #, kde-format
 msgid "Baloo Index could not be opened"
 msgstr "Baloo 索引无法打开"
 
-#: statuscommand.cpp:81
+#: statuscommand.cpp:214
 #, kde-format
 msgid "Baloo File Indexer is running"
 msgstr "Baloo 文件索引器正在运行"
 
-#: statuscommand.cpp:82
+#: statuscommand.cpp:215
 #, kde-format
 msgid "Indexer state: %1"
 msgstr "索引器状态：%1"
 
-#: statuscommand.cpp:85
+#: statuscommand.cpp:218
 #, kde-format
 msgid "Baloo File Indexer is not running"
 msgstr "Baloo 文件索引器没有运行"
 
-#: statuscommand.cpp:91
+#: statuscommand.cpp:224
 #, kde-format
 msgid "Indexed %1 / %2 files"
 msgstr "已索引 %1 / %2 文件"
 
-#: statuscommand.cpp:108
+#: statuscommand.cpp:232
 #, kde-format
-msgid "File: %1"
-msgstr "文件：%1"
+msgid "Current size of index is %1"
+msgstr "索引的当前大小为 %1"
+
+#: statuscommand.cpp:234
+#, kde-format
+msgid "Index does not exist yet"
+msgstr "索引尚不存在"

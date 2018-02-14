@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2015, 2017.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-04-20 02:49+0200\n"
-"PO-Revision-Date: 2017-11-01 11:58+0100\n"
+"POT-Creation-Date: 2018-01-28 03:17+0100\n"
+"PO-Revision-Date: 2018-01-31 21:33+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <kde-i18n-doc@kde.org>\n"
 "Language: gl\n"
@@ -352,42 +352,127 @@ msgstr "Vixiar o indexador de ficheiros"
 msgid "Display the disk space used by index"
 msgstr "Mostrar o espazo en disco que ocupa o índice"
 
+#: main.cpp:93
+#, kde-format
+msgid ""
+"Output format <%1|%2|%3>.\n"
+"Only applies to \"%4\""
+msgstr ""
+"Formato de saída <%1|%2|%3>.\n"
+"Só de aplica a «%4»."
+
+#: main.cpp:99
+#, kde-format
+msgid "format"
+msgstr "formato"
+
+#: monitorcommand.cpp:41
+#, kde-format
+msgid "Baloo is not running"
+msgstr "Baloo non se está executando."
+
+#: monitorcommand.cpp:47
+#, kde-format
+msgid "Press ctrl+c to exit monitor"
+msgstr "Prema Ctrl+C para saír do monitor."
+
+#: monitorcommand.cpp:52
+#, kde-format
+msgid "Baloo died"
+msgstr "Baloo morreu."
+
+#: monitorcommand.cpp:66
+#, kde-format
+msgctxt "currently indexed file"
+msgid "Indexing: %1"
+msgstr "Indexando: %1"
+
 #: statuscommand.cpp:45
 #, kde-format
 msgid "Print the status of the Indexer"
 msgstr "Mostrar o estado do indexador."
 
-#: statuscommand.cpp:54
+#: statuscommand.cpp:55 statuscommand.cpp:93 statuscommand.cpp:135
 #, kde-format
-msgid "Baloo is currently disabled. To enable, please run \"balooctl enable\""
-msgstr "Baloo está desactivado. Execute «balooctl enable» para activalo."
+msgid "Ignoring non-existent file %1"
+msgstr "Ignorando o ficheiro %1, que non existe."
 
 #: statuscommand.cpp:60
+#, kde-format
+msgid "File: %1"
+msgstr "Ficheiro: %1"
+
+#: statuscommand.cpp:62
+#, kde-format
+msgid "Basic Indexing: Done"
+msgstr "Indexación básica: feita."
+
+#: statuscommand.cpp:64
+#, kde-format
+msgid "Basic Indexing: Scheduled"
+msgstr "Indexación básica: planificada."
+
+#: statuscommand.cpp:68
+#, kde-format
+msgid "Basic Indexing: Disabled"
+msgstr "Indexación básica: desactivada."
+
+#: statuscommand.cpp:77
+#, kde-format
+msgid "Content Indexing: Scheduled"
+msgstr "Indexación de contido: planificada."
+
+#: statuscommand.cpp:79
+#, kde-format
+msgid "Content Indexing: Failed"
+msgstr "Indexación de contido: fallou."
+
+#: statuscommand.cpp:81
+#, kde-format
+msgid "Content Indexing: Done"
+msgstr "Indexación de contido: feita."
+
+#: statuscommand.cpp:181
+#, kde-format
+msgid "Output format \"%1\" is invalid"
+msgstr "O formato de saída «%1» non é correcto."
+
+#: statuscommand.cpp:187
+#, kde-format
+msgid "Baloo is currently disabled. To enable, please run %1"
+msgstr "Baloo está desactivado. Execute %1 para activalo."
+
+#: statuscommand.cpp:193
 #, kde-format
 msgid "Baloo Index could not be opened"
 msgstr "Non se puido abrir o índice de Baloo."
 
-#: statuscommand.cpp:81
+#: statuscommand.cpp:214
 #, kde-format
 msgid "Baloo File Indexer is running"
 msgstr "O indexador de ficheiros de Baloo está executándose."
 
-#: statuscommand.cpp:82
+#: statuscommand.cpp:215
 #, kde-format
 msgid "Indexer state: %1"
 msgstr "Estado do indexador: %1"
 
-#: statuscommand.cpp:85
+#: statuscommand.cpp:218
 #, kde-format
 msgid "Baloo File Indexer is not running"
 msgstr "O indexador de ficheiros de Baloo non se está executando."
 
-#: statuscommand.cpp:91
+#: statuscommand.cpp:224
 #, kde-format
 msgid "Indexed %1 / %2 files"
 msgstr "Indexáronse %1 ficheiros de %2."
 
-#: statuscommand.cpp:108
+#: statuscommand.cpp:232
 #, kde-format
-msgid "File: %1"
-msgstr "Ficheiro: %1"
+msgid "Current size of index is %1"
+msgstr "O tamaño actual do índice é %1."
+
+#: statuscommand.cpp:234
+#, kde-format
+msgid "Index does not exist yet"
+msgstr "O índice aínda non existe."
