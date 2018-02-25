@@ -47,7 +47,7 @@ inline quint64 devIdAndInodeToId(quint32 devId, quint32 inode)
  */
 inline quint64 statBufToId(const QT_STATBUF& stBuf)
 {
-    // We're loosing 32 bits of info, so this could potentially break
+    // We're losing 32 bits of info, so this could potentially break
     // on file systems with really large inode and device ids
     return devIdAndInodeToId(static_cast<quint32>(stBuf.st_dev),
                              static_cast<quint32>(stBuf.st_ino));
