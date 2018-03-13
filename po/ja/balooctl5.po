@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooctl\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-28 03:17+0100\n"
+"POT-Creation-Date: 2018-02-24 03:17+0100\n"
 "PO-Revision-Date: 2014-07-22 17:43-0700\n"
 "Last-Translator: Japanese KDE translation team <kde-jp@kde.org>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -320,65 +320,73 @@ msgstr ""
 
 #: main.cpp:86
 #, kde-format
-msgid "Check database for consistency"
+msgid "Index the specified files"
 msgstr ""
 
 #: main.cpp:87
 #, kde-format
-msgid "Index the specified files"
+msgid "Forget the specified files"
 msgstr ""
 
 #: main.cpp:88
 #, kde-format
-msgid "Forget the specified files"
+msgid "Modify the Baloo configuration"
 msgstr ""
 
 #: main.cpp:89
 #, kde-format
-msgid "Modify the Baloo configuration"
+msgid "Monitor the file indexer"
 msgstr ""
 
 #: main.cpp:90
 #, kde-format
-msgid "Monitor the file indexer"
-msgstr ""
-
-#: main.cpp:91
-#, kde-format
 msgid "Display the disk space used by index"
 msgstr ""
 
-#: main.cpp:93
+#: main.cpp:92
 #, kde-format
 msgid ""
 "Output format <%1|%2|%3>.\n"
 "Only applies to \"%4\""
 msgstr ""
 
-#: main.cpp:99
+#: main.cpp:98
 #, kde-format
 msgid "format"
 msgstr ""
 
-#: monitorcommand.cpp:41
+#: monitorcommand.cpp:38
 #, kde-format
-msgid "Baloo is not running"
+msgctxt "Application"
+msgid "Waiting for %1 to start"
 msgstr ""
 
-#: monitorcommand.cpp:47
+#: monitorcommand.cpp:39
+#, kde-format
+msgctxt "Application"
+msgid "%1 is running"
+msgstr ""
+
+#: monitorcommand.cpp:40
+#, kde-format
+msgctxt "Application"
+msgid "%1 died"
+msgstr ""
+
+#: monitorcommand.cpp:41
 #, kde-format
 msgid "Press ctrl+c to exit monitor"
 msgstr ""
 
-#: monitorcommand.cpp:52
-#, kde-format
-msgid "Baloo died"
-msgstr ""
-
-#: monitorcommand.cpp:66
+#: monitorcommand.cpp:88
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
+msgstr ""
+
+#: monitorcommand.cpp:96
+#, kde-format
+msgid ": Ok"
 msgstr ""
 
 #: statuscommand.cpp:45

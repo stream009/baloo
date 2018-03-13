@@ -1,15 +1,15 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Steve Allewell <steve.allewell@gmail.com>, 2014, 2015, 2017.
+# Steve Allewell <steve.allewell@gmail.com>, 2014, 2015, 2017, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-28 03:17+0100\n"
-"PO-Revision-Date: 2017-05-21 16:47+0000\n"
+"POT-Creation-Date: 2018-02-24 03:17+0100\n"
+"PO-Revision-Date: 2018-02-18 16:24+0000\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
-"Language-Team: English <kde-i18n-doc@kde.org>\n"
+"Language-Team: British English <kde-i18n-doc@kde.org>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Steve Allewell"
+msgstr "Steve Allewell, "
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
@@ -323,68 +323,76 @@ msgstr "Check for any unindexed files and index them"
 
 #: main.cpp:86
 #, kde-format
-msgid "Check database for consistency"
-msgstr "Check database for consistency"
-
-#: main.cpp:87
-#, kde-format
 msgid "Index the specified files"
 msgstr "Index the specified files"
 
-#: main.cpp:88
+#: main.cpp:87
 #, kde-format
 msgid "Forget the specified files"
 msgstr "Forget the specified files"
 
-#: main.cpp:89
+#: main.cpp:88
 #, kde-format
 msgid "Modify the Baloo configuration"
 msgstr "Modify the Baloo configuration"
 
-#: main.cpp:90
+#: main.cpp:89
 #, kde-format
 msgid "Monitor the file indexer"
 msgstr "Monitor the file indexer"
 
-#: main.cpp:91
+#: main.cpp:90
 #, kde-format
 msgid "Display the disk space used by index"
 msgstr "Display the disk space used by index"
 
-#: main.cpp:93
+#: main.cpp:92
 #, kde-format
 msgid ""
 "Output format <%1|%2|%3>.\n"
 "Only applies to \"%4\""
 msgstr ""
+"Output format <%1|%2|%3>.\n"
+"Only applies to \"%4\""
 
-#: main.cpp:99
+#: main.cpp:98
 #, kde-format
 msgid "format"
-msgstr ""
+msgstr "format"
+
+#: monitorcommand.cpp:38
+#, kde-format
+msgctxt "Application"
+msgid "Waiting for %1 to start"
+msgstr "Waiting for %1 to start"
+
+#: monitorcommand.cpp:39
+#, kde-format
+msgctxt "Application"
+msgid "%1 is running"
+msgstr "%1 is running"
+
+#: monitorcommand.cpp:40
+#, kde-format
+msgctxt "Application"
+msgid "%1 died"
+msgstr "%1 died"
 
 #: monitorcommand.cpp:41
-#, fuzzy, kde-format
-#| msgid "Baloo File Indexer is not running"
-msgid "Baloo is not running"
-msgstr "Baloo File Indexer is not running"
-
-#: monitorcommand.cpp:47
 #, kde-format
 msgid "Press ctrl+c to exit monitor"
-msgstr ""
+msgstr "Press ctrl+c to exit monitor"
 
-#: monitorcommand.cpp:52
+#: monitorcommand.cpp:88
 #, kde-format
-msgid "Baloo died"
-msgstr ""
-
-#: monitorcommand.cpp:66
-#, fuzzy, kde-format
-#| msgid "Indexer state: %1"
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
-msgstr "Indexer state: %1"
+msgstr "Indexing: %1"
+
+#: monitorcommand.cpp:96
+#, kde-format
+msgid ": Ok"
+msgstr ": Ok"
 
 #: statuscommand.cpp:45
 #, kde-format
@@ -394,7 +402,7 @@ msgstr "Print the status of the Indexer"
 #: statuscommand.cpp:55 statuscommand.cpp:93 statuscommand.cpp:135
 #, kde-format
 msgid "Ignoring non-existent file %1"
-msgstr ""
+msgstr "Ignoring non-existent file %1"
 
 #: statuscommand.cpp:60
 #, kde-format
@@ -404,44 +412,42 @@ msgstr "File: %1"
 #: statuscommand.cpp:62
 #, kde-format
 msgid "Basic Indexing: Done"
-msgstr ""
+msgstr "Basic Indexing: Done"
 
 #: statuscommand.cpp:64
 #, kde-format
 msgid "Basic Indexing: Scheduled"
-msgstr ""
+msgstr "Basic Indexing: Scheduled"
 
 #: statuscommand.cpp:68
 #, kde-format
 msgid "Basic Indexing: Disabled"
-msgstr ""
+msgstr "Basic Indexing: Disabled"
 
 #: statuscommand.cpp:77
 #, kde-format
 msgid "Content Indexing: Scheduled"
-msgstr ""
+msgstr "Content Indexing: Scheduled"
 
 #: statuscommand.cpp:79
 #, kde-format
 msgid "Content Indexing: Failed"
-msgstr ""
+msgstr "Content Indexing: Failed"
 
 #: statuscommand.cpp:81
 #, kde-format
 msgid "Content Indexing: Done"
-msgstr ""
+msgstr "Content Indexing: Done"
 
 #: statuscommand.cpp:181
 #, kde-format
 msgid "Output format \"%1\" is invalid"
-msgstr ""
+msgstr "Output format \"%1\" is invalid"
 
 #: statuscommand.cpp:187
-#, fuzzy, kde-format
-#| msgid ""
-#| "Baloo is currently disabled. To enable, please run \"balooctl enable\""
+#, kde-format
 msgid "Baloo is currently disabled. To enable, please run %1"
-msgstr "Baloo is currently disabled. To enable, please run \"balooctl enable\""
+msgstr "Baloo is currently disabled. To enable, please run %1"
 
 #: statuscommand.cpp:193
 #, kde-format
@@ -471,10 +477,9 @@ msgstr "Indexed %1 / %2 files"
 #: statuscommand.cpp:232
 #, kde-format
 msgid "Current size of index is %1"
-msgstr ""
+msgstr "Current size of index is %1"
 
 #: statuscommand.cpp:234
-#, fuzzy, kde-format
-#| msgid "Path does not exist"
+#, kde-format
 msgid "Index does not exist yet"
-msgstr "Path does not exist"
+msgstr "Index does not exist yet"

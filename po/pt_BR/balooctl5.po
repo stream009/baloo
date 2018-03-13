@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooctl\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-28 03:17+0100\n"
+"POT-Creation-Date: 2018-02-24 03:17+0100\n"
 "PO-Revision-Date: 2017-12-12 15:06-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -327,68 +327,76 @@ msgstr "Procurar e indexar arquivos não indexados"
 
 #: main.cpp:86
 #, kde-format
-msgid "Check database for consistency"
-msgstr "Verificar banco de dados por consistência."
-
-#: main.cpp:87
-#, kde-format
 msgid "Index the specified files"
 msgstr "Indexar os arquivos indicados"
 
-#: main.cpp:88
+#: main.cpp:87
 #, kde-format
 msgid "Forget the specified files"
 msgstr "Não indexar os arquivos indicados"
 
-#: main.cpp:89
+#: main.cpp:88
 #, kde-format
 msgid "Modify the Baloo configuration"
 msgstr "Modificar a configuração do Baloo"
 
-#: main.cpp:90
+#: main.cpp:89
 #, kde-format
 msgid "Monitor the file indexer"
 msgstr "Monitorar o indexador de arquivos"
 
-#: main.cpp:91
+#: main.cpp:90
 #, kde-format
 msgid "Display the disk space used by index"
 msgstr "Mostrar o espaço em disco usado pelo índice"
 
-#: main.cpp:93
+#: main.cpp:92
 #, kde-format
 msgid ""
 "Output format <%1|%2|%3>.\n"
 "Only applies to \"%4\""
 msgstr ""
 
-#: main.cpp:99
+#: main.cpp:98
 #, kde-format
 msgid "format"
 msgstr ""
 
-#: monitorcommand.cpp:41
+#: monitorcommand.cpp:38
+#, kde-format
+msgctxt "Application"
+msgid "Waiting for %1 to start"
+msgstr ""
+
+#: monitorcommand.cpp:39
 #, fuzzy, kde-format
 #| msgid "Baloo File Indexer is not running"
-msgid "Baloo is not running"
+msgctxt "Application"
+msgid "%1 is running"
 msgstr "O Indexador de Arquivos Baloo não está em execução"
 
-#: monitorcommand.cpp:47
+#: monitorcommand.cpp:40
+#, kde-format
+msgctxt "Application"
+msgid "%1 died"
+msgstr ""
+
+#: monitorcommand.cpp:41
 #, kde-format
 msgid "Press ctrl+c to exit monitor"
 msgstr ""
 
-#: monitorcommand.cpp:52
-#, kde-format
-msgid "Baloo died"
-msgstr ""
-
-#: monitorcommand.cpp:66
+#: monitorcommand.cpp:88
 #, fuzzy, kde-format
 #| msgid "Indexer state: %1"
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
 msgstr "Estado da indexação: %1"
+
+#: monitorcommand.cpp:96
+#, kde-format
+msgid ": Ok"
+msgstr ""
 
 #: statuscommand.cpp:45
 #, kde-format

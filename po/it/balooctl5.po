@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooctl\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-28 03:17+0100\n"
+"POT-Creation-Date: 2018-02-24 03:17+0100\n"
 "PO-Revision-Date: 2018-01-31 10:07+0100\n"
 "Last-Translator: Paolo Zamponi <zapaolo@email.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -325,35 +325,30 @@ msgstr "Cerca file non indicizzati e li indicizza"
 
 #: main.cpp:86
 #, kde-format
-msgid "Check database for consistency"
-msgstr "Verifica la consistenza della banca dati"
-
-#: main.cpp:87
-#, kde-format
 msgid "Index the specified files"
 msgstr "Indicizza i file specificati"
 
-#: main.cpp:88
+#: main.cpp:87
 #, kde-format
 msgid "Forget the specified files"
 msgstr "Dimentica i file specificati"
 
-#: main.cpp:89
+#: main.cpp:88
 #, kde-format
 msgid "Modify the Baloo configuration"
 msgstr "Modifica la configurazione di Baloo"
 
-#: main.cpp:90
+#: main.cpp:89
 #, kde-format
 msgid "Monitor the file indexer"
 msgstr "Controlla l'indicizzatore dei file"
 
-#: main.cpp:91
+#: main.cpp:90
 #, kde-format
 msgid "Display the disk space used by index"
 msgstr "Mostra lo spazio sul disco usato dall'indice"
 
-#: main.cpp:93
+#: main.cpp:92
 #, kde-format
 msgid ""
 "Output format <%1|%2|%3>.\n"
@@ -362,31 +357,45 @@ msgstr ""
 "Formato di output <%1|%2|%3>.\n"
 "Si applica solo a «%4»"
 
-#: main.cpp:99
+#: main.cpp:98
 #, kde-format
 msgid "format"
 msgstr "formato"
 
-#: monitorcommand.cpp:41
+#: monitorcommand.cpp:38
 #, kde-format
-msgid "Baloo is not running"
+msgctxt "Application"
+msgid "Waiting for %1 to start"
+msgstr ""
+
+#: monitorcommand.cpp:39
+#, fuzzy, kde-format
+#| msgid "Baloo is not running"
+msgctxt "Application"
+msgid "%1 is running"
 msgstr "Baloo non è in esecuzione"
 
-#: monitorcommand.cpp:47
+#: monitorcommand.cpp:40
+#, kde-format
+msgctxt "Application"
+msgid "%1 died"
+msgstr ""
+
+#: monitorcommand.cpp:41
 #, kde-format
 msgid "Press ctrl+c to exit monitor"
 msgstr "Premi ctrl+c per uscire dal monitoraggio"
 
-#: monitorcommand.cpp:52
-#, kde-format
-msgid "Baloo died"
-msgstr "Baloo è morto"
-
-#: monitorcommand.cpp:66
+#: monitorcommand.cpp:88
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
 msgstr "Indicizzazione: %1"
+
+#: monitorcommand.cpp:96
+#, kde-format
+msgid ": Ok"
+msgstr ""
 
 #: statuscommand.cpp:45
 #, kde-format

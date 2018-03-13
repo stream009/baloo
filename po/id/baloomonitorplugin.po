@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2016-11-19 20:11+0100\n"
-"PO-Revision-Date: 2018-01-23 07:42+0700\n"
+"PO-Revision-Date: 2018-03-03 08:12+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -40,12 +40,12 @@ msgstr "Pengindeksan Inisial"
 #: ../../file/indexerstate.h:54
 #, kde-format
 msgid "Indexing new files"
-msgstr "Pengindeksan file-file baru"
+msgstr "Pengindeksan fail-file baru"
 
 #: ../../file/indexerstate.h:57
 #, kde-format
 msgid "Indexing modified files"
-msgstr "Pengindeksan file termodifikasi"
+msgstr "Pengindeksan fail termodifikasi"
 
 #: ../../file/indexerstate.h:60
 #, kde-format
@@ -55,9 +55,9 @@ msgstr "Pengindeksan Atribut Diperluas"
 #: ../../file/indexerstate.h:63
 #, kde-format
 msgid "Indexing file content"
-msgstr "Pengindeksan isi file"
+msgstr "Pengindeksan isi fail "
 
 #: ../../file/indexerstate.h:66
 #, kde-format
 msgid "Checking for unindexed files"
-msgstr "Pemeriksaan file-file tak terindeks"
+msgstr "Pemeriksaan fail-file tak terindeks"

@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Franklin, 2014, 2015.
-# Jeff Huang <s8321414@gmail.com>, 2016, 2017.
+# Jeff Huang <s8321414@gmail.com>, 2016, 2017, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-28 03:17+0100\n"
-"PO-Revision-Date: 2017-03-23 19:49+0800\n"
+"POT-Creation-Date: 2018-02-24 03:17+0100\n"
+"PO-Revision-Date: 2018-02-21 20:49+0800\n"
 "Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
 "Language-Team: Chinese <kde-i18n-doc@kde.org>\n"
 "Language: zh_TW\n"
@@ -324,68 +324,76 @@ msgstr "檢查是否有任何未建索引的檔案，並建立索引"
 
 #: main.cpp:86
 #, kde-format
-msgid "Check database for consistency"
-msgstr "檢查資料庫一致性"
-
-#: main.cpp:87
-#, kde-format
 msgid "Index the specified files"
 msgstr "建立指定檔案索引"
 
-#: main.cpp:88
+#: main.cpp:87
 #, kde-format
 msgid "Forget the specified files"
 msgstr "忘記指定檔案索引"
 
-#: main.cpp:89
+#: main.cpp:88
 #, kde-format
 msgid "Modify the Baloo configuration"
 msgstr "修改 Baloo 設定"
 
-#: main.cpp:90
+#: main.cpp:89
 #, kde-format
 msgid "Monitor the file indexer"
 msgstr "監控檔案索引器"
 
-#: main.cpp:91
+#: main.cpp:90
 #, kde-format
 msgid "Display the disk space used by index"
 msgstr "顯示被索引使用的磁碟空間"
 
-#: main.cpp:93
+#: main.cpp:92
 #, kde-format
 msgid ""
 "Output format <%1|%2|%3>.\n"
 "Only applies to \"%4\""
 msgstr ""
+"輸出格式 <%1|%2|%3>。\n"
+"僅套用於「%4」"
 
-#: main.cpp:99
+#: main.cpp:98
 #, kde-format
 msgid "format"
-msgstr ""
+msgstr "格式"
+
+#: monitorcommand.cpp:38
+#, kde-format
+msgctxt "Application"
+msgid "Waiting for %1 to start"
+msgstr "等待 %1 開始"
+
+#: monitorcommand.cpp:39
+#, kde-format
+msgctxt "Application"
+msgid "%1 is running"
+msgstr "%1 執行中"
+
+#: monitorcommand.cpp:40
+#, kde-format
+msgctxt "Application"
+msgid "%1 died"
+msgstr "%1 已結束"
 
 #: monitorcommand.cpp:41
-#, fuzzy, kde-format
-#| msgid "Baloo File Indexer is not running"
-msgid "Baloo is not running"
-msgstr "Baloo 檔案索引器未執行"
-
-#: monitorcommand.cpp:47
 #, kde-format
 msgid "Press ctrl+c to exit monitor"
-msgstr ""
+msgstr "按 Ctrl+C 以結束監視"
 
-#: monitorcommand.cpp:52
+#: monitorcommand.cpp:88
 #, kde-format
-msgid "Baloo died"
-msgstr ""
-
-#: monitorcommand.cpp:66
-#, fuzzy, kde-format
-#| msgid "Indexer state: %1"
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
-msgstr "索引器狀態：%1"
+msgstr "索引：%1"
+
+#: monitorcommand.cpp:96
+#, kde-format
+msgid ": Ok"
+msgstr "：確定"
 
 #: statuscommand.cpp:45
 #, kde-format
@@ -395,7 +403,7 @@ msgstr "印出索引器狀態"
 #: statuscommand.cpp:55 statuscommand.cpp:93 statuscommand.cpp:135
 #, kde-format
 msgid "Ignoring non-existent file %1"
-msgstr ""
+msgstr "忽略不存在的檔案 %1"
 
 #: statuscommand.cpp:60
 #, kde-format
@@ -405,44 +413,42 @@ msgstr "檔案：%1"
 #: statuscommand.cpp:62
 #, kde-format
 msgid "Basic Indexing: Done"
-msgstr ""
+msgstr "基礎索引：完成"
 
 #: statuscommand.cpp:64
 #, kde-format
 msgid "Basic Indexing: Scheduled"
-msgstr ""
+msgstr "基礎索引：已規劃"
 
 #: statuscommand.cpp:68
 #, kde-format
 msgid "Basic Indexing: Disabled"
-msgstr ""
+msgstr "基礎索引：已停用"
 
 #: statuscommand.cpp:77
 #, kde-format
 msgid "Content Indexing: Scheduled"
-msgstr ""
+msgstr "內容索引：已規劃"
 
 #: statuscommand.cpp:79
 #, kde-format
 msgid "Content Indexing: Failed"
-msgstr ""
+msgstr "內容索引：失敗"
 
 #: statuscommand.cpp:81
 #, kde-format
 msgid "Content Indexing: Done"
-msgstr ""
+msgstr "內容索引：完成"
 
 #: statuscommand.cpp:181
 #, kde-format
 msgid "Output format \"%1\" is invalid"
-msgstr ""
+msgstr "輸出格式「%1」無效"
 
 #: statuscommand.cpp:187
-#, fuzzy, kde-format
-#| msgid ""
-#| "Baloo is currently disabled. To enable, please run \"balooctl enable\""
+#, kde-format
 msgid "Baloo is currently disabled. To enable, please run %1"
-msgstr "Baloo 目前已停用。要啟用，請執行「balooctl enable」"
+msgstr "Baloo 目前已停用。要啟用，請執行 %1"
 
 #: statuscommand.cpp:193
 #, kde-format
@@ -472,10 +478,9 @@ msgstr "已索引 %1/%2 個檔案"
 #: statuscommand.cpp:232
 #, kde-format
 msgid "Current size of index is %1"
-msgstr ""
+msgstr "目前索引大小為 %1"
 
 #: statuscommand.cpp:234
-#, fuzzy, kde-format
-#| msgid "Path does not exist"
+#, kde-format
 msgid "Index does not exist yet"
-msgstr "路徑不存在"
+msgstr "索引不存在"

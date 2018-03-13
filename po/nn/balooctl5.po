@@ -1,12 +1,12 @@
 # Translation of balooctl5 to Norwegian Nynorsk
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2015, 2016, 2017.
+# Karl Ove Hufthammer <karl@huftis.org>, 2015, 2016, 2017, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-28 03:17+0100\n"
-"PO-Revision-Date: 2017-05-01 20:38+0100\n"
+"POT-Creation-Date: 2018-02-24 03:17+0100\n"
+"PO-Revision-Date: 2018-02-12 19:56+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "Language: nn\n"
@@ -325,65 +325,75 @@ msgstr "Sjå etter filer som ikkje er indekserte, og indekser dei"
 
 #: main.cpp:86
 #, kde-format
-msgid "Check database for consistency"
-msgstr "Kontroller at databasen er konsistent"
-
-#: main.cpp:87
-#, kde-format
 msgid "Index the specified files"
 msgstr "Indekser dei valde filene"
 
-#: main.cpp:88
+#: main.cpp:87
 #, kde-format
 msgid "Forget the specified files"
 msgstr "Gløym dei valde filene"
 
-#: main.cpp:89
+#: main.cpp:88
 #, kde-format
 msgid "Modify the Baloo configuration"
 msgstr "Endra Baloo-oppsettet"
 
-#: main.cpp:90
+#: main.cpp:89
 #, kde-format
 msgid "Monitor the file indexer"
 msgstr "Overvak filindekseraren"
 
-#: main.cpp:91
+#: main.cpp:90
 #, kde-format
 msgid "Display the disk space used by index"
 msgstr "Vis diskplassen brukt av indeksen"
 
-#: main.cpp:93
+#: main.cpp:92
 #, kde-format
 msgid ""
 "Output format <%1|%2|%3>.\n"
 "Only applies to \"%4\""
 msgstr ""
+"Utdata-format <%1|%2|%3>.\n"
+"Gjeld berre «%4»"
 
-#: main.cpp:99
+#: main.cpp:98
 #, kde-format
 msgid "format"
+msgstr "format"
+
+#: monitorcommand.cpp:38
+#, kde-format
+msgctxt "Application"
+msgid "Waiting for %1 to start"
+msgstr ""
+
+#: monitorcommand.cpp:39
+#, kde-format
+msgctxt "Application"
+msgid "%1 is running"
+msgstr ""
+
+#: monitorcommand.cpp:40
+#, kde-format
+msgctxt "Application"
+msgid "%1 died"
 msgstr ""
 
 #: monitorcommand.cpp:41
 #, kde-format
-msgid "Baloo is not running"
-msgstr ""
-
-#: monitorcommand.cpp:47
-#, kde-format
 msgid "Press ctrl+c to exit monitor"
-msgstr ""
+msgstr "Trykk «Ctrl + C» for å avslutta overvakinga"
 
-#: monitorcommand.cpp:52
-#, kde-format
-msgid "Baloo died"
-msgstr ""
-
-#: monitorcommand.cpp:66
+#: monitorcommand.cpp:88
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
+msgstr "Indekserer: %1"
+
+#: monitorcommand.cpp:96
+#, kde-format
+msgid ": Ok"
 msgstr ""
 
 #: statuscommand.cpp:45
@@ -394,7 +404,7 @@ msgstr "Vis status for indekseraren"
 #: statuscommand.cpp:55 statuscommand.cpp:93 statuscommand.cpp:135
 #, kde-format
 msgid "Ignoring non-existent file %1"
-msgstr ""
+msgstr "Hoppar over fil som ikkje finst: %1"
 
 #: statuscommand.cpp:60
 #, kde-format
@@ -404,42 +414,42 @@ msgstr "Fil: %1"
 #: statuscommand.cpp:62
 #, kde-format
 msgid "Basic Indexing: Done"
-msgstr ""
+msgstr "Grunnleggjande indeksering: ferdig"
 
 #: statuscommand.cpp:64
 #, kde-format
 msgid "Basic Indexing: Scheduled"
-msgstr ""
+msgstr "Grunnleggjande indeksering: planlagd"
 
 #: statuscommand.cpp:68
 #, kde-format
 msgid "Basic Indexing: Disabled"
-msgstr ""
+msgstr "Grunnleggjande indeksering: slått av"
 
 #: statuscommand.cpp:77
 #, kde-format
 msgid "Content Indexing: Scheduled"
-msgstr ""
+msgstr "Innhaldsindeksering: planlagd"
 
 #: statuscommand.cpp:79
 #, kde-format
 msgid "Content Indexing: Failed"
-msgstr ""
+msgstr "Innhaldsindeksering: mislukka"
 
 #: statuscommand.cpp:81
 #, kde-format
 msgid "Content Indexing: Done"
-msgstr ""
+msgstr "Innhaldsindeksering: ferdig"
 
 #: statuscommand.cpp:181
 #, kde-format
 msgid "Output format \"%1\" is invalid"
-msgstr ""
+msgstr "Utdata-formatet «%1» er ugyldig"
 
 #: statuscommand.cpp:187
 #, kde-format
 msgid "Baloo is currently disabled. To enable, please run %1"
-msgstr ""
+msgstr "Baloo er slått av. Køyr «%1» for å slå tenesta på att."
 
 #: statuscommand.cpp:193
 #, kde-format
@@ -469,9 +479,9 @@ msgstr "Indeksert %1/%2 filer"
 #: statuscommand.cpp:232
 #, kde-format
 msgid "Current size of index is %1"
-msgstr ""
+msgstr "Storleiken på indeksen er %1"
 
 #: statuscommand.cpp:234
 #, kde-format
 msgid "Index does not exist yet"
-msgstr ""
+msgstr "Indeksen finst ikkje enno"

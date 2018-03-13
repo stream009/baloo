@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooctl5\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-28 03:17+0100\n"
-"PO-Revision-Date: 2018-02-03 19:16+0100\n"
+"POT-Creation-Date: 2018-02-24 03:17+0100\n"
+"PO-Revision-Date: 2018-02-18 12:17+0100\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -328,35 +328,30 @@ msgstr "Comprova si hi ha qualsevol fitxer sense indexar i indexa'l"
 
 #: main.cpp:86
 #, kde-format
-msgid "Check database for consistency"
-msgstr "Comprova la consistència de la base de dades"
-
-#: main.cpp:87
-#, kde-format
 msgid "Index the specified files"
 msgstr "Indexa els fitxers especificats"
 
-#: main.cpp:88
+#: main.cpp:87
 #, kde-format
 msgid "Forget the specified files"
 msgstr "Oblida els fitxers especificats"
 
-#: main.cpp:89
+#: main.cpp:88
 #, kde-format
 msgid "Modify the Baloo configuration"
 msgstr "Modifica la configuració del Baloo"
 
-#: main.cpp:90
+#: main.cpp:89
 #, kde-format
 msgid "Monitor the file indexer"
 msgstr "Controla l'indexador de fitxers"
 
-#: main.cpp:91
+#: main.cpp:90
 #, kde-format
 msgid "Display the disk space used by index"
 msgstr "Mostra l'espai en disc usat per l'índex"
 
-#: main.cpp:93
+#: main.cpp:92
 #, kde-format
 msgid ""
 "Output format <%1|%2|%3>.\n"
@@ -365,31 +360,44 @@ msgstr ""
 "Format de sortida <%1|%2|%3>.\n"
 "Només s'aplica a «%4»"
 
-#: main.cpp:99
+#: main.cpp:98
 #, kde-format
 msgid "format"
 msgstr "format"
 
-#: monitorcommand.cpp:41
+#: monitorcommand.cpp:38
 #, kde-format
-msgid "Baloo is not running"
-msgstr "El Baloo no s'està executant"
+msgctxt "Application"
+msgid "Waiting for %1 to start"
+msgstr "S'està esperant que s'iniciï %1"
 
-#: monitorcommand.cpp:47
+#: monitorcommand.cpp:39
+#, kde-format
+msgctxt "Application"
+msgid "%1 is running"
+msgstr "S'està executant %1"
+
+#: monitorcommand.cpp:40
+#, kde-format
+msgctxt "Application"
+msgid "%1 died"
+msgstr "%1 ha mort"
+
+#: monitorcommand.cpp:41
 #, kde-format
 msgid "Press ctrl+c to exit monitor"
 msgstr "Premeu Ctrl+c per sortir del monitor"
 
-#: monitorcommand.cpp:52
-#, kde-format
-msgid "Baloo died"
-msgstr "El Baloo ha mort"
-
-#: monitorcommand.cpp:66
+#: monitorcommand.cpp:88
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
 msgstr "Indexació: %1"
+
+#: monitorcommand.cpp:96
+#, kde-format
+msgid ": Ok"
+msgstr ": D'acord"
 
 #: statuscommand.cpp:45
 #, kde-format

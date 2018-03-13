@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooctl5\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-28 03:17+0100\n"
-"PO-Revision-Date: 2018-01-28 10:48+0200\n"
+"POT-Creation-Date: 2018-02-24 03:17+0100\n"
+"PO-Revision-Date: 2018-02-18 09:30+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -328,35 +328,30 @@ msgstr "Знайти усі неіндексовані файли і індек�
 
 #: main.cpp:86
 #, kde-format
-msgid "Check database for consistency"
-msgstr "Перевірити базу даних на цілісність"
-
-#: main.cpp:87
-#, kde-format
 msgid "Index the specified files"
 msgstr "Індексувати вказані файли"
 
-#: main.cpp:88
+#: main.cpp:87
 #, kde-format
 msgid "Forget the specified files"
 msgstr "Забути про вказані файли"
 
-#: main.cpp:89
+#: main.cpp:88
 #, kde-format
 msgid "Modify the Baloo configuration"
 msgstr "Змінити налаштування Baloo"
 
-#: main.cpp:90
+#: main.cpp:89
 #, kde-format
 msgid "Monitor the file indexer"
 msgstr "Спостерігати за засобом індексування файлів"
 
-#: main.cpp:91
+#: main.cpp:90
 #, kde-format
 msgid "Display the disk space used by index"
 msgstr "Показати дані щодо місця на диску, яке займає покажчик"
 
-#: main.cpp:93
+#: main.cpp:92
 #, kde-format
 msgid ""
 "Output format <%1|%2|%3>.\n"
@@ -365,31 +360,44 @@ msgstr ""
 "Формат виведення — <%1|%2|%3>.\n"
 "Застосовується до «%4»"
 
-#: main.cpp:99
+#: main.cpp:98
 #, kde-format
 msgid "format"
 msgstr "формат"
 
-#: monitorcommand.cpp:41
+#: monitorcommand.cpp:38
 #, kde-format
-msgid "Baloo is not running"
-msgstr "Baloo не запущено"
+msgctxt "Application"
+msgid "Waiting for %1 to start"
+msgstr "Очікуємо на запуск %1"
 
-#: monitorcommand.cpp:47
+#: monitorcommand.cpp:39
+#, kde-format
+msgctxt "Application"
+msgid "%1 is running"
+msgstr "%1 працює"
+
+#: monitorcommand.cpp:40
+#, kde-format
+msgctxt "Application"
+msgid "%1 died"
+msgstr "%1 завершила роботу"
+
+#: monitorcommand.cpp:41
 #, kde-format
 msgid "Press ctrl+c to exit monitor"
 msgstr "Натисніть Ctrl+C, щоб припинити спостереження"
 
-#: monitorcommand.cpp:52
-#, kde-format
-msgid "Baloo died"
-msgstr "Baloo завершив роботу"
-
-#: monitorcommand.cpp:66
+#: monitorcommand.cpp:88
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
 msgstr "Індексуємо: %1"
+
+#: monitorcommand.cpp:96
+#, kde-format
+msgid ": Ok"
+msgstr ": Без помилок"
 
 #: statuscommand.cpp:45
 #, kde-format

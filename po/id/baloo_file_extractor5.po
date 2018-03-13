@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2016-11-19 20:11+0100\n"
-"PO-Revision-Date: 2018-01-23 07:30+0700\n"
+"PO-Revision-Date: 2018-03-02 21:29+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -30,7 +30,7 @@ msgstr "wantoyek@gmail.com"
 #: main.cpp:40
 #, kde-format
 msgid "Baloo File Extractor"
-msgstr "Baloo Pengekstrak File"
+msgstr "Baloo Pengekstrak Fail"
 
 #: main.cpp:41
 #, kde-format

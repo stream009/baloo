@@ -1,43 +1,45 @@
 # Translation of baloosearch5.po to Euskara/Basque (eu).
-# Copyright (C) 2017, Free Software Foundation, Inc.
+# Copyright (C) 2017-2018, Free Software Foundation, Inc.
 # This file is distributed under the same license as the frameworks package.
-# KDE Euskaratzeko proiektuaren arduraduna <xalba@euskalnet.net>, 2017.
+# KDE Euskaratzeko proiektuaren arduraduna <xalba@euskalnet.net>.
 #
 # Translators:
-# Ander Elortondo <ander@elortondo.net>, 2017
+# Ander Elortondo <ander@elortondo.net>, 2017.
+# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2017, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: baloosearch5\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-01-28 03:17+0100\n"
-"PO-Revision-Date: 2017-07-25 10:55+0100\n"
-"Last-Translator: Ander Elortondo <ander.elor@gmail.com>\n"
-"Language-Team: Basque (https://www.transifex.com/librezale/teams/76827/eu/)\n"
+"PO-Revision-Date: 2018-02-19 08:32+0100\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
+"Language-Team: Basque <kde-i18n-doc@kde.org>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 2.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Ander Elortondo"
+msgstr "Ander Elortondo,Iñigo Salvador Azurmendi"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "ander@elortondo.net"
+msgstr "ander@elortondo.net,xalba@euskalnet.net"
 
 #: main.cpp:41
 #, kde-format
 msgid "Baloo Search"
-msgstr "Baloo bilatzailea"
+msgstr "Baloo bilaketa"
 
 #: main.cpp:43
 #, kde-format
 msgid "A tool to search through the files indexed by Baloo"
-msgstr "Fitxategietan bilaketak egiteko tresna, Balook zerrendatua"
+msgstr "Balook indexatutako fitxategietan barrena bilatzeko tresna"
 
 #: main.cpp:45
 #, kde-format
@@ -52,54 +54,54 @@ msgstr "Maintainer"
 #: main.cpp:51
 #, kde-format
 msgid "The maximum number of results"
-msgstr "Emaitzen kopuru maximoa"
+msgstr "Emaitzen kopuru handiena"
 
 #: main.cpp:52
 #, kde-format
 msgid "limit"
-msgstr "Mugak"
+msgstr "Muga"
 
 #: main.cpp:54
 #, kde-format
 msgid "Offset from which to start the search"
-msgstr "Bilaketa hasi beharreko desplazamendua"
+msgstr "Bilaketa hasteko jatorri-aldaketa"
 
 #: main.cpp:55
 #, kde-format
 msgid "offset"
-msgstr "desplazamendua"
+msgstr "jatorri-aldaketa"
 
 #: main.cpp:57
 #, kde-format
 msgid "Type of data to be searched"
-msgstr "Bilatu behar den datu mota"
+msgstr "Bilatu beharreko datu mota"
 
 #: main.cpp:58
 #, kde-format
 msgid "typeStr"
-msgstr "datuMota"
+msgstr "typeStr"
 
 #: main.cpp:60
 #, kde-format
 msgid "Limit search to specified directory"
-msgstr "Mugatu bilaketa adierazitako karpetan"
+msgstr "Mugatu bilaketa adierazitako karpetara"
 
 #: main.cpp:61
 #, kde-format
 msgid "directory"
-msgstr "Karpeta"
+msgstr "karpeta"
 
 #: main.cpp:62
 #, kde-format
 msgid "query"
-msgstr "Kontsulta"
+msgstr "kontsulta"
 
 #: main.cpp:62
 #, kde-format
 msgid "List of words to query for"
-msgstr "Kontsultarako hitz zerrenda"
+msgstr "kontsultarako hitz zerrenda"
 
 #: main.cpp:107
 #, kde-format
 msgid "Elapsed: %1 msecs"
-msgstr ""
+msgstr "Igarotakoa: %1 ms"

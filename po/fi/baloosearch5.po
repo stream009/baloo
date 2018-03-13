@@ -1,14 +1,15 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2013, 2014, 2015, 2016.
+# Tommi Nieminen <translator@legisign.org>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-01-28 03:17+0100\n"
-"PO-Revision-Date: 2015-09-20 15:08+0200\n"
-"Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
+"PO-Revision-Date: 2018-02-20 12:53+0200\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
@@ -20,12 +21,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Lasse Liehu"
+msgstr "Lasse Liehu, Tommi Nieminen"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "lasse.liehu@gmail.com"
+msgstr "lasse.liehu@gmail.com,translator@legisign.org"
 
 #: main.cpp:41
 #, kde-format
@@ -100,4 +101,4 @@ msgstr "Haun hakusanaluettelo"
 #: main.cpp:107
 #, kde-format
 msgid "Elapsed: %1 msecs"
-msgstr ""
+msgstr "Aikaa kului: %1 ms"
