@@ -117,8 +117,18 @@ Term::Term(const Term& lhs, Term::Operation op, const Term& rhs)
     : d(new Private)
 {
     d->m_op = op;
-    d->m_subTerms << lhs;
-    d->m_subTerms << rhs;
+
+    if (lhs.operation() == op) {
+        d->m_subTerms << lhs.subTerms();
+    } else {
+        d->m_subTerms << lhs;
+    }
+
+    if (rhs.operation() == op) {
+        d->m_subTerms << rhs.subTerms();
+    } else {
+        d->m_subTerms << rhs;
+    }
 }
 
 Term::~Term()
@@ -448,11 +458,11 @@ QDebug operator <<(QDebug d, const Baloo::Term& t)
                                                         t.value().typeName()).toUtf8().constData();
     }
     else {
-        d << "(" << operationToString(t.operation()).toUtf8().constData();
+        d << "[" << operationToString(t.operation()).toUtf8().constData();
         for (const Term& term : t.subTerms()) {
             d << term;
         }
-        d << ")";
+        d << "]";
 
     }
     return d;

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-02-24 03:17+0100\n"
+"POT-Creation-Date: 2018-03-08 03:26+0100\n"
 "PO-Revision-Date: 2018-01-31 21:33+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <kde-i18n-doc@kde.org>\n"
@@ -361,37 +361,30 @@ msgstr ""
 msgid "format"
 msgstr "formato"
 
-#: monitorcommand.cpp:38
-#, kde-format
-msgctxt "Application"
-msgid "Waiting for %1 to start"
-msgstr ""
-
-#: monitorcommand.cpp:39
+#: monitorcommand.cpp:58 monitorcommand.cpp:71
 #, fuzzy, kde-format
-#| msgid "Baloo is not running"
-msgctxt "Application"
-msgid "%1 is running"
-msgstr "Baloo non se está executando."
-
-#: monitorcommand.cpp:40
-#, kde-format
-msgctxt "Application"
-msgid "%1 died"
-msgstr ""
-
-#: monitorcommand.cpp:41
-#, kde-format
-msgid "Press ctrl+c to exit monitor"
+#| msgid "Press ctrl+c to exit monitor"
+msgid "Press ctrl+c to stop monitoring"
 msgstr "Prema Ctrl+C para saír do monitor."
 
-#: monitorcommand.cpp:88
+#: monitorcommand.cpp:70
+#, kde-format
+msgid "Waiting for file indexer to start"
+msgstr ""
+
+#: monitorcommand.cpp:77
+#, fuzzy, kde-format
+#| msgid "Baloo File Indexer is running"
+msgid "File indexer is running"
+msgstr "O indexador de ficheiros de Baloo está executándose."
+
+#: monitorcommand.cpp:89
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
 msgstr "Indexando: %1"
 
-#: monitorcommand.cpp:96
+#: monitorcommand.cpp:97
 #, kde-format
 msgid ": Ok"
 msgstr ""

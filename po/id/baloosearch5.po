@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-01-28 03:17+0100\n"
-"PO-Revision-Date: 2018-03-03 08:12+0700\n"
+"PO-Revision-Date: 2018-04-03 06:32+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -35,7 +35,7 @@ msgstr "Pencarian Baloo"
 #: main.cpp:43
 #, kde-format
 msgid "A tool to search through the files indexed by Baloo"
-msgstr "Sebuah alat untuk mencari melalui pengindeksan fail oleh Baloo"
+msgstr "Sebuah alat untuk mencari melalui pengindeksan file oleh Baloo"
 
 #: main.cpp:45
 #, kde-format

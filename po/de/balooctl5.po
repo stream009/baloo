@@ -1,11 +1,11 @@
 # Frederik Schwarzer <schwarzer@kde.org>, 2014, 2015, 2018.
-# Burkhard Lück <lueck@hube-lueck.de>, 2015, 2017.
+# Burkhard Lück <lueck@hube-lueck.de>, 2015, 2017, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-02-24 03:17+0100\n"
-"PO-Revision-Date: 2018-02-17 10:27+0100\n"
+"POT-Creation-Date: 2018-03-08 03:26+0100\n"
+"PO-Revision-Date: 2018-03-11 13:36+0100\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -354,46 +354,39 @@ msgid ""
 "Output format <%1|%2|%3>.\n"
 "Only applies to \"%4\""
 msgstr ""
+"Ausgabeformat <%1|%2|%3>.\n"
+"Pass nur zu \"%4\""
 
 #: main.cpp:98
 #, kde-format
 msgid "format"
-msgstr ""
+msgstr "Format"
 
-#: monitorcommand.cpp:38
+#: monitorcommand.cpp:58 monitorcommand.cpp:71
 #, kde-format
-msgctxt "Application"
-msgid "Waiting for %1 to start"
-msgstr ""
+msgid "Press ctrl+c to stop monitoring"
+msgstr "Drücken Sie Strg+C um die Überwachung zu beenden"
 
-#: monitorcommand.cpp:39
-#, fuzzy, kde-format
-#| msgid "Baloo is not running"
-msgctxt "Application"
-msgid "%1 is running"
-msgstr "Baloo läuft nicht"
-
-#: monitorcommand.cpp:40
+#: monitorcommand.cpp:70
 #, kde-format
-msgctxt "Application"
-msgid "%1 died"
-msgstr ""
+msgid "Waiting for file indexer to start"
+msgstr "Warten auf den Start der Dateiindizierung"
 
-#: monitorcommand.cpp:41
+#: monitorcommand.cpp:77
 #, kde-format
-msgid "Press ctrl+c to exit monitor"
-msgstr "Drücken Sie Strg+C um die Anzeige zu beenden"
+msgid "File indexer is running"
+msgstr "Die Dateiindizierung läuft"
 
-#: monitorcommand.cpp:88
+#: monitorcommand.cpp:89
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
 msgstr "Wird indiziert: %1"
 
-#: monitorcommand.cpp:96
+#: monitorcommand.cpp:97
 #, kde-format
 msgid ": Ok"
-msgstr ""
+msgstr ": OK"
 
 #: statuscommand.cpp:45
 #, kde-format

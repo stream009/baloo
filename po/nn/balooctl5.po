@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-02-24 03:17+0100\n"
-"PO-Revision-Date: 2018-02-12 19:56+0100\n"
+"POT-Creation-Date: 2018-03-08 03:26+0100\n"
+"PO-Revision-Date: 2018-03-11 15:52+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "Language: nn\n"
@@ -362,39 +362,31 @@ msgstr ""
 msgid "format"
 msgstr "format"
 
-#: monitorcommand.cpp:38
+#: monitorcommand.cpp:58 monitorcommand.cpp:71
 #, kde-format
-msgctxt "Application"
-msgid "Waiting for %1 to start"
-msgstr ""
+msgid "Press ctrl+c to stop monitoring"
+msgstr "Trykk «Ctrl + C» for å stoppa filovervaking"
 
-#: monitorcommand.cpp:39
+#: monitorcommand.cpp:70
 #, kde-format
-msgctxt "Application"
-msgid "%1 is running"
-msgstr ""
+msgid "Waiting for file indexer to start"
+msgstr "Ventar på at filindekseringa skal starta"
 
-#: monitorcommand.cpp:40
+#: monitorcommand.cpp:77
 #, kde-format
-msgctxt "Application"
-msgid "%1 died"
-msgstr ""
+msgid "File indexer is running"
+msgstr "Filindekseraren køyrer"
 
-#: monitorcommand.cpp:41
-#, kde-format
-msgid "Press ctrl+c to exit monitor"
-msgstr "Trykk «Ctrl + C» for å avslutta overvakinga"
-
-#: monitorcommand.cpp:88
+#: monitorcommand.cpp:89
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
 msgstr "Indekserer: %1"
 
-#: monitorcommand.cpp:96
+#: monitorcommand.cpp:97
 #, kde-format
 msgid ": Ok"
-msgstr ""
+msgstr ": OK"
 
 #: statuscommand.cpp:45
 #, kde-format

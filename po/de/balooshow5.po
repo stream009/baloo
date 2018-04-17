@@ -1,12 +1,12 @@
-# Burkhard Lück <lueck@hube-lueck.de>, 2013, 2015.
+# Burkhard Lück <lueck@hube-lueck.de>, 2013, 2015, 2018.
 # Frederik Schwarzer <schwarzer@kde.org>, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-01-28 03:17+0100\n"
-"PO-Revision-Date: 2015-10-24 23:24+0100\n"
-"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"PO-Revision-Date: 2018-03-02 11:14+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -51,37 +51,33 @@ msgid "Maintainer"
 msgstr "Betreuer"
 
 #: main.cpp:69
-#, fuzzy, kde-format
-#| msgid "The file URL"
+#, kde-format
 msgid "The file urls"
-msgstr "Die Datei-URL"
+msgstr "Die Datei-Adressen (URLs)"
 
 #: main.cpp:71
 #, kde-format
 msgid "Print internal info"
-msgstr ""
+msgstr "Interne Information ausgeben"
 
 #: main.cpp:73
 #, kde-format
 msgid "Inode number of the file to show"
-msgstr ""
+msgstr "Die Inode-Nummer der anzuzeigenden Datei"
 
 #: main.cpp:75
 #, kde-format
 msgid "Device id for the files"
-msgstr ""
+msgstr "Geräte-Kennung für die Dateien"
 
 #: main.cpp:107
-#, fuzzy, kde-format
-#| msgid ""
-#| "The Baloo index could not be opened. Please run \"balooctl status\" to "
-#| "see if Baloo is enabled and working."
+#, kde-format
 msgid ""
 "The Baloo index could not be opened. Please run \"%1\" to see if Baloo is "
 "enabled and working."
 msgstr ""
-"Die Baloo-Indizierung kann nicht göffnet werden. Führen Sie bitte „balooctl "
-"status“ aus, um zu sehen, ob Baloo aktiviert ist und läuft."
+"Die Baloo-Indizierung kann nicht geöffnet werden. Führen Sie bitte „%1“ aus, "
+"um zu sehen, ob Baloo aktiviert ist und läuft."
 
 #: main.cpp:123
 #, kde-format
@@ -103,19 +99,19 @@ msgstr "Keine Indexinformationen gefunden "
 #: main.cpp:190
 #, kde-format
 msgid "Internal Info"
-msgstr ""
+msgstr "Interne Information"
 
 #: main.cpp:191
 #, kde-format
 msgid "Terms: %1"
-msgstr ""
+msgstr "Begriffe: %1"
 
 #: main.cpp:192
 #, kde-format
 msgid "File Name Terms: %1"
-msgstr ""
+msgstr "Dateinamen-Begriffe: %1"
 
 #: main.cpp:193
 #, kde-format
 msgid "%1 Terms: %2"
-msgstr ""
+msgstr "%1 Begriffe: %2"

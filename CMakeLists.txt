@@ -1,8 +1,8 @@
 # set minimum version requirements
 cmake_minimum_required(VERSION 3.0)
-set(REQUIRED_QT_VERSION 5.7.0)
-set(KF5_VERSION "5.44.0") # handled by release scripts
-set(KF5_DEP_VERSION "5.44.0") # handled by release scripts
+set(REQUIRED_QT_VERSION 5.8.0)
+set(KF5_VERSION "5.45.0") # handled by release scripts
+set(KF5_DEP_VERSION "5.45.0") # handled by release scripts
 
 # set up project
 project(Baloo VERSION ${KF5_VERSION})
@@ -49,6 +49,9 @@ include(ECMMarkNonGuiExecutable)
 
 option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
 add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
+
+option(BUILD_EXPERIMENTAL "Build experimental features" OFF)
+add_feature_info(EXP ${BUILD_EXPERIMENTAL} "Build experimental features")
 
 
 # set up build dependencies

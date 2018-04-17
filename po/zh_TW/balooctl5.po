@@ -3,13 +3,14 @@
 #
 # Franklin, 2014, 2015.
 # Jeff Huang <s8321414@gmail.com>, 2016, 2017, 2018.
+# pan93412 <pan93412@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-02-24 03:17+0100\n"
-"PO-Revision-Date: 2018-02-21 20:49+0800\n"
-"Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
+"POT-Creation-Date: 2018-03-08 03:26+0100\n"
+"PO-Revision-Date: 2018-03-24 14:53+0800\n"
+"Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <kde-i18n-doc@kde.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
@@ -361,36 +362,28 @@ msgstr ""
 msgid "format"
 msgstr "格式"
 
-#: monitorcommand.cpp:38
+#: monitorcommand.cpp:58 monitorcommand.cpp:71
 #, kde-format
-msgctxt "Application"
-msgid "Waiting for %1 to start"
-msgstr "等待 %1 開始"
-
-#: monitorcommand.cpp:39
-#, kde-format
-msgctxt "Application"
-msgid "%1 is running"
-msgstr "%1 執行中"
-
-#: monitorcommand.cpp:40
-#, kde-format
-msgctxt "Application"
-msgid "%1 died"
-msgstr "%1 已結束"
-
-#: monitorcommand.cpp:41
-#, kde-format
-msgid "Press ctrl+c to exit monitor"
+msgid "Press ctrl+c to stop monitoring"
 msgstr "按 Ctrl+C 以結束監視"
 
-#: monitorcommand.cpp:88
+#: monitorcommand.cpp:70
+#, kde-format
+msgid "Waiting for file indexer to start"
+msgstr "等待檔案索引開始"
+
+#: monitorcommand.cpp:77
+#, kde-format
+msgid "File indexer is running"
+msgstr "檔案索引器正在執行中"
+
+#: monitorcommand.cpp:89
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
 msgstr "索引：%1"
 
-#: monitorcommand.cpp:96
+#: monitorcommand.cpp:97
 #, kde-format
 msgid ": Ok"
 msgstr "：確定"

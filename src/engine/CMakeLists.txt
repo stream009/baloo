@@ -26,6 +26,10 @@ set(BALOO_ENGINE_SRCS
     fsutils.cpp
 )
 
+if(${BUILD_EXPERIMENTAL})
+  set(BALOO_ENGINE_SRCS ${BALOO_ENGINE_SRCS} experimental/databasesanitizer.cpp)
+endif()
+
 add_library(KF5BalooEngine ${BALOO_ENGINE_SRCS})
 add_library(KF5::BalooEngine ALIAS KF5BalooEngine)
 
@@ -36,6 +40,7 @@ target_link_libraries(KF5BalooEngine
     ${LMDB_LIBRARIES}
     PRIVATE
     KF5BalooCodecs
+    KF5::I18n
 )
 
 set_target_properties(KF5BalooEngine PROPERTIES

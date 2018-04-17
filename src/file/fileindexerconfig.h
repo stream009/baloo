@@ -20,9 +20,9 @@
 #ifndef BALOO_FILEINDEXER_SERVICE_CONFIG_H_
 #define BALOO_FILEINDEXER_SERVICE_CONFIG_H_
 
-#include <QtCore/QObject>
-#include <QtCore/QList>
-#include <QtCore/QSet>
+#include <QObject>
+#include <QList>
+#include <QSet>
 
 #include <kconfig.h>
 
@@ -190,6 +190,8 @@ private:
 
     /// Caching cleaned up list (no duplicates, no useless entries, etc.)
     QList<QPair<QString, bool> > m_folderCache;
+    /// Whether the folder cache needs to be rebuilt the next time it is used
+    bool m_folderCacheDirty;
 
     /// cache of regexp objects for all exclude filters
     /// to prevent regexp parsing over and over

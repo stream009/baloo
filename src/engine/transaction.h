@@ -130,6 +130,7 @@ private:
     MDB_env* m_env;
     WriteTransaction* m_writeTrans;
 
+    friend class DatabaseSanitizerImpl;
     friend class DBState; // for testing
 };
 }

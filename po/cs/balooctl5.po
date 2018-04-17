@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-02-24 03:17+0100\n"
+"POT-Creation-Date: 2018-03-08 03:26+0100\n"
 "PO-Revision-Date: 2017-03-20 11:52+0100\n"
 "Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -356,40 +356,30 @@ msgstr ""
 #: main.cpp:98
 #, kde-format
 msgid "format"
-msgstr ""
+msgstr "formát"
 
-#: monitorcommand.cpp:38
+#: monitorcommand.cpp:58 monitorcommand.cpp:71
 #, kde-format
-msgctxt "Application"
-msgid "Waiting for %1 to start"
+msgid "Press ctrl+c to stop monitoring"
 msgstr ""
 
-#: monitorcommand.cpp:39
-#, fuzzy, kde-format
-#| msgid "Baloo File Indexer is not running"
-msgctxt "Application"
-msgid "%1 is running"
-msgstr "Indexer Baloo neběží"
-
-#: monitorcommand.cpp:40
+#: monitorcommand.cpp:70
 #, kde-format
-msgctxt "Application"
-msgid "%1 died"
+msgid "Waiting for file indexer to start"
 msgstr ""
 
-#: monitorcommand.cpp:41
+#: monitorcommand.cpp:77
 #, kde-format
-msgid "Press ctrl+c to exit monitor"
+msgid "File indexer is running"
 msgstr ""
 
-#: monitorcommand.cpp:88
-#, fuzzy, kde-format
-#| msgid "Indexer state: %1"
+#: monitorcommand.cpp:89
+#, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
-msgstr "Stav indexeru: %1"
+msgstr ""
 
-#: monitorcommand.cpp:96
+#: monitorcommand.cpp:97
 #, kde-format
 msgid ": Ok"
 msgstr ""
@@ -445,12 +435,9 @@ msgid "Output format \"%1\" is invalid"
 msgstr ""
 
 #: statuscommand.cpp:187
-#, fuzzy, kde-format
-#| msgid ""
-#| "Baloo is currently disabled. To enable, please run \"balooctl enable\""
+#, kde-format
 msgid "Baloo is currently disabled. To enable, please run %1"
 msgstr ""
-"Baloo je momentálně vypnuté. Pro jeho zapnutí spusťte \"balooctl enable\""
 
 #: statuscommand.cpp:193
 #, kde-format
@@ -483,7 +470,6 @@ msgid "Current size of index is %1"
 msgstr ""
 
 #: statuscommand.cpp:234
-#, fuzzy, kde-format
-#| msgid "Path does not exist"
+#, kde-format
 msgid "Index does not exist yet"
-msgstr "Cesta neexistuje"
+msgstr ""

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-02-24 03:17+0100\n"
-"PO-Revision-Date: 2018-02-20 12:52+0200\n"
+"POT-Creation-Date: 2018-03-08 03:26+0100\n"
+"PO-Revision-Date: 2018-03-18 16:49+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -361,36 +361,28 @@ msgstr ""
 msgid "format"
 msgstr "muoto"
 
-#: monitorcommand.cpp:38
+#: monitorcommand.cpp:58 monitorcommand.cpp:71
 #, kde-format
-msgctxt "Application"
-msgid "Waiting for %1 to start"
-msgstr "Odotetaan käynnistymistä: %1"
-
-#: monitorcommand.cpp:39
-#, kde-format
-msgctxt "Application"
-msgid "%1 is running"
-msgstr "%1 on käynnissä"
-
-#: monitorcommand.cpp:40
-#, kde-format
-msgctxt "Application"
-msgid "%1 died"
-msgstr "%1 kuoli"
-
-#: monitorcommand.cpp:41
-#, kde-format
-msgid "Press ctrl+c to exit monitor"
+msgid "Press ctrl+c to stop monitoring"
 msgstr "Lopeta valvonta painamalla Ctrl+C"
 
-#: monitorcommand.cpp:88
+#: monitorcommand.cpp:70
+#, kde-format
+msgid "Waiting for file indexer to start"
+msgstr "Odotetaan tiedostoindeksoijan käynnistymistä"
+
+#: monitorcommand.cpp:77
+#, kde-format
+msgid "File indexer is running"
+msgstr "Tiedostoindeksoija on käynnissä"
+
+#: monitorcommand.cpp:89
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
 msgstr "Indeksoidaan: %1"
 
-#: monitorcommand.cpp:96
+#: monitorcommand.cpp:97
 #, kde-format
 msgid ": Ok"
 msgstr ": OK"

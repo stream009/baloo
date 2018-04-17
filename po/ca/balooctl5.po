@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooctl5\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-02-24 03:17+0100\n"
-"PO-Revision-Date: 2018-02-18 12:17+0100\n"
+"POT-Creation-Date: 2018-03-08 03:26+0100\n"
+"PO-Revision-Date: 2018-03-08 20:38+0100\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -365,36 +365,28 @@ msgstr ""
 msgid "format"
 msgstr "format"
 
-#: monitorcommand.cpp:38
+#: monitorcommand.cpp:58 monitorcommand.cpp:71
 #, kde-format
-msgctxt "Application"
-msgid "Waiting for %1 to start"
-msgstr "S'està esperant que s'iniciï %1"
+msgid "Press ctrl+c to stop monitoring"
+msgstr "Premeu Ctrl+c per aturar el monitoratge"
 
-#: monitorcommand.cpp:39
+#: monitorcommand.cpp:70
 #, kde-format
-msgctxt "Application"
-msgid "%1 is running"
-msgstr "S'està executant %1"
+msgid "Waiting for file indexer to start"
+msgstr "S'està esperant que s'iniciï l'indexador de fitxers"
 
-#: monitorcommand.cpp:40
+#: monitorcommand.cpp:77
 #, kde-format
-msgctxt "Application"
-msgid "%1 died"
-msgstr "%1 ha mort"
+msgid "File indexer is running"
+msgstr "L'indexador de fitxers s'està executant"
 
-#: monitorcommand.cpp:41
-#, kde-format
-msgid "Press ctrl+c to exit monitor"
-msgstr "Premeu Ctrl+c per sortir del monitor"
-
-#: monitorcommand.cpp:88
+#: monitorcommand.cpp:89
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
 msgstr "Indexació: %1"
 
-#: monitorcommand.cpp:96
+#: monitorcommand.cpp:97
 #, kde-format
 msgid ": Ok"
 msgstr ": D'acord"
