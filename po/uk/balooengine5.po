@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooengine5\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-03-17 03:15+0100\n"
-"PO-Revision-Date: 2018-03-17 08:44+0200\n"
+"POT-Creation-Date: 2018-04-20 03:29+0200\n"
+"PO-Revision-Date: 2018-04-20 09:30+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -20,12 +20,33 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 2.0\n"
 
-#: databasesanitizer.cpp:180
+#: experimental/databasesanitizer.cpp:276
 #, kde-format
-msgid "Missing:"
-msgstr "Не вистачає:"
+msgid "Total: %1, Inaccessible: %2"
+msgstr "Загалом: %1, недоступних: %2"
 
-#: databasesanitizer.cpp:190 databasesanitizer.cpp:213
+#: experimental/databasesanitizer.cpp:280
 #, kde-format
-msgid "Found %1 matching items"
-msgstr "Знайдено %1 відповідних записів"
+msgid "Total: %1, Ignored: %2, Accessible: %3, Inaccessible: %4"
+msgstr "Загалом: %1, проігнорованих: %2, доступних: %3, недоступних: %4"
+
+#: experimental/databasesanitizer.cpp:336
+#, kde-format
+msgid "Found %1 matching in %2 devices"
+msgstr "Знайдено %1 відповідних записів на %2 пристроях"
+
+#: experimental/databasesanitizer.cpp:357
+#, kde-format
+msgid "IgnoredSymbolicLink:"
+msgstr "Проігнорованих символічних посилань:"
+
+#: experimental/databasesanitizer.cpp:361
+#, kde-format
+msgid "Removing:"
+msgstr "Вилучення:"
+
+#: experimental/databasesanitizer.cpp:375
+#, kde-format
+msgctxt "numbers"
+msgid "Removed: %1, Total: %2, Ignored: %3"
+msgstr "Вилучено: %1, загалом: %2, проігноровано: %3"

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-03-23 03:23+0100\n"
-"PO-Revision-Date: 2018-03-23 23:00+0100\n"
+"POT-Creation-Date: 2018-04-20 03:29+0200\n"
+"PO-Revision-Date: 2018-04-20 11:39+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
 "Language: nl\n"
@@ -54,22 +54,27 @@ msgstr "geheel getal"
 #: main.cpp:58
 #, kde-format
 msgid ""
-"Print results of a prune operation, but do not change anything.\n"
-"Only applies to \"%1\" command"
-msgstr ""
-"Drukt resultaten af van een opschoonbewerking, maar wijzigt niets.\n"
-"Is alleen van toepassing op commando \"%1\""
-
-#: main.cpp:63
-#, kde-format
-msgid ""
 "List only inaccessible entries.\n"
 "Only applies to \"%1\""
 msgstr ""
 "Maakt alleen een lijst van niet toegankelijke items.\n"
 "Is alleen van toepassing op \"%1\""
 
-#: main.cpp:70
+#: main.cpp:62
+#, kde-format
+msgid "Act only on item on mounted devices"
+msgstr "Werkt alleen op item op aangekoppelde apparaten"
+
+#: main.cpp:66
+#, kde-format
+msgid ""
+"Print results of a prune operation, but do not change anything.\n"
+"Only applies to \"%1\" command"
+msgstr ""
+"Drukt resultaten af van een opschoonbewerking, maar wijzigt niets.\n"
+"Is alleen van toepassing op commando \"%1\""
+
+#: main.cpp:74
 #, kde-format
 msgid ""
 "List database contents. Use a regular expression as argument to filter output"
@@ -77,12 +82,17 @@ msgstr ""
 "Maakt een lijst van de database-inhoud. Een reguliere expressie als argument "
 "gebruiken om uitvoer te filteren"
 
-#: main.cpp:103
+#: main.cpp:85
 #, kde-format
 msgid "List devices"
 msgstr "Apparaten in een lijst zetten"
 
-#: main.cpp:152
+#: main.cpp:100
+#, kde-format
+msgid "Remove stale database entries"
+msgstr "Ongebruikte items in database verwijderen"
+
+#: main.cpp:155
 #, kde-format
 msgid ""
 "\n"
@@ -95,37 +105,37 @@ msgstr ""
 "Commando's:\n"
 "    %1"
 
-#: main.cpp:159
+#: main.cpp:162
 #, kde-format
 msgid "Baloo Database Sanitizer"
 msgstr "Opschoner van Baloo-database"
 
-#: main.cpp:161
+#: main.cpp:164
 #, kde-format
 msgid "The Baloo Database Lister & Sanitizer"
 msgstr "De lijstenmaker & opschoner van de Baloo-database"
 
-#: main.cpp:163
+#: main.cpp:166
 #, kde-format
 msgid "(c) 2018, Michael Heidelbach"
 msgstr "(c) 2018, Michael Heidelbach"
 
-#: main.cpp:164
+#: main.cpp:167
 #, kde-format
 msgid "Michael Heidelbach"
 msgstr "Michael Heidelbach"
 
-#: main.cpp:164
+#: main.cpp:167
 #, kde-format
 msgid "Maintainer"
 msgstr "Onderhouder"
 
-#: main.cpp:170
+#: main.cpp:173
 #, kde-format
 msgid "The command to execute"
 msgstr "Het uit te voeren commando"
 
-#: main.cpp:174
+#: main.cpp:177
 #, kde-format
 msgctxt "Command"
 msgid ""
@@ -135,17 +145,22 @@ msgstr ""
 "Een reguliere expressie toegepast op het URL-adres van database-items\n"
 "Voorbeeld: %1"
 
-#: main.cpp:223 main.cpp:231
+#: main.cpp:234 main.cpp:242 main.cpp:252
 #, kde-format
 msgid "Baloo Index could not be opened"
 msgstr "Baloo-index kon niet worden geopend"
 
-#: main.cpp:227 main.cpp:235
+#: main.cpp:238 main.cpp:246
 #, kde-format
 msgid "Listing database contents..."
 msgstr "Een lijst maken van database-inhoud..."
 
-#: main.cpp:262
+#: main.cpp:256
+#, kde-format
+msgid "Removing stale database contents..."
+msgstr "Ongebruikte inhoud van database wordt verwijderd..."
+
+#: main.cpp:279
 #, kde-format
 msgid "Elapsed: %1 secs"
 msgstr "Verstreken: %1 seconden"

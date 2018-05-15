@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-19 20:11+0100\n"
+"POT-Creation-Date: 2018-04-28 03:38+0200\n"
 "PO-Revision-Date: 2016-02-01 11:42+0100\n"
 "Last-Translator: Giovanni Sora <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -27,6 +27,57 @@ msgstr "Giovanni Sora"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "g.sora@tiscali.it"
+
+#: indexerstate.h:42
+#, kde-format
+msgid "Unknown"
+msgstr ""
+
+#: indexerstate.h:45
+#, kde-format
+msgid "Idle"
+msgstr ""
+
+#: indexerstate.h:48
+#, kde-format
+msgid "Suspended"
+msgstr ""
+
+#: indexerstate.h:51
+#, kde-format
+msgid "Initial Indexing"
+msgstr ""
+
+#: indexerstate.h:54
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Index files"
+msgid "Indexing new files"
+msgstr "Indicisa files"
+
+#: indexerstate.h:57
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Index files"
+msgid "Indexing modified files"
+msgstr "Indicisa files"
+
+#: indexerstate.h:60
+#, kde-format
+msgid "Indexing Extended Attributes"
+msgstr ""
+
+#: indexerstate.h:63
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Index files"
+msgid "Indexing file content"
+msgstr "Indicisa files"
+
+#: indexerstate.h:66
+#, kde-format
+msgid "Checking for unindexed files"
+msgstr ""
 
 #: main.cpp:47
 #, kde-format

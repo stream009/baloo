@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Alexander Potashev <aspotashev@gmail.com>, 2014, 2015.
+# Alexander Potashev <aspotashev@gmail.com>, 2014, 2015, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-01-28 03:17+0100\n"
-"PO-Revision-Date: 2015-10-01 22:07+0300\n"
+"PO-Revision-Date: 2018-04-21 21:41+0300\n"
 "Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -101,4 +101,4 @@ msgstr "Список слов, которые следует искать."
 #: main.cpp:107
 #, kde-format
 msgid "Elapsed: %1 msecs"
-msgstr ""
+msgstr "Затрачено: %1 мс"

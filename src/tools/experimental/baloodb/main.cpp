@@ -54,13 +54,17 @@ const auto options = QList<QCommandLineOption>{
         0
     },
     QCommandLineOption{
+        QStringList{QStringLiteral("m"), QStringLiteral("missing-only")},
+        i18n("List only inaccessible entries.\nOnly applies to \"%1\"", QStringLiteral("list"))
+    },
+    QCommandLineOption{
+        QStringList{QStringLiteral("u"), QStringLiteral("mounted-only")},
+        i18n("Act only on item on mounted devices")
+    },
+    QCommandLineOption{
         QStringList{QStringLiteral("D"), QStringLiteral("dry-run")},
         i18n("Print results of a prune operation, but do not change anything."
         "\nOnly applies to \"%1\" command", QStringLiteral("prune"))
-    },
-    QCommandLineOption{
-        QStringList{QStringLiteral("m"), QStringLiteral("missing-only")},
-        i18n("List only inaccessible entries.\nOnly applies to \"%1\"", QStringLiteral("list"))
     }
 };
 
@@ -76,6 +80,12 @@ const auto commands = std::vector<Command>{
             QStringLiteral("device-id")
         }
     },
+    Command{
+        QStringLiteral("devices"),
+        i18n("List devices"),
+        QStringList{},
+        QStringList{QStringLiteral("missing-only")}
+    },
     /*TODO:
     Command{
         QStringLiteral("check"),
@@ -85,24 +95,17 @@ const auto commands = std::vector<Command>{
         QStringList{}
     },
     */
-    /*TODO:
     Command{
-        QStringLiteral("prune"),
+        QStringLiteral("clean"),
         i18n("Remove stale database entries"),
         QStringList{
             QStringLiteral("pattern")
         },
         QStringList{
             QStringLiteral("dry-run"),
-            QStringLiteral("device-id")
+            QStringLiteral("device-id"),
+            QStringLiteral("mounted-only")
         }
-    },
-    */
-    Command{
-        QStringLiteral("devices"),
-        i18n("List devices"),
-        QStringList{},
-        QStringList{QStringLiteral("missing-only")}
     }
 };
 
@@ -143,7 +146,7 @@ QString createDescription()
             .arg(argumentStr);
 
         const QString str = QStringLiteral("%1 %2")
-            .arg(commandStr, -48)
+            .arg(commandStr, -58)
             .arg(c.description);
 
         allowedcommands.append(str);
@@ -205,7 +208,15 @@ int main(int argc, char* argv[])
     for (const auto& dev : parser.values(QStringLiteral("device-id"))) {
         deviceIds.append(dev.toInt());
     }
-    const bool missingOnly = parser.isSet(QStringLiteral("missing-only"));
+    const DatabaseSanitizer::ItemAccessFilters accessFilter = (
+        parser.isSet(QStringLiteral("missing-only"))
+        ? DatabaseSanitizer::IgnoreAvailable
+        : DatabaseSanitizer::IgnoreNone
+    ) | (
+        parser.isSet(QStringLiteral("mounted-only"))
+        ? DatabaseSanitizer::IgnoreUnmounted
+        : DatabaseSanitizer::IgnoreNone
+    );
     const QString pattern = args.isEmpty()
         ? QString()
         : args.at(0);
@@ -225,7 +236,7 @@ int main(int argc, char* argv[])
         }
         DatabaseSanitizer san(db, Transaction::ReadOnly);
         err << i18n("Listing database contents...") << endl;
-        san.printList(deviceIds, missingOnly, urlFilter);
+        san.printList(deviceIds, accessFilter, urlFilter);
     } else if (command == QStringLiteral("devices")) {
         if (!db->open(Database::ReadOnlyDatabase)) {
             err << i18n("Baloo Index could not be opened") << endl;
@@ -233,11 +244,17 @@ int main(int argc, char* argv[])
         }
         DatabaseSanitizer san(db, Transaction::ReadOnly);
         err << i18n("Listing database contents...") << endl;
-        san.printDevices(deviceIds);
+        san.printDevices(deviceIds, accessFilter);
 
     } else if (command == QStringLiteral("clean")) {
-        /* TODO: add prune command */
-        parser.showHelp(1);
+        auto dbMode = Database::ReadWriteDatabase;
+        if (!db->open(dbMode)) {
+            err << i18n("Baloo Index could not be opened") << endl;
+            return 1;
+        }
+        DatabaseSanitizer san(db, Transaction::ReadWrite);
+        err << i18n("Removing stale database contents...") << endl;
+        san.removeStaleEntries(deviceIds, accessFilter, parser.isSet(QStringLiteral("dry-run")), urlFilter);
 
     } else if (command == QStringLiteral("check")) {
         parser.showHelp(1);

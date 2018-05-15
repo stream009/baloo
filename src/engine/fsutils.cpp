@@ -27,44 +27,11 @@
 #ifdef Q_OS_LINUX
 #include <errno.h>
 #include <unistd.h>
-#include <mntent.h>
 #include <sys/ioctl.h>
 #include <fcntl.h>
 #endif
 
 using namespace Baloo;
-
-QString FSUtils::getDirectoryFileSystem(const QString &directory)
-{
-#ifndef Q_OS_LINUX
-    return QString();
-#else
-    QString bestMatchPath;
-    QString bestMatchFS;
-
-    FILE *mtab = setmntent("/etc/mtab", "r");
-    if (!mtab) {
-        return QString();
-    }
-    while (mntent *mnt = getmntent(mtab)) {
-        if (qstrcmp(mnt->mnt_type, MNTTYPE_IGNORE) == 0) {
-            continue;
-        }
-
-        const QString dir = QString::fromLocal8Bit(mnt->mnt_dir);
-        if (!directory.startsWith(dir) || dir.length() < bestMatchPath.length()) {
-            continue;
-        }
-
-        bestMatchPath = dir;
-        bestMatchFS = QString::fromLocal8Bit(mnt->mnt_type);
-    }
-
-    endmntent(mtab);
-
-    return bestMatchFS;
-#endif
-}
 
 void FSUtils::disableCoW(const QString &path)
 {
@@ -92,14 +59,22 @@ void FSUtils::disableCoW(const QString &path)
     }
 
     if (ioctl(fd, FS_IOC_GETFLAGS, &flags) == -1) {
-        qWarning() << "ioctl error: failed to get file flags (" << errno << ")";
+        const int errno_ioctl = errno;
+        // ignore ENOTTY, filesystem does not support attrs (and likely neither supports COW)
+        if (errno_ioctl != ENOTTY) {
+            qWarning() << "ioctl error: failed to get file flags (" << errno_ioctl << ")";
+        }
         close(fd);
         return;
     }
     if (!(flags & FS_NOCOW_FL)) {
         flags |= FS_NOCOW_FL;
         if (ioctl(fd, FS_IOC_SETFLAGS, &flags) == -1) {
-            qWarning() << "ioctl error: failed to set file flags (" << errno << ")";
+            const int errno_ioctl = errno;
+            // ignore EOPNOTSUPP, returned on filesystems not supporting COW
+            if (errno_ioctl != EOPNOTSUPP) {
+                qWarning() << "ioctl error: failed to set file flags (" << errno_ioctl << ")";
+            }
             close(fd);
             return;
         }
@@ -107,3 +82,4 @@ void FSUtils::disableCoW(const QString &path)
     close(fd);
 #endif
 }
+

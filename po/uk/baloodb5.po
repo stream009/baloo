@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: baloodb5\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-03-23 03:23+0100\n"
-"PO-Revision-Date: 2018-03-21 08:15+0200\n"
+"POT-Creation-Date: 2018-04-20 03:29+0200\n"
+"PO-Revision-Date: 2018-04-20 09:32+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -55,22 +55,27 @@ msgstr "ціле число"
 #: main.cpp:58
 #, kde-format
 msgid ""
-"Print results of a prune operation, but do not change anything.\n"
-"Only applies to \"%1\" command"
-msgstr ""
-"Вивести результати дії з чищення, але не виконувати її.\n"
-"Стосується лише команди «%1»"
-
-#: main.cpp:63
-#, kde-format
-msgid ""
 "List only inaccessible entries.\n"
 "Only applies to \"%1\""
 msgstr ""
 "Вивести список лише недоступних записів.\n"
 "Стосується лише команди «%1»"
 
-#: main.cpp:70
+#: main.cpp:62
+#, kde-format
+msgid "Act only on item on mounted devices"
+msgstr "Працювати лише із записами на змонтованих пристроях"
+
+#: main.cpp:66
+#, kde-format
+msgid ""
+"Print results of a prune operation, but do not change anything.\n"
+"Only applies to \"%1\" command"
+msgstr ""
+"Вивести результати дії з чищення, але не виконувати її.\n"
+"Стосується лише команди «%1»"
+
+#: main.cpp:74
 #, kde-format
 msgid ""
 "List database contents. Use a regular expression as argument to filter output"
@@ -78,12 +83,17 @@ msgstr ""
 "Вивести список вмісту бази даних. Скористайтеся формальним виразом-"
 "аргументом для фільтрування виведеного."
 
-#: main.cpp:103
+#: main.cpp:85
 #, kde-format
 msgid "List devices"
 msgstr "Вивести список пристроїв"
 
-#: main.cpp:152
+#: main.cpp:100
+#, kde-format
+msgid "Remove stale database entries"
+msgstr "Вилучити застарілі записи бази даних"
+
+#: main.cpp:155
 #, kde-format
 msgid ""
 "\n"
@@ -96,37 +106,37 @@ msgstr ""
 "Команди:\n"
 "    %1"
 
-#: main.cpp:159
+#: main.cpp:162
 #, kde-format
 msgid "Baloo Database Sanitizer"
 msgstr "Чистильник бази даних Baloo"
 
-#: main.cpp:161
+#: main.cpp:164
 #, kde-format
 msgid "The Baloo Database Lister & Sanitizer"
 msgstr "Засіб для побудови списку та чищення бази даних Baloo"
 
-#: main.cpp:163
+#: main.cpp:166
 #, kde-format
 msgid "(c) 2018, Michael Heidelbach"
 msgstr "© Michael Heidelbach, 2018"
 
-#: main.cpp:164
+#: main.cpp:167
 #, kde-format
 msgid "Michael Heidelbach"
 msgstr "Michael Heidelbach"
 
-#: main.cpp:164
+#: main.cpp:167
 #, kde-format
 msgid "Maintainer"
 msgstr "Супровідник"
 
-#: main.cpp:170
+#: main.cpp:173
 #, kde-format
 msgid "The command to execute"
 msgstr "Команда, яку слід виконати"
 
-#: main.cpp:174
+#: main.cpp:177
 #, kde-format
 msgctxt "Command"
 msgid ""
@@ -136,17 +146,22 @@ msgstr ""
 "Формальний вираз, який буде застосовано до адрес записів у базі даних.\n"
 "Приклад: %1"
 
-#: main.cpp:223 main.cpp:231
+#: main.cpp:234 main.cpp:242 main.cpp:252
 #, kde-format
 msgid "Baloo Index could not be opened"
 msgstr "Не вдалося відкрити покажчик Baloo"
 
-#: main.cpp:227 main.cpp:235
+#: main.cpp:238 main.cpp:246
 #, kde-format
 msgid "Listing database contents..."
 msgstr "Будуємо список записів у базі даних…"
 
-#: main.cpp:262
+#: main.cpp:256
+#, kde-format
+msgid "Removing stale database contents..."
+msgstr "Вилучаємо з бази даних застарілі дані…"
+
+#: main.cpp:279
 #, kde-format
 msgid "Elapsed: %1 secs"
 msgstr "Минуло: %1 сек."

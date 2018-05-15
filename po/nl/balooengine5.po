@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-03-17 03:15+0100\n"
-"PO-Revision-Date: 2018-03-17 18:15+0100\n"
+"POT-Creation-Date: 2018-04-20 03:29+0200\n"
+"PO-Revision-Date: 2018-04-20 11:40+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
 "Language: nl\n"
@@ -17,12 +17,33 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 2.0\n"
 
-#: databasesanitizer.cpp:180
+#: experimental/databasesanitizer.cpp:276
 #, kde-format
-msgid "Missing:"
-msgstr "Ontbreekt:"
+msgid "Total: %1, Inaccessible: %2"
+msgstr "Totaal: %1, niet toegankelijk: %2"
 
-#: databasesanitizer.cpp:190 databasesanitizer.cpp:213
+#: experimental/databasesanitizer.cpp:280
 #, kde-format
-msgid "Found %1 matching items"
-msgstr "%1 overeenkomende items gevonden"
+msgid "Total: %1, Ignored: %2, Accessible: %3, Inaccessible: %4"
+msgstr "Totaal: %1, genegeerd: %2, toegankelijk: %3, ontoegankelijk: %4"
+
+#: experimental/databasesanitizer.cpp:336
+#, kde-format
+msgid "Found %1 matching in %2 devices"
+msgstr "%1 overeenkomst in %2 apparaten gevonden"
+
+#: experimental/databasesanitizer.cpp:357
+#, kde-format
+msgid "IgnoredSymbolicLink:"
+msgstr "IgnoredSymbolicLink:"
+
+#: experimental/databasesanitizer.cpp:361
+#, kde-format
+msgid "Removing:"
+msgstr "Bezig met verwijderen:"
+
+#: experimental/databasesanitizer.cpp:375
+#, kde-format
+msgctxt "numbers"
+msgid "Removed: %1, Total: %2, Ignored: %3"
+msgstr "Verwijderd: %1, totaal: %2, genegeerd: %3"

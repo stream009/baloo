@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Vít Pelčák <vit@pelcak.org>, 2014, 2015, 2017.
+# Vít Pelčák <vit@pelcak.org>, 2014, 2015, 2017, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-01-28 03:17+0100\n"
-"PO-Revision-Date: 2017-03-08 10:08+0100\n"
-"Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
+"PO-Revision-Date: 2018-04-13 16:00+0100\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -102,4 +102,4 @@ msgstr "Seznam vyhledávaných slov"
 #: main.cpp:107
 #, kde-format
 msgid "Elapsed: %1 msecs"
-msgstr ""
+msgstr "Uplynulo: %1 ms"

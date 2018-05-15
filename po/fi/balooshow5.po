@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-28 03:17+0100\n"
+"POT-Creation-Date: 2018-04-17 03:33+0200\n"
 "PO-Revision-Date: 2018-02-20 12:56+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -28,52 +28,52 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "lasse.liehu@gmail.com, translator@legisign.org"
 
-#: main.cpp:59
+#: main.cpp:64
 #, kde-format
 msgid "Baloo Show"
 msgstr "Baloo Show"
 
-#: main.cpp:61
+#: main.cpp:66
 #, kde-format
 msgid "The Baloo data Viewer - A debugging tool"
 msgstr "Baloon datakatselin – työkalu virheiden paikantamiseen"
 
-#: main.cpp:63
+#: main.cpp:68
 #, kde-format
 msgid "(c) 2012, Vishesh Handa"
 msgstr "© 2012 Vishesh Handa"
 
-#: main.cpp:64
+#: main.cpp:69
 #, kde-format
 msgid "Vishesh Handa"
 msgstr "Vishesh Handa"
 
-#: main.cpp:64
+#: main.cpp:69
 #, kde-format
 msgid "Maintainer"
 msgstr "Ylläpitäjä"
 
-#: main.cpp:69
+#: main.cpp:74
 #, kde-format
 msgid "The file urls"
 msgstr "Tiedostojen osoitteet"
 
-#: main.cpp:71
+#: main.cpp:76
 #, kde-format
 msgid "Print internal info"
 msgstr "Tulosta sisäiset tiedot"
 
-#: main.cpp:73
+#: main.cpp:78
 #, kde-format
 msgid "Inode number of the file to show"
 msgstr "Näytettävän tiedoston inode-numero"
 
-#: main.cpp:75
+#: main.cpp:80
 #, kde-format
 msgid "Device id for the files"
 msgstr "Tiedostojen laitetunniste"
 
-#: main.cpp:107
+#: main.cpp:112
 #, kde-format
 msgid ""
 "The Baloo index could not be opened. Please run \"%1\" to see if Baloo is "
@@ -82,38 +82,38 @@ msgstr ""
 "Baloon indeksiä ei voi avata. Varmista, että Baloo on käynnissä ja toimii "
 "suorittamalla ”%1”."
 
-#: main.cpp:123
+#: main.cpp:128
 #, kde-format
 msgid "The fileID is not equal to the actual Baloo fileID"
 msgstr "fileID ei ole sama kuin Baloon todellinen fileID"
 
-#: main.cpp:124
+#: main.cpp:129
 #, kde-format
 msgid "This is a bug"
 msgstr "Tämä on ohjelmavirhe"
 
-#: main.cpp:152
+#: main.cpp:157
 #, kde-format
 msgid "No index information found"
 msgstr "Indeksitietoa ei löytynyt"
 
-#: main.cpp:190
+#: main.cpp:195
 #, kde-format
 msgid "Internal Info"
 msgstr "Sisäisen tiedot"
 
 # *** TARKISTA: Onko ”term” hakusana vai jotain muuta, seuraako tässä numero vain luettelo hakusanoista tms.
-#: main.cpp:191
+#: main.cpp:196
 #, kde-format
 msgid "Terms: %1"
 msgstr "Hakusanoja: %1"
 
-#: main.cpp:192
+#: main.cpp:197
 #, kde-format
 msgid "File Name Terms: %1"
 msgstr "Tiedostonimihakusanoja: %1"
 
-#: main.cpp:193
+#: main.cpp:198
 #, kde-format
 msgid "%1 Terms: %2"
 msgstr "%1 hakusanaa: %2"

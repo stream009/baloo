@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-28 03:17+0100\n"
+"POT-Creation-Date: 2018-04-17 03:33+0200\n"
 "PO-Revision-Date: 2018-01-31 21:34+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <kde-i18n-doc@kde.org>\n"
@@ -29,52 +29,52 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "mvillarino@kde-espana.org"
 
-#: main.cpp:59
+#: main.cpp:64
 #, kde-format
 msgid "Baloo Show"
 msgstr "Baloo Show"
 
-#: main.cpp:61
+#: main.cpp:66
 #, kde-format
 msgid "The Baloo data Viewer - A debugging tool"
 msgstr "O visor de datos de Baloo, unha ferramenta de depuración"
 
-#: main.cpp:63
+#: main.cpp:68
 #, kde-format
 msgid "(c) 2012, Vishesh Handa"
 msgstr "© 2012, Vishesh Handa"
 
-#: main.cpp:64
+#: main.cpp:69
 #, kde-format
 msgid "Vishesh Handa"
 msgstr "Vishesh Handa"
 
-#: main.cpp:64
+#: main.cpp:69
 #, kde-format
 msgid "Maintainer"
 msgstr "Mantenedor"
 
-#: main.cpp:69
+#: main.cpp:74
 #, kde-format
 msgid "The file urls"
 msgstr "Os URL de ficheiro."
 
-#: main.cpp:71
+#: main.cpp:76
 #, kde-format
 msgid "Print internal info"
 msgstr "Imprimir información interna."
 
-#: main.cpp:73
+#: main.cpp:78
 #, kde-format
 msgid "Inode number of the file to show"
 msgstr "Número de inode do ficheiro para mostrar."
 
-#: main.cpp:75
+#: main.cpp:80
 #, kde-format
 msgid "Device id for the files"
 msgstr "Identificador de dispositivo dos ficheiros."
 
-#: main.cpp:107
+#: main.cpp:112
 #, kde-format
 msgid ""
 "The Baloo index could not be opened. Please run \"%1\" to see if Baloo is "
@@ -83,39 +83,39 @@ msgstr ""
 "Non se puido abrir o índice de Baloo. Execute «%1» para ver se Baloo está "
 "activado e en funcionamento."
 
-#: main.cpp:123
+#: main.cpp:128
 #, kde-format
 msgid "The fileID is not equal to the actual Baloo fileID"
 msgstr ""
 "O identificador do ficheiro non é idéntico ao identificador do ficheiro de "
 "Baloo."
 
-#: main.cpp:124
+#: main.cpp:129
 #, kde-format
 msgid "This is a bug"
 msgstr "Isto é un fallo."
 
-#: main.cpp:152
+#: main.cpp:157
 #, kde-format
 msgid "No index information found"
 msgstr "Non se atopou información de indexación."
 
-#: main.cpp:190
+#: main.cpp:195
 #, kde-format
 msgid "Internal Info"
 msgstr "Información interna"
 
-#: main.cpp:191
+#: main.cpp:196
 #, kde-format
 msgid "Terms: %1"
 msgstr "Termos: %1"
 
-#: main.cpp:192
+#: main.cpp:197
 #, kde-format
 msgid "File Name Terms: %1"
 msgstr "Termos de nome de ficheiro: %1"
 
-#: main.cpp:193
+#: main.cpp:198
 #, kde-format
 msgid "%1 Terms: %2"
 msgstr "Termos de %1: %2"

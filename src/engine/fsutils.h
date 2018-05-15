@@ -30,22 +30,11 @@ namespace Baloo {
 namespace FSUtils {
 
 /**
- * Returns name of filesystem that @p directory is stored on. This
- * only works on Linux and returns empty string on other platforms or when it's
- * unable to detect the filesystem.
- */
-QString getDirectoryFileSystem(const QString &directory);
-
-/**
  * Disables filesystem copy-on-write feature on given file or directory.
- * Only works on Linux and does nothing on other platforms.
- *
- * It was tested only with Btrfs but in theory can be called on any FS that
- * supports NOCOW.
+ * Only implemented on Linux and does nothing on other platforms.
  */
 void disableCoW(const QString &path);
 
 }
-
 }
 #endif

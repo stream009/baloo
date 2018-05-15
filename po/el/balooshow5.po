@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-28 03:17+0100\n"
+"POT-Creation-Date: 2018-04-17 03:33+0200\n"
 "PO-Revision-Date: 2015-10-27 00:02+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -27,53 +27,53 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "capoiosct@gmail.com"
 
-#: main.cpp:59
+#: main.cpp:64
 #, kde-format
 msgid "Baloo Show"
 msgstr "Baloo Show"
 
-#: main.cpp:61
+#: main.cpp:66
 #, kde-format
 msgid "The Baloo data Viewer - A debugging tool"
 msgstr "Baloo Show - Εργαλείο διόρθωσης σφαλμάτων"
 
-#: main.cpp:63
+#: main.cpp:68
 #, kde-format
 msgid "(c) 2012, Vishesh Handa"
 msgstr "(c) 2012, Vishesh Handa"
 
-#: main.cpp:64
+#: main.cpp:69
 #, kde-format
 msgid "Vishesh Handa"
 msgstr "Vishesh Handa"
 
-#: main.cpp:64
+#: main.cpp:69
 #, kde-format
 msgid "Maintainer"
 msgstr "Συντηρητής"
 
-#: main.cpp:69
+#: main.cpp:74
 #, fuzzy, kde-format
 #| msgid "The file URL"
 msgid "The file urls"
 msgstr "Το URL του αρχείου"
 
-#: main.cpp:71
+#: main.cpp:76
 #, kde-format
 msgid "Print internal info"
 msgstr ""
 
-#: main.cpp:73
+#: main.cpp:78
 #, kde-format
 msgid "Inode number of the file to show"
 msgstr ""
 
-#: main.cpp:75
+#: main.cpp:80
 #, kde-format
 msgid "Device id for the files"
 msgstr ""
 
-#: main.cpp:107
+#: main.cpp:112
 #, fuzzy, kde-format
 #| msgid ""
 #| "The Baloo index could not be opened. Please run \"balooctl status\" to "
@@ -85,37 +85,37 @@ msgstr ""
 "Αδυναμία ανοίγματος του δείκτη Baloo. Εκτελέστε \"balooctl status\" για να "
 "δείτε αν το Baloo είναι ενεργό και λειτουργεί."
 
-#: main.cpp:123
+#: main.cpp:128
 #, kde-format
 msgid "The fileID is not equal to the actual Baloo fileID"
 msgstr "Το fileID δεν είναι ίδιο με το πραγματικό fileID του Baloo"
 
-#: main.cpp:124
+#: main.cpp:129
 #, kde-format
 msgid "This is a bug"
 msgstr "Αυτό είναι ένα σφάλμα"
 
-#: main.cpp:152
+#: main.cpp:157
 #, kde-format
 msgid "No index information found"
 msgstr "Δεν βρέθηκαν πληροφορίες δείκτη"
 
-#: main.cpp:190
+#: main.cpp:195
 #, kde-format
 msgid "Internal Info"
 msgstr ""
 
-#: main.cpp:191
+#: main.cpp:196
 #, kde-format
 msgid "Terms: %1"
 msgstr ""
 
-#: main.cpp:192
+#: main.cpp:197
 #, kde-format
 msgid "File Name Terms: %1"
 msgstr ""
 
-#: main.cpp:193
+#: main.cpp:198
 #, kde-format
 msgid "%1 Terms: %2"
 msgstr ""

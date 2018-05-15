@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio5_timeline\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-19 20:11+0100\n"
+"POT-Creation-Date: 2018-04-09 03:24+0200\n"
 "PO-Revision-Date: 2015-09-10 02:07+0100\n"
 "Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Generator: Lokalize 2.0\n"
 
-#: kio_timeline.cpp:62
+#: kio_timeline.cpp:63
 #, kde-format
 msgctxt ""
 "Month and year used in a tree above the actual days. Have a look at http://"
@@ -31,12 +31,12 @@ msgctxt ""
 msgid "MMMM yyyy"
 msgstr "MMMM de yyyy"
 
-#: kio_timeline.cpp:120
+#: kio_timeline.cpp:122
 #, kde-format
 msgid "Today"
 msgstr "Hui"
 
-#: kio_timeline.cpp:121 kio_timeline.cpp:190
+#: kio_timeline.cpp:123 kio_timeline.cpp:192
 #, kde-format
 msgid "Calendar"
 msgstr "Calendari"

@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-03-08 03:26+0100\n"
-"PO-Revision-Date: 2018-01-31 21:33+0100\n"
-"Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
+"PO-Revision-Date: 2018-04-22 08:55+0100\n"
+"Last-Translator: Adrian Chaves <adrian@chaves.io>\n"
 "Language-Team: Galician <kde-i18n-doc@kde.org>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
@@ -362,21 +362,19 @@ msgid "format"
 msgstr "formato"
 
 #: monitorcommand.cpp:58 monitorcommand.cpp:71
-#, fuzzy, kde-format
-#| msgid "Press ctrl+c to exit monitor"
+#, kde-format
 msgid "Press ctrl+c to stop monitoring"
-msgstr "Prema Ctrl+C para saír do monitor."
+msgstr "Prema Ctrl+C para deixar de monitorizar."
 
 #: monitorcommand.cpp:70
 #, kde-format
 msgid "Waiting for file indexer to start"
-msgstr ""
+msgstr "Agardando a que comece o indexador de ficheiros."
 
 #: monitorcommand.cpp:77
-#, fuzzy, kde-format
-#| msgid "Baloo File Indexer is running"
+#, kde-format
 msgid "File indexer is running"
-msgstr "O indexador de ficheiros de Baloo está executándose."
+msgstr "O indexador de ficheiros está executándose."
 
 #: monitorcommand.cpp:89
 #, kde-format
@@ -387,7 +385,7 @@ msgstr "Indexando: %1"
 #: monitorcommand.cpp:97
 #, kde-format
 msgid ": Ok"
-msgstr ""
+msgstr ": Ben"
 
 #: statuscommand.cpp:45
 #, kde-format

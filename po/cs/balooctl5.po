@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Vít Pelčák <vit@pelcak.org>, 2014, 2015, 2016, 2017.
+# Vít Pelčák <vit@pelcak.org>, 2014, 2015, 2016, 2017, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-03-08 03:26+0100\n"
-"PO-Revision-Date: 2017-03-20 11:52+0100\n"
-"Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
+"PO-Revision-Date: 2018-04-12 15:38+0100\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -361,28 +361,28 @@ msgstr "formát"
 #: monitorcommand.cpp:58 monitorcommand.cpp:71
 #, kde-format
 msgid "Press ctrl+c to stop monitoring"
-msgstr ""
+msgstr "Stiskněte ctrl+c pro dokončení monitorování"
 
 #: monitorcommand.cpp:70
 #, kde-format
 msgid "Waiting for file indexer to start"
-msgstr ""
+msgstr "Čeká se na start indexeru souborů"
 
 #: monitorcommand.cpp:77
 #, kde-format
 msgid "File indexer is running"
-msgstr ""
+msgstr "Indexer souborů není spuštěn"
 
 #: monitorcommand.cpp:89
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
-msgstr ""
+msgstr "Indexování: %1"
 
 #: monitorcommand.cpp:97
 #, kde-format
 msgid ": Ok"
-msgstr ""
+msgstr ": OK"
 
 #: statuscommand.cpp:45
 #, kde-format
@@ -392,7 +392,7 @@ msgstr "Zobrazit status indexeru"
 #: statuscommand.cpp:55 statuscommand.cpp:93 statuscommand.cpp:135
 #, kde-format
 msgid "Ignoring non-existent file %1"
-msgstr ""
+msgstr "Ignorování neexistujícího souboru %1"
 
 #: statuscommand.cpp:60
 #, kde-format
@@ -402,42 +402,42 @@ msgstr "Soubor: %1"
 #: statuscommand.cpp:62
 #, kde-format
 msgid "Basic Indexing: Done"
-msgstr ""
+msgstr "Základní indexování: Dokončeno"
 
 #: statuscommand.cpp:64
 #, kde-format
 msgid "Basic Indexing: Scheduled"
-msgstr ""
+msgstr "Základní indexování: Naplánováno"
 
 #: statuscommand.cpp:68
 #, kde-format
 msgid "Basic Indexing: Disabled"
-msgstr ""
+msgstr "Základní indexování: Vypnuto"
 
 #: statuscommand.cpp:77
 #, kde-format
 msgid "Content Indexing: Scheduled"
-msgstr ""
+msgstr "Indexování obsahu: Naplánováno"
 
 #: statuscommand.cpp:79
 #, kde-format
 msgid "Content Indexing: Failed"
-msgstr ""
+msgstr "Indexování obsahu: Selhalo"
 
 #: statuscommand.cpp:81
 #, kde-format
 msgid "Content Indexing: Done"
-msgstr ""
+msgstr "Indexování obsahu: Dokončeno"
 
 #: statuscommand.cpp:181
 #, kde-format
 msgid "Output format \"%1\" is invalid"
-msgstr ""
+msgstr "Výstupní formát \"%1\" je neplatný"
 
 #: statuscommand.cpp:187
 #, kde-format
 msgid "Baloo is currently disabled. To enable, please run %1"
-msgstr ""
+msgstr "Baloo je momentálně vypnuté. Pro jeho zapnutí spusťte %1"
 
 #: statuscommand.cpp:193
 #, kde-format
@@ -467,9 +467,9 @@ msgstr "Indexováno %1 / %2 souborů"
 #: statuscommand.cpp:232
 #, kde-format
 msgid "Current size of index is %1"
-msgstr ""
+msgstr "Aktuální velikost indexu je %1"
 
 #: statuscommand.cpp:234
 #, kde-format
 msgid "Index does not exist yet"
-msgstr ""
+msgstr "Index zatím neexistuje"

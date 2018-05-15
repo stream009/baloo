@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Vít Pelčák <vit@pelcak.org>, 2014, 2017.
+# Vít Pelčák <vit@pelcak.org>, 2014, 2017, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-28 03:17+0100\n"
-"PO-Revision-Date: 2017-03-08 10:10+0100\n"
-"Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
+"POT-Creation-Date: 2018-04-17 03:33+0200\n"
+"PO-Revision-Date: 2018-04-13 15:59+0100\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -27,89 +27,89 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "vit@pelcak.org"
 
-#: main.cpp:59
+#: main.cpp:64
 #, kde-format
 msgid "Baloo Show"
 msgstr "Baloo Show"
 
-#: main.cpp:61
+#: main.cpp:66
 #, kde-format
 msgid "The Baloo data Viewer - A debugging tool"
 msgstr "Prohlížeč dat Baloo - Ladicí nástroj"
 
-#: main.cpp:63
+#: main.cpp:68
 #, kde-format
 msgid "(c) 2012, Vishesh Handa"
 msgstr "(c) 2012, Vishesh Handa"
 
-#: main.cpp:64
+#: main.cpp:69
 #, kde-format
 msgid "Vishesh Handa"
 msgstr "Vishesh Handa"
 
-#: main.cpp:64
+#: main.cpp:69
 #, kde-format
 msgid "Maintainer"
 msgstr "Správce"
 
-#: main.cpp:69
+#: main.cpp:74
 #, kde-format
 msgid "The file urls"
-msgstr ""
+msgstr "URL souborů"
 
-#: main.cpp:71
+#: main.cpp:76
 #, kde-format
 msgid "Print internal info"
-msgstr ""
+msgstr "Interní informace o tisku"
 
-#: main.cpp:73
+#: main.cpp:78
 #, kde-format
 msgid "Inode number of the file to show"
 msgstr ""
 
-#: main.cpp:75
+#: main.cpp:80
 #, kde-format
 msgid "Device id for the files"
 msgstr ""
 
-#: main.cpp:107
+#: main.cpp:112
 #, kde-format
 msgid ""
 "The Baloo index could not be opened. Please run \"%1\" to see if Baloo is "
 "enabled and working."
 msgstr ""
 
-#: main.cpp:123
+#: main.cpp:128
 #, kde-format
 msgid "The fileID is not equal to the actual Baloo fileID"
 msgstr "fileID není rovno skutečnému fileID Baloo"
 
-#: main.cpp:124
+#: main.cpp:129
 #, kde-format
 msgid "This is a bug"
 msgstr "Tohle je chyba"
 
-#: main.cpp:152
+#: main.cpp:157
 #, kde-format
 msgid "No index information found"
 msgstr "Nebyla nalezena informace o indexu"
 
-#: main.cpp:190
+#: main.cpp:195
 #, kde-format
 msgid "Internal Info"
-msgstr ""
+msgstr "Interní informace"
 
-#: main.cpp:191
+#: main.cpp:196
 #, kde-format
 msgid "Terms: %1"
 msgstr ""
 
-#: main.cpp:192
+#: main.cpp:197
 #, kde-format
 msgid "File Name Terms: %1"
 msgstr ""
 
-#: main.cpp:193
+#: main.cpp:198
 #, kde-format
 msgid "%1 Terms: %2"
 msgstr ""

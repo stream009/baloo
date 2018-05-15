@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-03-23 03:23+0100\n"
-"PO-Revision-Date: 2018-03-30 12:21+0000\n"
+"POT-Creation-Date: 2018-04-20 03:29+0200\n"
+"PO-Revision-Date: 2018-04-22 13:20+0000\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English <kde-i18n-doc@kde.org>\n"
 "Language: en_GB\n"
@@ -54,34 +54,44 @@ msgstr "integer"
 #: main.cpp:58
 #, kde-format
 msgid ""
-"Print results of a prune operation, but do not change anything.\n"
-"Only applies to \"%1\" command"
-msgstr ""
-"Print results of a prune operation, but do not change anything.\n"
-"Only applies to \"%1\" command"
-
-#: main.cpp:63
-#, kde-format
-msgid ""
 "List only inaccessible entries.\n"
 "Only applies to \"%1\""
 msgstr ""
 "List only inaccessible entries.\n"
 "Only applies to \"%1\""
 
-#: main.cpp:70
+#: main.cpp:62
+#, kde-format
+msgid "Act only on item on mounted devices"
+msgstr "Act only on item on mounted devices"
+
+#: main.cpp:66
+#, kde-format
+msgid ""
+"Print results of a prune operation, but do not change anything.\n"
+"Only applies to \"%1\" command"
+msgstr ""
+"Print results of a prune operation, but do not change anything.\n"
+"Only applies to \"%1\" command"
+
+#: main.cpp:74
 #, kde-format
 msgid ""
 "List database contents. Use a regular expression as argument to filter output"
 msgstr ""
 "List database contents. Use a regular expression as argument to filter output"
 
-#: main.cpp:103
+#: main.cpp:85
 #, kde-format
 msgid "List devices"
 msgstr "List devices"
 
-#: main.cpp:152
+#: main.cpp:100
+#, kde-format
+msgid "Remove stale database entries"
+msgstr "Remove stale database entries"
+
+#: main.cpp:155
 #, kde-format
 msgid ""
 "\n"
@@ -94,37 +104,37 @@ msgstr ""
 "Commands:\n"
 "    %1"
 
-#: main.cpp:159
+#: main.cpp:162
 #, kde-format
 msgid "Baloo Database Sanitizer"
 msgstr "Baloo Database Sanitiser"
 
-#: main.cpp:161
+#: main.cpp:164
 #, kde-format
 msgid "The Baloo Database Lister & Sanitizer"
 msgstr "The Baloo Database Lister & Sanitiser"
 
-#: main.cpp:163
+#: main.cpp:166
 #, kde-format
 msgid "(c) 2018, Michael Heidelbach"
 msgstr "(c) 2018, Michael Heidelbach"
 
-#: main.cpp:164
+#: main.cpp:167
 #, kde-format
 msgid "Michael Heidelbach"
 msgstr "Michael Heidelbach"
 
-#: main.cpp:164
+#: main.cpp:167
 #, kde-format
 msgid "Maintainer"
 msgstr "Maintainer"
 
-#: main.cpp:170
+#: main.cpp:173
 #, kde-format
 msgid "The command to execute"
 msgstr "The command to execute"
 
-#: main.cpp:174
+#: main.cpp:177
 #, kde-format
 msgctxt "Command"
 msgid ""
@@ -134,17 +144,22 @@ msgstr ""
 "A regular expression applied to the URL of database items\n"
 "Example: %1"
 
-#: main.cpp:223 main.cpp:231
+#: main.cpp:234 main.cpp:242 main.cpp:252
 #, kde-format
 msgid "Baloo Index could not be opened"
 msgstr "Baloo Index could not be opened"
 
-#: main.cpp:227 main.cpp:235
+#: main.cpp:238 main.cpp:246
 #, kde-format
 msgid "Listing database contents..."
 msgstr "Listing database contents..."
 
-#: main.cpp:262
+#: main.cpp:256
+#, kde-format
+msgid "Removing stale database contents..."
+msgstr "Removing stale database contents..."
+
+#: main.cpp:279
 #, kde-format
 msgid "Elapsed: %1 secs"
 msgstr "Elapsed: %1 secs"
