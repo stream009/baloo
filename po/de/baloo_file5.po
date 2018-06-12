@@ -1,10 +1,10 @@
-# Burkhard Lück <lueck@hube-lueck.de>, 2013, 2014, 2015.
+# Burkhard Lück <lueck@hube-lueck.de>, 2013, 2014, 2015, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-04-28 03:38+0200\n"
-"PO-Revision-Date: 2015-05-15 16:37+0200\n"
+"PO-Revision-Date: 2018-05-18 12:40+0100\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -27,55 +27,47 @@ msgstr "lueck@hube-lueck.de"
 #: indexerstate.h:42
 #, kde-format
 msgid "Unknown"
-msgstr ""
+msgstr "Unbekannt"
 
 #: indexerstate.h:45
 #, kde-format
 msgid "Idle"
-msgstr ""
+msgstr "Inaktiv"
 
 #: indexerstate.h:48
-#, fuzzy, kde-format
-#| msgctxt "Suspends the File indexing service."
-#| msgid "Suspend"
+#, kde-format
 msgid "Suspended"
-msgstr "Aussetzen"
+msgstr "Angehalten"
 
 #: indexerstate.h:51
 #, kde-format
 msgid "Initial Indexing"
-msgstr ""
+msgstr "Erstindizierung"
 
 #: indexerstate.h:54
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Index files"
+#, kde-format
 msgid "Indexing new files"
-msgstr "Dateien indizieren"
+msgstr "Neue Dateien werden indiziert"
 
 #: indexerstate.h:57
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Index files"
+#, kde-format
 msgid "Indexing modified files"
-msgstr "Dateien indizieren"
+msgstr "Geänderte Dateien werden indiziert"
 
 #: indexerstate.h:60
 #, kde-format
 msgid "Indexing Extended Attributes"
-msgstr ""
+msgstr "Erweiterte Attribute werden indiziert"
 
 #: indexerstate.h:63
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Index files"
+#, kde-format
 msgid "Indexing file content"
-msgstr "Dateien indizieren"
+msgstr "Dateiinhalt wird indiziert"
 
 #: indexerstate.h:66
 #, kde-format
 msgid "Checking for unindexed files"
-msgstr ""
+msgstr "Überprüfung auf nicht indizierten Dateien"
 
 #: main.cpp:47
 #, kde-format

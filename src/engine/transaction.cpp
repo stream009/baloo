@@ -314,7 +314,8 @@ PostingIterator* Transaction::postingIterator(const EngineQuery& query) const
     vec.reserve(query.subQueries().size());
 
     if (query.op() == EngineQuery::Phrase) {
-        for (const EngineQuery& q : query.subQueries()) {
+        const auto subQueries = query.subQueries();
+        for (const EngineQuery& q : subQueries) {
             Q_ASSERT_X(q.leaf(), "Transaction::toPostingIterator", "Phrase queries must contain leaf queries");
             vec << positionDb.iter(q.term());
         }
@@ -322,8 +323,20 @@ PostingIterator* Transaction::postingIterator(const EngineQuery& query) const
         return new PhraseAndIterator(vec);
     }
 
-    for (const EngineQuery& q : query.subQueries()) {
-        vec << postingIterator(q);
+    const auto subQueries = query.subQueries();
+    for (const EngineQuery& q : subQueries) {
+        auto iterator = postingIterator(q);
+        if (iterator) {
+            vec << iterator;
+        } else if (query.op() == EngineQuery::And) {
+            return nullptr;
+        }
+    }
+
+    if (vec.empty()) {
+        return nullptr;
+    } else if (vec.size() == 1) {
+        return vec.takeFirst();
     }
 
     if (query.op() == EngineQuery::And) {
@@ -472,7 +485,7 @@ void Transaction::checkFsTree()
     out << "Total Document IDs: " << allIds.size() << endl;
 
     int count = 0;
-    for (quint64 id: allIds) {
+    for (quint64 id: qAsConst(allIds)) {
         QByteArray url = docUrlDb.get(id);
         if (url.isEmpty()) {
             auto terms = documentTermsDB.get(id);
@@ -491,7 +504,7 @@ void Transaction::checkFsTree()
 
             out << "Missing filePath for " << id << endl;
             out << "\tPostingDB Terms: ";
-            for (const QByteArray& term : newTerms) {
+            for (const QByteArray& term : qAsConst(newTerms)) {
                 out << term << " ";
             }
             out << endl;
@@ -545,12 +558,12 @@ void Transaction::checkTermsDbinPostingDb()
 
     QTextStream out(stdout);
     out << "PostingDB check .." << endl;
-    for (quint64 id : allIds) {
+    for (quint64 id : qAsConst(allIds)) {
         QVector<QByteArray> terms = documentTermsDB.get(id);
         terms += documentXattrTermsDB.get(id);
         terms += documentFileNameTermsDB.get(id);
 
-        for (const QByteArray& term : terms) {
+        for (const QByteArray& term : qAsConst(terms)) {
             PostingList plist = postingDb.get(term);
             if (!plist.contains(id)) {
                 out << id << " is missing term " << term << endl;

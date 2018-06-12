@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-03-08 03:26+0100\n"
-"PO-Revision-Date: 2018-04-03 06:34+0700\n"
+"PO-Revision-Date: 2018-05-31 22:01+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -115,7 +115,7 @@ msgstr "Setel nilainya parameter config"
 #: configcommand.cpp:77
 #, kde-format
 msgid "Display this help menu"
-msgstr "Tayangkan menu bantuan ini"
+msgstr "Tampilkan menu bantuan ini"
 
 #: configcommand.cpp:83
 #, kde-format
@@ -254,7 +254,7 @@ msgstr "Sebuah nilai harus disediakan"
 #: configcommand.cpp:428 configcommand.cpp:455
 #, kde-format
 msgid "Invalid value"
-msgstr "Nilai tidak sah"
+msgstr "Nilai tidak absah"
 
 #: main.cpp:69
 #, kde-format
@@ -344,7 +344,7 @@ msgstr "Pantau pengindeks file "
 #: main.cpp:90
 #, kde-format
 msgid "Display the disk space used by index"
-msgstr "Tayangkan ruang disk yang digunakan oleh indeks"
+msgstr "Tampilkan ruang disk yang digunakan oleh indeks"
 
 #: main.cpp:92
 #, kde-format
@@ -434,7 +434,7 @@ msgstr "Pengindeksan Isi: Kelar"
 #: statuscommand.cpp:181
 #, kde-format
 msgid "Output format \"%1\" is invalid"
-msgstr "Format keluaran \"%1\" tak sah"
+msgstr "Format keluaran \"%1\" tak absah"
 
 #: statuscommand.cpp:187
 #, kde-format

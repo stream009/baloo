@@ -11,6 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-POFile-SpellExtra: LigaçãoSimbólicaIgnorada\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: experimental/databasesanitizer.cpp:276
 #, kde-format

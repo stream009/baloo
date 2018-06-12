@@ -49,7 +49,7 @@ public:
 
     QString currentFile() { return m_currentFile; }
 
-    void run() Q_DECL_OVERRIDE;
+    void run() override;
 
     void quit() {
         m_stop.store(true);

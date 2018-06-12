@@ -32,47 +32,47 @@ msgstr "vit@pelcak.org"
 #: indexerstate.h:42
 #, kde-format
 msgid "Unknown"
-msgstr ""
+msgstr "Neznámý"
 
 #: indexerstate.h:45
 #, kde-format
 msgid "Idle"
-msgstr ""
+msgstr "Nečinný"
 
 #: indexerstate.h:48
 #, kde-format
 msgid "Suspended"
-msgstr ""
+msgstr "Pozastaveno"
 
 #: indexerstate.h:51
 #, kde-format
 msgid "Initial Indexing"
-msgstr ""
+msgstr "Počáteční indexování"
 
 #: indexerstate.h:54
 #, kde-format
 msgid "Indexing new files"
-msgstr ""
+msgstr "Indexuji nové soubory"
 
 #: indexerstate.h:57
 #, kde-format
 msgid "Indexing modified files"
-msgstr ""
+msgstr "Indexuji změněné soubory"
 
 #: indexerstate.h:60
 #, kde-format
 msgid "Indexing Extended Attributes"
-msgstr ""
+msgstr "Indexuji rozšířené atributy"
 
 #: indexerstate.h:63
 #, kde-format
 msgid "Indexing file content"
-msgstr ""
+msgstr "Indexuji obsah souboru"
 
 #: indexerstate.h:66
 #, kde-format
 msgid "Checking for unindexed files"
-msgstr ""
+msgstr "Hledám neindexované soubory"
 
 #: main.cpp:47
 #, kde-format

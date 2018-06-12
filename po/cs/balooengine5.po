@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-04-20 03:29+0200\n"
-"PO-Revision-Date: 2018-04-19 15:59+0100\n"
+"PO-Revision-Date: 2018-04-27 09:41+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -35,15 +35,15 @@ msgstr ""
 #: experimental/databasesanitizer.cpp:357
 #, kde-format
 msgid "IgnoredSymbolicLink:"
-msgstr ""
+msgstr "Ignorovaný Symbolický odkaz:"
 
 #: experimental/databasesanitizer.cpp:361
 #, kde-format
 msgid "Removing:"
-msgstr ""
+msgstr "Odstraňuje se:"
 
 #: experimental/databasesanitizer.cpp:375
 #, kde-format
 msgctxt "numbers"
 msgid "Removed: %1, Total: %2, Ignored: %3"
-msgstr ""
+msgstr "Odstraněno: %1, Celkem: %2, Ignorováno: %3"

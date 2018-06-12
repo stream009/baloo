@@ -160,16 +160,24 @@ PostingIterator* SearchStore::constructQuery(Transaction* tr, const Term& term)
     Q_ASSERT(tr);
 
     if (term.operation() == Term::And || term.operation() == Term::Or) {
-        QList<Term> subTerms = term.subTerms();
+        const QList<Term> subTerms = term.subTerms();
         QVector<PostingIterator*> vec;
         vec.reserve(subTerms.size());
 
-        for (const Term& t : term.subTerms()) {
-            vec << constructQuery(tr, t);
+        for (const Term& t : subTerms) {
+            auto iterator = constructQuery(tr, t);
+            // constructQuery returns a nullptr to signal an empty list
+            if (iterator) {
+                vec << iterator;
+            } else if (term.operation() == Term::And) {
+                return nullptr;
+            }
         }
 
         if (vec.isEmpty()) {
             return nullptr;
+        } else if (vec.size() == 1) {
+            return vec.takeFirst();
         }
 
         if (term.operation() == Term::And) {
