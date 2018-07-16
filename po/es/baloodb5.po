@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: baloodb5\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-04-20 03:29+0200\n"
-"PO-Revision-Date: 2018-04-22 12:20+0100\n"
+"POT-Creation-Date: 2018-06-04 03:29+0200\n"
+"PO-Revision-Date: 2018-06-15 11:36+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -70,10 +70,10 @@ msgstr "Actuar solo sobre elementos de dispositivos montados"
 #: main.cpp:66
 #, kde-format
 msgid ""
-"Print results of a prune operation, but do not change anything.\n"
+"Print results of a cleaning operation, but do not change anything.\n"
 "Only applies to \"%1\" command"
 msgstr ""
-"Mostrar el resultado de una operación de recorte, pero sin modificar nada.\n"
+"Mostrar el resultado de una operación de limpieza, pero sin modificar nada.\n"
 "Solo se aplica a la orden «%1»."
 
 #: main.cpp:74

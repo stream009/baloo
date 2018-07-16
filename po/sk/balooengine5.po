@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: balooengine5\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-04-20 03:29+0200\n"
-"PO-Revision-Date: 2018-03-21 20:36+0100\n"
-"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
+"PO-Revision-Date: 2018-06-03 21:39+0100\n"
+"Last-Translator: Roman Paholik <wizzardsk@gmail.om>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -34,12 +34,12 @@ msgstr "Našlo sa %1 zhodných položiek"
 #: experimental/databasesanitizer.cpp:357
 #, kde-format
 msgid "IgnoredSymbolicLink:"
-msgstr ""
+msgstr "IgnoredSymbolicLink:"
 
 #: experimental/databasesanitizer.cpp:361
 #, kde-format
 msgid "Removing:"
-msgstr ""
+msgstr "Odstraňuje sa:"
 
 #: experimental/databasesanitizer.cpp:375
 #, kde-format

@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-04-20 03:29+0200\n"
-"PO-Revision-Date: 2018-05-19 19:18+0100\n"
+"POT-Creation-Date: 2018-06-04 03:29+0200\n"
+"PO-Revision-Date: 2018-06-09 23:22+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "Language: nn\n"
@@ -65,11 +65,10 @@ msgstr "Handsam berre monterte einingar"
 #: main.cpp:66
 #, kde-format
 msgid ""
-"Print results of a prune operation, but do not change anything.\n"
+"Print results of a cleaning operation, but do not change anything.\n"
 "Only applies to \"%1\" command"
 msgstr ""
 "Vis resultatet av reinseoperasjon, men ikkje endra noko.\n"
-"\n"
 "Gjeld berre kommandoen «%1»."
 
 #: main.cpp:74

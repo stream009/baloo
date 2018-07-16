@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-04-20 03:29+0200\n"
-"PO-Revision-Date: 2018-04-29 07:19+0700\n"
+"POT-Creation-Date: 2018-06-04 03:29+0200\n"
+"PO-Revision-Date: 2018-06-13 10:48+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -68,11 +68,11 @@ msgstr "Hanya bertindak pada item pada perangkat yang dikaitkan"
 #: main.cpp:66
 #, kde-format
 msgid ""
-"Print results of a prune operation, but do not change anything.\n"
+"Print results of a cleaning operation, but do not change anything.\n"
 "Only applies to \"%1\" command"
 msgstr ""
-"Cetak hasil operasi pemangkasan, tapi tidak mengubah apa pun.\n"
-"Hanya diterapkan untuk perintah ''%1''"
+"Cetak hasil dari operasi pembersihan, tapi tidak mengubah apa pun.\n"
+"Hanya berlaku untuk perintah ''%1''"
 
 #: main.cpp:74
 #, kde-format
@@ -80,7 +80,7 @@ msgid ""
 "List database contents. Use a regular expression as argument to filter output"
 msgstr ""
 "Daftar isi pangkalan data. Gunakan ekspresi reguler sebagai argumen untuk "
-"keluaran filter"
+"output filter"
 
 #: main.cpp:85
 #, kde-format

@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Alexander Potashev <aspotashev@gmail.com>, 2014, 2015.
+# Alexander Potashev <aspotashev@gmail.com>, 2014, 2015, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-04-28 03:38+0200\n"
-"PO-Revision-Date: 2015-08-20 22:30+0300\n"
+"PO-Revision-Date: 2018-06-02 23:58+0300\n"
 "Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -31,53 +31,47 @@ msgstr "aspotashev@gmail.com"
 #: indexerstate.h:42
 #, kde-format
 msgid "Unknown"
-msgstr ""
+msgstr "Неизвестно"
 
 #: indexerstate.h:45
 #, kde-format
 msgid "Idle"
-msgstr ""
+msgstr "Ожидание"
 
 #: indexerstate.h:48
 #, kde-format
 msgid "Suspended"
-msgstr ""
+msgstr "Приостановлено"
 
 #: indexerstate.h:51
 #, kde-format
 msgid "Initial Indexing"
-msgstr ""
+msgstr "Идёт первичное индексирование"
 
 #: indexerstate.h:54
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Index files"
+#, kde-format
 msgid "Indexing new files"
-msgstr "Индексировать файлы"
+msgstr "Идёт индексирование новых файлов"
 
 #: indexerstate.h:57
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Index files"
+#, kde-format
 msgid "Indexing modified files"
-msgstr "Индексировать файлы"
+msgstr "Идёт индексирование изменённых файлов"
 
 #: indexerstate.h:60
 #, kde-format
 msgid "Indexing Extended Attributes"
-msgstr ""
+msgstr "Идёт индексирование расширенных атрибутов"
 
 #: indexerstate.h:63
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Index files"
+#, kde-format
 msgid "Indexing file content"
-msgstr "Индексировать файлы"
+msgstr "Идёт индексирование содержимого файлов"
 
 #: indexerstate.h:66
 #, kde-format
 msgid "Checking for unindexed files"
-msgstr ""
+msgstr "Идёт обнаружение непроиндексированных файлов"
 
 #: main.cpp:47
 #, kde-format

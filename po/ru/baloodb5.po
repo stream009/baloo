@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-04-20 03:29+0200\n"
-"PO-Revision-Date: 2018-04-21 21:40+0300\n"
+"POT-Creation-Date: 2018-06-04 03:29+0200\n"
+"PO-Revision-Date: 2018-06-03 11:40+0300\n"
 "Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -21,12 +21,12 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Александр Поташев"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "aspotashev@gmail.com"
 
 #: main.cpp:48
 #, kde-format
@@ -39,11 +39,18 @@ msgid ""
 "device id.\n"
 "May be given multiple times."
 msgstr ""
+"Фильтр по идентификатору устройства.\n"
+"0 (по умолчанию) выключает фильтрацию по устройствам.\n"
+"Положительные числа добавляют фильтры, показывающие\n"
+"только устройства с указанными идентификаторами.\n"
+"Отрицательные числа применяют фильтры, исключающие\n"
+"устройства с соответствующими идентификаторами.\n"
+"Параметр может повторяться несколько раз."
 
 #: main.cpp:53
 #, kde-format
 msgid "integer"
-msgstr ""
+msgstr "целое число"
 
 #: main.cpp:58
 #, kde-format
@@ -51,34 +58,45 @@ msgid ""
 "List only inaccessible entries.\n"
 "Only applies to \"%1\""
 msgstr ""
+"Перечислять только недоступные объекты.\n"
+"Применимо только к команде «%1»."
 
 #: main.cpp:62
 #, kde-format
 msgid "Act only on item on mounted devices"
-msgstr ""
+msgstr "Выполнить действие только для объектов на подключённых устройствах."
 
 #: main.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Print results of a prune operation, but do not change anything.\n"
+#| "Only applies to \"%1\" command"
 msgid ""
-"Print results of a prune operation, but do not change anything.\n"
+"Print results of a cleaning operation, but do not change anything.\n"
 "Only applies to \"%1\" command"
 msgstr ""
+"Напечатать предполагаемые результаты операции очистки, но не модифицировать "
+"базу данных.\n"
+"Применимо только к команде «%1»."
 
 #: main.cpp:74
 #, kde-format
 msgid ""
 "List database contents. Use a regular expression as argument to filter output"
 msgstr ""
+"Показать содержимое базы данных. Можно использовать регулярное выражение в "
+"качестве аргумента для фильтрации вывода."
 
 #: main.cpp:85
 #, kde-format
 msgid "List devices"
-msgstr ""
+msgstr "Показать список устройств."
 
 #: main.cpp:100
 #, kde-format
 msgid "Remove stale database entries"
 msgstr ""
+"Удалить из базы данных записи, соответствующие несуществующим объектам."
 
 #: main.cpp:155
 #, kde-format
@@ -88,16 +106,20 @@ msgid ""
 "Commands:\n"
 "    %1"
 msgstr ""
+"\n"
+"\n"
+"Команды:\n"
+"    %1"
 
 #: main.cpp:162
 #, kde-format
 msgid "Baloo Database Sanitizer"
-msgstr ""
+msgstr "Утилита очистки базы данных Baloo"
 
 #: main.cpp:164
 #, kde-format
 msgid "The Baloo Database Lister & Sanitizer"
-msgstr ""
+msgstr "Утилита просмотра и очистки базы данных Baloo"
 
 #: main.cpp:166
 #, kde-format
@@ -126,6 +148,8 @@ msgid ""
 "A regular expression applied to the URL of database items\n"
 "Example: %1"
 msgstr ""
+"Регулярное выражение, применяемое к адресам объектов из базы данных.\n"
+"Пример: %1"
 
 #: main.cpp:234 main.cpp:242 main.cpp:252
 #, kde-format
@@ -135,14 +159,14 @@ msgstr "Не удалось открыть индекс Baloo."
 #: main.cpp:238 main.cpp:246
 #, kde-format
 msgid "Listing database contents..."
-msgstr ""
+msgstr "Чтение содержимого базы данных..."
 
 #: main.cpp:256
 #, kde-format
 msgid "Removing stale database contents..."
-msgstr ""
+msgstr "Удаление устаревших записей из базы данных..."
 
 #: main.cpp:279
 #, kde-format
 msgid "Elapsed: %1 secs"
-msgstr ""
+msgstr "Затрачено времени: %1 с"

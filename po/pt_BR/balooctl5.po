@@ -376,13 +376,11 @@ msgstr "Aguardando o indexador de arquivos iniciar"
 
 #: monitorcommand.cpp:77
 #, kde-format
-#| msgid "Baloo File Indexer is running"
 msgid "File indexer is running"
 msgstr "O indexador de arquivos está em execução"
 
 #: monitorcommand.cpp:89
 #, kde-format
-#| msgid "Indexer state: %1"
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
 msgstr "Indexando: %1"
@@ -444,8 +442,6 @@ msgstr "O formato de saída \"%1\" é inválido."
 
 #: statuscommand.cpp:187
 #, kde-format
-#| msgid ""
-#| "Baloo is currently disabled. To enable, please run \"balooctl enable\""
 msgid "Baloo is currently disabled. To enable, please run %1"
 msgstr "O Baloo está desativado. Para ativá-lo, execute %1"
 
@@ -481,6 +477,5 @@ msgstr "O tamanho atual do índice é %1"
 
 #: statuscommand.cpp:234
 #, kde-format
-#| msgid "Path does not exist"
 msgid "Index does not exist yet"
 msgstr "O índice ainda não existe"

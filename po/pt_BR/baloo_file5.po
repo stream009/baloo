@@ -66,8 +66,6 @@ msgstr "Indexando os atributos estendidos"
 
 #: indexerstate.h:63
 #, kde-format
-#| msgctxt "@info:status"
-#| msgid "Indexing files for desktop search."
 msgid "Indexing file content"
 msgstr "Indexando o conteúdo do arquivo"
 

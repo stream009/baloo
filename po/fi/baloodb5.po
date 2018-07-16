@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-04-20 03:29+0200\n"
+"POT-Creation-Date: 2018-06-04 03:29+0200\n"
 "PO-Revision-Date: 2018-03-23 19:09+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -65,9 +65,12 @@ msgid "Act only on item on mounted devices"
 msgstr ""
 
 #: main.cpp:66
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Print results of a prune operation, but do not change anything.\n"
+#| "Only applies to \"%1\" command"
 msgid ""
-"Print results of a prune operation, but do not change anything.\n"
+"Print results of a cleaning operation, but do not change anything.\n"
 "Only applies to \"%1\" command"
 msgstr ""
 "Tulosta karsintatoimenpiteen tulokset mutta älä muuta mitään.\n"

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-04-20 03:29+0200\n"
-"PO-Revision-Date: 2018-04-21 21:40+0300\n"
+"PO-Revision-Date: 2018-06-03 11:44+0300\n"
 "Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -21,22 +21,22 @@ msgstr ""
 #: experimental/databasesanitizer.cpp:276
 #, kde-format
 msgid "Total: %1, Inaccessible: %2"
-msgstr ""
+msgstr "Всего: %1, недоступны: %2"
 
 #: experimental/databasesanitizer.cpp:280
 #, kde-format
 msgid "Total: %1, Ignored: %2, Accessible: %3, Inaccessible: %4"
-msgstr ""
+msgstr "Всего: %1, проигнорированы: %2, доступны: %3, недоступны: %4"
 
 #: experimental/databasesanitizer.cpp:336
 #, kde-format
 msgid "Found %1 matching in %2 devices"
-msgstr ""
+msgstr "Найдено %1 совпадений на %2 устройствах"
 
 #: experimental/databasesanitizer.cpp:357
 #, kde-format
 msgid "IgnoredSymbolicLink:"
-msgstr ""
+msgstr "Игнорируется символическая ссылка:"
 
 #: experimental/databasesanitizer.cpp:361
 #, kde-format
@@ -47,4 +47,4 @@ msgstr "Удаление:"
 #, kde-format
 msgctxt "numbers"
 msgid "Removed: %1, Total: %2, Ignored: %3"
-msgstr ""
+msgstr "Удалены: %1, всего: %2, проигнорированы: %3"

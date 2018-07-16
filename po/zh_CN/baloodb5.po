@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-04-20 03:29+0200\n"
-"PO-Revision-Date: 2018-05-18 06:23-0400\n"
+"POT-Creation-Date: 2018-06-04 03:29+0200\n"
+"PO-Revision-Date: 2018-07-03 17:35\n"
 "Last-Translator: guoyunhebrave <guoyunhebrave@gmail.com>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -70,11 +70,11 @@ msgstr "仅对已挂载设备上的项进行操作"
 #: main.cpp:66
 #, kde-format
 msgid ""
-"Print results of a prune operation, but do not change anything.\n"
+"Print results of a cleaning operation, but do not change anything.\n"
 "Only applies to \"%1\" command"
 msgstr ""
-"打印修剪操作的结果，但不修改任何内容。\n"
-"仅适用于 “%1” 命令"
+"打印清理操作的结果，但不更改任何内容。\n"
+"仅适用于 \"%1\" 命令"
 
 #: main.cpp:74
 #, kde-format
