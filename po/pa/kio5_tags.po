@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-23 03:20+0100\n"
+"POT-Creation-Date: 2018-07-30 03:29+0200\n"
 "PO-Revision-Date: 2014-03-16 23:42-0500\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -17,22 +17,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: kio_tags.cpp:125 kio_tags.cpp:184
+#: kio_tags.cpp:126 kio_tags.cpp:185
 #, kde-format
 msgid "File %1 already has tag %2"
 msgstr ""
 
-#: kio_tags.cpp:309
+#: kio_tags.cpp:310
 #, kde-format
 msgid "Tag"
 msgstr "ਟੈਗ"
 
-#: kio_tags.cpp:311
+#: kio_tags.cpp:312
 #, kde-format
 msgid "Tag Fragment"
 msgstr ""
 
-#: kio_tags.cpp:313 kio_tags.cpp:318
+#: kio_tags.cpp:314 kio_tags.cpp:319
 #, kde-format
 msgid "All Tags"
 msgstr "ਸਭ ਟੈਗ"

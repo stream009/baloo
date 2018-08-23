@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-03-08 03:26+0100\n"
-"PO-Revision-Date: 2018-03-18 16:49+0200\n"
+"PO-Revision-Date: 2018-07-12 17:19+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -61,7 +61,7 @@ msgstr "Indeksoidaan muuttuneita tiedostoja"
 #: ../../file/indexerstate.h:60
 #, kde-format
 msgid "Indexing Extended Attributes"
-msgstr "Indeksoidaan laajennettuja attribuutteja"
+msgstr "Indeksoidaan laajennettuja määritteitä"
 
 #: ../../file/indexerstate.h:63
 #, kde-format

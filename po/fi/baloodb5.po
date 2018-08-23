@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-06-04 03:29+0200\n"
-"PO-Revision-Date: 2018-03-23 19:09+0200\n"
+"PO-Revision-Date: 2018-07-12 17:19+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -62,18 +62,15 @@ msgstr ""
 #: main.cpp:62
 #, kde-format
 msgid "Act only on item on mounted devices"
-msgstr ""
+msgstr "Käsittele vain liitettyjen laitteiden tietueet"
 
 #: main.cpp:66
-#, fuzzy, kde-format
-#| msgid ""
-#| "Print results of a prune operation, but do not change anything.\n"
-#| "Only applies to \"%1\" command"
+#, kde-format
 msgid ""
 "Print results of a cleaning operation, but do not change anything.\n"
 "Only applies to \"%1\" command"
 msgstr ""
-"Tulosta karsintatoimenpiteen tulokset mutta älä muuta mitään.\n"
+"Tulosta siivoustoimenpiteen tulokset mutta älä muuta mitään.\n"
 "Vaikuttaa vain komentoon ”%1”"
 
 #: main.cpp:74
@@ -92,7 +89,7 @@ msgstr "Luettele laitteet"
 #: main.cpp:100
 #, kde-format
 msgid "Remove stale database entries"
-msgstr ""
+msgstr "Poista vanhentuneet tietokantatietueet"
 
 #: main.cpp:155
 #, kde-format
@@ -160,7 +157,7 @@ msgstr "Luetellaan tietokannan sisältöä…"
 #: main.cpp:256
 #, kde-format
 msgid "Removing stale database contents..."
-msgstr ""
+msgstr "Poistetaan tietokannan vanhentunutta sisältöä…"
 
 #: main.cpp:279
 #, kde-format

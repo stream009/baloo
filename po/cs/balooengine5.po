@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-04-20 03:29+0200\n"
-"PO-Revision-Date: 2018-04-27 09:41+0100\n"
+"PO-Revision-Date: 2018-07-10 14:30+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -30,7 +30,7 @@ msgstr "Celkem: %1, Ignorováno: %2, Dostupné: %3, Nedostupné: %4"
 #: experimental/databasesanitizer.cpp:336
 #, kde-format
 msgid "Found %1 matching in %2 devices"
-msgstr ""
+msgstr "Nalezeno %1 odpovídající na %2 zařízeních"
 
 #: experimental/databasesanitizer.cpp:357
 #, kde-format

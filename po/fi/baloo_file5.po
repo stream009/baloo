@@ -1,15 +1,16 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2013, 2014, 2015.
+# Tommi Nieminen <translator@legisign.org>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2018-04-28 03:38+0200\n"
-"PO-Revision-Date: 2015-05-16 13:14+0200\n"
-"Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
-"Language-Team: Finnish <lokalisointi@lists.coss.fi>\n"
+"PO-Revision-Date: 2018-07-12 17:19+0200\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,63 +21,57 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Lasse Liehu"
+msgstr "Lasse Liehu,Tommi Nieminen"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "lasse.liehu@gmail.com"
+msgstr "lasse.liehu@gmail.com,translator@legisign.org"
 
 #: indexerstate.h:42
 #, kde-format
 msgid "Unknown"
-msgstr ""
+msgstr "Tuntematon"
 
 #: indexerstate.h:45
 #, kde-format
 msgid "Idle"
-msgstr ""
+msgstr "Jouten"
 
 #: indexerstate.h:48
 #, kde-format
 msgid "Suspended"
-msgstr ""
+msgstr "Keskeytetty"
 
 #: indexerstate.h:51
 #, kde-format
 msgid "Initial Indexing"
-msgstr ""
+msgstr "Alustava indeksointi"
 
 #: indexerstate.h:54
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Index files"
+#, kde-format
 msgid "Indexing new files"
-msgstr "Indeksoi tiedostot"
+msgstr "Indeksoidaan uusia tiedostoja"
 
 #: indexerstate.h:57
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Index files"
+#, kde-format
 msgid "Indexing modified files"
-msgstr "Indeksoi tiedostot"
+msgstr "Indeksoidaan muuttuneita tiedostoja"
 
 #: indexerstate.h:60
 #, kde-format
 msgid "Indexing Extended Attributes"
-msgstr ""
+msgstr "Indeksoidaan laajennettuja määritteitä"
 
 #: indexerstate.h:63
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Index files"
+#, kde-format
 msgid "Indexing file content"
-msgstr "Indeksoi tiedostot"
+msgstr "Indeksoidaan tiedostojen sisältöjä"
 
 #: indexerstate.h:66
 #, kde-format
 msgid "Checking for unindexed files"
-msgstr ""
+msgstr "Tarkistetaan indeksoimattomia tiedostoja"
 
 #: main.cpp:47
 #, kde-format

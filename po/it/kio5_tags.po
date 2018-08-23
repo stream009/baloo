@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio_tags\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-23 03:20+0100\n"
+"POT-Creation-Date: 2018-07-30 03:29+0200\n"
 "PO-Revision-Date: 2017-12-01 10:20+0100\n"
 "Last-Translator: Paolo Zamponi <zapaolo@email.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -19,22 +19,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 2.0\n"
 
-#: kio_tags.cpp:125 kio_tags.cpp:184
+#: kio_tags.cpp:126 kio_tags.cpp:185
 #, kde-format
 msgid "File %1 already has tag %2"
 msgstr "Il file %1 ha già l'etichetta %2"
 
-#: kio_tags.cpp:309
+#: kio_tags.cpp:310
 #, kde-format
 msgid "Tag"
 msgstr "Etichetta"
 
-#: kio_tags.cpp:311
+#: kio_tags.cpp:312
 #, kde-format
 msgid "Tag Fragment"
 msgstr "Frammento di etichetta"
 
-#: kio_tags.cpp:313 kio_tags.cpp:318
+#: kio_tags.cpp:314 kio_tags.cpp:319
 #, kde-format
 msgid "All Tags"
 msgstr "Tutte le etichette"
