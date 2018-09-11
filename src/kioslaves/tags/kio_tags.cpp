@@ -355,13 +355,10 @@ TagsProtocol::ParseResult TagsProtocol::parseUrl(const QUrl& url, const QList<Pa
         int pos = 0;
 
         // Extract and remove any multiple filename suffix from the file name.
-        QRegularExpression regexp(QStringLiteral("\\s\\(\\d+\\)$"));
+        QRegularExpression regexp(QStringLiteral("\\s\\((\\d+)\\)$"));
         QRegularExpressionMatch regMatch = regexp.match(fileName);
         if (regMatch.hasMatch()) {
-            QString match = regMatch.captured(0);
-            match.remove(0, 2);
-            match.chop(1);
-            pos = match.toInt();
+            pos = regMatch.captured(1).toInt();
 
             fileName.remove(regexp);
         }
@@ -372,17 +369,14 @@ TagsProtocol::ParseResult TagsProtocol::parseUrl(const QUrl& url, const QList<Pa
 
         int i = 0;
         while (it.next()) {
-            if ((pos > 0) && (i != pos)) {
-                i++;
-                continue;
-            } else if (i > pos) {
-                break;
-            }
-
             result.fileUrl = QUrl::fromLocalFile(it.filePath());
             result.metaData = KFileMetaData::UserMetaData(it.filePath());
 
-            i++;
+            if (i == pos) {
+                break;
+            } else {
+                i++;
+            }
         }
 
         if (!result.fileUrl.isEmpty() || flags.contains(ChopLastSection)) {
