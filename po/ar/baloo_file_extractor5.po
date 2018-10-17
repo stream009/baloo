@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Safa Alfulaij <safa1996alfulaij@gmail.com>, ٢٠١٥, 2017.
+# Safa Alfulaij <safa1996alfulaij@gmail.com>, ٢٠١٥, 2017, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-19 20:11+0100\n"
-"PO-Revision-Date: 2017-01-25 19:48+0300\n"
+"POT-Creation-Date: 2018-08-16 09:04+0200\n"
+"PO-Revision-Date: 2018-06-08 00:28+0300\n"
 "Last-Translator: Safa Alfulaij <safa1996alfulaij@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "Language: ar\n"
@@ -31,7 +31,7 @@ msgstr "safa1996alfulaij@gmail.com"
 #: main.cpp:40
 #, kde-format
 msgid "Baloo File Extractor"
-msgstr "مُستخرج بالو للملفّات"
+msgstr "مُستخرج بالو للملفات"
 
 #: main.cpp:41
 #, kde-format

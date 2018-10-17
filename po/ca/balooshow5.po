@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooshow5\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-04-17 03:33+0200\n"
+"POT-Creation-Date: 2018-09-18 03:45+0200\n"
 "PO-Revision-Date: 2018-01-28 12:26+0100\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -30,52 +30,52 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "txemaq@gmail.com"
 
-#: main.cpp:64
+#: main.cpp:63
 #, kde-format
 msgid "Baloo Show"
 msgstr "Vista del Baloo"
 
-#: main.cpp:66
+#: main.cpp:65
 #, kde-format
 msgid "The Baloo data Viewer - A debugging tool"
 msgstr "El visualitzador de dades del Baloo - Una eina de depuració"
 
-#: main.cpp:68
+#: main.cpp:67
 #, kde-format
 msgid "(c) 2012, Vishesh Handa"
 msgstr "(c) 2012, Vishesh Handa"
 
-#: main.cpp:69
+#: main.cpp:68
 #, kde-format
 msgid "Vishesh Handa"
 msgstr "Vishesh Handa"
 
-#: main.cpp:69
+#: main.cpp:68
 #, kde-format
 msgid "Maintainer"
 msgstr "Mantenidor"
 
-#: main.cpp:74
+#: main.cpp:73
 #, kde-format
 msgid "The file urls"
 msgstr "Els URL del fitxer"
 
-#: main.cpp:76
+#: main.cpp:75
 #, kde-format
 msgid "Print internal info"
 msgstr "Imprimeix la informació interna"
 
-#: main.cpp:78
+#: main.cpp:77
 #, kde-format
 msgid "Inode number of the file to show"
 msgstr "Número d'inode del fitxer a mostrar"
 
-#: main.cpp:80
+#: main.cpp:79
 #, kde-format
 msgid "Device id for the files"
 msgstr "ID del dispositiu dels fitxers"
 
-#: main.cpp:112
+#: main.cpp:111
 #, kde-format
 msgid ""
 "The Baloo index could not be opened. Please run \"%1\" to see if Baloo is "
@@ -84,17 +84,17 @@ msgstr ""
 "No s'ha pogut obrir l'índex del Baloo. Executeu «%1» per veure si el Baloo "
 "està habilitat i en funcionament."
 
-#: main.cpp:128
+#: main.cpp:127
 #, kde-format
 msgid "The fileID is not equal to the actual Baloo fileID"
 msgstr "L'ID del fitxer no és igual que l'ID del fitxer real del Baloo."
 
-#: main.cpp:129
+#: main.cpp:128
 #, kde-format
 msgid "This is a bug"
 msgstr "Això és un error"
 
-#: main.cpp:157
+#: main.cpp:156
 #, kde-format
 msgid "No index information found"
 msgstr "No s'ha trobat informació de l'índex"

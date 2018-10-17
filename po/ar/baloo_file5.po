@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Abdalrahim G. Fakhouri <abdilra7eem@yahoo.com>, 2014.
-# Safa Alfulaij <safa1996alfulaij@gmail.com>, ٢٠١٥.
+# Safa Alfulaij <safa1996alfulaij@gmail.com>, ٢٠١٥, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-04-28 03:38+0200\n"
-"PO-Revision-Date: ٢٠١٥-١٠-٠١ ١٠:١٢+0300\n"
+"POT-Creation-Date: 2018-08-16 09:04+0200\n"
+"PO-Revision-Date: 2018-06-08 00:38+0300\n"
 "Last-Translator: Safa Alfulaij <safa1996alfulaij@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "Language: ar\n"
@@ -32,58 +32,52 @@ msgstr "abdilra7eem@yahoo.com,safa1996alfulaij@gmail.com"
 #: indexerstate.h:42
 #, kde-format
 msgid "Unknown"
-msgstr ""
+msgstr "مجهولة"
 
 #: indexerstate.h:45
 #, kde-format
 msgid "Idle"
-msgstr ""
+msgstr "خامل"
 
 #: indexerstate.h:48
 #, kde-format
 msgid "Suspended"
-msgstr ""
+msgstr "معلّق"
 
 #: indexerstate.h:51
 #, kde-format
 msgid "Initial Indexing"
-msgstr ""
+msgstr "الفهرسة الأولية"
 
 #: indexerstate.h:54
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Index files"
+#, kde-format
 msgid "Indexing new files"
-msgstr "ملفات الفهرسة"
+msgstr "يُفهرس الملفات الجديدة"
 
 #: indexerstate.h:57
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Index files"
+#, kde-format
 msgid "Indexing modified files"
-msgstr "ملفات الفهرسة"
+msgstr "يُفهرس الملفات المعدلة"
 
 #: indexerstate.h:60
 #, kde-format
 msgid "Indexing Extended Attributes"
-msgstr ""
+msgstr "يُفهرس الصفات الممتدة"
 
 #: indexerstate.h:63
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Index files"
+#, kde-format
 msgid "Indexing file content"
-msgstr "ملفات الفهرسة"
+msgstr "يُفهرس محتويات الملفات"
 
 #: indexerstate.h:66
 #, kde-format
 msgid "Checking for unindexed files"
-msgstr ""
+msgstr "يفحص بحثًا عن الملفات غير المفهرسة"
 
 #: main.cpp:47
 #, kde-format
 msgid "Baloo File Indexing Daemon"
-msgstr "عفريت بالو لفهرسة الملفّات"
+msgstr "عفريت بالو لفهرسة الملفات"
 
 #: main.cpp:48
 #, kde-format

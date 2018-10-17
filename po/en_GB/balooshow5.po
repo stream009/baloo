@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-04-17 03:33+0200\n"
+"POT-Creation-Date: 2018-09-18 03:45+0200\n"
 "PO-Revision-Date: 2018-02-18 16:23+0000\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English <kde-i18n-doc@kde.org>\n"
@@ -27,52 +27,52 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "steve.allewell@gmail.com"
 
-#: main.cpp:64
+#: main.cpp:63
 #, kde-format
 msgid "Baloo Show"
 msgstr "Baloo Show"
 
-#: main.cpp:66
+#: main.cpp:65
 #, kde-format
 msgid "The Baloo data Viewer - A debugging tool"
 msgstr "The Baloo data Viewer - A debugging tool"
 
-#: main.cpp:68
+#: main.cpp:67
 #, kde-format
 msgid "(c) 2012, Vishesh Handa"
 msgstr "(c) 2012, Vishesh Handa"
 
-#: main.cpp:69
+#: main.cpp:68
 #, kde-format
 msgid "Vishesh Handa"
 msgstr "Vishesh Handa"
 
-#: main.cpp:69
+#: main.cpp:68
 #, kde-format
 msgid "Maintainer"
 msgstr "Maintainer"
 
-#: main.cpp:74
+#: main.cpp:73
 #, kde-format
 msgid "The file urls"
 msgstr "The file URLs"
 
-#: main.cpp:76
+#: main.cpp:75
 #, kde-format
 msgid "Print internal info"
 msgstr "Print internal info"
 
-#: main.cpp:78
+#: main.cpp:77
 #, kde-format
 msgid "Inode number of the file to show"
 msgstr "Inode number of the file to show"
 
-#: main.cpp:80
+#: main.cpp:79
 #, kde-format
 msgid "Device id for the files"
 msgstr "Device ID for the files"
 
-#: main.cpp:112
+#: main.cpp:111
 #, kde-format
 msgid ""
 "The Baloo index could not be opened. Please run \"%1\" to see if Baloo is "
@@ -81,17 +81,17 @@ msgstr ""
 "The Baloo index could not be opened. Please run \"%1\" to see if Baloo is "
 "enabled and working."
 
-#: main.cpp:128
+#: main.cpp:127
 #, kde-format
 msgid "The fileID is not equal to the actual Baloo fileID"
 msgstr "The fileID is not equal to the actual Baloo fileID"
 
-#: main.cpp:129
+#: main.cpp:128
 #, kde-format
 msgid "This is a bug"
 msgstr "This is a bug"
 
-#: main.cpp:157
+#: main.cpp:156
 #, kde-format
 msgid "No index information found"
 msgstr "No index information found"

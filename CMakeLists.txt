@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.0)
 set(REQUIRED_QT_VERSION 5.8.0)
 set(KF5_VERSION "5.51.0") # handled by release scripts
-set(KF5_DEP_VERSION "5.50.0") # handled by release scripts
+set(KF5_DEP_VERSION "5.51.0") # handled by release scripts
 
 # set up project
 project(Baloo VERSION ${KF5_VERSION})
@@ -72,6 +72,10 @@ endif()
 # compiler flags and build system
 add_definitions(-DQT_NO_KEYWORDS)
 remove_definitions(-DQT_NO_CAST_FROM_ASCII)
+add_definitions(-DQT_NO_CAST_TO_ASCII)
+add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
+add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
+add_definitions(-DQT_USE_QSTRINGBUILDER)
 
 find_package(Inotify)
 set_package_properties(Inotify PROPERTIES

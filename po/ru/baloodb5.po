@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-06-04 03:29+0200\n"
-"PO-Revision-Date: 2018-06-03 11:40+0300\n"
+"POT-Creation-Date: 2018-08-16 09:04+0200\n"
+"PO-Revision-Date: 2018-09-14 23:54+0300\n"
 "Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -67,10 +67,7 @@ msgid "Act only on item on mounted devices"
 msgstr "Выполнить действие только для объектов на подключённых устройствах."
 
 #: main.cpp:66
-#, fuzzy, kde-format
-#| msgid ""
-#| "Print results of a prune operation, but do not change anything.\n"
-#| "Only applies to \"%1\" command"
+#, kde-format
 msgid ""
 "Print results of a cleaning operation, but do not change anything.\n"
 "Only applies to \"%1\" command"

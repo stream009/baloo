@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Abdalrahim G. Fakhouri <abdilra7eem@yahoo.com>, 2014.
-# Safa Alfulaij <safa1996alfulaij@gmail.com>, ٢٠١٥, 2017.
+# Safa Alfulaij <safa1996alfulaij@gmail.com>, ٢٠١٥, 2017, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-28 03:17+0100\n"
-"PO-Revision-Date: 2017-01-25 19:42+0300\n"
+"POT-Creation-Date: 2018-08-16 09:04+0200\n"
+"PO-Revision-Date: 2018-06-08 15:39+0300\n"
 "Last-Translator: Safa Alfulaij <safa1996alfulaij@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "Language: ar\n"
@@ -37,7 +37,7 @@ msgstr "بالو للبحث"
 #: main.cpp:43
 #, kde-format
 msgid "A tool to search through the files indexed by Baloo"
-msgstr "أداة للبحث في الملفّات التي فهرسها «بالو»"
+msgstr "أداة للبحث في الملفات التي فهرسها «بالو»"
 
 #: main.cpp:45
 #, kde-format
@@ -52,12 +52,12 @@ msgstr "المصين"
 #: main.cpp:51
 #, kde-format
 msgid "The maximum number of results"
-msgstr "أقصى عدد للنّتائج"
+msgstr "أقصى عدد للنتائج"
 
 #: main.cpp:52
 #, kde-format
 msgid "limit"
-msgstr "الحدّ"
+msgstr "الحد"
 
 #: main.cpp:54
 #, kde-format
@@ -77,17 +77,17 @@ msgstr "نوع البيانات ليُبحث عنها"
 #: main.cpp:58
 #, kde-format
 msgid "typeStr"
-msgstr "نص_النّوع"
+msgstr "نص_النوع"
 
 #: main.cpp:60
 #, kde-format
 msgid "Limit search to specified directory"
-msgstr "احصر البحث إلى الدّليل المحدّد"
+msgstr "احصر البحث إلى الدليل المنتقى"
 
 #: main.cpp:61
 #, kde-format
 msgid "directory"
-msgstr "الدّليل"
+msgstr "الدليل"
 
 #: main.cpp:62
 #, kde-format
@@ -102,4 +102,4 @@ msgstr "قائمة الكلمات ليُستعلم عنها"
 #: main.cpp:107
 #, kde-format
 msgid "Elapsed: %1 msecs"
-msgstr ""
+msgstr "المنقضي: %1 ملي‌ثانية"

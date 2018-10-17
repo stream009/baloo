@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-04-09 03:24+0200\n"
+"POT-Creation-Date: 2018-09-26 03:54+0200\n"
 "PO-Revision-Date: 2015-09-18 20:11+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
-#: kio_search.cpp:48
+#: kio_search.cpp:49
 #, kde-format
 msgid "Search Folder"
 msgstr "Søkjemappe"

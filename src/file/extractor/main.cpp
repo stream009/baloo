@@ -64,7 +64,7 @@ int main(int argc, char* argv[])
     lowerPriority();
 #endif
 
-    KAboutData aboutData(QStringLiteral("baloo"), i18n("Baloo File Extractor"), PROJECT_VERSION);
+    KAboutData aboutData(QStringLiteral("baloo"), i18n("Baloo File Extractor"), QLatin1String(PROJECT_VERSION));
     aboutData.addAuthor(i18n("Vishesh Handa"), i18n("Maintainer"), QStringLiteral("vhanda@kde.org"), QStringLiteral("http://vhanda.in"));
 
     //QApplication::setDesktopSettingsAware(false);

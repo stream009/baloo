@@ -1,21 +1,21 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Shinjo Park <kde@peremen.name>, 2014, 2015.
+# Shinjo Park <kde@peremen.name>, 2014, 2015, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-04-28 03:38+0200\n"
-"PO-Revision-Date: 2015-06-27 13:50+0200\n"
+"POT-Creation-Date: 2018-08-16 09:04+0200\n"
+"PO-Revision-Date: 2018-08-14 22:48+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
-"Language-Team: Korean <kde@peremen.name>\n"
+"Language-Team: Korean <kde-i18n-doc@kde.org>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -30,53 +30,47 @@ msgstr "kde@peremen.name"
 #: indexerstate.h:42
 #, kde-format
 msgid "Unknown"
-msgstr ""
+msgstr "알 수 없음"
 
 #: indexerstate.h:45
 #, kde-format
 msgid "Idle"
-msgstr ""
+msgstr "대기"
 
 #: indexerstate.h:48
 #, kde-format
 msgid "Suspended"
-msgstr ""
+msgstr "일시 정지됨"
 
 #: indexerstate.h:51
 #, kde-format
 msgid "Initial Indexing"
-msgstr ""
+msgstr "초기 색인 중"
 
 #: indexerstate.h:54
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Index files"
+#, kde-format
 msgid "Indexing new files"
-msgstr "파일 색인"
+msgstr "새로운 파일 색인 중"
 
 #: indexerstate.h:57
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Index files"
+#, kde-format
 msgid "Indexing modified files"
-msgstr "파일 색인"
+msgstr "수정된 파일 색인 중"
 
 #: indexerstate.h:60
 #, kde-format
 msgid "Indexing Extended Attributes"
-msgstr ""
+msgstr "확장 속성 색인 중"
 
 #: indexerstate.h:63
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Index files"
+#, kde-format
 msgid "Indexing file content"
-msgstr "파일 색인"
+msgstr "파일 내용 색인 중"
 
 #: indexerstate.h:66
 #, kde-format
 msgid "Checking for unindexed files"
-msgstr ""
+msgstr "색인에 없는 파일 검색 중"
 
 #: main.cpp:47
 #, kde-format

@@ -1,13 +1,14 @@
 # translation of balooshow.po to Slovak
 # Roman Paholik <wizzardsk@gmail.com>, 2013, 2015.
+# Mthw <jari_45@hotmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: balooshow\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-04-17 03:33+0200\n"
-"PO-Revision-Date: 2015-10-11 12:19+0100\n"
-"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
-"Language-Team: Slovak <kde-sk@linux.sk>\n"
+"POT-Creation-Date: 2018-09-18 03:45+0200\n"
+"PO-Revision-Date: 2018-09-15 19:23+0100\n"
+"Last-Translator: Mthw <jari_45@hotmail.com>\n"
+"Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,75 +26,71 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "wizzardsk@gmail.com"
 
-#: main.cpp:64
+#: main.cpp:63
 #, kde-format
 msgid "Baloo Show"
 msgstr "Baloo Show"
 
-#: main.cpp:66
+#: main.cpp:65
 #, kde-format
 msgid "The Baloo data Viewer - A debugging tool"
 msgstr "Prehliadač údajov Baloo - ladiaci nástroj"
 
-#: main.cpp:68
+#: main.cpp:67
 #, kde-format
 msgid "(c) 2012, Vishesh Handa"
 msgstr "(c) 2012, Vishesh Handa"
 
-#: main.cpp:69
+#: main.cpp:68
 #, kde-format
 msgid "Vishesh Handa"
 msgstr "Vishesh Handa"
 
-#: main.cpp:69
+#: main.cpp:68
 #, kde-format
 msgid "Maintainer"
 msgstr "Správca"
 
-#: main.cpp:74
-#, fuzzy, kde-format
-#| msgid "The file URL"
+#: main.cpp:73
+#, kde-format
 msgid "The file urls"
-msgstr "URL súboru"
+msgstr "URL súborov"
 
-#: main.cpp:76
+#: main.cpp:75
 #, kde-format
 msgid "Print internal info"
-msgstr ""
+msgstr "Vytlačiť interné informácie"
 
-#: main.cpp:78
+#: main.cpp:77
 #, kde-format
 msgid "Inode number of the file to show"
 msgstr ""
 
-#: main.cpp:80
+#: main.cpp:79
 #, kde-format
 msgid "Device id for the files"
 msgstr ""
 
-#: main.cpp:112
-#, fuzzy, kde-format
-#| msgid ""
-#| "The Baloo index could not be opened. Please run \"balooctl status\" to "
-#| "see if Baloo is enabled and working."
+#: main.cpp:111
+#, kde-format
 msgid ""
 "The Baloo index could not be opened. Please run \"%1\" to see if Baloo is "
 "enabled and working."
 msgstr ""
-"Baloo index nie je možné otvoriť. Prosím spustite \"balooctl status\" na "
-"zistenie, či je Baloo povolené a funkčné."
+"Baloo index nie je možné otvoriť. Prosím spustite \"%1\" na zistenie, či je "
+"Baloo povolené a funkčné."
 
-#: main.cpp:128
+#: main.cpp:127
 #, kde-format
 msgid "The fileID is not equal to the actual Baloo fileID"
 msgstr "fileID sa nerovná aktuálnemu Baloo fileID"
 
-#: main.cpp:129
+#: main.cpp:128
 #, kde-format
 msgid "This is a bug"
 msgstr "Toto je chyba"
 
-#: main.cpp:157
+#: main.cpp:156
 #, kde-format
 msgid "No index information found"
 msgstr "Nenašli sa žiadne indexové informácie"
@@ -101,7 +98,7 @@ msgstr "Nenašli sa žiadne indexové informácie"
 #: main.cpp:195
 #, kde-format
 msgid "Internal Info"
-msgstr ""
+msgstr "Interné informácie"
 
 #: main.cpp:196
 #, kde-format

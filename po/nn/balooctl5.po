@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-03-08 03:26+0100\n"
+"POT-Creation-Date: 2018-09-30 03:43+0200\n"
 "PO-Revision-Date: 2018-03-11 15:52+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -74,186 +74,174 @@ msgstr "Indekserer filinnhald"
 msgid "Checking for unindexed files"
 msgstr "Ser etter ikkje-indekserte filer"
 
-#: configcommand.cpp:45
+#: configcommand.cpp:46
 #, kde-format
 msgid "Manipulate the Baloo configuration"
 msgstr "Endra Baloo-oppsettet"
 
-#: configcommand.cpp:68
+#: configcommand.cpp:69
 #, kde-format
 msgid "The config command can be used to manipulate the Baloo Configuration"
 msgstr "Kommandoen «config» kan brukast til å endra Baloo-oppsettet"
 
-#: configcommand.cpp:69
+#: configcommand.cpp:70
 #, kde-format
 msgid "Usage: balooctl config <command>"
 msgstr "Bruk: balooctl config <kommando>"
 
-#: configcommand.cpp:70
+#: configcommand.cpp:71
 #, kde-format
 msgid "Possible Commands:"
 msgstr "Moglege kommandoar:"
 
-#: configcommand.cpp:73
+#: configcommand.cpp:74
 #, kde-format
 msgid "Add a value to config parameter"
 msgstr "Legg verdi til oppsettparameter"
 
-#: configcommand.cpp:74
+#: configcommand.cpp:75
 #, kde-format
 msgid "Remove a value from a config parameter"
 msgstr "Fjern verdi frå oppsettparameter"
 
-#: configcommand.cpp:75
+#: configcommand.cpp:76
 #, kde-format
 msgid "Show the value of a config parameter"
 msgstr "Vis verdi til oppsettparameter"
 
-#: configcommand.cpp:76
+#: configcommand.cpp:77
 #, kde-format
 msgid "Set the value of a config parameter"
 msgstr "Definer verdi til oppsettparameter"
 
-#: configcommand.cpp:77
+#: configcommand.cpp:78
 #, kde-format
 msgid "Display this help menu"
 msgstr "Vis denne hjelpeteksten"
 
-#: configcommand.cpp:83
+#: configcommand.cpp:84
 #, kde-format
 msgid "The following configuration options may be listed:"
 msgstr "Desse oppsettverdiane kan visast:"
 
-#: configcommand.cpp:85 configcommand.cpp:398
+#: configcommand.cpp:86 configcommand.cpp:363
 #, kde-format
 msgid "Controls if Baloo indexes hidden files and folders"
 msgstr "Styrer om Baloo skal indeksera gøymde filer og mapper"
 
-#: configcommand.cpp:86
+#: configcommand.cpp:87
 #, kde-format
 msgid "Controls if baloo indexes file content."
 msgstr "Styrer om Baloo skal indeksera filinnhald"
 
-#: configcommand.cpp:87 configcommand.cpp:150 configcommand.cpp:261
+#: configcommand.cpp:88 configcommand.cpp:151 configcommand.cpp:240
 #, kde-format
 msgid "The list of folders which Baloo indexes"
 msgstr "Liste over mapper som Baloo skal indeksera"
 
-#: configcommand.cpp:88 configcommand.cpp:151 configcommand.cpp:262
+#: configcommand.cpp:89 configcommand.cpp:152 configcommand.cpp:241
 #, kde-format
 msgid "The list of folders which Baloo will never index"
 msgstr "Liste over mapper som Baloo aldri skal indeksera"
 
-#: configcommand.cpp:89 configcommand.cpp:152 configcommand.cpp:263
+#: configcommand.cpp:90 configcommand.cpp:153 configcommand.cpp:242
 #, kde-format
 msgid "The list of filters which are used to exclude files"
 msgstr "Liste over filter som vert brukt til å eksludera filer"
 
-#: configcommand.cpp:90 configcommand.cpp:153 configcommand.cpp:264
+#: configcommand.cpp:91 configcommand.cpp:154 configcommand.cpp:243
 #, kde-format
 msgid "The list of mimetypes which are used to exclude files"
 msgstr "Liste over MIME-typar som skal brukast til å ekskludera filer"
 
-#: configcommand.cpp:142 configcommand.cpp:253 configcommand.cpp:390
-#: configcommand.cpp:459
+#: configcommand.cpp:143 configcommand.cpp:232 configcommand.cpp:355
+#: configcommand.cpp:424
 #, kde-format
 msgid "Config parameter could not be found"
 msgstr "Fann ikkje oppsettparameteren"
 
-#: configcommand.cpp:148 configcommand.cpp:259 configcommand.cpp:396
+#: configcommand.cpp:149 configcommand.cpp:238 configcommand.cpp:361
 #, kde-format
 msgid "The following configuration options may be modified:"
 msgstr "Desse innstillingane kan endrast:"
 
-#: configcommand.cpp:161 configcommand.cpp:191 configcommand.cpp:272
-#: configcommand.cpp:314
+#: configcommand.cpp:162 configcommand.cpp:181 configcommand.cpp:251
+#: configcommand.cpp:286
 #, kde-format
 msgid "A folder must be provided"
 msgstr "Du må oppgje ei mappe"
 
-#: configcommand.cpp:167 configcommand.cpp:197 configcommand.cpp:278
-#: configcommand.cpp:320
-#, kde-format
-msgid "Path does not exist"
-msgstr "Adressa finst ikkje"
-
-#: configcommand.cpp:172 configcommand.cpp:202 configcommand.cpp:283
-#: configcommand.cpp:325
-#, kde-format
-msgid "Path is not a directory"
-msgstr "Adresse viser ikkje til ei mappe"
-
-#: configcommand.cpp:179
+#: configcommand.cpp:169
 #, kde-format
 msgid "%1 is not in the list of include folders"
 msgstr "%1 er ikkje i lista over inkluderte mapper"
 
-#: configcommand.cpp:209
+#: configcommand.cpp:188
 #, kde-format
 msgid "%1 is not in the list of exclude folders"
 msgstr "%1 er ikkje i lista over ekskluderte mapper"
 
-#: configcommand.cpp:221 configcommand.cpp:356
+#: configcommand.cpp:200 configcommand.cpp:321
 #, kde-format
 msgid "A filter must be provided"
 msgstr "Du må oppgje eit filter"
 
-#: configcommand.cpp:227
+#: configcommand.cpp:206
 #, kde-format
 msgid "%1 is not in list of exclude filters"
 msgstr "%1 er ikkje i lista over ekskluderte filter"
 
-#: configcommand.cpp:238 configcommand.cpp:374
+#: configcommand.cpp:217 configcommand.cpp:339
 #, kde-format
 msgid "A mimetype must be provided"
 msgstr "Du må oppgje MIME-type"
 
-#: configcommand.cpp:244
+#: configcommand.cpp:223
 #, kde-format
 msgid "%1 is not in list of exclude mimetypes"
 msgstr "%1 er ikkje i lista over ekskluderte MIME-typar"
 
-#: configcommand.cpp:290
+#: configcommand.cpp:257 configcommand.cpp:292
+#, kde-format
+msgid "Path does not exist"
+msgstr "Adressa finst ikkje"
+
+#: configcommand.cpp:262 configcommand.cpp:297
+#, kde-format
+msgid "Path is not a directory"
+msgstr "Adresse viser ikkje til ei mappe"
+
+#: configcommand.cpp:269
 #, kde-format
 msgid "%1 is already in the list of include folders"
 msgstr "%1 er alt i lista over inkluderte mapper"
 
-#: configcommand.cpp:296
-#, kde-format
-msgid "Parent folder %1 is already in the list of include folders"
-msgstr "Foreldermappa %1 er alt i lista over inkluderte mapper"
-
-#: configcommand.cpp:302 configcommand.cpp:344
+#: configcommand.cpp:274 configcommand.cpp:309
 #, kde-format
 msgid "%1 is in the list of exclude folders"
 msgstr "%1 er i lista over ekskluderte mapper"
 
-#: configcommand.cpp:332
+#: configcommand.cpp:304
 #, kde-format
 msgid "%1 is already in the list of exclude folders"
 msgstr "%1 finst alt i lista over ekskluderte mapper"
 
-#: configcommand.cpp:338
-#, kde-format
-msgid "Parent folder %1 is already in the list of exclude folders"
-msgstr "Foreldermappa %1 finst alt i lista over ekskluderte mapper"
-
-#: configcommand.cpp:362
+#: configcommand.cpp:327
 #, kde-format
 msgid "Exclude filter is already in the list"
 msgstr "Ekskluderingsfilteret finst alt i lista"
 
-#: configcommand.cpp:380
+#: configcommand.cpp:345
 #, kde-format
 msgid "Exclude mimetype is already in the list"
 msgstr "Den ekskluderte MIME-typen finst alt i lista"
 
-#: configcommand.cpp:407 configcommand.cpp:434
+#: configcommand.cpp:372 configcommand.cpp:399
 #, kde-format
 msgid "A value must be provided"
 msgstr "Du må oppgje ein verdi"
 
-#: configcommand.cpp:428 configcommand.cpp:455
+#: configcommand.cpp:393 configcommand.cpp:420
 #, kde-format
 msgid "Invalid value"
 msgstr "Ugyldig verdi"

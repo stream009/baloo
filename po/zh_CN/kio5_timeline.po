@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-04-09 03:24+0200\n"
-"PO-Revision-Date: 2018-07-24 08:41\n"
-"Last-Translator: guoyunhebrave <guoyunhebrave@gmail.com>\n"
+"POT-Creation-Date: 2018-10-08 03:44+0200\n"
+"PO-Revision-Date: 2018-09-28 19:47\n"
+"Last-Translator: guoyunhe <yunhe.guo@protonmail.com>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Crowdin-Language: zh-CN\n"
 "X-Crowdin-File: /kf5-trunk/messages/frameworks/kio5_timeline.pot\n"
 
-#: kio_timeline.cpp:63
+#: kio_timeline.cpp:64
 #, kde-format
 msgctxt ""
 "Month and year used in a tree above the actual days. Have a look at http://"
@@ -31,12 +31,12 @@ msgctxt ""
 msgid "MMMM yyyy"
 msgstr "yyyy年 MMMM"
 
-#: kio_timeline.cpp:122
+#: kio_timeline.cpp:124
 #, kde-format
 msgid "Today"
 msgstr "今天"
 
-#: kio_timeline.cpp:123 kio_timeline.cpp:192
+#: kio_timeline.cpp:125 kio_timeline.cpp:195
 #, kde-format
 msgid "Calendar"
 msgstr "日历"

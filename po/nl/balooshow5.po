@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-04-17 03:33+0200\n"
+"POT-Creation-Date: 2018-09-18 03:45+0200\n"
 "PO-Revision-Date: 2018-01-29 11:25+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
@@ -27,52 +27,52 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "freekdekruijf@kde.nl"
 
-#: main.cpp:64
+#: main.cpp:63
 #, kde-format
 msgid "Baloo Show"
 msgstr "Baloo-tonen"
 
-#: main.cpp:66
+#: main.cpp:65
 #, kde-format
 msgid "The Baloo data Viewer - A debugging tool"
 msgstr "De Baloo viewer van gegevens - een hulpmiddel voor debuggen"
 
-#: main.cpp:68
+#: main.cpp:67
 #, kde-format
 msgid "(c) 2012, Vishesh Handa"
 msgstr "(c) 2012, Vishesh Handa"
 
-#: main.cpp:69
+#: main.cpp:68
 #, kde-format
 msgid "Vishesh Handa"
 msgstr "Vishesh Handa"
 
-#: main.cpp:69
+#: main.cpp:68
 #, kde-format
 msgid "Maintainer"
 msgstr "Onderhouder"
 
-#: main.cpp:74
+#: main.cpp:73
 #, kde-format
 msgid "The file urls"
 msgstr "De URL's van het bestand"
 
-#: main.cpp:76
+#: main.cpp:75
 #, kde-format
 msgid "Print internal info"
 msgstr "Interne info afdrukken"
 
-#: main.cpp:78
+#: main.cpp:77
 #, kde-format
 msgid "Inode number of the file to show"
 msgstr "Inode-nummer van het te tonen bestand"
 
-#: main.cpp:80
+#: main.cpp:79
 #, kde-format
 msgid "Device id for the files"
 msgstr "Apparaat-id voor de bestanden"
 
-#: main.cpp:112
+#: main.cpp:111
 #, kde-format
 msgid ""
 "The Baloo index could not be opened. Please run \"%1\" to see if Baloo is "
@@ -81,17 +81,17 @@ msgstr ""
 "De Baloo-index kon niet geopend worden. Geef het commando \"%1\" om te zien "
 "of Baloo is ingeschakeld en werkt."
 
-#: main.cpp:128
+#: main.cpp:127
 #, kde-format
 msgid "The fileID is not equal to the actual Baloo fileID"
 msgstr "Het bestands-ID is niet gelijk aan het actuele Baloo bestands-ID"
 
-#: main.cpp:129
+#: main.cpp:128
 #, kde-format
 msgid "This is a bug"
 msgstr "Dit is een bug"
 
-#: main.cpp:157
+#: main.cpp:156
 #, kde-format
 msgid "No index information found"
 msgstr "Geen indexinformatie gevonden"

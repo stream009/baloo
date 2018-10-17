@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-07-30 03:29+0200\n"
+"POT-Creation-Date: 2018-10-08 03:44+0200\n"
 "PO-Revision-Date: 2017-12-03 20:58+0900\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -22,17 +22,17 @@ msgstr ""
 msgid "File %1 already has tag %2"
 msgstr "Tiedostolla %1 on jo tunniste %2"
 
-#: kio_tags.cpp:310
+#: kio_tags.cpp:313
 #, kde-format
 msgid "Tag"
 msgstr "Tunniste"
 
-#: kio_tags.cpp:312
+#: kio_tags.cpp:315
 #, kde-format
 msgid "Tag Fragment"
 msgstr "Tunnisteen osa"
 
-#: kio_tags.cpp:314 kio_tags.cpp:319
+#: kio_tags.cpp:317 kio_tags.cpp:322
 #, kde-format
 msgid "All Tags"
 msgstr "Kaikki tunnisteet"

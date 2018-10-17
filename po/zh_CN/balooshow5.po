@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-04-17 03:33+0200\n"
-"PO-Revision-Date: 2018-07-24 08:41\n"
-"Last-Translator: guoyunhebrave <guoyunhebrave@gmail.com>\n"
+"POT-Creation-Date: 2018-09-18 03:45+0200\n"
+"PO-Revision-Date: 2018-09-28 19:47\n"
+"Last-Translator: guoyunhe <yunhe.guo@protonmail.com>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -31,69 +31,69 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-china@kde.org, chaofeng111@gmail.com"
 
-#: main.cpp:64
+#: main.cpp:63
 #, kde-format
 msgid "Baloo Show"
 msgstr "Baloo 展示"
 
-#: main.cpp:66
+#: main.cpp:65
 #, kde-format
 msgid "The Baloo data Viewer - A debugging tool"
 msgstr "Baloo 数据查看器 - 调试工具"
 
-#: main.cpp:68
+#: main.cpp:67
 #, kde-format
 msgid "(c) 2012, Vishesh Handa"
 msgstr "(c) 2012, Vishesh Handa"
 
-#: main.cpp:69
+#: main.cpp:68
 #, kde-format
 msgid "Vishesh Handa"
 msgstr "Vishesh Handa"
 
-#: main.cpp:69
+#: main.cpp:68
 #, kde-format
 msgid "Maintainer"
 msgstr "维护者"
 
-#: main.cpp:74
+#: main.cpp:73
 #, kde-format
 msgid "The file urls"
 msgstr "文件 URL"
 
-#: main.cpp:76
+#: main.cpp:75
 #, kde-format
 msgid "Print internal info"
 msgstr "打印内部信息"
 
-#: main.cpp:78
+#: main.cpp:77
 #, kde-format
 msgid "Inode number of the file to show"
 msgstr "要显示的文件的 Inode 号"
 
-#: main.cpp:80
+#: main.cpp:79
 #, kde-format
 msgid "Device id for the files"
 msgstr "文件的设备 id"
 
-#: main.cpp:112
+#: main.cpp:111
 #, kde-format
 msgid ""
 "The Baloo index could not be opened. Please run \"%1\" to see if Baloo is "
 "enabled and working."
 msgstr "无法打开 Baloo 索引。请运行 \"%1\" 以查看 Baloo 是否已启用且工作正常。"
 
-#: main.cpp:128
+#: main.cpp:127
 #, kde-format
 msgid "The fileID is not equal to the actual Baloo fileID"
 msgstr "fileID 不等于实际 Baloo 文件 fileID。"
 
-#: main.cpp:129
+#: main.cpp:128
 #, kde-format
 msgid "This is a bug"
 msgstr "这是一个错误"
 
-#: main.cpp:157
+#: main.cpp:156
 #, kde-format
 msgid "No index information found"
 msgstr "未找到索引信息"

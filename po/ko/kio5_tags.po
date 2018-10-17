@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-07-30 03:29+0200\n"
+"POT-Creation-Date: 2018-10-08 03:44+0200\n"
 "PO-Revision-Date: 2017-12-02 21:14+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde@peremen.name>\n"
@@ -22,17 +22,17 @@ msgstr ""
 msgid "File %1 already has tag %2"
 msgstr "%1 파일에 %2 태그가 이미 붙어 있음"
 
-#: kio_tags.cpp:310
+#: kio_tags.cpp:313
 #, kde-format
 msgid "Tag"
 msgstr "태그"
 
-#: kio_tags.cpp:312
+#: kio_tags.cpp:315
 #, kde-format
 msgid "Tag Fragment"
 msgstr "태그 조각"
 
-#: kio_tags.cpp:314 kio_tags.cpp:319
+#: kio_tags.cpp:317 kio_tags.cpp:322
 #, kde-format
 msgid "All Tags"
 msgstr "모든 태그"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooctl\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-03-08 03:26+0100\n"
+"POT-Creation-Date: 2018-09-30 03:43+0200\n"
 "PO-Revision-Date: 2017-04-07 00:51+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -83,187 +83,175 @@ msgid "Checking for unindexed files"
 msgstr "тражи неиндексиране фајлове"
 
 # >> @info command description
-#: configcommand.cpp:45
+#: configcommand.cpp:46
 #, kde-format
 msgid "Manipulate the Baloo configuration"
 msgstr "Измените поставу Балуа"
 
-#: configcommand.cpp:68
+#: configcommand.cpp:69
 #, kde-format
 msgid "The config command can be used to manipulate the Baloo Configuration"
 msgstr "Ова наредба служи за мењање поставе Балуа"
 
 # literal-segment: config
-#: configcommand.cpp:69
+#: configcommand.cpp:70
 #, kde-format
 msgid "Usage: balooctl config <command>"
 msgstr "Употреба: balooctl config <наредба>"
 
-#: configcommand.cpp:70
+#: configcommand.cpp:71
 #, kde-format
 msgid "Possible Commands:"
 msgstr "Могуће наредбе:"
 
-#: configcommand.cpp:73
+#: configcommand.cpp:74
 #, kde-format
 msgid "Add a value to config parameter"
 msgstr "Додај вредност параметру поставе."
 
-#: configcommand.cpp:74
+#: configcommand.cpp:75
 #, kde-format
 msgid "Remove a value from a config parameter"
 msgstr "Уклони вредност из параметра поставе."
 
-#: configcommand.cpp:75
+#: configcommand.cpp:76
 #, kde-format
 msgid "Show the value of a config parameter"
 msgstr "Прикажи вредност параметра поставе."
 
-#: configcommand.cpp:76
+#: configcommand.cpp:77
 #, kde-format
 msgid "Set the value of a config parameter"
 msgstr "Постави вредност параметра поставе."
 
-#: configcommand.cpp:77
+#: configcommand.cpp:78
 #, kde-format
 msgid "Display this help menu"
 msgstr "Прикажи овај мени помоћи."
 
-#: configcommand.cpp:83
+#: configcommand.cpp:84
 #, kde-format
 msgid "The following configuration options may be listed:"
 msgstr "Могу се набројати следеће опције поставе:"
 
-#: configcommand.cpp:85 configcommand.cpp:398
+#: configcommand.cpp:86 configcommand.cpp:363
 #, kde-format
 msgid "Controls if Baloo indexes hidden files and folders"
 msgstr "Одређује да ли Балу индексира скривене фајлове и фасцикле."
 
-#: configcommand.cpp:86
+#: configcommand.cpp:87
 #, kde-format
 msgid "Controls if baloo indexes file content."
 msgstr "Одређује да ли Балу индексира садржај фајлова."
 
-#: configcommand.cpp:87 configcommand.cpp:150 configcommand.cpp:261
+#: configcommand.cpp:88 configcommand.cpp:151 configcommand.cpp:240
 #, kde-format
 msgid "The list of folders which Baloo indexes"
 msgstr "Списак фасцикли које Балу индексира."
 
-#: configcommand.cpp:88 configcommand.cpp:151 configcommand.cpp:262
+#: configcommand.cpp:89 configcommand.cpp:152 configcommand.cpp:241
 #, kde-format
 msgid "The list of folders which Baloo will never index"
 msgstr "Списак фасцикли које Балу никад не индексира."
 
-#: configcommand.cpp:89 configcommand.cpp:152 configcommand.cpp:263
+#: configcommand.cpp:90 configcommand.cpp:153 configcommand.cpp:242
 #, kde-format
 msgid "The list of filters which are used to exclude files"
 msgstr "Списак филтера за искључивање фајлова."
 
-#: configcommand.cpp:90 configcommand.cpp:153 configcommand.cpp:264
+#: configcommand.cpp:91 configcommand.cpp:154 configcommand.cpp:243
 #, kde-format
 msgid "The list of mimetypes which are used to exclude files"
 msgstr "Списак МИМЕ типова за искључивање фајлова."
 
-#: configcommand.cpp:142 configcommand.cpp:253 configcommand.cpp:390
-#: configcommand.cpp:459
+#: configcommand.cpp:143 configcommand.cpp:232 configcommand.cpp:355
+#: configcommand.cpp:424
 #, kde-format
 msgid "Config parameter could not be found"
 msgstr "Параметар поставе није нађен."
 
-#: configcommand.cpp:148 configcommand.cpp:259 configcommand.cpp:396
+#: configcommand.cpp:149 configcommand.cpp:238 configcommand.cpp:361
 #, kde-format
 msgid "The following configuration options may be modified:"
 msgstr "Могуће је изменити следеће опције поставе:"
 
-#: configcommand.cpp:161 configcommand.cpp:191 configcommand.cpp:272
-#: configcommand.cpp:314
+#: configcommand.cpp:162 configcommand.cpp:181 configcommand.cpp:251
+#: configcommand.cpp:286
 #, kde-format
 msgid "A folder must be provided"
 msgstr "Мора да се зада фасцикла."
 
-#: configcommand.cpp:167 configcommand.cpp:197 configcommand.cpp:278
-#: configcommand.cpp:320
-#, kde-format
-msgid "Path does not exist"
-msgstr "Путања не постоји."
-
-#: configcommand.cpp:172 configcommand.cpp:202 configcommand.cpp:283
-#: configcommand.cpp:325
-#, kde-format
-msgid "Path is not a directory"
-msgstr "Путања није фасцикла."
-
-#: configcommand.cpp:179
+#: configcommand.cpp:169
 #, kde-format
 msgid "%1 is not in the list of include folders"
 msgstr "%1 није на списку укључених фасцикли."
 
-#: configcommand.cpp:209
+#: configcommand.cpp:188
 #, kde-format
 msgid "%1 is not in the list of exclude folders"
 msgstr "%1 није на списку искључених фасцикли."
 
-#: configcommand.cpp:221 configcommand.cpp:356
+#: configcommand.cpp:200 configcommand.cpp:321
 #, kde-format
 msgid "A filter must be provided"
 msgstr "Мора да се зада филтер."
 
-#: configcommand.cpp:227
+#: configcommand.cpp:206
 #, kde-format
 msgid "%1 is not in list of exclude filters"
 msgstr "%1 није на списку искључних филтера."
 
-#: configcommand.cpp:238 configcommand.cpp:374
+#: configcommand.cpp:217 configcommand.cpp:339
 #, kde-format
 msgid "A mimetype must be provided"
 msgstr "Мора да се зада МИМЕ тип."
 
-#: configcommand.cpp:244
+#: configcommand.cpp:223
 #, kde-format
 msgid "%1 is not in list of exclude mimetypes"
 msgstr "%1 није на списку искључних МИМЕ типова."
 
-#: configcommand.cpp:290
+#: configcommand.cpp:257 configcommand.cpp:292
+#, kde-format
+msgid "Path does not exist"
+msgstr "Путања не постоји."
+
+#: configcommand.cpp:262 configcommand.cpp:297
+#, kde-format
+msgid "Path is not a directory"
+msgstr "Путања није фасцикла."
+
+#: configcommand.cpp:269
 #, kde-format
 msgid "%1 is already in the list of include folders"
 msgstr "%1 је већ на списку укључених фасцикли."
 
-#: configcommand.cpp:296
-#, kde-format
-msgid "Parent folder %1 is already in the list of include folders"
-msgstr "Родитељска фасцикла %1 већ је на списку укључених фасцикли."
-
-#: configcommand.cpp:302 configcommand.cpp:344
+#: configcommand.cpp:274 configcommand.cpp:309
 #, kde-format
 msgid "%1 is in the list of exclude folders"
 msgstr "%1 је на списку искључених фасцикли."
 
-#: configcommand.cpp:332
+#: configcommand.cpp:304
 #, kde-format
 msgid "%1 is already in the list of exclude folders"
 msgstr "%1 је већ на списку искључених фасцикли."
 
-#: configcommand.cpp:338
-#, kde-format
-msgid "Parent folder %1 is already in the list of exclude folders"
-msgstr "Родитељска фасцикла %1 већ је на списку искључених фасцикли."
-
-#: configcommand.cpp:362
+#: configcommand.cpp:327
 #, kde-format
 msgid "Exclude filter is already in the list"
 msgstr "Искључни филтер је већ на списку."
 
-#: configcommand.cpp:380
+#: configcommand.cpp:345
 #, kde-format
 msgid "Exclude mimetype is already in the list"
 msgstr "Искључни МИМЕ тип је већ на списку."
 
-#: configcommand.cpp:407 configcommand.cpp:434
+#: configcommand.cpp:372 configcommand.cpp:399
 #, kde-format
 msgid "A value must be provided"
 msgstr "Мора да се зада вредност."
 
-#: configcommand.cpp:428 configcommand.cpp:455
+#: configcommand.cpp:393 configcommand.cpp:420
 #, kde-format
 msgid "Invalid value"
 msgstr "Лоша вредност."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-07-30 03:29+0200\n"
+"POT-Creation-Date: 2018-10-08 03:44+0200\n"
 "PO-Revision-Date: 2014-10-05 19:28+0300\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -23,17 +23,17 @@ msgstr ""
 msgid "File %1 already has tag %2"
 msgstr ""
 
-#: kio_tags.cpp:310
+#: kio_tags.cpp:313
 #, kde-format
 msgid "Tag"
 msgstr "Marcaj"
 
-#: kio_tags.cpp:312
+#: kio_tags.cpp:315
 #, kde-format
 msgid "Tag Fragment"
 msgstr ""
 
-#: kio_tags.cpp:314 kio_tags.cpp:319
+#: kio_tags.cpp:317 kio_tags.cpp:322
 #, kde-format
 msgid "All Tags"
 msgstr "Toate marcajele"
