@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: baloo_file\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-08-16 09:04+0200\n"
+"POT-Creation-Date: 2018-10-09 03:54+0200\n"
 "PO-Revision-Date: 2018-09-15 19:19+0100\n"
 "Last-Translator: Mthw <jari_45@hotmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -26,49 +26,55 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "wizzardsk@gmail.com"
 
-#: indexerstate.h:42
+#: indexerstate.h:43
 #, kde-format
 msgid "Unknown"
 msgstr "Neznáme"
 
-#: indexerstate.h:45
+#: indexerstate.h:46
 #, kde-format
 msgid "Idle"
 msgstr "Nečinný"
 
-#: indexerstate.h:48
+#: indexerstate.h:49
 #, kde-format
 msgid "Suspended"
 msgstr "Pozastavený"
 
-#: indexerstate.h:51
+#: indexerstate.h:52
 #, kde-format
 msgid "Initial Indexing"
 msgstr "Prvotné indexovanie"
 
-#: indexerstate.h:54
+#: indexerstate.h:55
 #, kde-format
 msgid "Indexing new files"
 msgstr "Indexujem nové súbory"
 
-#: indexerstate.h:57
+#: indexerstate.h:58
 #, kde-format
 msgid "Indexing modified files"
 msgstr "Indexujem upravené súbory"
 
-#: indexerstate.h:60
+#: indexerstate.h:61
 #, kde-format
 msgid "Indexing Extended Attributes"
 msgstr "Indexujem rozšírené atribúty"
 
-#: indexerstate.h:63
+#: indexerstate.h:64
 #, kde-format
 msgid "Indexing file content"
 msgstr "Indexujem obsah súborov"
 
-#: indexerstate.h:66
+#: indexerstate.h:67
 #, kde-format
 msgid "Checking for unindexed files"
+msgstr "Kontrolujem neindexované súbory"
+
+#: indexerstate.h:70
+#, fuzzy, kde-format
+#| msgid "Checking for unindexed files"
+msgid "Checking for stale index entries"
 msgstr "Kontrolujem neindexované súbory"
 
 #: main.cpp:47

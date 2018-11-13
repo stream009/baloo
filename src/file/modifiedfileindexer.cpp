@@ -32,7 +32,7 @@
 
 using namespace Baloo;
 
-ModifiedFileIndexer::ModifiedFileIndexer(Database* db, FileIndexerConfig* config, const QStringList& files)
+ModifiedFileIndexer::ModifiedFileIndexer(Database* db, const FileIndexerConfig* config, const QStringList& files)
     : m_db(db)
     , m_config(config)
     , m_files(files)
@@ -70,20 +70,25 @@ void ModifiedFileIndexer::run()
             continue;
         }
 
-        quint32 mTime = tr.documentTimeInfo(fileId).mTime;
+        DocumentTimeDB::TimeInfo timeInfo = tr.documentTimeInfo(fileId);
 
         // A folders mtime is updated when a new file is added / removed / renamed
         // we don't really need to reindex a folder when that happens
         // In fact, we never need to reindex a folder
-        if (mTime && mimetype == QLatin1String("inode/directory")) {
-            qDebug() << filePath << "is skipped because it is directory.";
+        if (timeInfo.mTime && mimetype == QLatin1String("inode/directory")) {
             continue;
         }
 
         // FIXME: Using QFileInfo over here is quite expensive!
         QFileInfo fileInfo(filePath);
-        if (mTime == fileInfo.lastModified().toTime_t()) {
-            qDebug() << filePath << "is skipped because modified time is differenct to database's one.";
+        bool mTimeChanged = timeInfo.mTime != fileInfo.lastModified().toTime_t();
+#if QT_VERSION >= QT_VERSION_CHECK(5,10,0)
+        bool cTimeChanged = timeInfo.cTime != fileInfo.metadataChangeTime().toTime_t();
+#else
+        bool cTimeChanged = timeInfo.cTime != fileInfo.created().toTime_t();
+#endif
+
+        if (!mTimeChanged && !cTimeChanged) {
             continue;
         }
 
@@ -100,7 +105,6 @@ void ModifiedFileIndexer::run()
         // cause Baloo was not running and missed those events
         if (tr.hasDocument(job.document().id())) {
             tr.replaceDocument(job.document(), DocumentTime);
-            tr.setPhaseOne(job.document().id());
         }
         else {
             tr.addDocument(job.document());

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooctl5\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-09-30 03:43+0200\n"
-"PO-Revision-Date: 2018-03-08 09:39+0200\n"
+"POT-Creation-Date: 2018-10-09 03:54+0200\n"
+"PO-Revision-Date: 2018-10-09 08:46+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -30,50 +30,55 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yurchor@ukr.net"
 
-#: ../../file/indexerstate.h:42
+#: ../../file/indexerstate.h:43
 #, kde-format
 msgid "Unknown"
 msgstr "Невідомо"
 
-#: ../../file/indexerstate.h:45
+#: ../../file/indexerstate.h:46
 #, kde-format
 msgid "Idle"
 msgstr "Бездіяльність"
 
-#: ../../file/indexerstate.h:48
+#: ../../file/indexerstate.h:49
 #, kde-format
 msgid "Suspended"
 msgstr "Приспано"
 
-#: ../../file/indexerstate.h:51
+#: ../../file/indexerstate.h:52
 #, kde-format
 msgid "Initial Indexing"
 msgstr "Початкове індексування"
 
-#: ../../file/indexerstate.h:54
+#: ../../file/indexerstate.h:55
 #, kde-format
 msgid "Indexing new files"
 msgstr "Індексування нових файлів"
 
-#: ../../file/indexerstate.h:57
+#: ../../file/indexerstate.h:58
 #, kde-format
 msgid "Indexing modified files"
 msgstr "Індексування змінених файлів"
 
-#: ../../file/indexerstate.h:60
+#: ../../file/indexerstate.h:61
 #, kde-format
 msgid "Indexing Extended Attributes"
 msgstr "Індексування розширених атрибутів"
 
-#: ../../file/indexerstate.h:63
+#: ../../file/indexerstate.h:64
 #, kde-format
 msgid "Indexing file content"
 msgstr "Індексування вмісту файла"
 
-#: ../../file/indexerstate.h:66
+#: ../../file/indexerstate.h:67
 #, kde-format
 msgid "Checking for unindexed files"
 msgstr "Пошук неіндексованих файлів"
+
+#: ../../file/indexerstate.h:70
+#, kde-format
+msgid "Checking for stale index entries"
+msgstr "Пошук застарілих записів покажчика"
 
 #: configcommand.cpp:46
 #, kde-format
@@ -353,28 +358,28 @@ msgstr ""
 msgid "format"
 msgstr "формат"
 
-#: monitorcommand.cpp:58 monitorcommand.cpp:71
+#: monitorcommand.cpp:68 monitorcommand.cpp:86
 #, kde-format
 msgid "Press ctrl+c to stop monitoring"
 msgstr "Натисніть Ctrl+C, щоб припинити спостереження"
 
-#: monitorcommand.cpp:70
+#: monitorcommand.cpp:85
 #, kde-format
 msgid "Waiting for file indexer to start"
 msgstr "Очікуємо на запуск засобу індексування файлів"
 
-#: monitorcommand.cpp:77
+#: monitorcommand.cpp:92
 #, kde-format
 msgid "File indexer is running"
 msgstr "Засіб індексування файлів працює"
 
-#: monitorcommand.cpp:89
+#: monitorcommand.cpp:104
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
 msgstr "Індексуємо: %1"
 
-#: monitorcommand.cpp:97
+#: monitorcommand.cpp:112
 #, kde-format
 msgid ": Ok"
 msgstr ": Без помилок"

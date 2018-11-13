@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2015.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2015, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-08-16 09:04+0200\n"
-"PO-Revision-Date: 2015-10-04 08:08+0100\n"
+"POT-Creation-Date: 2018-10-09 03:54+0200\n"
+"PO-Revision-Date: 2018-10-14 11:27+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -18,47 +18,52 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 2.0\n"
 
-#: ../../file/indexerstate.h:42
+#: ../../file/indexerstate.h:43
 #, kde-format
 msgid "Unknown"
 msgstr "Nieznany"
 
-#: ../../file/indexerstate.h:45
+#: ../../file/indexerstate.h:46
 #, kde-format
 msgid "Idle"
 msgstr "Bezczynny"
 
-#: ../../file/indexerstate.h:48
+#: ../../file/indexerstate.h:49
 #, kde-format
 msgid "Suspended"
 msgstr "Uśpiony"
 
-#: ../../file/indexerstate.h:51
+#: ../../file/indexerstate.h:52
 #, kde-format
 msgid "Initial Indexing"
 msgstr "Wstępne indeksowanie"
 
-#: ../../file/indexerstate.h:54
+#: ../../file/indexerstate.h:55
 #, kde-format
 msgid "Indexing new files"
 msgstr "Indeksowanie nowych plików"
 
-#: ../../file/indexerstate.h:57
+#: ../../file/indexerstate.h:58
 #, kde-format
 msgid "Indexing modified files"
 msgstr "Indeksowanie zmienionych plików"
 
-#: ../../file/indexerstate.h:60
+#: ../../file/indexerstate.h:61
 #, kde-format
 msgid "Indexing Extended Attributes"
 msgstr "Indeksowanie rozszerzonych atrybutów"
 
-#: ../../file/indexerstate.h:63
+#: ../../file/indexerstate.h:64
 #, kde-format
 msgid "Indexing file content"
 msgstr "Indeksowanie zawartości plików"
 
-#: ../../file/indexerstate.h:66
+#: ../../file/indexerstate.h:67
 #, kde-format
 msgid "Checking for unindexed files"
 msgstr "Szukanie niezaindeksowanych plików"
+
+#: ../../file/indexerstate.h:70
+#, kde-format
+msgid "Checking for stale index entries"
+msgstr "Szukanie zawieszonych wpisów indeksu"

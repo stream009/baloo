@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-08-16 09:04+0200\n"
-"PO-Revision-Date: 2018-09-28 19:47\n"
-"Last-Translator: guoyunhe <yunhe.guo@protonmail.com>\n"
+"POT-Creation-Date: 2018-10-09 03:54+0200\n"
+"PO-Revision-Date: 2018-10-09 18:38\n"
+"Last-Translator: guoyunhe <i@guoyunhe.me>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -20,47 +20,52 @@ msgstr ""
 "X-Crowdin-Language: zh-CN\n"
 "X-Crowdin-File: /kf5-trunk/messages/frameworks/baloomonitorplugin.pot\n"
 
-#: ../../file/indexerstate.h:42
+#: ../../file/indexerstate.h:43
 #, kde-format
 msgid "Unknown"
 msgstr "未知"
 
-#: ../../file/indexerstate.h:45
+#: ../../file/indexerstate.h:46
 #, kde-format
 msgid "Idle"
 msgstr "空闲"
 
-#: ../../file/indexerstate.h:48
+#: ../../file/indexerstate.h:49
 #, kde-format
 msgid "Suspended"
 msgstr "挂起"
 
-#: ../../file/indexerstate.h:51
+#: ../../file/indexerstate.h:52
 #, kde-format
 msgid "Initial Indexing"
 msgstr "初始索引"
 
-#: ../../file/indexerstate.h:54
+#: ../../file/indexerstate.h:55
 #, kde-format
 msgid "Indexing new files"
 msgstr "正在索引新文件"
 
-#: ../../file/indexerstate.h:57
+#: ../../file/indexerstate.h:58
 #, kde-format
 msgid "Indexing modified files"
 msgstr "正在索引修改的文件"
 
-#: ../../file/indexerstate.h:60
+#: ../../file/indexerstate.h:61
 #, kde-format
 msgid "Indexing Extended Attributes"
 msgstr "正在索引扩展属性"
 
-#: ../../file/indexerstate.h:63
+#: ../../file/indexerstate.h:64
 #, kde-format
 msgid "Indexing file content"
 msgstr "正在索引文件内容"
 
-#: ../../file/indexerstate.h:66
+#: ../../file/indexerstate.h:67
 #, kde-format
 msgid "Checking for unindexed files"
 msgstr "正在检查未索引文件"
+
+#: ../../file/indexerstate.h:70
+#, kde-format
+msgid "Checking for stale index entries"
+msgstr "正在检查陈旧索引项"

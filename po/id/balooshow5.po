@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-09-18 03:45+0200\n"
-"PO-Revision-Date: 2018-05-19 16:40+0700\n"
+"POT-Creation-Date: 2018-10-31 03:52+0100\n"
+"PO-Revision-Date: 2018-11-01 07:28+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -115,3 +115,9 @@ msgstr "Istilah Nama File: %1"
 #, kde-format
 msgid "%1 Terms: %2"
 msgstr "Istilah %1: %2"
+
+#: main.cpp:201
+#, kde-format
+msgctxt "Prefix string for internal errors"
+msgid "Internal Error - %1"
+msgstr "Error Internal - %1"

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-08-16 09:04+0200\n"
-"PO-Revision-Date: 2018-04-29 07:13+0700\n"
+"POT-Creation-Date: 2018-10-09 03:54+0200\n"
+"PO-Revision-Date: 2018-10-15 06:53+0700\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -27,50 +27,55 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "wantoyek@gmail.com"
 
-#: indexerstate.h:42
+#: indexerstate.h:43
 #, kde-format
 msgid "Unknown"
 msgstr "Tak diketahui"
 
-#: indexerstate.h:45
+#: indexerstate.h:46
 #, kde-format
 msgid "Idle"
 msgstr "Nganggur"
 
-#: indexerstate.h:48
+#: indexerstate.h:49
 #, kde-format
 msgid "Suspended"
 msgstr "Disuspend"
 
-#: indexerstate.h:51
+#: indexerstate.h:52
 #, kde-format
 msgid "Initial Indexing"
 msgstr "Pengindeksan Inisial"
 
-#: indexerstate.h:54
+#: indexerstate.h:55
 #, kde-format
 msgid "Indexing new files"
 msgstr "Pengindeksan file baru"
 
-#: indexerstate.h:57
+#: indexerstate.h:58
 #, kde-format
 msgid "Indexing modified files"
 msgstr "Pengindeksan file termodifikasi"
 
-#: indexerstate.h:60
+#: indexerstate.h:61
 #, kde-format
 msgid "Indexing Extended Attributes"
 msgstr "Pengindeksan Atribut Diperluas"
 
-#: indexerstate.h:63
+#: indexerstate.h:64
 #, kde-format
 msgid "Indexing file content"
 msgstr "Pengindeksan isi file "
 
-#: indexerstate.h:66
+#: indexerstate.h:67
 #, kde-format
 msgid "Checking for unindexed files"
-msgstr "Pemeriksaan file tak terindeks"
+msgstr "Pemeriksaan atas file tak terindeks"
+
+#: indexerstate.h:70
+#, kde-format
+msgid "Checking for stale index entries"
+msgstr "Pemeriksaan atas entri-entri indeks yang basi"
 
 #: main.cpp:47
 #, kde-format

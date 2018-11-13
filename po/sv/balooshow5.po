@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-09-18 03:45+0200\n"
-"PO-Revision-Date: 2018-01-28 22:23+0100\n"
+"POT-Creation-Date: 2018-10-31 03:52+0100\n"
+"PO-Revision-Date: 2018-10-31 21:39+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -115,3 +115,9 @@ msgstr "Filnamnstermer: %1"
 #, kde-format
 msgid "%1 Terms: %2"
 msgstr "%1 termer: %2"
+
+#: main.cpp:201
+#, kde-format
+msgctxt "Prefix string for internal errors"
+msgid "Internal Error - %1"
+msgstr "Internt fel - %1"

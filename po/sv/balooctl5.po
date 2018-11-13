@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-09-30 03:43+0200\n"
-"PO-Revision-Date: 2018-03-08 21:43+0100\n"
+"POT-Creation-Date: 2018-10-09 03:54+0200\n"
+"PO-Revision-Date: 2018-10-10 17:45+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -27,50 +27,55 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "stefan.asserhall@bredband.net"
 
-#: ../../file/indexerstate.h:42
+#: ../../file/indexerstate.h:43
 #, kde-format
 msgid "Unknown"
 msgstr "Okänd"
 
-#: ../../file/indexerstate.h:45
+#: ../../file/indexerstate.h:46
 #, kde-format
 msgid "Idle"
 msgstr "Overksam"
 
-#: ../../file/indexerstate.h:48
+#: ../../file/indexerstate.h:49
 #, kde-format
 msgid "Suspended"
 msgstr "Tillfälligt stoppad"
 
-#: ../../file/indexerstate.h:51
+#: ../../file/indexerstate.h:52
 #, kde-format
 msgid "Initial Indexing"
 msgstr "Inledande indexering"
 
-#: ../../file/indexerstate.h:54
+#: ../../file/indexerstate.h:55
 #, kde-format
 msgid "Indexing new files"
 msgstr "Indexerar nya filer"
 
-#: ../../file/indexerstate.h:57
+#: ../../file/indexerstate.h:58
 #, kde-format
 msgid "Indexing modified files"
 msgstr "Indexerar ändrade filer"
 
-#: ../../file/indexerstate.h:60
+#: ../../file/indexerstate.h:61
 #, kde-format
 msgid "Indexing Extended Attributes"
 msgstr "Indexerar utökade attribut"
 
-#: ../../file/indexerstate.h:63
+#: ../../file/indexerstate.h:64
 #, kde-format
 msgid "Indexing file content"
 msgstr "Indexerar filinnehåll"
 
-#: ../../file/indexerstate.h:66
+#: ../../file/indexerstate.h:67
 #, kde-format
 msgid "Checking for unindexed files"
 msgstr "Kontrollerar om det finns ej indexerade filer"
+
+#: ../../file/indexerstate.h:70
+#, kde-format
+msgid "Checking for stale index entries"
+msgstr "Kontrollerar om det finns inaktuella indexposter"
 
 #: configcommand.cpp:46
 #, kde-format
@@ -348,28 +353,28 @@ msgstr ""
 msgid "format"
 msgstr "format"
 
-#: monitorcommand.cpp:58 monitorcommand.cpp:71
+#: monitorcommand.cpp:68 monitorcommand.cpp:86
 #, kde-format
 msgid "Press ctrl+c to stop monitoring"
 msgstr "Tryck på Ctrl+C för att avsluta övervakning"
 
-#: monitorcommand.cpp:70
+#: monitorcommand.cpp:85
 #, kde-format
 msgid "Waiting for file indexer to start"
 msgstr "Väntar på att filindexering ska starta"
 
-#: monitorcommand.cpp:77
+#: monitorcommand.cpp:92
 #, kde-format
 msgid "File indexer is running"
 msgstr "Filindexering kör"
 
-#: monitorcommand.cpp:89
+#: monitorcommand.cpp:104
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
 msgstr "Indexerar: %1"
 
-#: monitorcommand.cpp:97
+#: monitorcommand.cpp:112
 #, kde-format
 msgid ": Ok"
 msgstr ": Ok"

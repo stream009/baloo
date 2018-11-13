@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-09-30 03:43+0200\n"
+"POT-Creation-Date: 2018-10-09 03:54+0200\n"
 "PO-Revision-Date: 2018-06-08 15:31+0300\n"
 "Last-Translator: Safa Alfulaij <safa1996alfulaij@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -28,49 +28,55 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "safa1996alfulaij@gmail.com"
 
-#: ../../file/indexerstate.h:42
+#: ../../file/indexerstate.h:43
 #, kde-format
 msgid "Unknown"
 msgstr "مجهولة"
 
-#: ../../file/indexerstate.h:45
+#: ../../file/indexerstate.h:46
 #, kde-format
 msgid "Idle"
 msgstr "خامل"
 
-#: ../../file/indexerstate.h:48
+#: ../../file/indexerstate.h:49
 #, kde-format
 msgid "Suspended"
 msgstr "مُرجأ"
 
-#: ../../file/indexerstate.h:51
+#: ../../file/indexerstate.h:52
 #, kde-format
 msgid "Initial Indexing"
 msgstr "الفهرسة الأولية"
 
-#: ../../file/indexerstate.h:54
+#: ../../file/indexerstate.h:55
 #, kde-format
 msgid "Indexing new files"
 msgstr "يُفهرس الملفات الجديدة"
 
-#: ../../file/indexerstate.h:57
+#: ../../file/indexerstate.h:58
 #, kde-format
 msgid "Indexing modified files"
 msgstr "يُفهرس الملفات المعدلة"
 
-#: ../../file/indexerstate.h:60
+#: ../../file/indexerstate.h:61
 #, kde-format
 msgid "Indexing Extended Attributes"
 msgstr "يُفهرس الخصائص الممتدة"
 
-#: ../../file/indexerstate.h:63
+#: ../../file/indexerstate.h:64
 #, kde-format
 msgid "Indexing file content"
 msgstr "يُفهرس محتويات الملفات"
 
-#: ../../file/indexerstate.h:66
+#: ../../file/indexerstate.h:67
 #, kde-format
 msgid "Checking for unindexed files"
+msgstr "يفحص بحثًا عن الملفات غير المفهرسة"
+
+#: ../../file/indexerstate.h:70
+#, fuzzy, kde-format
+#| msgid "Checking for unindexed files"
+msgid "Checking for stale index entries"
 msgstr "يفحص بحثًا عن الملفات غير المفهرسة"
 
 #: configcommand.cpp:46
@@ -349,28 +355,28 @@ msgstr ""
 msgid "format"
 msgstr "التنسيق"
 
-#: monitorcommand.cpp:58 monitorcommand.cpp:71
+#: monitorcommand.cpp:68 monitorcommand.cpp:86
 #, kde-format
 msgid "Press ctrl+c to stop monitoring"
 msgstr "اضغط Ctrl+c لإيقاف المراقبة"
 
-#: monitorcommand.cpp:70
+#: monitorcommand.cpp:85
 #, kde-format
 msgid "Waiting for file indexer to start"
 msgstr "ينتظر بدء مفهرس الملفات"
 
-#: monitorcommand.cpp:77
+#: monitorcommand.cpp:92
 #, kde-format
 msgid "File indexer is running"
 msgstr "مفهرس الملفات يعمل"
 
-#: monitorcommand.cpp:89
+#: monitorcommand.cpp:104
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
 msgstr "يُفهرس: %1"
 
-#: monitorcommand.cpp:97
+#: monitorcommand.cpp:112
 #, kde-format
 msgid ": Ok"
 msgstr ": تم"

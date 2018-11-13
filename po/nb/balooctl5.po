@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-09-30 03:43+0200\n"
+"POT-Creation-Date: 2018-10-09 03:54+0200\n"
 "PO-Revision-Date: 2015-06-13 08:47+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -29,49 +29,54 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "bjornst@skogkatt.homelinux.org"
 
-#: ../../file/indexerstate.h:42
+#: ../../file/indexerstate.h:43
 #, kde-format
 msgid "Unknown"
 msgstr "Ukjent"
 
-#: ../../file/indexerstate.h:45
+#: ../../file/indexerstate.h:46
 #, kde-format
 msgid "Idle"
 msgstr "Inaktiv"
 
-#: ../../file/indexerstate.h:48
+#: ../../file/indexerstate.h:49
 #, kde-format
 msgid "Suspended"
 msgstr "I hvilemodus"
 
-#: ../../file/indexerstate.h:51
+#: ../../file/indexerstate.h:52
 #, kde-format
 msgid "Initial Indexing"
 msgstr ""
 
-#: ../../file/indexerstate.h:54
+#: ../../file/indexerstate.h:55
 #, kde-format
 msgid "Indexing new files"
 msgstr ""
 
-#: ../../file/indexerstate.h:57
+#: ../../file/indexerstate.h:58
 #, kde-format
 msgid "Indexing modified files"
 msgstr ""
 
-#: ../../file/indexerstate.h:60
+#: ../../file/indexerstate.h:61
 #, kde-format
 msgid "Indexing Extended Attributes"
 msgstr ""
 
-#: ../../file/indexerstate.h:63
+#: ../../file/indexerstate.h:64
 #, kde-format
 msgid "Indexing file content"
 msgstr ""
 
-#: ../../file/indexerstate.h:66
+#: ../../file/indexerstate.h:67
 #, kde-format
 msgid "Checking for unindexed files"
+msgstr ""
+
+#: ../../file/indexerstate.h:70
+#, kde-format
+msgid "Checking for stale index entries"
 msgstr ""
 
 #: configcommand.cpp:46
@@ -348,28 +353,28 @@ msgstr ""
 msgid "format"
 msgstr ""
 
-#: monitorcommand.cpp:58 monitorcommand.cpp:71
+#: monitorcommand.cpp:68 monitorcommand.cpp:86
 #, kde-format
 msgid "Press ctrl+c to stop monitoring"
 msgstr ""
 
-#: monitorcommand.cpp:70
+#: monitorcommand.cpp:85
 #, kde-format
 msgid "Waiting for file indexer to start"
 msgstr ""
 
-#: monitorcommand.cpp:77
+#: monitorcommand.cpp:92
 #, kde-format
 msgid "File indexer is running"
 msgstr ""
 
-#: monitorcommand.cpp:89
+#: monitorcommand.cpp:104
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
 msgstr ""
 
-#: monitorcommand.cpp:97
+#: monitorcommand.cpp:112
 #, kde-format
 msgid ": Ok"
 msgstr ""

@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-09-30 03:43+0200\n"
-"PO-Revision-Date: 2018-09-28 19:47\n"
-"Last-Translator: guoyunhe <yunhe.guo@protonmail.com>\n"
+"POT-Creation-Date: 2018-10-09 03:54+0200\n"
+"PO-Revision-Date: 2018-10-09 18:39\n"
+"Last-Translator: guoyunhe <i@guoyunhe.me>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -32,50 +32,55 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-china@kde.org"
 
-#: ../../file/indexerstate.h:42
+#: ../../file/indexerstate.h:43
 #, kde-format
 msgid "Unknown"
 msgstr "未知"
 
-#: ../../file/indexerstate.h:45
+#: ../../file/indexerstate.h:46
 #, kde-format
 msgid "Idle"
 msgstr "空闲"
 
-#: ../../file/indexerstate.h:48
+#: ../../file/indexerstate.h:49
 #, kde-format
 msgid "Suspended"
 msgstr "挂起"
 
-#: ../../file/indexerstate.h:51
+#: ../../file/indexerstate.h:52
 #, kde-format
 msgid "Initial Indexing"
 msgstr "首次索引"
 
-#: ../../file/indexerstate.h:54
+#: ../../file/indexerstate.h:55
 #, kde-format
 msgid "Indexing new files"
 msgstr "正在索引新文件"
 
-#: ../../file/indexerstate.h:57
+#: ../../file/indexerstate.h:58
 #, kde-format
 msgid "Indexing modified files"
 msgstr "正在索引修改过的文件"
 
-#: ../../file/indexerstate.h:60
+#: ../../file/indexerstate.h:61
 #, kde-format
 msgid "Indexing Extended Attributes"
 msgstr "正在索引扩展属性"
 
-#: ../../file/indexerstate.h:63
+#: ../../file/indexerstate.h:64
 #, kde-format
 msgid "Indexing file content"
 msgstr "正在索引文件内容"
 
-#: ../../file/indexerstate.h:66
+#: ../../file/indexerstate.h:67
 #, kde-format
 msgid "Checking for unindexed files"
 msgstr "正在检查未索引文件"
+
+#: ../../file/indexerstate.h:70
+#, kde-format
+msgid "Checking for stale index entries"
+msgstr "正在检查陈旧索引项"
 
 #: configcommand.cpp:46
 #, kde-format
@@ -353,28 +358,28 @@ msgstr ""
 msgid "format"
 msgstr "格式"
 
-#: monitorcommand.cpp:58 monitorcommand.cpp:71
+#: monitorcommand.cpp:68 monitorcommand.cpp:86
 #, kde-format
 msgid "Press ctrl+c to stop monitoring"
 msgstr "按 Ctrl + C 停止监视"
 
-#: monitorcommand.cpp:70
+#: monitorcommand.cpp:85
 #, kde-format
 msgid "Waiting for file indexer to start"
 msgstr "正在等待文件索引器启动"
 
-#: monitorcommand.cpp:77
+#: monitorcommand.cpp:92
 #, kde-format
 msgid "File indexer is running"
 msgstr "文件索引器正在运行"
 
-#: monitorcommand.cpp:89
+#: monitorcommand.cpp:104
 #, kde-format
 msgctxt "currently indexed file"
 msgid "Indexing: %1"
 msgstr "正在索引：%1"
 
-#: monitorcommand.cpp:97
+#: monitorcommand.cpp:112
 #, kde-format
 msgid ": Ok"
 msgstr ": 确定"

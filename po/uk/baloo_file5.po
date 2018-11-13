@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: baloo_file5\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-08-16 09:04+0200\n"
-"PO-Revision-Date: 2018-04-28 10:01+0200\n"
+"POT-Creation-Date: 2018-10-09 03:54+0200\n"
+"PO-Revision-Date: 2018-10-09 08:46+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -30,50 +30,55 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "fr.ivan@ukrainian-orthodox.org"
 
-#: indexerstate.h:42
+#: indexerstate.h:43
 #, kde-format
 msgid "Unknown"
 msgstr "Невідомий"
 
-#: indexerstate.h:45
+#: indexerstate.h:46
 #, kde-format
 msgid "Idle"
 msgstr "Бездіяльність"
 
-#: indexerstate.h:48
+#: indexerstate.h:49
 #, kde-format
 msgid "Suspended"
 msgstr "Призупинено"
 
-#: indexerstate.h:51
+#: indexerstate.h:52
 #, kde-format
 msgid "Initial Indexing"
 msgstr "Початкове індексування"
 
-#: indexerstate.h:54
+#: indexerstate.h:55
 #, kde-format
 msgid "Indexing new files"
 msgstr "Індексування нових файлів"
 
-#: indexerstate.h:57
+#: indexerstate.h:58
 #, kde-format
 msgid "Indexing modified files"
 msgstr "Індексування змінених файлів"
 
-#: indexerstate.h:60
+#: indexerstate.h:61
 #, kde-format
 msgid "Indexing Extended Attributes"
 msgstr "Індексування розширених атрибутів"
 
-#: indexerstate.h:63
+#: indexerstate.h:64
 #, kde-format
 msgid "Indexing file content"
 msgstr "Індексування вмісту файла"
 
-#: indexerstate.h:66
+#: indexerstate.h:67
 #, kde-format
 msgid "Checking for unindexed files"
 msgstr "Пошук неіндексованих файлів"
+
+#: indexerstate.h:70
+#, kde-format
+msgid "Checking for stale index entries"
+msgstr "Пошук застарілих записів покажчика"
 
 #: main.cpp:47
 #, kde-format

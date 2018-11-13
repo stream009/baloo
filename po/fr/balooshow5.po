@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-09-18 03:45+0200\n"
+"POT-Creation-Date: 2018-10-31 03:52+0100\n"
 "PO-Revision-Date: 2018-02-08 23:04+0100\n"
 "Last-Translator: Yoann Laissus <yoann.laissus@gmail.com>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
@@ -121,3 +121,10 @@ msgstr "Termes du nom de fichier : %1"
 #, kde-format
 msgid "%1 Terms: %2"
 msgstr "%1 termes : %2"
+
+#: main.cpp:201
+#, fuzzy, kde-format
+#| msgid "Internal Info"
+msgctxt "Prefix string for internal errors"
+msgid "Internal Error - %1"
+msgstr "Informations internes"

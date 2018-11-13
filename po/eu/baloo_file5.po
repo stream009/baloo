@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: baloo_file5\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-08-16 09:04+0200\n"
+"POT-Creation-Date: 2018-10-09 03:54+0200\n"
 "PO-Revision-Date: 2018-04-30 02:23+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
 "Language-Team: Basque <kde-i18n-doc@kde.org>\n"
@@ -30,49 +30,55 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "xalba@euskalnet.net"
 
-#: indexerstate.h:42
+#: indexerstate.h:43
 #, kde-format
 msgid "Unknown"
 msgstr "Ezezaguna"
 
-#: indexerstate.h:45
+#: indexerstate.h:46
 #, kde-format
 msgid "Idle"
 msgstr "Ez aktibo"
 
-#: indexerstate.h:48
+#: indexerstate.h:49
 #, kde-format
 msgid "Suspended"
 msgstr "Esekita"
 
-#: indexerstate.h:51
+#: indexerstate.h:52
 #, kde-format
 msgid "Initial Indexing"
 msgstr "Hasierako indexatzea"
 
-#: indexerstate.h:54
+#: indexerstate.h:55
 #, kde-format
 msgid "Indexing new files"
 msgstr "Fitxategi berriak indexatzen"
 
-#: indexerstate.h:57
+#: indexerstate.h:58
 #, kde-format
 msgid "Indexing modified files"
 msgstr "Aldatutako fitxategiak indexatzen"
 
-#: indexerstate.h:60
+#: indexerstate.h:61
 #, kde-format
 msgid "Indexing Extended Attributes"
 msgstr "Atributu hedatuak indexatzen"
 
-#: indexerstate.h:63
+#: indexerstate.h:64
 #, kde-format
 msgid "Indexing file content"
 msgstr "Fitxategien edukia indexatzen"
 
-#: indexerstate.h:66
+#: indexerstate.h:67
 #, kde-format
 msgid "Checking for unindexed files"
+msgstr "Indexatu gabeko fitxategiak egiaztatzen"
+
+#: indexerstate.h:70
+#, fuzzy, kde-format
+#| msgid "Checking for unindexed files"
+msgid "Checking for stale index entries"
 msgstr "Indexatu gabeko fitxategiak egiaztatzen"
 
 #: main.cpp:47

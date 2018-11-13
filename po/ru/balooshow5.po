@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-09-18 03:45+0200\n"
+"POT-Creation-Date: 2018-10-31 03:52+0100\n"
 "PO-Revision-Date: 2018-06-03 11:50+0300\n"
 "Last-Translator: Alexander Potashev <aspotashev@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -116,3 +116,10 @@ msgstr "Ключевые слова из имени файла: %1"
 #, kde-format
 msgid "%1 Terms: %2"
 msgstr "Ключевые слова из %1: %2"
+
+#: main.cpp:201
+#, fuzzy, kde-format
+#| msgid "Internal Info"
+msgctxt "Prefix string for internal errors"
+msgid "Internal Error - %1"
+msgstr "Техническая информация"

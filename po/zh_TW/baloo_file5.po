@@ -3,13 +3,14 @@
 #
 # Franklin Weng <franklin at goodhorse dot idv dot tw>, 2014, 2015.
 # pan93412 <pan93412@gmail.com>, 2018.
+# Jeff Huang <s8321414@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-08-16 09:04+0200\n"
-"PO-Revision-Date: 2018-04-29 13:20+0800\n"
-"Last-Translator: pan93412 <pan93412@gmail.com>\n"
+"POT-Creation-Date: 2018-10-09 03:54+0200\n"
+"PO-Revision-Date: 2018-10-31 14:59+0800\n"
+"Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
 "Language-Team: Chinese <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
@@ -21,57 +22,62 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Franklin Weng"
+msgstr "Franklin Weng, Jeff Huang"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "franklin@nospam.goodhorse.idv.tw"
+msgstr "franklin@nospam.goodhorse.idv.tw, s8321414@gmail.com"
 
-#: indexerstate.h:42
+#: indexerstate.h:43
 #, kde-format
 msgid "Unknown"
 msgstr "未知的"
 
-#: indexerstate.h:45
+#: indexerstate.h:46
 #, kde-format
 msgid "Idle"
 msgstr "閒置的"
 
-#: indexerstate.h:48
+#: indexerstate.h:49
 #, kde-format
 msgid "Suspended"
 msgstr "暫停的"
 
-#: indexerstate.h:51
+#: indexerstate.h:52
 #, kde-format
 msgid "Initial Indexing"
 msgstr "正在初始索引"
 
-#: indexerstate.h:54
+#: indexerstate.h:55
 #, kde-format
 msgid "Indexing new files"
 msgstr "正在索引新檔案"
 
-#: indexerstate.h:57
+#: indexerstate.h:58
 #, kde-format
 msgid "Indexing modified files"
 msgstr "正在索引修改過的檔案"
 
-#: indexerstate.h:60
+#: indexerstate.h:61
 #, kde-format
 msgid "Indexing Extended Attributes"
 msgstr "正在索引延伸屬性"
 
-#: indexerstate.h:63
+#: indexerstate.h:64
 #, kde-format
 msgid "Indexing file content"
 msgstr "正在索引檔案內容"
 
-#: indexerstate.h:66
+#: indexerstate.h:67
 #, kde-format
 msgid "Checking for unindexed files"
 msgstr "正在檢查未索引檔案"
+
+#: indexerstate.h:70
+#, kde-format
+msgid "Checking for stale index entries"
+msgstr "正在檢查過時的索引項目"
 
 #: main.cpp:47
 #, kde-format

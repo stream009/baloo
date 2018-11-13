@@ -89,9 +89,7 @@ void App::processNextFile()
         quint64 id = m_io.nextId();
 
         QString url = QFile::decodeName(m_tr->documentUrl(id));
-        qCDebug(BALOO) << url;
-        if (!QFile::exists(url)) {
-            qCDebug(BALOO) << "File doesn't exist";
+        if (url.isEmpty() || !QFile::exists(url)) {
             m_tr->removeDocument(id);
             QTimer::singleShot(0, this, &App::processNextFile);
             m_io.writeBatchIndexed();
@@ -139,12 +137,19 @@ void App::index(Transaction* tr, const QString& url, quint64 id)
 {
     qCDebug(BALOO) << ">>";
     QString mimetype = m_mimeDb.mimeTypeForFile(url).name();
+    qCDebug(BALOO) << "Indexing" << id << url << mimetype;
 
-    bool shouldIndex = m_config.shouldBeIndexed(url) && m_config.shouldMimeTypeBeIndexed(mimetype);
-    if (!shouldIndex) {
+    if (!m_config.shouldBeIndexed(url)) {
         // FIXME: This should never be happening!
+        qCWarning(BALOO) << "Found" << url << "in the ContentIndexingDB, although it should be skipped";
         tr->removeDocument(id);
-        qCDebug(BALOO) << url << "shouldn't be indexed. skipping.";
+    }
+
+    // The initial BasicIndexingJob run has been supplied with the file extension
+    // mimetype only, skip based on the "real" mimetype
+    if (!m_config.shouldMimeTypeBeIndexed(mimetype)) {
+        qCDebug(BALOO) << "Skipping" << url << "- mimetype:" << mimetype;
+        tr->removePhaseOne(id);
         return;
     }
 
@@ -162,7 +167,7 @@ void App::index(Transaction* tr, const QString& url, quint64 id)
 
     // We always run the basic indexing again. This is mostly so that the proper
     // mimetype is set and we get proper type information.
-    // The mimetype fetched in the BasicIQ is fast but not accurate
+    // The mimetype fetched in the BasicIndexingJob is fast but not accurate
     BasicIndexingJob basicIndexer(url, mimetype, BasicIndexingJob::NoLevel);
     basicIndexer.index();
 

@@ -26,7 +26,6 @@
 
 #include <QStandardPaths>
 #include <KConfigGroup>
-#include <QDebug>
 
 
 namespace
@@ -393,7 +392,7 @@ bool FileIndexerConfig::indexingEnabled() const
     return m_config.group("Basic Settings").readEntry("Indexing-Enabled", true);
 }
 
-uint FileIndexerConfig::maxUncomittedFiles()
+uint FileIndexerConfig::maxUncomittedFiles() const
 {
     return m_maxUncomittedFiles;
 }

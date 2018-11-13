@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: balooshow\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-09-18 03:45+0200\n"
+"POT-Creation-Date: 2018-10-31 03:52+0100\n"
 "PO-Revision-Date: 2018-09-15 19:23+0100\n"
 "Last-Translator: Mthw <jari_45@hotmail.com>\n"
 "Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
@@ -114,3 +114,10 @@ msgstr ""
 #, kde-format
 msgid "%1 Terms: %2"
 msgstr ""
+
+#: main.cpp:201
+#, fuzzy, kde-format
+#| msgid "Internal Info"
+msgctxt "Prefix string for internal errors"
+msgid "Internal Error - %1"
+msgstr "Interné informácie"

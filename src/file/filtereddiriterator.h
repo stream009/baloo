@@ -21,6 +21,7 @@
 #define FILTEREDDIRITERATOR_H
 
 #include <QDirIterator>
+#include <QFileInfo>
 #include <QStack>
 
 namespace Baloo {
@@ -34,11 +35,12 @@ public:
         FilesAndDirs,
         DirsOnly
     };
-    FilteredDirIterator(FileIndexerConfig* config, const QString& folder, Filter filter = FilesAndDirs);
+    FilteredDirIterator(const FileIndexerConfig* config, const QString& folder, Filter filter = FilesAndDirs);
     ~FilteredDirIterator();
 
     QString next();
     QString filePath() const;
+    QFileInfo fileInfo() const;
 
 private:
     /**
@@ -47,7 +49,7 @@ private:
      */
     bool shouldIndexFolder(const QString& filePath) const;
 
-    FileIndexerConfig* m_config;
+    const FileIndexerConfig* m_config;
 
     QDirIterator* m_currentIter;
     QStack<QString> m_paths;

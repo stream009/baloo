@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-09-18 03:45+0200\n"
+"POT-Creation-Date: 2018-10-13 03:45+0200\n"
 "PO-Revision-Date: 2014-02-23 11:42+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -19,22 +19,22 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
-#: kio_tags.cpp:126 kio_tags.cpp:185
+#: kio_tags.cpp:124 kio_tags.cpp:183
 #, kde-format
 msgid "File %1 already has tag %2"
 msgstr ""
 
-#: kio_tags.cpp:312
+#: kio_tags.cpp:311
 #, kde-format
 msgid "Tag"
 msgstr "Etikett"
 
-#: kio_tags.cpp:314
+#: kio_tags.cpp:313
 #, kde-format
 msgid "Tag Fragment"
 msgstr ""
 
-#: kio_tags.cpp:316 kio_tags.cpp:321
+#: kio_tags.cpp:315 kio_tags.cpp:320
 #, kde-format
 msgid "All Tags"
 msgstr "Alle etiketter"

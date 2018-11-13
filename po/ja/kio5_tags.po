@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio_tags\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-10-08 03:44+0200\n"
+"POT-Creation-Date: 2018-10-13 03:45+0200\n"
 "PO-Revision-Date: 2008-11-30 00:26+0900\n"
 "Last-Translator: Yukiko Bando <ybando@k6.dion.ne.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -14,22 +14,22 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
-#: kio_tags.cpp:126 kio_tags.cpp:185
+#: kio_tags.cpp:124 kio_tags.cpp:183
 #, kde-format
 msgid "File %1 already has tag %2"
 msgstr ""
 
-#: kio_tags.cpp:313
+#: kio_tags.cpp:311
 #, kde-format
 msgid "Tag"
 msgstr ""
 
-#: kio_tags.cpp:315
+#: kio_tags.cpp:313
 #, kde-format
 msgid "Tag Fragment"
 msgstr ""
 
-#: kio_tags.cpp:317 kio_tags.cpp:322
+#: kio_tags.cpp:315 kio_tags.cpp:320
 #, kde-format
 msgid "All Tags"
 msgstr ""

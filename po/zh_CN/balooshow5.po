@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-09-18 03:45+0200\n"
-"PO-Revision-Date: 2018-09-28 19:47\n"
-"Last-Translator: guoyunhe <yunhe.guo@protonmail.com>\n"
+"POT-Creation-Date: 2018-10-31 03:52+0100\n"
+"PO-Revision-Date: 2018-10-09 18:39\n"
+"Last-Translator: guoyunhe <i@guoyunhe.me>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -117,3 +117,10 @@ msgstr "文件名术语：%1"
 #, kde-format
 msgid "%1 Terms: %2"
 msgstr "%1 个术语：%2"
+
+#: main.cpp:201
+#, fuzzy, kde-format
+#| msgid "Internal Info"
+msgctxt "Prefix string for internal errors"
+msgid "Internal Error - %1"
+msgstr "内部信息"

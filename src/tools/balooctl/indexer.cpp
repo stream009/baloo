@@ -56,8 +56,8 @@ void Indexer::index()
     }
 
     result.finish();
-    if (m_tr->hasDocument(result.document().id())) {
-        m_tr->replaceDocument(result.document(), DocumentTerms | DocumentData);
+    if (m_tr->hasDocument(doc.id())) {
+        m_tr->replaceDocument(doc, Everything);
     } else {
         m_tr->addDocument(result.document());
     }

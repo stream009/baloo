@@ -56,32 +56,46 @@ public Q_SLOTS:
         if (!m_newFiles.contains(file)) {
             qDebug() << "enque new file:" << file;
             m_newFiles << file;
-            QTimer::singleShot(0, this, &FileIndexScheduler::scheduleIndexing);
+            if (m_indexerState == Idle || m_isGoingIdle) {
+                QTimer::singleShot(0, this, &FileIndexScheduler::scheduleIndexing);
+            }
         }
     }
 
     void indexModifiedFile(const QString& file) {
         if (!m_modifiedFiles.contains(file)) {
             m_modifiedFiles << file;
-            QTimer::singleShot(0, this, &FileIndexScheduler::scheduleIndexing);
+            if (m_indexerState == Idle || m_isGoingIdle) {
+                QTimer::singleShot(0, this, &FileIndexScheduler::scheduleIndexing);
+            }
         }
     }
 
     void indexXAttrFile(const QString& file) {
         if (!m_xattrFiles.contains(file)) {
             m_xattrFiles << file;
-            QTimer::singleShot(0, this, &FileIndexScheduler::scheduleIndexing);
+            if (m_indexerState == Idle || m_isGoingIdle) {
+                QTimer::singleShot(0, this, &FileIndexScheduler::scheduleIndexing);
+            }
         }
+    }
+
+    void runnerFinished() {
+        m_isGoingIdle = true;
+        QTimer::singleShot(0, this, &FileIndexScheduler::scheduleIndexing);
     }
 
     void handleFileRemoved(const QString& file);
 
     void scheduleIndexing();
+    void scheduleCheckUnindexedFiles();
+    void scheduleCheckStaleIndexEntries();
 
     Q_SCRIPTABLE void suspend() { setSuspend(true); }
     Q_SCRIPTABLE void resume() { setSuspend(false); }
     Q_SCRIPTABLE uint getRemainingTime();
     Q_SCRIPTABLE void checkUnindexedFiles();
+    Q_SCRIPTABLE void checkStaleIndexEntries();
     Q_SCRIPTABLE uint getBatchSize();
 
 private Q_SLOTS:
@@ -108,6 +122,8 @@ private:
     TimeEstimator m_timeEstimator;
 
     bool m_checkUnindexedFiles;
+    bool m_checkStaleIndexEntries;
+    bool m_isGoingIdle;
 };
 
 }

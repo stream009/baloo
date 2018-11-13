@@ -24,6 +24,7 @@
 #include "baloodebug.h"
 #include <unistd.h>
 #include <iostream>
+#include <QtGlobal>
 
 using namespace Baloo;
 

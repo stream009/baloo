@@ -21,11 +21,10 @@
 #include "fileindexerconfig.h"
 
 #include <QFileInfo>
-#include <QDebug>
 
 using namespace Baloo;
 
-FilteredDirIterator::FilteredDirIterator(FileIndexerConfig* config, const QString& folder, Filter filter)
+FilteredDirIterator::FilteredDirIterator(const FileIndexerConfig* config, const QString& folder, Filter filter)
     : m_config(config)
     , m_currentIter(nullptr)
     , m_filters(QDir::NoDotAndDotDot | QDir::Readable | QDir::NoSymLinks)
@@ -105,6 +104,11 @@ QString FilteredDirIterator::next()
 QString FilteredDirIterator::filePath() const
 {
     return m_filePath;
+}
+
+QFileInfo FilteredDirIterator::fileInfo() const
+{
+    return m_currentIter ?  m_currentIter->fileInfo() : QFileInfo();
 }
 
 bool FilteredDirIterator::shouldIndexFolder(const QString& path) const
